@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/GEOTEC/static/css/main.073c9b0a.css",
-    "main.js": "/GEOTEC/static/js/main.d3ac0e31.js",
+    "main.css": "/GEOTEC/static/css/main.dc670f6e.css",
+    "main.js": "/GEOTEC/static/js/main.5c726d42.js",
     "static/js/787.5ed54547.chunk.js": "/GEOTEC/static/js/787.5ed54547.chunk.js",
-    "static/media/logo.svg": "/GEOTEC/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/mountains_wrapper.png": "/GEOTEC/static/media/mountains_wrapper.fa191591165aa5523ba6.png",
+    "static/media/Raleway-Bold.ttf": "/GEOTEC/static/media/Raleway-Bold.cefd37fb7d1d62c51b20.ttf",
+    "static/media/Raleway-Regular.ttf": "/GEOTEC/static/media/Raleway-Regular.c268e80ba67c4a294054.ttf",
+    "static/media/Poppins-ExtraLight.ttf": "/GEOTEC/static/media/Poppins-ExtraLight.333cb30c20e31999802a.ttf",
     "index.html": "/GEOTEC/index.html",
-    "main.073c9b0a.css.map": "/GEOTEC/static/css/main.073c9b0a.css.map",
-    "main.d3ac0e31.js.map": "/GEOTEC/static/js/main.d3ac0e31.js.map",
+    "main.dc670f6e.css.map": "/GEOTEC/static/css/main.dc670f6e.css.map",
+    "main.5c726d42.js.map": "/GEOTEC/static/js/main.5c726d42.js.map",
     "787.5ed54547.chunk.js.map": "/GEOTEC/static/js/787.5ed54547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.d3ac0e31.js"
+    "static/css/main.dc670f6e.css",
+    "static/js/main.5c726d42.js"
   ]
 }
