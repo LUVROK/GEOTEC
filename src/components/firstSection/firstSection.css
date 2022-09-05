@@ -1,0 +1,88 @@
+.firstSection {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 91px);
+    height: calc(100vh - 0px);
+    /* background-color: aqua; */
+}
+.firstSection_block {
+    position: relative;
+    top: 141px;
+    left: 92px;
+    width: 77%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+} 
+.firstSection_block_geotec {
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    /* font-size: 64px; */
+    line-height: 45px;
+    color: #102876;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+}
+.firstSection_block_geotec svg {
+    padding: 0px 15px;
+    position: relative;
+    bottom: 0;
+    height: 100%;
+}
+.firstSection_block_geotec_perhapse {
+    position: relative;
+    top: 22px;
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 40px;    
+    letter-spacing: -0.02em;
+    color: #102876;
+}
+.italic_geotec_perhapse_firstSection {
+    font-family: 'Raleway-Light';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #3856B5;
+}
+.geotec_title_firstSection {
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    color: #3856B5;
+}
+.bigFontSize {
+    font-size: 64px;
+    color: #3856B5;
+    font-family: 'Poppins-ExtraLight';
+    font-style: normal;
+    font-weight: 275;
+    font-size: 64px;
+    line-height: 65px;
+}
+
+.firstSection_block_geotec_perhapse_GEOTEC {
+    font-family: 'Poppins-ExtraLight';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 275;
+    font-size: 36px;
+    line-height: 40px;    
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #3856B5;
+}
+
+.PoppinsFirstSec {
+    font-family: 'Poppins-ExtraLight';
+}

@@ -1,0 +1,94 @@
+.Wrapper {
+    width: 100%;
+    height: calc(100vh - 91px);
+    position: sticky;
+    top: 91px;
+}
+.Wrapper_image {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../media/mountains_wrapper.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: cover; */
+    border-radius: 40px;
+}
+.Wrapper_block_GEOTEC {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+.Wrapper_block_GEOTEC_block1 {
+    height: auto;
+    width: auto;
+    position: relative;
+    left: 74px;
+    top: 0;
+    /* top: 75px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    transition: 2s ease;
+}
+.Wrapper_block_GEOTEC_block2 {
+    height: auto;
+    width: auto;
+    position: relative;
+    top: -33px;
+    /* top: 42px; */
+    left: 74px;
+    color: #3856B5;
+    font-family: 'Raleway-Regular';
+    font-size: 24px;
+    transition: 2s ease;
+}
+.Wrapper_block_GEOTEC_block3 {
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 77px;
+    left: 74px;
+    color: #3856B5;
+    font-family: 'Raleway-Regular';
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+}
+.Wrapper_block_GEOTEC_block2_button {
+    cursor: pointer;
+    position: relative;
+    left: 49px;
+}
+.Wrapper_block_GEOTEC_block2_title {
+    font-family: 'Poppins-Light';
+    font-size: 24px;
+} 
+.Wrapper_block_GEOTEC_title {
+    width: 85%;
+    text-transform: uppercase;
+    font-size: 164px;
+    font-family: 'Poppins-ExtraLight';
+    color: #3856B5;
+    line-height: 246px;
+    font-weight: 275;
+    font-style: normal;
+}
+.Wrapper_block_GEOTEC_logo {
+    width: 15%;
+    position: relative;
+}
+.Wrapper_block_GEOTEC_logo svg {
+    position: relative;
+    left: 56px;
+}

@@ -1,0 +1,107 @@
+.Whyarewe {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 91px);
+    height: calc(100vh - 0px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 162px;
+}
+.Whyarewe_block {
+    position: relative;
+    /* top: 141px;
+    left: 92px;
+    width: 77%; */
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+} 
+.Whyarewe_block_title {
+    position: absolute;
+    /* background-color:black; */
+    background-color: #F0F1F8;
+    border-radius: 40px;
+    width: 50%;
+    height: 100%;
+}
+.Whyarewe_block_title_text {
+    position: relative;
+    top: 169px;
+    left: 90px;
+    width: 50%;
+    font-family: 'Raleway-Regular';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-transform: capitalize;
+}
+.Whyarewe_block_Content {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    /* background-color:aqua; */
+    background: url(../../media/staff.png) no-repeat;
+    background-size: cover;
+    
+    width: 60%;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.Whyarewe_block_Content_first {
+    position: absolute;
+    top: 169px;
+    margin-left: 81.74px;
+    width: auto;
+    height: auto;
+    transition: all 2s ease;
+}
+.Whyarewe_block_Content_first_title {
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.Whyarewe_block_Content_first_text {
+    position: relative;
+    top: 30px;
+    width: 40%;
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.listLogo {
+    position: absolute;
+    left: 73px;
+    bottom: 89.52px;
+    z-index: 101;
+    cursor: pointer;
+}
+.Whyarewe_block_Content_first_text_Gear_Wheel {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+.Whyarewe_block_Content path {
+    fill: #F0F1F8;
+    transition: 0.7s;
+}
+.listLogo:hover path {
+    fill: #3a448b;
+}
+.active {
+    /* transform: translateX(0px); */
+    z-index: 100;
+}

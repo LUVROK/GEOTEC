@@ -1,0 +1,113 @@
+.AboutUs {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 91px);
+    height: calc(100vh - 0px);
+    border-radius: 40px;
+    overflow: hidden;
+    /* top: 233px; */
+    /* background-color: blue; */
+}
+.CompanyBar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    height: 221px;
+    border-radius: 40px;
+    background-image: url(../../media/GeotecGeoComp.png);
+    background-repeat: no-repeat;
+    background-size: cover 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 65px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.logo_CompanyBar {
+    font-family: 'Poppins-ExtraLight';
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 275;
+    font-size: 128px;
+    line-height: 65px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-left: 87px;
+}
+.perhaps_logo_companyBar {
+    position: absolute;
+    bottom: 0px;
+    left: 88px;
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: none;
+}
+
+.researchs_block {
+    position: relative;
+    margin: 100px 88px 0px 88px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.researchs_block_elem {
+    position: relative;
+    width: 25%;
+    height: 120px;
+    font-family: 'Raleway-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: -0.03em;
+}
+.borderbottom {
+    position: absolute;
+    border-bottom: 1px solid #000000;
+    height: 1px;
+    width: 100%;
+    top: 90%;
+}
+.researchs_block_elem svg {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.researchs_block_elem:nth-child(0) {
+    margin-right: 26px;
+}
+.researchs_block_elem:nth-child(1) {
+    margin-right: 26px;
+}
+.researchs_block_elem:nth-child(2) {
+    margin-right: 26px;
+}
+.researchs_block_elem:nth-child(3) {
+    margin-right: 26px;
+}
+
+
+
+
+
+@media screen and (max-width: 1820px) {
+    
+}
