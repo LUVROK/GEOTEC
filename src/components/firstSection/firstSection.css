@@ -8,81 +8,186 @@
 .firstSection_block {
     position: relative;
     top: 141px;
-    left: 92px;
-    width: 77%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 } 
 .firstSection_block_geotec {
-    font-family: 'Raleway-Light';
+    font-family: 'Raleway-Regular';
     font-style: normal;
-    font-weight: 300;
-    /* font-size: 64px; */
-    line-height: 45px;
-    color: #102876;
-    font-size: 36px;
-    line-height: 45px;
+    color: #4A6AD0;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 138%;
     letter-spacing: -0.02em;
+    width: 863px;
 }
+
+.element-animation {
+    margin: 2rem 0;
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(80px);
+}
+  
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transition-timing-function: cubic-bezier(0,.65,.7,1);
+    transform: translateY(0%);
+}
+.element-animation:nth-child(1).element-show {
+    transition-delay: 0.1s;
+}
+
+
 .firstSection_block_geotec svg {
     padding: 0px 15px;
     position: relative;
     bottom: 0;
     height: 100%;
 }
+
+.firstSection_block_geotec_perhapse_block {
+    position: relative;
+    height: auto;
+    width: auto;
+    transition-delay: 0.4s !important;
+}
 .firstSection_block_geotec_perhapse {
     position: relative;
-    top: 22px;
+    margin-top: 83px;
     font-family: 'Raleway-Light';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 40px;    
     letter-spacing: -0.02em;
     color: #102876;
-}
-.italic_geotec_perhapse_firstSection {
-    font-family: 'Raleway-Light';
-    font-style: italic;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -0.02em;
-    color: #3856B5;
-}
-.geotec_title_firstSection {
-    font-family: 'Raleway-Light';
     font-style: normal;
     font-weight: 300;
-    font-size: 36px;
-    line-height: 45px;
-    letter-spacing: -0.02em;
-    color: #3856B5;
+    font-size: 16px;
+    line-height: 26px;
+    width: 79%;
+}
+.top_sec {
+    margin-top: 33px;
+}
+.engFont {
+    font-family: 'Poppins-ExtraLight';
+    font-style: normal;
+    font-weight: 275;
+    font-size: 16px;
+    line-height: 26px;
+    color: #102876;
 }
 .bigFontSize {
     font-size: 64px;
-    color: #3856B5;
+    color: #4A6AD0;
     font-family: 'Poppins-ExtraLight';
     font-style: normal;
     font-weight: 275;
-    font-size: 64px;
-    line-height: 65px;
+    line-height: 138%;
 }
 
-.firstSection_block_geotec_perhapse_GEOTEC {
-    font-family: 'Poppins-ExtraLight';
-    font-size: 36px;
+.firstSection_block_geotec_perhapse_width {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.blockCont_block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 85px;
+    display: flex;
+    flex-direction: row;
+    transition-delay: 0.4s !important;
+}
+.firstSection_block_geotec_block {
+    position: relative;
+    height: auto;
+    width: 57%;
+    margin-left: 82px;
+}
+.blockCont {
+    position: relative;
+    width: 262px;
+    height: 208px;
+    background: #4A6AD0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.centerer:first-of-type {
+    margin-right: 77px;
+}
+.blockCont img {
+    padding-top: 29px;
+    padding-left: 31px;
+}
+.blockCont_text {
+    font-family: 'Raleway-Light';
     font-style: normal;
-    font-weight: 275;
-    font-size: 36px;
-    line-height: 40px;    
-    letter-spacing: -0.02em;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-top: 12px;
+    padding-left: 28px;
+}
+.blockCont svg {
+    position: absolute;
+    right: 31px;
+    bottom: 28px;
+}
+
+
+.centerer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    transition: transform 0.5s;
+    transition-delay: cubic-bezier(.13,.65,.24,.95);
+  }
+  .centerer:hover {
+    transform: scale(1.03);
+  }
+  
+  [class^=btn-] {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* width: 210px;
+    height: 60px; */
     text-transform: uppercase;
-    color: #3856B5;
-}
-
-.PoppinsFirstSec {
-    font-family: 'Poppins-ExtraLight';
-}
+    /* border: 1px solid currentColor; */
+  }
+  
+  .btn-6 {
+    overflow: hidden;
+    /* color: #31b462; */
+  }
+  .btn-6 span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #dadadaaf;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    mix-blend-mode: multiply;
+  }
+  .btn-6:hover {
+    color: #c3e9d1;
+  }
+  .btn-6:hover span {
+    width: 255%;
+    height: 592.5px;
+  }
+  /* .btn-6:active {
+    background-color: #0da746;
+  } */

@@ -12,8 +12,8 @@ const AllContentSection = () => {
                 <FirstSection />
                 <History />
                 <Whyarewe />
-                <AboutUs />
-                <Projects />
+                {/* <AboutUs />
+                <Projects /> */}
             </div>
         </div>
     );

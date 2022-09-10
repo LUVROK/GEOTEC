@@ -1,8 +1,154 @@
 .History {
     width: 100%;
     height: 100vh;
-    background-color: #F0F1F8;
+    /* background-color: #F0F1F8; */
     position: relative;
     display: flex;
     border-radius: 40px;
+    margin-top: 33px;
+}
+.backgroundHistorySvg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+    top: 150px;
+}
+.History_block {
+    padding-top: 33px;
+    padding-left: 82px;
+    width: 100%;
+    height: 100%;
+}
+
+.History h2 {
+    font-family: 'Raleway-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 75px;
+
+    text-transform: capitalize;
+
+    background: linear-gradient(0deg, #2444A9, #2444A9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.textBlock {
+    position: relative;
+    width: 50%;
+    height: 392px;
+    margin-top: 10%;
+}
+.textBlock_text_content {
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #102876;
+    margin-top: 5%;
+}
+.textBlock_text {
+    position: relative;
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 100%;
+    text-transform: capitalize;
+    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.textBlock_textPopins {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.textBlock_textPopinsMini {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.ImageBack {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* background-color: yellow; */
+    height: 234px;
+    top: 163px;
+}
+.ImageBack img {
+    width: 365px;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+
+}
+
+
+.TimeHistoryBox {
+    position: absolute;
+    right: 180px;
+    top: 25%;
+    width: auto;
+    height: auto;
+    border-right: 5px solid #4A6AD0;;
+    padding-right: 66px;
+    overflow-y: scroll;
+}
+.TimeHistoryBox_block {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.TimeHistoryBox::-webkit-scrollbar {
+    width: 0px;
+}
+.TimeHistoryBox_element {
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #4A6AD0;
+    margin: 5.5px;
+    transition: all 0.5s cubic-bezier(0,.11,.29,1);
+    cursor: pointer;
+}
+.TimeHistoryBox_element.active {
+    color: #1839A3;
+    /* transform: scale(2); */
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 132px;
+    text-transform: uppercase;
 }

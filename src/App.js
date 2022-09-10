@@ -87,19 +87,19 @@ function App() {
 
   return (
     // <Scrollbar onScroll={() => console.log(1)}>
-    <div className="App" id='App'>
-      {
-        !isrender &&
-        <Preloader />
-      }
-      <div className="block_All" id="block_All">
-        <Nav />
-        <Wrapper />
-        <img src={Subtract} alt="" className='Subtract_left'></img>
-        <img src={Subtract} alt="" className='Subtract_right'></img>
-        <AllContentSection />
+      <div className="App" id='App'>
+        {
+          !isrender &&
+          <Preloader />
+        }
+        <div className="block_All" id="block_All">
+          <Nav />
+          <Wrapper />
+          <img src={Subtract} alt="" className='Subtract_left'></img>
+          <img src={Subtract} alt="" className='Subtract_right'></img>
+          <AllContentSection />
+        </div>
       </div>
-    </div>
     // {/* </Scrollbar> */}
   );
 }

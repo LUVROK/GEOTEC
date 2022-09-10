@@ -2,25 +2,49 @@ import './whyarewe.css';
 import React, { useState } from 'react';
 
 const Whyarewe = () => {
-    const [activelistLogo, setActivelistLogo] = useState(null)
+    const [activelistLogo, setActivelistLogo] = useState(null);
+    const [activelistSvg, setActivelistSvg] = useState(null);
 
     const listLogoClick = () => {
         const el = document.getElementById('Whyarewe_1th');
         const elActive = document.querySelector('.active');
-        const elAll = document.querySelectorAll('.Whyarewe_block_Content_first');
+        const elAll = document.querySelectorAll('.Whyarewe_block_Content_first_transform');
+        const elAllgearwhell = document.querySelectorAll('.Whyarewe_block_Content_first_text_Gear_Wheel');
 
         let indexEl = null;
+        let indexEl2 = null;
 
         for (let i = 0; i < elAll.length; i++) {
             elAll[i].classList.forEach(element => element === 'active' ? [setActivelistLogo(i), indexEl = i] : null);
+            elAllgearwhell[i].classList.forEach(element => element === 'active' ? [setActivelistSvg(i), indexEl2 = i] : null);
         }
 
+        console.log(elAll[indexEl + 1])
 
         elAll[indexEl].style.transform = 'translateX(-1680px)';
-        elAll[indexEl + 1].style.transform = 'translateX(0px)';
+        elAll[indexEl].classList.remove('active');
+
+        elAllgearwhell[indexEl2].style.transform = 'translateY(-1680px)';
+        elAllgearwhell[indexEl2].classList.remove('active');
+
+        if (elAll[indexEl + 1]) {
+
+            elAll[indexEl + 1].style.transform = 'translateX(0px)';
+            elAll[indexEl + 1].classList.add('active');
+
+            elAllgearwhell[indexEl2 + 1].style.transform = 'translateY(0px)';
+            elAllgearwhell[indexEl2 + 1].classList.add('active');
+        }
+        else {
+            elAll[0].style.transform = 'translateX(0px)';
+            elAll[0].classList.add('active');
+
+            elAllgearwhell[0].style.transform = 'translateY(0px)';
+            elAllgearwhell[0].classList.add('active');
+        }
 
         //settimeout для опарсити и для пролистывания
-        
+
     }
 
     return (
@@ -30,29 +54,65 @@ const Whyarewe = () => {
                     <div className='Whyarewe_block_title_text'>Почему Выбирают Нас?</div>
                 </div>
                 <div className='Whyarewe_block_Content'>
-                    <div className='Whyarewe_block_Content_first active' style={{ transform: 'translateX(0px)' }} id="Whyarewe_1th">
-                        <div className='Whyarewe_block_Content_first_title'>
-                            Cотрудники
+                    <div className='Whyarewe_block_Content_first'>
+                        <div className='Whyarewe_block_Content_first_transform active' style={{ transform: 'translateX(0px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_1th">
+                            <div className='Whyarewe_block_Content_first_title'>
+                                Cотрудники
+                            </div>
+                            <div className='Whyarewe_block_Content_first_text'>
+                                Наши сотрудники - пример креативности, опыта и мотивации.<br /><br />Поддержание слогана <br />«Безопасность- превыше всего!» и обеспечение здоровой производственной среды
+                            </div>
                         </div>
-                        <div className='Whyarewe_block_Content_first_text'>
-                            Наши сотрудники - пример креативности, опыта и мотивации.<br /><br />Поддержание слогана <br />«Безопасность- превыше всего!» и обеспечение здоровой производственной среды
+                        <div className='Whyarewe_block_Content_first_text_Gear_Wheel active Gear_Wheel_first' style={{ transform: 'translateY(0px)', transition: '1s' }} id="Whyarewe_1thSvg">
+                            <svg width="214" height="475" viewBox="0 0 214 475" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M213.098 0C141.377 0.321096 83.3341 58.827 83.3341 130.951C83.3341 203.076 141.377 261.582 213.098 261.903V0ZM0 431.904C0 338.016 76.1116 261.904 170 261.904H213.096V475H0V431.904Z" fill="#F0F1F8" />
+                            </svg>
                         </div>
-                        <div className='Whyarewe_block_Content_first_text_Gear_Wheel'>
+                    </div>
+                    <div className='Whyarewe_block_Content_first'>
+                        <div className='Whyarewe_block_Content_first_transform' style={{ transform: 'translateX(-1680px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_2th">
+                            <div className='Whyarewe_block_Content_first_title'>
+                                Устойчивое развитие
+                            </div>
+                            <div className='Whyarewe_block_Content_first_text'>
+                                Мы добиваемся устойчивого развития и осведомлённостив области окружающей средыМы хотим получить всенародное признание какизвестная устойчивая компания
+                            </div>
+                        </div>
+                        <div className='Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_second' style={{ transform: 'translateY(1680px)', transition: '1s' }} id="Whyarewe_2thSvg">
+                            <svg width="380" height="381" viewBox="0 0 380 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M0 281C154.497 281 280 155.335 280 0H380C380 210.278 210.011 381 0 381V281Z" fill="#F0F1F8" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div className='Whyarewe_block_Content_first'>
+                        <div className='Whyarewe_block_Content_first_transform' style={{ transform: 'translateX(-1680px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_3th">
+                            <div className='Whyarewe_block_Content_first_title'>
+                                Безопасность и Качество
+                            </div>
+                            <div className='Whyarewe_block_Content_first_text'>
+                                Мы имеем высокие стандарты по качеству, которые применяются при выполнении работ<br /><br />
+                                Ставим безопасность превыше всего и обеспечиваем здоровую рабочую cреду
+                            </div>
+                        </div>
+                        <div className='Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_third' style={{ transform: 'translateY(1680px)', transition: '1s' }} id="Whyarewe_3thSvg">
                             <svg width="312" height="310" viewBox="0 0 312 310" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M308.763 0C309.844 0 310.922 0.0055464 312 0.0166123V161.861C310.924 161.837 309.845 161.826 308.764 161.826C227.613 161.826 161.826 227.612 161.826 308.763C161.826 308.965 161.827 309.166 161.828 309.367H0.000577432C0.000192536 309.166 0 308.965 0 308.763C0 288.938 1.86859 269.548 5.43926 250.762C8.33654 251.114 11.2865 251.295 14.2788 251.295C54.3393 251.295 86.8148 218.819 86.8148 178.759C86.8148 156.758 77.0197 137.045 61.5525 123.742C84.3285 93.3593 112.575 67.3134 144.83 47.0654C158.078 61.3561 177.013 70.3003 198.036 70.3003C236.554 70.3003 268.06 40.2774 270.429 2.35637C282.989 0.801033 295.783 0 308.763 0Z" fill="#F0F1F8" />
                             </svg>
                         </div>
                     </div>
-                    <div className='Whyarewe_block_Content_first' style={{ transform: 'translateX(1680px)' }} id="Whyarewe_2th">
-                        <div className='Whyarewe_block_Content_first_title'>
-                            Устойчивое развитие
+                    <div className='Whyarewe_block_Content_first'>
+                        <div className='Whyarewe_block_Content_first_transform' style={{ transform: 'translateX(-1680px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_2th">
+                            <div className='Whyarewe_block_Content_first_title'>
+                                Заказчики
+                            </div>
+                            <div className='Whyarewe_block_Content_first_text'>
+                                Требования Заказчика – наш основной приоритет<br />
+                                Выслушиваем и принимаем каждое слово Заказчика, и ищем лучшие решения для непрерывного совершенствования
+                            </div>
                         </div>
-                        <div className='Whyarewe_block_Content_first_text'>
-                            Мы добиваемся устойчивого развития и осведомлённостив области окружающей средыМы хотим получить всенародное признание какизвестная устойчивая компания
-                        </div>
-                        <div className='Whyarewe_block_Content_first_text_Gear_Wheel'>
-                            <svg width="312" height="310" viewBox="0 0 312 310" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M308.763 0C309.844 0 310.922 0.0055464 312 0.0166123V161.861C310.924 161.837 309.845 161.826 308.764 161.826C227.613 161.826 161.826 227.612 161.826 308.763C161.826 308.965 161.827 309.166 161.828 309.367H0.000577432C0.000192536 309.166 0 308.965 0 308.763C0 288.938 1.86859 269.548 5.43926 250.762C8.33654 251.114 11.2865 251.295 14.2788 251.295C54.3393 251.295 86.8148 218.819 86.8148 178.759C86.8148 156.758 77.0197 137.045 61.5525 123.742C84.3285 93.3593 112.575 67.3134 144.83 47.0654C158.078 61.3561 177.013 70.3003 198.036 70.3003C236.554 70.3003 268.06 40.2774 270.429 2.35637C282.989 0.801033 295.783 0 308.763 0Z" fill="#F0F1F8" />
+                        <div className='Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_fourth' style={{ transform: 'translateY(1680px)', transition: '1s' }} id="Whyarewe_2thSvg">
+                            <svg width="265" height="475" viewBox="0 0 265 475" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M214.638 0H265V198.28V434.842V474.842H225H164.276H40C17.9086 474.842 0 456.933 0 434.842V198.281C0 176.189 17.9086 158.281 40 158.281H164.276V81.2792L214.638 0Z" fill="#F0F1F8" />
                             </svg>
                         </div>
                     </div>

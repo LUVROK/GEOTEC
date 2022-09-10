@@ -38,8 +38,14 @@
     font-family: 'Raleway-Regular';
     font-weight: 400;
     font-size: 64px;
-    line-height: 75px;
+    line-height: 70px;
     text-transform: capitalize;
+
+    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 .Whyarewe_block_Content {
     position: absolute;
@@ -92,7 +98,20 @@
 .Whyarewe_block_Content_first_text_Gear_Wheel {
     position: absolute;
     top: 25%;
-    right: 0;
+    right: -1px;
+}
+.Gear_Wheel_first {
+    top: 22.3%;
+    top: -22px;
+}
+.Gear_Wheel_second {
+    top: 28.4%;
+}
+.Gear_Wheel_third {
+    top: 29.7%;
+}
+.Gear_Wheel_fourth {
+    top: 19.9%;
 }
 .Whyarewe_block_Content path {
     fill: #F0F1F8;
