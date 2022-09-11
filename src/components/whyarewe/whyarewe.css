@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 162px;
+    /* margin-bottom: 162px; */
 }
 .Whyarewe_block {
     position: relative;
@@ -63,8 +63,8 @@
 .Whyarewe_block_Content_first {
     position: absolute;
     top: 169px;
-    margin-left: 81.74px;
-    width: auto;
+    padding-left: 81.74px;
+    width: 100%;
     height: auto;
     transition: all 2s ease;
 }
@@ -72,10 +72,13 @@
     font-family: 'Raleway-Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 54px;
     line-height: 75px;
     text-transform: capitalize;
     color: #FFFFFF;
+}
+.Whyarewe_block_Content_first_title_64text {
+    font-size: 64px;
 }
 .Whyarewe_block_Content_first_text {
     position: relative;
@@ -84,7 +87,7 @@
     font-family: 'Raleway-Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     color: #FFFFFF;
 }

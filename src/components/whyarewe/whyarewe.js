@@ -5,7 +5,9 @@ const Whyarewe = () => {
     const [activelistLogo, setActivelistLogo] = useState(null);
     const [activelistSvg, setActivelistSvg] = useState(null);
 
+
     const listLogoClick = () => {
+        document.querySelector('.listLogo').style.pointerEvents = 'none';
         const el = document.getElementById('Whyarewe_1th');
         const elActive = document.querySelector('.active');
         const elAll = document.querySelectorAll('.Whyarewe_block_Content_first_transform');
@@ -19,7 +21,51 @@ const Whyarewe = () => {
             elAllgearwhell[i].classList.forEach(element => element === 'active' ? [setActivelistSvg(i), indexEl2 = i] : null);
         }
 
-        console.log(elAll[indexEl + 1])
+        if (indexEl === 1) {
+            elAllgearwhell[3].style.transition = '1s';
+            elAllgearwhell[0].style.transition = '0s';
+            elAllgearwhell[0].style.transform = 'translateY(1680px)';
+            // console.log(elAllgearwhell[0].style.transform)
+        }
+        if (indexEl === 2) {
+            elAllgearwhell[0].style.transition = '1s';
+            elAllgearwhell[1].style.transition = '0s';
+            elAllgearwhell[1].style.transform = 'translateY(1680px)';
+            // console.log(elAllgearwhell[1].style.transform)
+        }
+        if (indexEl === 3) {
+            elAllgearwhell[1].style.transition = '1s';
+            elAllgearwhell[2].style.transition = '0s';
+            elAllgearwhell[2].style.transform = 'translateY(1680px)';
+            // console.log(elAllgearwhell[2].style.transform)
+        }
+        if (indexEl === 0) {
+            elAllgearwhell[2].style.transition = '1s';
+            elAllgearwhell[3].style.transition = '0s';
+            elAllgearwhell[3].style.transform = 'translateY(1680px)';
+            // console.log(elAllgearwhell[3].style.transform)
+        }
+
+
+        // if (indexEl === 3) {
+        //     if (i !== 3) {
+        //         elAllgearwhell[i].style.transition = '0s';
+        //         elAllgearwhell[i].style.transform = 'translateY(1680px)';
+        //         console.log(elAllgearwhell[i].style.transform)
+        //     }
+        //     elAllgearwhell[i].style.transition = '1s';
+        //     console.log(elAllgearwhell[i].style.transform)
+        // }
+        // if (indexEl === 0) {
+        //     if (i !== 4) {
+        //         elAllgearwhell[i].style.transition = '0s';
+        //         elAllgearwhell[i].style.transform = 'translateY(1680px)';
+        //         console.log(elAllgearwhell[i].style.transform)
+        //     }
+        //     elAllgearwhell[i].style.transition = '1s';
+        //     console.log(elAllgearwhell[i].style.transform)
+        // }
+
 
         elAll[indexEl].style.transform = 'translateX(-1680px)';
         elAll[indexEl].classList.remove('active');
@@ -36,19 +82,23 @@ const Whyarewe = () => {
             elAllgearwhell[indexEl2 + 1].classList.add('active');
         }
         else {
+
             elAll[0].style.transform = 'translateX(0px)';
             elAll[0].classList.add('active');
 
             elAllgearwhell[0].style.transform = 'translateY(0px)';
             elAllgearwhell[0].classList.add('active');
+
         }
+        setTimeout(() => {
+            document.querySelector('.listLogo').style.pointerEvents = 'all';
+        }, 1000)
 
         //settimeout для опарсити и для пролистывания
-
     }
 
     return (
-        <div className="Whyarewe">
+        <div className="Whyarewe section sec3">
             <div className='Whyarewe_block'>
                 <div className='Whyarewe_block_title'>
                     <div className='Whyarewe_block_title_text'>Почему Выбирают Нас?</div>
@@ -56,7 +106,7 @@ const Whyarewe = () => {
                 <div className='Whyarewe_block_Content'>
                     <div className='Whyarewe_block_Content_first'>
                         <div className='Whyarewe_block_Content_first_transform active' style={{ transform: 'translateX(0px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_1th">
-                            <div className='Whyarewe_block_Content_first_title'>
+                            <div className='Whyarewe_block_Content_first_title Whyarewe_block_Content_first_title_64text'>
                                 Cотрудники
                             </div>
                             <div className='Whyarewe_block_Content_first_text'>

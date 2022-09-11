@@ -18,10 +18,12 @@
     top: 150px;
 }
 .History_block {
+    position: relative;
     padding-top: 33px;
     padding-left: 82px;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .History h2 {
@@ -42,10 +44,22 @@
 }
 
 .textBlock {
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 392px;
     margin-top: 10%;
+    transition-delay: 0s;
+    /* transition: all 0.5s cubic-bezier(0,.11,.29,1); */
+
+}
+.textBlock_first {
+    /* transform: translateY(0px); */
+}
+.textBlock_second {
+    /* transform: translateY(880px); */
+}
+.textBlock_third {
+    /* transform: translateY(1760px); */
 }
 .textBlock_text_content {
     position: relative;
@@ -141,13 +155,13 @@
     text-transform: uppercase;
     color: #4A6AD0;
     margin: 5.5px;
-    transition: all 0.5s cubic-bezier(0,.11,.29,1);
+    transition: all 1s cubic-bezier(0,.11,.29,1);
     cursor: pointer;
 }
 .TimeHistoryBox_element.active {
     color: #1839A3;
     /* transform: scale(2); */
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 88px;
     line-height: 132px;
     text-transform: uppercase;

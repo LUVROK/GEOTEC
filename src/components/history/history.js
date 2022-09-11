@@ -50,11 +50,21 @@ const History = () => {
         });
 
         const massElements = document.querySelectorAll('.TimeHistoryBox_element');
+        const textBlockAll = document.querySelectorAll('.textBlock');
         let indexEl = null;
 
         function secondEl() {
             for (let i = 0; i < massElements.length; i++) {
                 massElements[i].classList.forEach(element => element === 'active' ? [setActiveTime(i), indexEl = i] : null);
+            }
+
+            if(textBlockAll[indexEl + 1]) {
+                textBlockAll[indexEl].style.transform = 'translateY(-880px)';
+                textBlockAll[indexEl + 1].style.transform = 'translateY(0px)';
+            }
+            else {
+                textBlockAll[indexEl].style.transform = 'translateY(-880px)';
+                textBlockAll[0].style.transform = 'translateY(0px)';
             }
 
             if (massElements[indexEl + 1]) {
@@ -65,12 +75,78 @@ const History = () => {
                 massElements[indexEl].classList.remove('active');
                 massElements[0].classList.add('active');
             }
-            setTimeout(() => { k = false }, 500);
+
+            if (indexEl === 1) {
+                textBlockAll[9].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[10].style.transition = '0s';
+                textBlockAll[10].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 2) {
+                textBlockAll[10].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[0].style.transition = '0s';
+                textBlockAll[0].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 3) {
+                textBlockAll[0].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[1].style.transition = '0s';
+                textBlockAll[1].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 4) {
+                textBlockAll[1].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[2].style.transition = '0s';
+                textBlockAll[2].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 5) {
+                textBlockAll[2].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[3].style.transition = '0s';
+                textBlockAll[3].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 6) {
+                textBlockAll[3].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[4].style.transition = '0s';
+                textBlockAll[4].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 7) {
+                textBlockAll[4].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[5].style.transition = '0s';
+                textBlockAll[5].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 8) {
+                textBlockAll[5].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[6].style.transition = '0s';
+                textBlockAll[6].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 9) {
+                textBlockAll[6].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[7].style.transition = '0s';
+                textBlockAll[7].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 10) {
+                textBlockAll[7].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[8].style.transition = '0s';
+                textBlockAll[8].style.transform = 'translateY(880px)';
+            }
+            if (indexEl === 0) {
+                textBlockAll[8].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[9].style.transition = '0s';
+                textBlockAll[9].style.transform = 'translateY(880px)';
+            }
+
+            setTimeout(() => { k = false }, 1000);
         }
 
         function secondEl2() {
             for (let i = 0; i < massElements.length; i++) {
                 massElements[i].classList.forEach(element => element === 'active' ? [setActiveTime(i), indexEl = i] : null);
+            }
+
+            if(textBlockAll[indexEl - 1]) {
+                textBlockAll[indexEl].style.transform = 'translateY(880px)';
+                textBlockAll[indexEl - 1].style.transform = 'translateY(0px)';
+            }
+            else {
+                textBlockAll[indexEl].style.transform = 'translateY(880px)';
+                textBlockAll[10].style.transform = 'translateY(0px)';
             }
 
             if (massElements[indexEl - 1]) {
@@ -81,7 +157,64 @@ const History = () => {
                 massElements[indexEl].classList.remove('active');
                 massElements[10].classList.add('active');
             }
-            setTimeout(() => { k = false }, 500);
+
+            if (indexEl === 1) {
+                textBlockAll[8].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[9].style.transition = '0s';
+                textBlockAll[9].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 2) {
+                textBlockAll[9].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[10].style.transition = '0s';
+                textBlockAll[10].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 3) {
+                textBlockAll[10].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[0].style.transition = '0s';
+                textBlockAll[0].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 4) {
+                textBlockAll[0].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[1].style.transition = '0s';
+                textBlockAll[1].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 5) {
+                textBlockAll[1].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[2].style.transition = '0s';
+                textBlockAll[2].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 6) {
+                textBlockAll[2].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[3].style.transition = '0s';
+                textBlockAll[3].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 7) {
+                textBlockAll[3].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[4].style.transition = '0s';
+                textBlockAll[4].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 8) {
+                textBlockAll[4].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[5].style.transition = '0s';
+                textBlockAll[5].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 9) {
+                textBlockAll[5].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[6].style.transition = '0s';
+                textBlockAll[6].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 10) {
+                textBlockAll[6].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[7].style.transition = '0s';
+                textBlockAll[7].style.transform = 'translateY(-880px)';
+            }
+            if (indexEl === 0) {
+                textBlockAll[7].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
+                textBlockAll[8].style.transition = '0s';
+                textBlockAll[8].style.transform = 'translateY(-880px)';
+            }
+
+            setTimeout(() => { k = false }, 1000);
         }
 
     }, [])
@@ -102,15 +235,125 @@ const History = () => {
     }
 
     return (
-        <div className="History">
+        <div className="History section sec2">
             <div className='History_block'>
                 <h2>История</h2>
-                <div className='textBlock active'>
+                <div className='textBlock textBlock_first active' style={{ transform: 'translateY(0px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                     <div className='textBlock_text'>
                         основание <span className="textBlock_textPopins">GEOTEC</span>
                     </div>
                     <div className='textBlock_text_content'>
                         <span className="textBlock_textPopins">GEOTEC</span> был основан в 2006 году
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_second active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Первый проект  <span className="textBlock_textPopins">GEOTEC</span>
+                    </div>
+                    <div className='textBlock_text_content'>
+                        <span className="textBlock_textPopins">GEOTEC</span> получил первый проект в Тенгизе от ТШО
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_third active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Расширение в Казахстане
+                    </div>
+                    <div className='textBlock_text_content'>
+                        Выполнен один из самых сложных проектов в Алматинской гондоле
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_fourth active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Партнерство с ТШО
+                    </div>
+                    <div className='textBlock_text_content'>
+                        ТШО подписал Генеральный Контракт на 7 лет
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_fifth active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Самое высокое здание в Казахстане
+                    </div>
+                    <div className='textBlock_text_content'>
+                        <span className="textBlock_textPopins">GEOTEC</span> выполнял изыскательские работы в г.Алматы
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_fifth active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Проект ветровой электростанции
+                    </div>
+                    <div className='textBlock_text_content'>
+                        Изыскательские работы выполнялись в тяжелых зимних условиях в Северном Казахстане
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_fifth active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Проект по <span className="textBlock_textPopins">3D</span> измерению&геофизическое исследование
+                    </div>
+                    <div className='textBlock_text_content'>
+                        <span className="textBlock_textPopins">GEOTEC</span> расширяет свои услуги с использованием <span className="textBlock_textPopins">3D</span> измерения и георадара <span className="textBlock_textPopins">(GPR)</span>
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_fifth active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Сертификация <span className="textBlock_textPopins">ISO 9001 and OHSAS 18001</span>
+                    </div>
+                    <div className='textBlock_text_content'>
+                        Сертифицирован компанией <span className="textBlock_textPopins">Bureau Veritas</span> по <span className="textBlock_textPopins">ISO 9001</span> и <span className="textBlock_textPopins">OHSAS 18001</span>
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_fifth active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Проект по модульному контролю ТШО
+                    </div>
+                    <div className='textBlock_text_content'>
+                        По поручению ТШО <span className="textBlock_textPopins">GEOTEC</span> выполняет работу по модульному контролю размеров
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_fifth active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        <span className="textBlock_textPopins">3D</span> моделирование <span className="textBlock_textPopins">IGCC</span>
+                    </div>
+                    <div className='textBlock_text_content'>
+                        По поручению <span className="textBlock_textPopins">KPI GEOTEC</span> выполнит лазерное сканировние в период строительства для создания исполнительной <span className="textBlock_textPopins">BIM</span>-модели Интегрированного газохимического комплекса
+                    </div>
+                    <div className='ImageBack'>
+                        <img src={history1Block} alt=""></img>
+                    </div>
+                </div>
+                <div className='textBlock textBlock_fifth active' style={{ transform: 'translateY(880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock_text'>
+                        Цель стать самым крупным подрядчиком в своей сфере
+                    </div>
+                    <div className='textBlock_text_content'>
+
                     </div>
                     <div className='ImageBack'>
                         <img src={history1Block} alt=""></img>

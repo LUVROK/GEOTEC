@@ -9,12 +9,26 @@ import $ from 'jquery';
 import Preloader from './components/Preloader/Preloader';
 // import { Scrollbar as BaseScrollbar } from "smooth-scrollbar/scrollbar";
 import Scroll from './components/SmothScroll.js'
+import './jquery.pagepiling';
+import './jquery.pagepiling.css';
 
 function App() {
   const [isrender, setisrender] = useState(false);
   // const scrollbar = useRef(null);
 
   useEffect(() => {
+
+    // $(function () {
+    //   $('#App').pagepiling({
+    //     navigation: {
+    //       'textColor': '#fff',
+    //       'bulletsColor': '#fff',
+    //       'position': 'right',
+    //       'tooltips': ['sec1', 'sec2', 'sec3']
+    //     }
+    //   })
+    // })
+
     setInterval(() => {
       setisrender(true);
     }, 2000);
@@ -84,22 +98,21 @@ function App() {
     }
   }, [isrender]);
 
-
   return (
     // <Scrollbar onScroll={() => console.log(1)}>
-      <div className="App" id='App'>
-        {
-          !isrender &&
-          <Preloader />
-        }
-        <div className="block_All" id="block_All">
-          <Nav />
-          <Wrapper />
-          <img src={Subtract} alt="" className='Subtract_left'></img>
-          <img src={Subtract} alt="" className='Subtract_right'></img>
-          <AllContentSection />
-        </div>
+    <div className="App" id="App">
+      {
+        !isrender &&
+        <Preloader />
+      }
+      <div className="block_All" id="block_All">
+        <Nav />
+        <Wrapper />
+        <img src={Subtract} alt="" className='Subtract_left'></img>
+        <img src={Subtract} alt="" className='Subtract_right'></img>
+        <AllContentSection />
       </div>
+    </div>
     // {/* </Scrollbar> */}
   );
 }

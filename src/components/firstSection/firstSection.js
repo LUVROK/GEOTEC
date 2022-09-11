@@ -44,7 +44,7 @@ const FirstSection = () => {
     // $('[href=#]').click(function () { return false });
 
     return (
-        <div className="firstSection">
+        <div className="firstSection section sec1">
             <div className='firstSection_block'>
                 <div className='firstSection_block_geotec_block'>
                     <div className='firstSection_block_geotec element-animation'>
