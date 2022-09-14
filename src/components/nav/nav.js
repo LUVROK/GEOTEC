@@ -4,7 +4,7 @@ import './nav.css';
 
 const Nav = () => {
     return (
-        <nav className="Nav_Block">
+        <nav className="Nav_Block box">
             <div className='Nav_Block_right'>
                 <a href='/#' className='Nav_Block_right_a a_style_none'>
                     <div className='Nav_Block_right_a_svg'>

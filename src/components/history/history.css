@@ -25,14 +25,19 @@
     height: 100%;
     overflow: hidden;
 }
+.History_block .hiddenOverflow {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
 
 .History h2 {
-    font-family: 'Raleway-Medium';
+    font-family: 'Raleway-Light';
     font-style: normal;
-    font-weight: 500;
-    font-size: 54px;
+    font-weight: 300;
+    font-size: 44px;
     line-height: 75px;
-
     text-transform: capitalize;
 
     background: linear-gradient(0deg, #2444A9, #2444A9);
@@ -40,7 +45,6 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-
 }
 
 .textBlock {
@@ -133,6 +137,8 @@
     border-right: 5px solid #4A6AD0;;
     padding-right: 66px;
     overflow-y: scroll;
+
+    overflow: hidden;
 }
 .TimeHistoryBox_block {
     position: relative;
@@ -143,9 +149,9 @@
     align-items: flex-end;
     flex-direction: column;
 }
-.TimeHistoryBox::-webkit-scrollbar {
+/* .TimeHistoryBox::-webkit-scrollbar {
     width: 0px;
-}
+} */
 .TimeHistoryBox_element {
     font-family: 'Poppins-Regular';
     font-style: normal;
@@ -164,5 +170,77 @@
     /* font-weight: 400; */
     font-size: 88px;
     line-height: 132px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+}
+.textBlock_text {
+    position: relative;
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 100%;
+    text-transform: capitalize;
+    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.textBlock_text_content {
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #102876;
+    margin-top: 5%;
+}
+.ImageBack {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* background-color: yellow; */
+    height: 234px;
+    top: 163px;
+}
+.ImageBack img {
+    width: 365px;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+
+}
+
+
+.textBlock_first .textBlock_text {
+
+}
+.textBlock_first .textBlock_text_content {
+    width: 50%;
+}
+.textBlock_first .ImageBack {
+
+}
+
+.textBlock_second .textBlock_text {
+
+}
+.textBlock_second .textBlock_text_content {
+    width: 50%;
+}
+.textBlock_second .ImageBack {
+
+}
+
+.textBlock_third .textBlock_text {
+
+}
+.textBlock_third .textBlock_text_content {
+    width: 50%;
+}
+.textBlock_third .ImageBack {
+
 }
