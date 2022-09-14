@@ -5,7 +5,24 @@ const Whyarewe = () => {
     const [activelistLogo, setActivelistLogo] = useState(null);
     const [activelistSvg, setActivelistSvg] = useState(null);
 
+    function onEntry(entry) {
+        entry.forEach(change => {
+            if (change.isIntersecting) {
+                change.target.classList.add('element-show');
+            }
+        });
+    }
 
+    let options = {
+        threshold: [0.5]
+    };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll('.element-animation');
+
+    for (let elm of elements) {
+        observer.observe(elm);
+    }
+    
     const listLogoClick = () => {
         document.querySelector('.listLogo').style.pointerEvents = 'none';
         const el = document.getElementById('Whyarewe_1th');
@@ -99,8 +116,8 @@ const Whyarewe = () => {
 
     return (
         <div className="Whyarewe section sec3">
-            <div className='Whyarewe_block'>
-                <div className='Whyarewe_block_title'>
+            <div className='Whyarewe_block element-animation'>
+                <div className='Whyarewe_block_title element-animation'>
                     <div className='Whyarewe_block_title_text'>Почему Выбирают Нас?</div>
                 </div>
                 <div className='Whyarewe_block_Content'>

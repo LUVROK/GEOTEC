@@ -3,6 +3,10 @@
     width: 100%;
     height: calc(100vh - 91px);
     height: calc(100vh - 0px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5%;
     /* background-color: aqua; */
 }
 .firstSection_block {

@@ -29,6 +29,8 @@ const AllContentSection = () => {
 
         bodyScrollBar.addListener(ScrollTrigger.update);
 
+        
+
         // gsap.to(document.querySelector("#box"), {
         //   duration: 4,
         //   scrollTrigger: {

@@ -9,6 +9,7 @@
 .scroll-content {
     position: fixed;
     width: 91%;
+    background-color: #FFFFFF;
 }
 .AllContentSection_block {
     width: 100%;
@@ -28,4 +29,7 @@
 }
 .AllContentSection_scroll .scrollbar-track .scrollbar-thumb {
     width: 0px;
+}
+.AllContentSection_scroll .scrollbar-track {
+    width: 0px !important;
 }

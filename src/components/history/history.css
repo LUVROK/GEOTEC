@@ -5,7 +5,7 @@
     position: relative;
     display: flex;
     border-radius: 40px;
-    margin-top: 33px;
+    /* margin-top: 33px; */
 }
 .backgroundHistorySvg {
     position: absolute;
@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     z-index: -100;
-    top: 150px;
+    top: 25%;
 }
 .History_block {
     position: relative;
@@ -28,7 +28,7 @@
 .History_block .hiddenOverflow {
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 80%;
     overflow: hidden;
 }
 
@@ -107,18 +107,6 @@
     background-clip: text;
     text-fill-color: transparent;
 }
-
-.ImageBack {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    /* background-color: yellow; */
-    height: 234px;
-    top: 163px;
-}
 .ImageBack img {
     width: 365px;
     height: 100%;
@@ -135,7 +123,7 @@
     width: auto;
     height: auto;
     border-right: 5px solid #4A6AD0;;
-    padding-right: 66px;
+    padding-right: 47px;
     overflow-y: scroll;
 
     overflow: hidden;
@@ -160,7 +148,7 @@
     line-height: 33px;
     text-transform: uppercase;
     color: #4A6AD0;
-    margin: 5.5px;
+    margin: 1.25px;
     transition: all 1s cubic-bezier(0,.11,.29,1);
     cursor: pointer;
 }
@@ -177,11 +165,10 @@
     font-family: 'Raleway-Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 88px;
-    line-height: 100%;
-    text-transform: capitalize;
-    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);
-    -webkit-background-clip: text;
+    font-size: 66px;
+    line-height: 120%;
+    text-transform: inherit;
+    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
@@ -189,22 +176,26 @@
 .textBlock_text_content {
     position: relative;
     font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: 275;
+    font-size: 22px;
     line-height: 26px;
     color: #102876;
     margin-top: 5%;
+    width: 50%;
 }
 .ImageBack {
     position: absolute;
     width: 100%;
     left: 0;
+    /* padding-right: 51px; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     /* background-color: yellow; */
     height: 234px;
-    top: 163px;
+    /* top: 124px; */
+    margin-top: -43px;
+    margin-right: 52px;
 }
 .ImageBack img {
     width: 365px;
@@ -216,25 +207,39 @@
 
 
 .textBlock_first .textBlock_text {
-
+    width: 70%;
+}
+.textBlock_first {
+    /* transform: translateY(-20%); */
+    transition-delay: 0.4s !important;
+    padding-left: 88px;
 }
 .textBlock_first .textBlock_text_content {
     width: 50%;
 }
 .textBlock_first .ImageBack {
+    /* margin-top: 43px; */
+}
+.textBlock_first .ImageBack .ImageBack img{
 
 }
 
+.textBlock_second{
+    padding-left: 88px;
+}
 .textBlock_second .textBlock_text {
 
 }
 .textBlock_second .textBlock_text_content {
-    width: 50%;
+    width: 40%;
 }
 .textBlock_second .ImageBack {
-
+    /* margin-top: 43px; */
 }
 
+.textBlock_third {
+    padding-left: 88px;
+}
 .textBlock_third .textBlock_text {
 
 }
@@ -242,5 +247,60 @@
     width: 50%;
 }
 .textBlock_third .ImageBack {
+    /* margin-top: 43px; */
+}
 
+.textBlock_fourth {
+    padding-left: 88px;
+}
+.textBlock_fourth .textBlock_text {
+
+}
+.textBlock_fourth .textBlock_text_content {
+    width: 40%;
+}
+.textBlock_fourth .ImageBack {
+    /* margin-top: 43px; */
+}
+
+.textBlock_fifth {
+    padding-left: 88px;
+}
+.textBlock_fifth .textBlock_text {
+
+}
+.textBlock_fifth .textBlock_text_content {
+    width: 50%;
+}
+.textBlock_fifth .ImageBack {
+    /* margin-top: 18px; */
+}
+
+.textBlock_sixth .textBlock_text_content {
+    width: 50%;
+}
+.textBlock_sixth .ImageBack {
+    margin-top: -63px;
+}
+
+.textBlock_seventh .textBlock_text {
+    width: 120%;
+}
+.textBlock_seventh .textBlock_text_content {
+    width: 50%;
+}
+
+.textBlock_eleventh .textBlock_text {
+    width: 80%;
+}
+.textBlock_eleventh .ImageBack {
+    margin-top: -150px;
+}
+
+
+.textBlock_twelveth .textBlock_text {
+    width: 140%;
+}
+.textBlock_twelveth .ImageBack {
+    margin-top: 30px;
 }
