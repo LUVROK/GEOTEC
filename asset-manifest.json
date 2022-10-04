@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GEOTEC/static/css/main.c2ba6373.css",
-    "main.js": "/GEOTEC/static/js/main.f236812d.js",
+    "main.css": "/GEOTEC/static/css/main.6a72a9de.css",
+    "main.js": "/GEOTEC/static/js/main.7b0c9282.js",
     "static/js/787.cd711f27.chunk.js": "/GEOTEC/static/js/787.cd711f27.chunk.js",
     "static/media/mountains_wrapper.png": "/GEOTEC/static/media/mountains_wrapper.b57186950a9f10061081.png",
     "static/media/GeotecGeoComp.png": "/GEOTEC/static/media/GeotecGeoComp.aad12d057fb59932820d.png",
@@ -15,12 +15,12 @@
     "static/media/Poppins-Regular.ttf": "/GEOTEC/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/history1Block.png": "/GEOTEC/static/media/history1Block.a1fdb3bbf5260dc0eb56.png",
     "index.html": "/GEOTEC/index.html",
-    "main.c2ba6373.css.map": "/GEOTEC/static/css/main.c2ba6373.css.map",
-    "main.f236812d.js.map": "/GEOTEC/static/js/main.f236812d.js.map",
+    "main.6a72a9de.css.map": "/GEOTEC/static/css/main.6a72a9de.css.map",
+    "main.7b0c9282.js.map": "/GEOTEC/static/js/main.7b0c9282.js.map",
     "787.cd711f27.chunk.js.map": "/GEOTEC/static/js/787.cd711f27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2ba6373.css",
-    "static/js/main.f236812d.js"
+    "static/css/main.6a72a9de.css",
+    "static/js/main.7b0c9282.js"
   ]
 }
