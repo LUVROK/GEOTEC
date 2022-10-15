@@ -15,6 +15,15 @@ import ScrollBar from 'smooth-scrollbar';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import History from './components/history/history';
+import Whyarewe from './components/whyarewe/whyarewe';
+import AboutUs from './components/aboutUs/aboutUs';
+import Projects from './components/projects/projects';
+import FirstSection from './components/firstSection/firstSection';
+
+
+import ReactPageScroller from 'react-page-scroller';
+
 
 // import { Scrollbar } from 'smooth-scrollbar-react';
 // import Scrollbar from 'react-smooth-scrollbar';
@@ -51,21 +60,21 @@ function App() {
   const scroller = useRef();
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollTrigger);
 
-    const scroller = document.querySelector(".scroller");
-    const bodyScrollBar = ScrollBar.init(scroller, {duration: 0.02});
+    // const scroller = document.querySelector(".scroller");
+    // const bodyScrollBar = ScrollBar.init(scroller, { duration: 0.02 });
 
-    ScrollTrigger.scrollerProxy(scroller, {
-      scrollTop(value) {
-        if (arguments.length) {
-          bodyScrollBar.scrollTop = value;
-        }
-        return bodyScrollBar.scrollTop;
-      }
-    });
+    // ScrollTrigger.scrollerProxy(scroller, {
+    //   scrollTop(value) {
+    //     if (arguments.length) {
+    //       bodyScrollBar.scrollTop = value;
+    //     }
+    //     return bodyScrollBar.scrollTop;
+    //   }
+    // });
 
-    bodyScrollBar.addListener(ScrollTrigger.update);
+    // bodyScrollBar.addListener(ScrollTrigger.update);
 
     // gsap.to(document.querySelector("#box"), {
     //   duration: 4,
@@ -96,7 +105,6 @@ function App() {
     const Wrapper_block_GEOTEC_block1 = document.querySelector(".Wrapper_block_GEOTEC_block1");
     const Wrapper_block_GEOTEC_block2 = document.querySelector(".Wrapper_block_GEOTEC_block2");
     const Wrapper_block_GEOTEC_block3 = document.querySelector(".Wrapper_block_GEOTEC_block3");
-    const AllContentSection_block = document.querySelector(".AllContentSection_block");
 
     // window.onload = function () {
     //   setTimeout(() => {
@@ -114,20 +122,20 @@ function App() {
 
     // }
 
-    window.addEventListener("scroll", function () {
-      if ($(document).scrollTop() >= $(window).height() * 0.8) {
-        Wrapper_block_GEOTEC_block1.style.opacity = 0;
-        Wrapper_block_GEOTEC_block2.style.opacity = 0;
-        Wrapper_block_GEOTEC_block3.style.opacity = 0;
-        AllContentSection_block.style.backgroundColor = '#ffffffb9';
-      }
-      else {
-        Wrapper_block_GEOTEC_block1.style.opacity = 1;
-        Wrapper_block_GEOTEC_block2.style.opacity = 1;
-        Wrapper_block_GEOTEC_block3.style.opacity = 1;
-        AllContentSection_block.style.backgroundColor = '#ffffffb0';
-      }
-    })
+    // window.addEventListener("scroll", function () {
+    // if ($(document).scrollTop() >= $(window).height() * 0.8) {
+    //   Wrapper_block_GEOTEC_block1.style.opacity = 0;
+    //   Wrapper_block_GEOTEC_block2.style.opacity = 0;
+    //   Wrapper_block_GEOTEC_block3.style.opacity = 0;
+    //   // AllContentSection_block.style.backgroundColor = '#ffffffb9';
+    // }
+    // else {
+    //   Wrapper_block_GEOTEC_block1.style.opacity = 1;
+    //   Wrapper_block_GEOTEC_block2.style.opacity = 1;
+    //   Wrapper_block_GEOTEC_block3.style.opacity = 1;
+    //   // AllContentSection_block.style.backgroundColor = '#ffffffb0';
+    // }
+    // })
 
 
   }, [])
@@ -135,13 +143,13 @@ function App() {
   useEffect(() => {
     if (!isrender) {
       // document.getElementById("App").style = "background: #FFFFFF;";
-      // document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
     } else {
       // Scrollbar.init(document.body);
 
       // document.getElementById("App").style = "background: #FFFFFF;";
-      document.getElementById("block_All").style = "opacity: 1";
-      // document.body.style.overflow = "scroll";
+      // document.getElementById("block_All").style = "opacity: 1";
+      document.body.style.overflow = "scroll";
       document.body.style.overflowX = "hidden";
 
       const Wrapper_block_GEOTEC_block1 = document.querySelector(".Wrapper_block_GEOTEC_block1");
@@ -158,6 +166,11 @@ function App() {
     }
   }, [isrender]);
 
+  const [currentPage, setCurrentPage] = useState(null);
+  const handlePageChange = number => {
+    setCurrentPage(number);
+  };
+
   return (
     // <Scrollbar onScroll={() => console.log(1)}>
     <div className="App" id="App">
@@ -168,19 +181,28 @@ function App() {
           overscroll: { effect: "bounce", damping: 0.04 }
         }}
       > */}
-      {
-        !isrender &&
-        <Preloader />
-      }
-      <div className="block_All" id="block_All">
-        <Nav />
-        <Wrapper />
-        <img src={Subtract} alt="" className='Subtract_left'></img>
-        <img src={Subtract} alt="" className='Subtract_right'></img>
-        <AllContentSection />
-        {/* </div> */}
-        {/* </Scrollbar> */}
-      </div>
+      {/* {
+          !isrender &&
+          <Preloader />
+        } */}
+      <Nav />
+      <img src={Subtract} alt="" className='Subtract_left'></img>
+      <img src={Subtract} alt="" className='Subtract_right'></img>
+      {/* <ReactPageScroller pageOnChange={handlePageChange}
+        containerWidth={window.innerWidth * 1}
+        containerHeight={window.innerHeight - 88}
+        customPageNumber={currentPage}> */}
+      <Wrapper />
+      {/* <div className="block_All" id="block_All"> */}
+      <AllContentSection />
+      {/* </div> */}
+      {/* </Scrollbar> */}
+      {/* </div> */}
+      <History />
+      <Whyarewe />
+      <AboutUs />
+      <Projects />
+      {/* </ReactPageScroller> */}
     </div>
 
     // {/* </Scrollbar> */}

@@ -4,4 +4,5 @@
     background-color: #F0F1F8;
     position: relative;
     display: flex;
+    z-index: 101;
 }

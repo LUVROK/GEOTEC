@@ -7,10 +7,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 29.5px 92px;
     z-index: 9999;
     background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
     /* backdrop-filter: blur(10px); */
+}
+.Nav_BlockCenter {
+    position: relative;
+    width: 91%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 92px;
+    z-index: 9999;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Nav_Block_right {
     position: relative;

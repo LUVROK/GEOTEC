@@ -8,28 +8,32 @@ import React, { useEffect, useRef } from 'react';
 import ScrollBar from 'smooth-scrollbar';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Subtract from '../../media/Subtract.png';
+import Wrapper from '../Wrapper/Wrapper';
 
-const AllContentSection = () => {
+const AllContentSection = ({ children }) => {
     const scroller = useRef();
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
 
-        const scroller = document.querySelector(".scroller");
-        const bodyScrollBar = ScrollBar.init(scroller, { duration: 0.02 });
+        const AllContentSection_block = document.querySelector(".AllContentSection_block");
 
-        ScrollTrigger.scrollerProxy(scroller, {
-            scrollTop(value) {
-                if (arguments.length) {
-                    bodyScrollBar.scrollTop = value;
-                }
-                return bodyScrollBar.scrollTop;
-            }
-        });
+        // gsap.registerPlugin(ScrollTrigger);
 
-        bodyScrollBar.addListener(ScrollTrigger.update);
+        // const scroller = document.querySelector(".scroller");
+        // const bodyScrollBar = ScrollBar.init(scroller, { duration: 0.02 });
 
-        
+        // ScrollTrigger.scrollerProxy(scroller, {
+        //     scrollTop(value) {
+        //         if (arguments.length) {
+        //             bodyScrollBar.scrollTop = value;
+        //         }
+        //         return bodyScrollBar.scrollTop;
+        //     }
+        // });
+
+        // bodyScrollBar.addListener(ScrollTrigger.update);
+
 
         // gsap.to(document.querySelector("#box"), {
         //   duration: 4,
@@ -55,11 +59,8 @@ const AllContentSection = () => {
         <div className="AllContentSection_scroll scroller" ref={scroller}>
             <div className="AllContentSection">
                 <div className='AllContentSection_block' style={{ backgroundColor: '#ffffffb0' }}>
+                    <div className='AllContentSection_block_background'></div>
                     <FirstSection />
-                    <History />
-                    <Whyarewe />
-                    {/* <AboutUs />
-                <Projects /> */}
                 </div>
             </div>
         </div>

@@ -42,7 +42,7 @@ const History = () => {
 
         for (let i = 0; i < massElements.length; i++) {
             textBlockAll[i].style.transition = '0s';
-            textBlockAll[i].style.transform = 'translateY(-880px)';
+            textBlockAll[i].style.transform = 'translateY(-950px)';
         }
 
         textBlockAll[indexEl].style.transition = 'all 1s cubic-bezier(0,.11,.29,1)';
@@ -55,8 +55,8 @@ const History = () => {
         <div className="History section sec2">
             <div className='History_block'>
                 <h2 className='element-animation'>История</h2>
-                <div className='hiddenOverflow'>
-                    <div className='textBlock textBlock_first element-animation active' id="first" style={{ transform: 'translateY(0px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                <div className='hiddenOverflow element-animation'>
+                    <div className='textBlock textBlock_first active' id="first" style={{ transform: 'translateY(0px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Основание <span className="textBlock_textPopins">GEOTEC</span>
                         </div>
@@ -67,7 +67,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_second' id="second" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_second' id="second" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Первый проект  <span className="textBlock_textPopins">GEOTEC</span>
                         </div>
@@ -78,7 +78,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_third' id="third" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_third' id="third" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Расширение<br />в Казахстане
                         </div>
@@ -89,7 +89,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_fourth' id="fourth" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_fourth' id="fourth" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Партнерство<br />с ТШО
                         </div>
@@ -100,7 +100,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_fifth' id="fifth" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_fifth' id="fifth" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Самое высокое здание в Казахстане
                         </div>
@@ -111,7 +111,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_sixth' id="sixth" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_sixth' id="sixth" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Проект ветровой электростанции
                         </div>
@@ -122,7 +122,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_seventh' id="seventh" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_seventh' id="seventh" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Проект по <span className="textBlock_textPopins">3D</span> измерению<br />&геофизическое исследование
                         </div>
@@ -133,7 +133,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_eight' id="eight" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_eight' id="eight" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Сертификация <span className="textBlock_textPopins">ISO 9001 and OHSAS 18001</span>
                         </div>
@@ -144,7 +144,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_tenth' id="tenth" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_tenth' id="tenth" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Проект по модульному контролю ТШО
                         </div>
@@ -155,7 +155,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_eleventh' id="eleventh" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_eleventh' id="eleventh" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             <span className="textBlock_textPopins">3D</span> моделирование <span className="textBlock_textPopins">IGCC</span>
                         </div>
@@ -166,7 +166,7 @@ const History = () => {
                             <img src={history1Block} alt=""></img>
                         </div>
                     </div>
-                    <div className='textBlock textBlock_twelveth' id="twelveth" style={{ transform: 'translateY(-880px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
+                    <div className='textBlock textBlock_twelveth' id="twelveth" style={{ transform: 'translateY(-950px)', transition: 'all 1s cubic-bezier(0,.11,.29,1)' }}>
                         <div className='textBlock_text'>
                             Цель стать самым крупным подрядчиком в своей сфере
                         </div>
@@ -179,31 +179,38 @@ const History = () => {
                     </div>
                 </div>
             </div>
+            <div className='TimeHistoryBox element-animation' id="TimeHistoryBox">
+                <div className='TimeHistoryBox_block'>
+                    <div className='TimeHistoryBox_element active' id="TimeHistoryBox_element_2006" onClick={() => currentCorrectActive('first', 2006)}>2006</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2007" onClick={() => currentCorrectActive('second', 2007)}>2007</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2009" onClick={() => currentCorrectActive('third', 2009)}>2009</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2011" onClick={() => currentCorrectActive('fourth', 2011)}>2011</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2012" onClick={() => currentCorrectActive('fifth', 2012)}>2012</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2014" onClick={() => currentCorrectActive('sixth', 2014)}>2014</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2014_2" onClick={() => currentCorrectActive('seventh', '2014_2')}>2014</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2015" onClick={() => currentCorrectActive('eight', 2015)}>2015</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2016" onClick={() => currentCorrectActive('tenth', 2016)}>2016</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2020" onClick={() => currentCorrectActive('eleventh', 2020)}>2020</div>
+                    <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2023" onClick={() => currentCorrectActive('twelveth', 2023)}>2023</div>
+                </div>
+            </div>
             <div className='backgroundHistorySvg'>
-                <svg width="544" height="400" viewBox="0 0 544 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="272" cy="200" rx="272" ry="200" fill="url(#paint0_radial_657_937)" />
+                <svg width="544" height="500" viewBox="0 0 544 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="290.5" cy="247.5" r="247.5" fill="url(#paint0_radial_774_382)" />
+                    <rect width="310" height="209" rx="20" transform="matrix(-1 0 0 1 310 118)" fill="url(#pattern0)" />
                     <defs>
-                        <radialGradient id="paint0_radial_657_937" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(272 200) rotate(90) scale(200 272)">
-                            <stop stopColor="#819CF1" stopOpacity="0.72" />
-                            <stop offset="1" stopColor="white" stopOpacity="0" />
-                        </radialGradient>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlinkHref="#image0_774_382" transform="translate(-0.0967965) scale(0.000932495 0.00138313)" />
+                        </pattern>
+                        <defs>
+                            <radialGradient id="paint0_radial_774_382" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(290.5 247.5) rotate(90) scale(247.5)">
+                                <stop stopColor="#83E6DB" stopOpacity="0.59" />
+                                <stop offset="0.739583" stopColor="#CAF5F0" stopOpacity="0.207083" />
+                                <stop offset="1" stopColor="white" stopOpacity="0" />
+                            </radialGradient>
+                        </defs>
                     </defs>
                 </svg>
-            </div>
-            <div className='TimeHistoryBox element-animation' id="TimeHistoryBox">
-                    <div className='TimeHistoryBox_block'>
-                        <div className='TimeHistoryBox_element active' id="TimeHistoryBox_element_2006" onClick={() => currentCorrectActive('first', 2006)}>2006</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2007" onClick={() => currentCorrectActive('second', 2007)}>2007</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2009" onClick={() => currentCorrectActive('third', 2009)}>2009</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2011" onClick={() => currentCorrectActive('fourth', 2011)}>2011</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2012" onClick={() => currentCorrectActive('fifth', 2012)}>2012</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2014" onClick={() => currentCorrectActive('sixth', 2014)}>2014</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2014_2" onClick={() => currentCorrectActive('seventh', '2014_2')}>2014</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2015" onClick={() => currentCorrectActive('eight', 2015)}>2015</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2016" onClick={() => currentCorrectActive('tenth', 2016)}>2016</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2020" onClick={() => currentCorrectActive('eleventh', 2020)}>2020</div>
-                        <div className='TimeHistoryBox_element' id="TimeHistoryBox_element_2023" onClick={() => currentCorrectActive('twelveth', 2023)}>2023</div>
-                    </div>
             </div>
         </div>
     );

@@ -1,7 +1,11 @@
 .Wrapper {
-    width: 100%;
-    height: calc(100vh - 91px);
-    position: sticky;
+    width: 91%;
+    height: calc(100vh - 88px);
+    position: -webkit-sticky;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0; right: 0;
     top: 91px;
 }
 .Wrapper_image {
@@ -12,7 +16,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     /* object-fit: cover; */
-    border-radius: 40px;
+    /* border-radius: 40px; */
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 .Wrapper_block_GEOTEC {
     width: 50%;

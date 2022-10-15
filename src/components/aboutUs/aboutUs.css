@@ -1,12 +1,22 @@
 .AboutUs {
     position: relative;
     width: 100%;
-    height: calc(100vh - 91px);
+    /* height: calc(100vh + 51px); */
     height: calc(100vh - 0px);
-    border-radius: 40px;
+    /* border-radius: 40px; */
     overflow: hidden;
-    /* top: 233px; */
+    padding-top: 142px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
     /* background-color: blue; */
+}
+.AboutUs_block {
+    position: relative;
+    width: calc(100% - 170px);
+    height: 100%;
 }
 .CompanyBar {
     position: relative;
@@ -24,7 +34,7 @@
     font-family: 'Raleway-Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 46px;
+    font-size: 44px;
     line-height: 65px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -32,10 +42,9 @@
 }
 .logo_CompanyBar {
     font-family: 'Poppins-ExtraLight';
-    font-size: 128px;
+    font-size: 110px;
     font-style: normal;
     font-weight: 275;
-    font-size: 128px;
     line-height: 65px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -43,9 +52,9 @@
 }
 .perhaps_logo_companyBar {
     position: absolute;
-    bottom: 0px;
+    bottom: 9px;
     left: 88px;
-    font-family: 'Raleway-Light';
+    font-family: 'Raleway-Regular';
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -57,7 +66,7 @@
 
 .researchs_block {
     position: relative;
-    margin: 100px 88px 0px 88px;
+    margin: 86px 0px 0px 0px;
     width: auto;
     height: auto;
     display: flex;
@@ -67,29 +76,51 @@
 }
 .researchs_block_elem {
     position: relative;
-    width: 25%;
-    height: 120px;
+    width: 23%;
     font-family: 'Raleway-Medium';
     font-style: normal;
     font-weight: 500;
+    color: #102876;
     font-size: 22px;
     line-height: 35px;
     letter-spacing: -0.03em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+.researchs_block_elem_text {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #102876;
+}
+.researchs_block_elem .text {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    transition-delay: 0.3s;
+    transition: 0.7s;
+    font-family: 'Raleway-Light';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
 }
 .borderbottom {
     position: absolute;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #102876;
     height: 1px;
     width: 100%;
-    top: 90%;
+    bottom: 45px;
 }
 .researchs_block_elem svg {
     position: absolute;
-    bottom: -45px;
+    bottom: 6px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    transition: 1s;
 }
 .researchs_block_elem:nth-child(0) {
     margin-right: 26px;

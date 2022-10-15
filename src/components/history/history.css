@@ -1,34 +1,43 @@
 .History {
     width: 100%;
     height: 100vh;
-    /* background-color: #F0F1F8; */
+    background-color: #F0F1F8;
     position: relative;
     display: flex;
-    border-radius: 40px;
+    z-index: 101;
+    /* border-radius: 40px; */
     /* margin-top: 33px; */
 }
 .backgroundHistorySvg {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -100;
-    top: 25%;
+    z-index: 1;
+    /* top: 25%; */
+    top: 0%;
 }
+.backgroundHistorySvg svg {
+    margin-top: 20%;
+} 
 .History_block {
     position: relative;
     padding-top: 33px;
-    padding-left: 82px;
-    width: 100%;
+    /* padding-left: 82px; */
+    width: 91%;
     height: 100%;
+    z-index: 3;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 .History_block .hiddenOverflow {
     position: relative;
     width: 100%;
-    height: 80%;
+    top: 20%;
+    height: 60%;
     overflow: hidden;
 }
 
@@ -38,7 +47,10 @@
     font-weight: 300;
     font-size: 44px;
     line-height: 75px;
+    padding-left: 85px;
     text-transform: capitalize;
+    margin-top: 44px;
+    position: absolute;
 
     background: linear-gradient(0deg, #2444A9, #2444A9);
     -webkit-background-clip: text;
@@ -51,8 +63,9 @@
     position: absolute;
     width: 50%;
     height: 392px;
-    margin-top: 10%;
+    padding-top: 4%;
     transition-delay: 0s;
+    padding-left: 85px;
     /* transition: all 0.5s cubic-bezier(0,.11,.29,1); */
 
 }
@@ -119,14 +132,15 @@
 .TimeHistoryBox {
     position: absolute;
     right: 180px;
-    top: 25%;
+    top: 35%;
     width: auto;
     height: auto;
     border-right: 5px solid #4A6AD0;;
     padding-right: 47px;
     overflow-y: scroll;
-
+    z-index: 2;
     overflow: hidden;
+    z-index: 1000;
 }
 .TimeHistoryBox_block {
     position: relative;
@@ -211,8 +225,8 @@
 }
 .textBlock_first {
     /* transform: translateY(-20%); */
-    transition-delay: 0.4s !important;
-    padding-left: 88px;
+    /* transition-delay: 0.4s !important; */
+    /* padding-left: 85px; */
 }
 .textBlock_first .textBlock_text_content {
     width: 50%;
