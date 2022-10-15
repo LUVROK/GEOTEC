@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/GEOTEC/static/css/main.6a72a9de.css",
-    "main.js": "/GEOTEC/static/js/main.7b0c9282.js",
+    "main.css": "/GEOTEC/static/css/main.957ea3ea.css",
+    "main.js": "/GEOTEC/static/js/main.4be8fe41.js",
     "static/js/787.cd711f27.chunk.js": "/GEOTEC/static/js/787.cd711f27.chunk.js",
     "static/media/mountains_wrapper.png": "/GEOTEC/static/media/mountains_wrapper.b57186950a9f10061081.png",
     "static/media/GeotecGeoComp.png": "/GEOTEC/static/media/GeotecGeoComp.aad12d057fb59932820d.png",
     "static/media/staff.png": "/GEOTEC/static/media/staff.46d2b5f5880ecd3727af.png",
+    "static/media/Geology-01_2021-04-07.png": "/GEOTEC/static/media/Geology-01_2021-04-07.2d737bdfdead2468cda5.png",
     "static/media/Raleway-Light.ttf": "/GEOTEC/static/media/Raleway-Light.b1f782b7717d75963d4a.ttf",
     "static/media/Raleway-Medium.ttf": "/GEOTEC/static/media/Raleway-Medium.67dbd97b51333b7ddc93.ttf",
     "static/media/Raleway-Bold.ttf": "/GEOTEC/static/media/Raleway-Bold.cefd37fb7d1d62c51b20.ttf",
@@ -15,12 +16,12 @@
     "static/media/Poppins-Regular.ttf": "/GEOTEC/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/history1Block.png": "/GEOTEC/static/media/history1Block.a1fdb3bbf5260dc0eb56.png",
     "index.html": "/GEOTEC/index.html",
-    "main.6a72a9de.css.map": "/GEOTEC/static/css/main.6a72a9de.css.map",
-    "main.7b0c9282.js.map": "/GEOTEC/static/js/main.7b0c9282.js.map",
+    "main.957ea3ea.css.map": "/GEOTEC/static/css/main.957ea3ea.css.map",
+    "main.4be8fe41.js.map": "/GEOTEC/static/js/main.4be8fe41.js.map",
     "787.cd711f27.chunk.js.map": "/GEOTEC/static/js/787.cd711f27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a72a9de.css",
-    "static/js/main.7b0c9282.js"
+    "static/css/main.957ea3ea.css",
+    "static/js/main.4be8fe41.js"
   ]
 }
