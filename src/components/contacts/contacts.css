@@ -1,0 +1,119 @@
+.contacts {
+    width: 100%;
+    height: calc(100vh);
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 101;
+    padding-top: 83px;
+    background-image: url(../../media/loon-image-original_2.png), url(../../media/loon-image-original_1.png);
+    background-size: 100% 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.contact_title {
+    padding-left: 62px;
+
+    font-family: 'Raleway-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 220px;
+    line-height: 258px;
+    text-align: center;
+    text-transform: uppercase;
+    color: transparent;
+
+    -webkit-text-stroke: 2px #BCC8EE;
+    /* border: 2px solid #BCC8EE;  */
+}
+
+.contact_contacts{
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.contact_contacts_element {
+    margin-top: 55px;
+    position: relative;
+    width: 314px;
+    height: 314px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #4A6AD0;
+    border-radius: 199px;
+    border: 1px solid #E8EDFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 1s;
+    background-color: #ffffff00;
+}
+.contact_contacts_element:hover {
+    background-color: #FFFFFF;
+}
+
+.contact_contacts_element svg {
+    position: absolute;
+    top: 25%;
+}
+
+.perhaps_contacts_element {
+    position: absolute;
+    top: 50%;
+}
+
+.contact_contacts_element:nth-child(1) {
+    margin-right: 26px;
+}
+
+.contact_contacts_element:nth-child(2) {
+    margin-right: 26px;
+}
+
+.textRU {
+    font-family: 'Raleway-Regular';
+}
+
+.map_btn {
+    position: absolute;
+    margin: auto;
+    bottom: 18%;
+    left: 0; right: 0;
+    background-color: #ffffff9f;
+    padding: 10px 0px 10px 26px;
+    width: 169px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.map_btn:hover {
+    background-color: #ffffff;
+}
+.map_btn svg {
+    position: relative;
+    margin-left: 22px;
+}

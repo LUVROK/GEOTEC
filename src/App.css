@@ -77,16 +77,16 @@
 .Subtract_left {
   position: fixed;
   top: 88px;
-  left: 0%;
+  left: 4.5%;
   width: 40px;
-  z-index: 9999;
+  z-index: 100;
 }
 .Subtract_right {
   position: fixed;
   top: 88px;
-  right: 0%;
+  right: 4.5%;
   width: 40px;
-  z-index: 9999;
+  z-index: 100;
   transform: scale(-1, 1);
 }
 .borderRadius_overlow_block {

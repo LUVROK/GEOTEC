@@ -1,0 +1,78 @@
+.our_technologies {
+    width: 100%;
+    height: calc(100vh);
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    padding-top: 121px;
+}
+.our_technologies_block {
+    position: relative;
+    width: 91%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 85px;
+}
+
+.our_technologies_left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.our_technologies_right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.our_technologies_title {
+    position: relative;
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 120%;
+    padding-top: 35px;
+    background: linear-gradient(92.45deg, #2444A9 9.74%, #526EC8 70.23%, #839AE9 91.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;    
+}
+
+.our_technologies_perhaps {
+    position: relative;
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;    
+    color: #102876;
+    padding-top: 23px;
+}
+.circleButton {
+    position: relative;
+    width: 211px;
+    height: 211px;
+    background-color: #07D3AF;
+    border-radius: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 54px;
+}

@@ -6,7 +6,8 @@
     /* border-radius: 40px; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
     background-color: #FFFFFF;
     z-index: 101;
     /* margin-bottom: 162px; */

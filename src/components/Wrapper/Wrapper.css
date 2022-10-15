@@ -1,22 +1,23 @@
 .Wrapper {
     width: 91%;
-    height: calc(100vh - 88px);
+    height: calc(100vh);
     position: -webkit-sticky;
     position: fixed;
     margin-left: auto;
     margin-right: auto;
     left: 0; right: 0;
-    top: 91px;
+    top: 0px;
 }
 .Wrapper_image {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 88px);
     background-image: url(../../media/mountains_wrapper.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     /* object-fit: cover; */
     /* border-radius: 40px; */
+    margin-top: 88px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
@@ -24,7 +25,7 @@
     width: 50%;
     height: auto;
     position: absolute;
-    top: 69px;
+    top: 157px;
     left: 0;
     display: flex;
     flex-direction: column;

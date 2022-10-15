@@ -20,7 +20,8 @@ import Whyarewe from './components/whyarewe/whyarewe';
 import AboutUs from './components/aboutUs/aboutUs';
 import Projects from './components/projects/projects';
 import FirstSection from './components/firstSection/firstSection';
-
+import Our_technologies from './components/our_technologies/our_technologies';
+import Contacts from './components/contacts/contacts';
 
 import ReactPageScroller from 'react-page-scroller';
 
@@ -202,6 +203,8 @@ function App() {
       <Whyarewe />
       <AboutUs />
       <Projects />
+      <Our_technologies />
+      <Contacts />
       {/* </ReactPageScroller> */}
     </div>
 

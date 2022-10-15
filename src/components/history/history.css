@@ -1,6 +1,6 @@
 .History {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh);
     background-color: #F0F1F8;
     position: relative;
     display: flex;
@@ -11,7 +11,7 @@
 .backgroundHistorySvg {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
 } 
 .History_block {
     position: relative;
-    padding-top: 33px;
+    padding-top: 121px;
     /* padding-left: 82px; */
     width: 91%;
     height: 100%;
@@ -67,7 +67,6 @@
     transition-delay: 0s;
     padding-left: 85px;
     /* transition: all 0.5s cubic-bezier(0,.11,.29,1); */
-
 }
 .textBlock_first {
     /* transform: translateY(0px); */

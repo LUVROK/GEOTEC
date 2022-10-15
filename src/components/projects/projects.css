@@ -1,8 +1,235 @@
 .Projects {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh);
     background-color: #F0F1F8;
     position: relative;
     display: flex;
     z-index: 101;
+}
+
+.Projects_block {
+    position: relative;
+    padding-top: 121px;
+    /* padding-left: 82px; */
+    width: 95.5%;
+    left: 2%;
+    height: 100%;
+    z-index: 3;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.Projects_block .hiddenOverflow {
+    position: relative;
+    width: 45%;
+    top: 0%;
+    height: 100%;
+    overflow: hidden;
+}
+.Projects_block .hiddenOverflow2 {
+    position: relative;
+    margin-right: -4.5%;
+    width: 59.5%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.ImagesBlockOverflow {
+    position: absolute;
+    height: 40%;
+    width: 25%; 
+    /* transform: translateX(20px); */
+    /* margin-right: 20px; */
+    background-color: transparent;
+    border-radius: 20px;
+    background-image: url(../../media/Geology-01_2021-04-07.png);
+    background-repeat: no-repeat;
+    background-size: 165%;
+    background-position: center;
+}
+.Projects .active {
+    height: 60%;
+    width: 31%; 
+}
+.firstThree {
+
+}
+.lastItems {
+}
+
+.Projects .element-animation{
+    margin: auto;
+}
+
+
+.Projects h2 {
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 75px;
+    padding-left: 85px;
+    text-transform: capitalize;
+    margin-top: 44px;
+    position: absolute;
+
+    background: linear-gradient(0deg, #2444A9, #2444A9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.Projects .textBlock_first .textBlock_text {
+    width: 100%
+}
+.Projects .textBlock_first .textBlock_text_content {
+    width: 100%;
+}
+
+.Projects .textBlock {
+    position: absolute;
+    width: 100%;
+    margin-top: 20%;
+    height: 392px;
+    padding-top: 4%;
+    transition-delay: 0s;
+    padding-left: 85px;
+    /* transition: all 0.5s cubic-bezier(0,.11,.29,1); */
+}
+.Projects .textBlock_first {
+    /* transform: translateY(0px); */
+}
+.Projects .textBlock_second {
+    /* transform: translateY(880px); */
+}
+.Projects .textBlock_third {
+    /* transform: translateY(1760px); */
+}
+.Projects .textBlock_text_content {
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #102876;
+    margin-top: 5%;
+}
+.Projects .textBlock_text {
+    position: relative;
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 100%;
+    text-transform: capitalize;
+    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.Projects .textBlock_textPopins {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.Projects .textBlock_textPopinsMini {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.Projects .Button_Learn_More {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 26px 45px;
+    background-color: #07D3AF;
+    bottom: 0px;
+
+    font-family: 'Raleway-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Projects .Button_Learn_More .title {
+    margin-right: 40px;
+}
+
+
+.buttonsBlock {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    bottom: 10%;
+}
+.StatusBar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    right: 20%;
+    bottom: 10%;
+    font-family: 'Poppins-Regular';
+    font-size: 24px;
+    color: #4A6AD0;
+}
+.lineStatus {
+    position: relative;
+    height: 1px;
+    background-color: #4A6AD0;
+    width: 125px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.btnBefore {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #4A6AD0;
+    height: 60px;
+    width: 60px;
+    border-radius: 59px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btnAfter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #4A6AD0;
+    height: 60px;
+    width: 60px;
+    border-radius: 59px;
+    cursor: pointer;
 }
