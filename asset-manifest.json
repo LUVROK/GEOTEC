@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GEOTEC/static/css/main.f950f494.css",
-    "main.js": "/GEOTEC/static/js/main.cf8332fd.js",
+    "main.css": "/GEOTEC/static/css/main.49e45d3a.css",
+    "main.js": "/GEOTEC/static/js/main.d2a00c28.js",
     "static/js/787.cd711f27.chunk.js": "/GEOTEC/static/js/787.cd711f27.chunk.js",
     "static/media/loon-image-original_1.png": "/GEOTEC/static/media/loon-image-original_1.6b34ea0aaefeba318a19.png",
     "static/media/ourTechBack1.png": "/GEOTEC/static/media/ourTechBack1.70901082692793ca7fca.png",
@@ -45,12 +45,12 @@
     "static/media/img9.png": "/GEOTEC/static/media/img9.e2d3c8c9ff042ffd59d6.png",
     "index.html": "/GEOTEC/index.html",
     "static/media/getFetch.cjs": "/GEOTEC/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.f950f494.css.map": "/GEOTEC/static/css/main.f950f494.css.map",
-    "main.cf8332fd.js.map": "/GEOTEC/static/js/main.cf8332fd.js.map",
+    "main.49e45d3a.css.map": "/GEOTEC/static/css/main.49e45d3a.css.map",
+    "main.d2a00c28.js.map": "/GEOTEC/static/js/main.d2a00c28.js.map",
     "787.cd711f27.chunk.js.map": "/GEOTEC/static/js/787.cd711f27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f950f494.css",
-    "static/js/main.cf8332fd.js"
+    "static/css/main.49e45d3a.css",
+    "static/js/main.d2a00c28.js"
   ]
 }
