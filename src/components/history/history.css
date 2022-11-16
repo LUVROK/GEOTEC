@@ -1,319 +1,432 @@
 .History {
-    width: 100%;
-    height: calc(100vh);
-    background-color: #F0F1F8;
-    position: relative;
-    display: flex;
-    z-index: 101;
-    /* border-radius: 40px; */
-    /* margin-top: 33px; */
+  width: 100%;
+  height: calc(100vh);
+  background-color: #f0f1f8;
+  position: relative;
+  display: flex;
+  z-index: 101;
+  /* border-radius: 40px; */
+  /* margin-top: 33px; */
 }
 .backgroundHistorySvg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    /* top: 25%; */
-    top: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  /* top: 25%; */
+  top: 0%;
+  padding-left: 10%;
 }
 .backgroundHistorySvg svg {
-    margin-top: 20%;
-} 
+  margin-top: 20%;
+}
 .History_block {
-    position: relative;
-    padding-top: 121px;
-    /* padding-left: 82px; */
-    width: 91%;
-    height: 100%;
-    z-index: 3;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  padding-top: 121px;
+  /* padding-left: 82px; */
+  width: 91%;
+  height: 100%;
+  z-index: 3;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 .History_block .hiddenOverflow {
-    position: relative;
-    width: 100%;
-    top: 20%;
-    height: 60%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  top: 20%;
+  height: 80%;
+  overflow: hidden;
 }
 
 .History h2 {
-    font-family: 'Raleway-Light';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 44px;
-    line-height: 75px;
-    padding-left: 85px;
-    text-transform: capitalize;
-    margin-top: 44px;
-    position: absolute;
+  font-family: "Raleway-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 75px;
+  padding-left: 35px;
+  text-transform: capitalize;
+  /* margin-top: 44px; */
+  position: absolute;
 
-    background: linear-gradient(0deg, #2444A9, #2444A9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  background: linear-gradient(0deg, #2444a9, #2444a9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .textBlock {
-    position: absolute;
-    width: 50%;
-    height: 392px;
-    padding-top: 4%;
-    transition-delay: 0s;
-    padding-left: 85px;
-    /* transition: all 0.5s cubic-bezier(0,.11,.29,1); */
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  /* padding-top: 4%; */
+  transition-delay: 0s;
+  padding-left: 85px;
+  /* transition: all 0.5s cubic-bezier(0,.11,.29,1); */
 }
 .textBlock_first {
-    /* transform: translateY(0px); */
+  /* transform: translateY(0px); */
 }
 .textBlock_second {
-    /* transform: translateY(880px); */
+  /* transform: translateY(880px); */
 }
 .textBlock_third {
-    /* transform: translateY(1760px); */
+  /* transform: translateY(1760px); */
 }
 .textBlock_text_content {
-    position: relative;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 26px;
-    color: #102876;
-    margin-top: 5%;
+  position: relative;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #102876;
+  margin-top: 5%;
 }
 .textBlock_text {
-    position: relative;
-    font-family: 'Raleway-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 88px;
-    line-height: 100%;
-    text-transform: capitalize;
-    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  position: relative;
+  font-family: "Raleway-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 88px;
+  line-height: 100%;
+  text-transform: capitalize;
+  background: linear-gradient(98.83deg, #2444a9 8.79%, #526ec8 44.21%, #839ae9 79.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
-.textBlock_textPopins {
-    font-family: 'Poppins-Light';
-    font-style: normal;
-    font-weight: 300;
-    line-height: 100%;
-}
 
 .textBlock_textPopinsMini {
-    font-family: 'Poppins-Light';
-    font-style: normal;
-    font-weight: 300;
-    line-height: 100%;
-    text-transform: capitalize;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  font-family: "Poppins-Light";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .ImageBack img {
-    width: 365px;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-
+  width: 365px;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
 }
-
 
 .TimeHistoryBox {
-    position: absolute;
-    right: 180px;
-    top: 35%;
-    width: auto;
-    height: auto;
-    border-right: 5px solid #4A6AD0;;
-    padding-right: 47px;
-    overflow-y: scroll;
-    z-index: 2;
-    overflow: hidden;
-    z-index: 1000;
+  position: absolute;
+  right: 180px;
+  top: 35%;
+  width: auto;
+  height: auto;
+  border-right: 5px solid #4a6ad0;
+  padding-right: 47px;
+  overflow-y: scroll;
+  z-index: 2;
+  overflow: hidden;
+  z-index: 1000;
 }
 .TimeHistoryBox_block {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
 }
 /* .TimeHistoryBox::-webkit-scrollbar {
     width: 0px;
 } */
 .TimeHistoryBox_element {
-    font-family: 'Poppins-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-    text-transform: uppercase;
-    color: #4A6AD0;
-    margin: 1.25px;
-    transition: all 1s cubic-bezier(0,.11,.29,1);
-    cursor: pointer;
+  font-family: "Poppins-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #4a6ad0;
+  margin: 1.25px;
+  transition: all 1s ease-out;
+  cursor: pointer;
 }
 .TimeHistoryBox_element.active {
-    color: #1839A3;
-    /* transform: scale(2); */
-    /* font-weight: 400; */
-    font-size: 88px;
-    line-height: 132px;
-    /* text-transform: uppercase; */
+  color: #1839a3;
+  /* transform: scale(2); */
+  /* font-weight: 400; */
+  font-size: 66px;
+  line-height: 99px;
+  /* text-transform: uppercase; */
 }
 .textBlock_text {
-    position: relative;
-    font-family: 'Raleway-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 66px;
-    line-height: 120%;
-    text-transform: inherit;
-    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  position: relative;
+  font-family: "Raleway-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 66px;
+  line-height: 120%;
+  text-transform: inherit;
+  background: linear-gradient(98.83deg, #2444a9 8.79%, #526ec8 44.21%, #839ae9 79.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .textBlock_text_content {
-    position: relative;
-    font-style: normal;
-    font-weight: 275;
-    font-size: 22px;
-    line-height: 26px;
-    color: #102876;
-    margin-top: 5%;
-    width: 50%;
+  position: relative;
+  font-style: normal;
+  font-weight: 275;
+  font-size: 22px;
+  line-height: 26px;
+  color: #102876;
+  margin-top: 5%;
+  width: 50%;
 }
 .ImageBack {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    /* padding-right: 51px; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    /* background-color: yellow; */
-    height: 234px;
-    /* top: 124px; */
-    margin-top: -43px;
-    margin-right: 52px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  /* padding-right: 51px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: yellow; */
+  height: 234px;
+  /* top: 124px; */
+  margin-top: -43px;
+  margin-right: 52px;
 }
 .ImageBack img {
-    width: 365px;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-
+  width: 365px;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
 }
-
 
 .textBlock_first .textBlock_text {
-    width: 70%;
+  width: 70%;
 }
+.lasttextBlock_text {
+  color: #70dfaa;
+  background: none;
+  -webkit-text-fill-color: #70dfaa;
+}
+/* .lastTimeHistoryBox_element {
+    color: #70dfaa;
+} */
 .textBlock_first {
-    /* transform: translateY(-20%); */
-    /* transition-delay: 0.4s !important; */
-    /* padding-left: 85px; */
+  /* transform: translateY(-20%); */
+  /* transition-delay: 0.4s !important; */
+  /* padding-left: 85px; */
 }
 .textBlock_first .textBlock_text_content {
-    width: 50%;
+  width: 50%;
 }
 .textBlock_first .ImageBack {
-    /* margin-top: 43px; */
+  /* margin-top: 43px; */
 }
-.textBlock_first .ImageBack .ImageBack img{
-
+.textBlock_first .ImageBack .ImageBack img {
 }
 
-.textBlock_second{
-    padding-left: 88px;
+.textBlock_second {
+  padding-left: 88px;
 }
 .textBlock_second .textBlock_text {
-
 }
 .textBlock_second .textBlock_text_content {
-    width: 40%;
+  width: 40%;
 }
 .textBlock_second .ImageBack {
-    /* margin-top: 43px; */
+  /* margin-top: 43px; */
 }
 
 .textBlock_third {
-    padding-left: 88px;
+  padding-left: 88px;
 }
 .textBlock_third .textBlock_text {
-
 }
 .textBlock_third .textBlock_text_content {
-    width: 50%;
+  width: 50%;
 }
 .textBlock_third .ImageBack {
-    /* margin-top: 43px; */
+  /* margin-top: 43px; */
 }
 
 .textBlock_fourth {
-    padding-left: 88px;
+  padding-left: 88px;
 }
 .textBlock_fourth .textBlock_text {
-
 }
 .textBlock_fourth .textBlock_text_content {
-    width: 40%;
+  width: 40%;
 }
 .textBlock_fourth .ImageBack {
-    /* margin-top: 43px; */
+  /* margin-top: 43px; */
 }
 
 .textBlock_fifth {
-    padding-left: 88px;
+  padding-left: 88px;
 }
 .textBlock_fifth .textBlock_text {
-
 }
 .textBlock_fifth .textBlock_text_content {
-    width: 50%;
+  width: 50%;
 }
 .textBlock_fifth .ImageBack {
-    /* margin-top: 18px; */
+  /* margin-top: 18px; */
 }
 
 .textBlock_sixth .textBlock_text_content {
-    width: 50%;
+  width: 50%;
 }
 .textBlock_sixth .ImageBack {
-    margin-top: -63px;
+  margin-top: -63px;
 }
 
 .textBlock_seventh .textBlock_text {
-    width: 120%;
+  width: 100%;
 }
 .textBlock_seventh .textBlock_text_content {
-    width: 50%;
+  width: 50%;
 }
 
 .textBlock_eleventh .textBlock_text {
-    width: 80%;
+  width: 80%;
 }
 .textBlock_eleventh .ImageBack {
-    margin-top: -150px;
+  margin-top: -150px;
 }
-
 
 .textBlock_twelveth .textBlock_text {
-    width: 140%;
+  width: 100%;
 }
 .textBlock_twelveth .ImageBack {
-    margin-top: 30px;
+  margin-top: 30px;
+}
+
+
+
+
+@media screen and (max-width: 1480px) {
+    .textBlock_text {
+        font-size: 44px;
+    }
+    .textBlock_text_content {
+        font-size: 18px;
+    }
+    .textBlock_seventh .textBlock_text_content {
+        width: 40%;
+    }
+    .ImageBack {
+        margin-top: 28px !important;
+    }
+    .backgroundHistorySvg {
+        padding-top: 7%;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    .TimeHistoryBox {
+        right: 60px;
+    }
+    .textBlock_seventh .textBlock_text_content {
+        width: 60%;
+    }
+    .textBlock_seventh .textBlock_text {
+        width: 100%;
+    }
+    .History_block {
+        padding-top: 51px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .textBlock {
+        padding-left: 35px;
+    }
+    .ImageBack {
+        margin-left: 35px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .TimeHistoryBox_block {
+        flex-direction: row;
+        height: 105px;
+    }
+    .TimeHistoryBox {
+        border: none;
+        top: auto;
+        bottom: 35px;
+    }
+    .textBlock_text_content {
+        width: 100%;
+        font-size: 16px;
+    }
+    .textBlock {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .TimeHistoryBox {
+        right: 0px;
+        padding: 0;
+        width: 100%;
+    }
+    .ImageBack {
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        /* margin-left: 0px; */
+    } 
+    .TimeHistoryBox_element {
+        /* margin-left: 70px; */
+    }
+    /* .TimeHistoryBox_element.active {
+        font-size: 32px
+    } */
+    .History h2 {
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    .History_block {
+        padding-top: 40px;
+    } 
+    .History_blockTitle {
+        display: none;
+    }
+    .History_block .hiddenOverflow {
+        top: 5%;
+    }
+    .textBlock_text {
+        width: 100%;
+        font-size: 28px;
+    }
+    .ImageBack img {
+        height: 80%;
+    }
+    .textBlock_sixth .textBlock_text_content {
+        width: 100%;
+        font-size: 16px;
+    }
+    .textBlock_seventh .textBlock_text_content {
+        width: 95%;
+    }
+    .TimeHistoryBox_element.active {
+        font-size: 42px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    
 }

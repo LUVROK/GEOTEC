@@ -1,0 +1,96 @@
+.titlePage {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 49px;
+  width: 50%;
+  font-family: "Poppins-Light";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  text-transform: capitalize;
+  background: linear-gradient(98.83deg, #2444a9 8.79%, #526ec8 44.21%, #839ae9 79.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.clients .svgclientsprojects {
+  position: absolute;
+  right: 4.5%;
+  top: 20px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.clients .firstBlock {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  /* margin-top: 40px; */
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  left: 0;
+  right: 0;
+  margin-top: 10vh;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.clients .secondBlock {
+  margin-top: 0px;
+  border-top: 0px;
+}
+
+.clients .element-animation23 {
+  margin: 2rem 0;
+  font-size: 3rem;
+  opacity: 0.2;
+  transform: translateY(80px);
+}
+
+.clients .element-animation23.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transition-timing-function: cubic-bezier(0, 0.65, 0.7, 1);
+  transform: translateY(0%);
+}
+.clients .element-animation23:nth-child(1).element-show {
+  transition-delay: 0.1s;
+}
+
+@media screen and (max-width: 1480px) {
+  .clients .firstBlock {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1134px) {
+  .clients .firstBlock {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    flex-direction: column;
+  }
+  .firstBlock img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .clients .firstBlock {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .clients .firstBlock {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}

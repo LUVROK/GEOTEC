@@ -1,7 +1,7 @@
 .Nav_Block {
     width: 100%;
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     flex-direction: row;
@@ -11,6 +11,7 @@
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
     /* backdrop-filter: blur(10px); */
 }
 .Nav_BlockCenter {
@@ -64,7 +65,67 @@
     color: inherit;
     font-size: 16px;
     font-family: 'Raleway-Light';
-    display: flex;
+    /* display: flex; */
     flex-wrap: nowrap;
     color: #102876;
+    white-space: nowrap;
 }
+.Nav_Block_left_a {
+    display: flex;
+}
+
+
+
+@media screen and (max-width: 1480px) {
+    .Nav_Block_left {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    .Nav_Block_left {
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .Nav_Block_left_a {
+        display: none;
+    }
+    .Nav_Block_right_a_title {
+        display: none;
+    }
+    .Nav_Block_left {
+        justify-content: flex-end;
+    }
+    .Nav_BlockCenter {
+        padding: 28px 32px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+}
+
+@media screen and (max-width: 490px) {
+    
+}
+
+
+
+
+/* @media screen and (max-width: 1480px) {
+    
+}
+
+@media screen and (max-width: 1134px) {
+    
+}
+
+@media screen and (max-width: 720px) {
+    
+}
+
+@media screen and (max-width: 490px) {
+    
+} */

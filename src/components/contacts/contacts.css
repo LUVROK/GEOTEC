@@ -10,7 +10,7 @@
     z-index: 101;
     padding-top: 83px;
     background-image: url(../../media/loon-image-original_2.png), url(../../media/loon-image-original_1.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -72,15 +72,29 @@
 .contact_contacts_element:hover {
     background-color: #FFFFFF;
 }
+.contact_contacts_element:hover svg {
+    transform: scale(1.1);
+    top: 25%;
+}
+.contact_contacts_element:hover .perhaps_contacts_element {
+    /* transition-delay: 0.2s; */
+    top: 50%;
+    color: #4A6AD0;
+    text-decoration: none;
+}
 
 .contact_contacts_element svg {
     position: absolute;
-    top: 25%;
+    top: 30%;
+    transition: all 1s;
 }
 
 .perhaps_contacts_element {
     position: absolute;
-    top: 50%;
+    transition: all 1s;
+    top: 55%;
+    color: #4A6AD0;
+    text-decoration: none;
 }
 
 .contact_contacts_element:nth-child(1) {
@@ -109,6 +123,8 @@
     border-radius: 20px;
     cursor: pointer;
     transition: all 1s;
+    color: #000000;
+    text-decoration: none;
 }
 .map_btn:hover {
     background-color: #ffffff;
@@ -116,4 +132,67 @@
 .map_btn svg {
     position: relative;
     margin-left: 22px;
+}
+
+
+
+
+@media screen and (max-width: 1480px) {
+    .contact_title {
+        font-size: 190px;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    .contact_title {
+        font-size: 140px;
+    }
+    .contacts {
+        height: 210vh;
+    }
+    .contact_contacts {
+        flex-direction: column;
+    }
+    .contacts {
+        background-image: url(../../media/ContactWhiteBackMobile.png), url(../../media/ContactBackMobile.png);
+    }
+    .contact_contacts_element {
+        background-color: #ffffffa6;
+    }
+    .map_btn {
+        bottom: 5%;
+    }
+    .contact_contacts_element:nth-child(1) {
+        margin-right: 0px;
+    }
+    .contact_contacts_element:nth-child(2) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .contact_title {
+        font-size: 120px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .contact_title {
+        font-size: 100px;
+        padding-left: 15px;
+        line-height: 158px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .contact_title {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .contact_title {
+        font-size: 60px;
+        line-height: 98px;
+    }
 }

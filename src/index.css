@@ -19,6 +19,14 @@ body {
   /* position: relative; */
 }
 
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* a:hover {
+  color: #FFFFFF;
+} */
+
 * {
   margin: 0;
   padding: 0;

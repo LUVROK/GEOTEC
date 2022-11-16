@@ -6,7 +6,7 @@
   /* overflow-y: scroll; */
   height: auto;
   /* scroll-behavior: smooth; */
-  /* overflow-y: scroll; */
+  overflow: hidden;
 }
 .WrapperFixedContent {
   position: relative;
@@ -93,4 +93,53 @@
   position: relative;
   width: 100%;
   height: auto;
+}
+
+
+
+.PoppinsLight {
+  font-family: 'Poppins-Light';
+}
+.PoppinsExtraLight {
+  font-family: 'Poppins-ExtraLight';
+}
+.PoppinsRegular {
+  font-family: 'Poppins-Regular';
+}
+.RalewayBold {
+  font-family: 'Raleway-Bold';
+}
+.RalewayLight {
+  font-family: 'Raleway-Light';
+}
+.RalewayMedium {
+  font-family: 'Raleway-Medium';
+}
+.RalewayRegular {
+  font-family: 'Raleway-Regular';
+}
+
+.fontweight200 {
+  font-weight: 200;
+}
+.fontweight275 {
+  font-weight: 275;
+}
+.fontweight300 {
+  font-weight: 300;
+}
+.fontweight400 {
+  font-weight: 400;
+}
+.fontweight500 {
+  font-weight: 500;
+}
+.fontweight600 {
+  font-weight: 600;
+}
+.fontweight700 {
+  font-weight: 700;
+}
+.fontweight800 {
+  font-weight: 800;
 }

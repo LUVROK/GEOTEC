@@ -1,144 +1,317 @@
 .AboutUs {
-    position: relative;
-    width: 100%;
-    /* height: calc(100vh + 51px); */
-    height: calc(100vh - 0px);
-    /* border-radius: 40px; */
-    overflow: hidden;
-    padding-top: 142px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 101;
-    /* background-color: blue; */
+  position: relative;
+  width: 100%;
+  /* height: calc(100vh + 51px); */
+  height: calc(100vh - 0px);
+  /* border-radius: 40px; */
+  overflow: hidden;
+  padding-top: 142px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+  /* background-color: blue; */
 }
 .AboutUs_block {
-    position: relative;
-    width: calc(100% - 170px);
-    height: 100%;
+  position: relative;
+  width: calc(100% - 170px);
+  height: 100%;
 }
 .CompanyBar {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    height: 221px;
-    border-radius: 40px;
-    background-image: url(../../media/GeotecGeoComp.png);
-    background-repeat: no-repeat;
-    background-size: cover 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'Raleway-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 65px;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  height: 221px;
+  border-radius: 40px;
+  background-image: url(../../media/GeotecGeoComp.png);
+  background-repeat: no-repeat;
+  background-size: cover 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Raleway-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
 }
 .logo_CompanyBar {
-    font-family: 'Poppins-ExtraLight';
-    font-size: 110px;
-    font-style: normal;
-    font-weight: 275;
-    line-height: 65px;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    margin-left: 87px;
+  font-family: "Poppins-ExtraLight";
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 275;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-left: 87px;
 }
 .perhaps_logo_companyBar {
-    position: absolute;
-    bottom: 9px;
-    left: 88px;
-    font-family: 'Raleway-Regular';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 35px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    text-transform: none;
+  position: absolute;
+  bottom: 9px;
+  left: 88px;
+  font-family: "Raleway-Regular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: none;
 }
 
 .researchs_block {
-    position: relative;
-    margin: 86px 0px 0px 0px;
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+  position: relative;
+  margin: 86px 0px 0px 0px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .researchs_block_elem {
-    position: relative;
-    width: 23%;
-    font-family: 'Raleway-Medium';
-    font-style: normal;
-    font-weight: 500;
-    color: #102876;
-    font-size: 22px;
-    line-height: 35px;
-    letter-spacing: -0.03em;
-    cursor: pointer;
-    transition: 1s ease-in-out;
-    overflow: hidden;
+  position: relative;
+  width: 23%;
+  font-family: "Raleway-Medium";
+  font-style: normal;
+  font-weight: 500;
+  color: #102876;
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
+.researchs_block_elem_overflow {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* background-color: yellow; */
+  transition: 1s ease-in-out;
 }
 .researchs_block_elem_text {
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid #102876;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #102876;
 }
 .researchs_block_elem .text {
-    position: relative;
-    width: 100%;
-    margin-top: 25px;
-    transition-delay: 0.3s;
-    transition: 0.7s;
-    font-family: 'Raleway-Light';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 30px;
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+  transition-delay: 0.3s;
+  transition: all 0.7s, opacity 1s;
+  font-family: "Raleway-Light";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
 }
 .borderbottom {
-    position: absolute;
-    border-bottom: 1px solid #102876;
-    height: 1px;
-    width: 100%;
-    bottom: 45px;
+  position: absolute;
+  border-bottom: 1px solid #102876;
+  height: 1px;
+  width: 100%;
+  bottom: 45px;
 }
 .researchs_block_elem svg {
-    position: absolute;
-    bottom: 6px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 1s;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 1s;
 }
 .researchs_block_elem:nth-child(0) {
-    margin-right: 26px;
+  margin-right: 26px;
 }
 .researchs_block_elem:nth-child(1) {
-    margin-right: 26px;
+  margin-right: 26px;
 }
 .researchs_block_elem:nth-child(2) {
-    margin-right: 26px;
+  margin-right: 26px;
 }
 .researchs_block_elem:nth-child(3) {
-    margin-right: 26px;
+  margin-right: 26px;
+}
+.mobileTitleAboutUs {
+  font-size: 32px;
+  line-height: 39px;
+  color: #4a6ad0;
+}
+.logo_CompanyBarMobile svg {
+  width: 75px;
+  height: 45px;
+  padding: 0px 15px;
+  position: relative;
+  bottom: 0;
 }
 
-
-
-
-
-@media screen and (max-width: 1820px) {
-    
+@media screen and (max-width: 1720px) {
+  .researchs_block_elem {
+    font-size: 18px;
+  }
+  .logo_CompanyBar {
+    margin-left: 24px;
+  }
+  .perhaps_logo_companyBar {
+    left: 24px;
+  }
 }
+
+@media screen and (max-width: 1650px) {
+  .logo_CompanyBar {
+    font-size: 82px;
+  }
+  .CompanyBar {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .logo_CompanyBarMobile svg {
+    padding: 5px 0px;
+    width: 51px;
+    height: 40px;
+  }
+  .AboutUs {
+    padding-top: 38px;
+  }
+  .AboutUs_block {
+    width: 90%;
+  }
+  .researchs_block {
+    margin-top: 20px;
+  }
+  .logo_CompanyBar {
+    font-size: 72px;
+  }
+  .CompanyBar {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .researchs_block_elem {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .CompanyBar {
+    height: 182px;
+  }
+}
+
+@media screen and (max-width: 1134px) {
+  .CompanyBar {
+    display: none;
+  }
+  .logo_CompanyBarMobile svg {
+    padding: 0;
+    width: 47px;
+    height: 34px;
+  }
+  .logo_CompanyBarMobileGeotec {
+    font-size: 46px;
+  }
+  .researchs_block_elem {
+    pointer-events: none;
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 30px;
+    margin-bottom: 12px;
+    padding-left: 17px;
+    background-color: rgb(246, 248, 255, 0.7);
+    border-radius: 34px;
+    backdrop-filter: blur(25px);
+  }
+  .borderbottom {
+    display: none;
+  }
+  .researchs_block_elem svg {
+    display: none;
+  }
+  .researchs_block_elem_text {
+    border-bottom: 0px;
+    height: auto !important;
+    padding-bottom: 12px;
+    line-height: 35px;
+  }
+  .researchs_block {
+    flex-direction: column;
+  }
+  .researchs_block_elem .text {
+    margin-top: 18px;
+  }
+  .researchs_block_elem_text {
+    padding-top: 30px;
+  }
+  .AboutUs {
+    height: auto;
+    background-image: url(../../media/ContactWhiteBackMobile.png), url(../../media/mountains_wrapper.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .MobileWhitebottomAboutus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../../media/ContactWhiteBackMobile.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo_CompanyBarMobile svg {
+    padding: 0;
+    width: 42px;
+    height: 28px;
+  }
+  .logo_CompanyBarMobileGeotec {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .logo_CompanyBarMobile svg {
+    padding: 0;
+    width: 34px;
+    height: 20px;
+  }
+  .logo_CompanyBarMobileGeotec {
+    font-size: 34px;
+  }
+}
+
+/* @media screen and (max-height: 2160px) and (max-width: 1134px){
+  .AboutUs {
+    height: 170vh;
+  }
+}
+
+@media screen and (max-height: 1080px) and (max-width: 1134px){
+  .AboutUs {
+    height: 210vh;
+  }
+}
+
+@media screen and (max-height: 720px) and (max-width: 1134px){
+    .AboutUs {
+      height: 250vh;
+    }
+} */

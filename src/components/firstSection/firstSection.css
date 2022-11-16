@@ -52,6 +52,8 @@
     position: relative;
     bottom: 0;
     height: 100%;
+    width:75px;
+    height: 45px;
 }
 
 .firstSection_block_geotec_perhapse_block {
@@ -173,7 +175,7 @@
     overflow: hidden;
     /* color: #31b462; */
   }
-  .btn-6 span {
+  .btn-6 .circlebtn {
     position: absolute;
     display: block;
     width: 0;
@@ -188,10 +190,186 @@
   .btn-6:hover {
     color: #c3e9d1;
   }
-  .btn-6:hover span {
+  .btn-6:hover .circlebtn {
     width: 255%;
     height: 592.5px;
   }
   /* .btn-6:active {
     background-color: #0da746;
   } */
+
+
+
+@media screen and (max-width: 1720px) {
+    .centerer:first-of-type {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .blockCont_block {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .firstSection_block_geotec {
+        font-size: 42px;
+    }
+    .bigFontSize {
+        font-size: 52px;
+    }
+    .firstSection_block_geotec svg {
+        padding: 5px 0px;
+        width: 51px;
+        height: 40px;
+    }
+    .firstSection_block {
+        flex-direction: row;
+        height: 85%;
+    }
+    .blockCont_block {
+        right: auto;
+        left: 0;
+        margin-left: 62px;
+    }
+    .firstSection_block_geotec_perhapse {
+        margin-top: 63px;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    .firstSection_block_geotec {
+        font-size: 36px;
+    }
+    .bigFontSize {
+        font-size: 46px;
+    }
+    .firstSection_block_geotec svg {
+        padding: 0;
+        width: 47px;
+        height: 34px;
+    }
+    .firstSection_block_geotec_block {
+        margin-left: 25px;
+    }
+    .firstSection_block_geotec {
+        width: 90%;
+    }
+    .firstSection_block_geotec_block {
+        width: 100%;
+    }
+    .firstSection_block_geotec_perhapse {
+        margin-top: 53px;
+        font-size: 15px;
+        width: 90%;
+        line-height: 19px;
+    }
+    .engFont {
+        line-height: 19px;
+    }
+    .blockCont_block {
+        flex-direction: column;
+        bottom: 0;
+        top: 60%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .blockCont {
+        height: 66px;
+        width: 320px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    } 
+    .centerer:first-of-type {
+        margin-bottom: 20px;
+    }
+    .blockCont img {
+        padding-top: 0px;
+        height: 45%;
+        padding-left: 20px;
+    }
+    .blockCont_text {
+        position: relative;
+        top: 0;
+        font-size: 14px;
+        padding-top: 0px;
+        padding-left: 9px;
+    }
+    .blockCont svg {
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0;
+    }
+    .blockCont_text span {
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0 !important;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .firstSection_block_geotec {
+        font-size: 30px;
+    }
+    .bigFontSize {
+        font-size: 38px;
+    }
+    .firstSection_block_geotec svg {
+        padding: 0;
+        width: 42px;
+        height: 28px;
+    }
+    .firstSection_block_geotec_block {
+        margin-left: 15px;
+    }
+    .firstSection_block_geotec {
+        width: 95%;
+    }
+    .firstSection_block_geotec_block {
+        width: 100%;
+    }
+    .firstSection_block_geotec_perhapse {
+        margin-top: 33px;
+        font-size: 14px;
+        width: 90%;
+    }
+    .blockCont_block {
+        margin-left: 0px;
+        justify-content: flex-end;
+    }
+    .centerer:first-of-type {
+        margin-bottom: 10px;
+    }
+    .firstSection_block {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .firstSection_block_geotec {
+        font-size: 24px;
+    }
+    .firstSection_block {
+        top: 2%;
+    }
+    .bigFontSize {
+        font-size: 30px;
+    }
+    .firstSection_block_geotec svg {
+        padding: 0;
+        width: 34px;
+        height: 20px;
+    }
+    .firstSection_block_geotec_perhapse {
+        margin-top: 13px;
+        font-size: 13px;
+        width: 95%;
+    }
+    .firstSection_block {
+        height: 90%;
+    }
+}

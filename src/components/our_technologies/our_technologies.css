@@ -9,6 +9,7 @@
     align-items: center;
     z-index: 101;
     padding-top: 121px;
+    overflow: hidden;
 }
 .our_technologies_block {
     position: relative;
@@ -17,37 +18,43 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 85px;
 }
-
 .our_technologies_left {
     position: relative;
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 80%;
+    transition: all 0.5s ease-out;
 }
-
 .our_technologies_right {
     position: relative;
-    width: 50%;
-    height: 100%;
+    width: 60%;
+    height: 80%;
+    /* cursor: url(../../media/goback.png) 14 0,pointer; */
+    /* cursor: pointer; */
+    display: flex;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all 0.5s ease-out;
+    /* cursor: '../../media/goback.png'; */
 }
-
 .our_technologies_title {
     position: relative;
     font-family: 'Raleway-Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 88px;
+    font-size: 66px;
     line-height: 120%;
-    padding-top: 35px;
+    padding-top: 44px;
     background: linear-gradient(92.45deg, #2444A9 9.74%, #526EC8 70.23%, #839AE9 91.57%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;    
 }
-
 .our_technologies_perhaps {
     position: relative;
     font-family: 'Raleway-Light';
@@ -62,9 +69,9 @@
     position: relative;
     width: 211px;
     height: 211px;
-    background-color: #07D3AF;
+    background-color: #2ADEA1;
     border-radius: 199px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     font-family: 'Raleway-Regular';
@@ -75,4 +82,217 @@
     color: #FFFFFF;
     text-align: center;
     margin-top: 54px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    border: 0px solid #07D3AF;
+}
+.circleButton:hover {
+    background-color: #07d3ad00;
+    color: #4A6AD0;
+    border: 1px solid #4a69d08f;
+}
+.our_technologies_right_left {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    cursor: url(../../media/goback.png) 14 0, default;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    z-index: 101;
+}
+.our_technologies_right_left:hover {
+    cursor: url(../../media/goback.png) 14 0, default;
+}
+.our_technologies_right_right {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+    height: 100%;
+    cursor: url(../../media/goTo.png) 14 0, default;
+    z-index: 100;
+}
+.our_technologies_right_right:hover{
+    cursor: url(../../media/goTo.png) 14 0, default;
+}
+.our_technologies_right_right .Image_Tech {
+    position: absolute;
+    transition: all 1s, opacity 0.3s;
+    overflow: visible;
+    /* background: url(../../media/goTo.png); */
+    /* background: radial-gradient(50% 50% at 50% 50%, rgba(131, 229, 219, 0.79) 0%, rgba(202, 245, 240, 0.407083) 73.96%, rgba(255, 255, 255, 0) 100%); */
+}
+.ourTech1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    left: -20%;
+    transition: all 0.5s ease-out;
+}
+.ourTech2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: -20%;
+    bottom: 0;
+    left: 30%;
+    transition: all 0.5s ease-out;
+
+}
+.our_technologies_right_right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.our_technologies_right_right svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.our_technologies_right_right svg:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.number_hopeful_models_block {
+    position: relative;
+    width: 265px;
+    height: 265px;
+    border-radius: 20px;
+    border: 2px solid #4A6AD0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-out;
+}
+.number_hopeful_models_block_title {
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    color: #102876;
+    line-height: 120%;
+}
+.number_hopeful_models_block_number {
+    position: relative;
+    left: 89px;
+    width: 100%;
+    text-align: left;
+    font-size: 88px;
+    color: #102876;
+    line-height: 132px;
+    margin-top: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 1634px) {
+    .our_technologies_right_right img {
+        width: 90%;
+    }
+    .our_technologies {
+        padding-top: 86px;
+    }
+    .our_technologies_title {
+        font-size: 60px;
+    }
+}
+
+
+@media screen and (max-width: 1480px) {
+    .our_technologies_right_right img {
+        width: 80%;
+    }
+    .our_technologies {
+        padding-top: 56px;
+    }
+    .our_technologies_title {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    .number_hopeful_models_block {
+        display: none;
+    }
+    .our_technologies_right_right img {
+        width: 70%;
+    }
+    .our_technologies_block {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .our_technologies_left {
+        order: 2;
+        height: 60%;
+        width: 70% !important;
+    }
+    .our_technologies_right {
+        height: 40%;
+        width: 100% !important;
+    }
+    .our_technologies_title {
+        font-size: 48px;
+    }
+    .ourTech1 {
+        height: 150%;
+    }
+    .ourTech2 {
+        height: 150%;
+    }
+    .our_technologies_left {
+        padding-top: 36px;
+    }
+    .circleButton {
+        width: 149px;
+        height: 149px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .our_technologies_perhaps {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 910px) {
+    .our_technologies_right_right img {
+        width: 60%;
+    }
+    .our_technologies_left {
+        width: 85% !important;
+    }
+}
+@media screen and (max-width: 720px) {
+    .our_technologies_left {
+        width: 100% !important;
+    }
+    .our_technologies_title {
+        font-size: 32px;
+        padding-top: 0px;
+    }
+    .our_technologies_right_right img {
+        width: 60%;
+    }
+    .our_technologies_left {
+        padding-top: 10px;
+    }
+    .our_technologies_perhaps {
+        font-size: 14px;
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    
 }
