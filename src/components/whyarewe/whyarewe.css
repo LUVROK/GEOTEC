@@ -57,7 +57,7 @@
   width: 100%;
   right: 0;
   /* background-color:aqua; */
-  background: url(../../media/staff.png) no-repeat;
+  background: url(../../media/staff.webp) no-repeat;
   background-size: cover;
 
   width: 60%;
@@ -176,6 +176,8 @@
   }
   .Gear_Wheel_first {
     top: 82%;
+    top: auto;
+    bottom: auto;
   }
   .Gear_Wheel_second {
     top: 97%;

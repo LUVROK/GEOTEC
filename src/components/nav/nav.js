@@ -14,6 +14,32 @@ const Nav = () => {
     i18n.changeLanguage(language);
   };
 
+  const [visibilityMenuLang, setVisibilityMenuLang] = useState(false);
+
+  useEffect(() => {
+    setVisibilityMenuLang(false);
+  }, [language_select]);
+
+  useEffect(() => {
+    const elem = document.querySelector(".selectorBlock");
+    elem.addEventListener("mouseleave", function () {
+      elem.style.opacity = "0";
+      elem.style.marginTop = "12px";
+      setVisibilityMenuLang(false);
+    });
+  }, []);
+
+  useEffect(() => {
+    const elem = document.querySelector(".selectorBlock");
+    if (visibilityMenuLang === true) {
+      elem.style.opacity = "1";
+      elem.style.marginTop = "15px";
+    } else {
+      elem.style.opacity = "0";
+      elem.style.marginTop = "12px";
+    }
+  }, [visibilityMenuLang]);
+
   useEffect(() => {
     //     $('.sel').each(function () {
     //         $(this).children('select').css('display', 'none');
@@ -133,34 +159,60 @@ const Nav = () => {
           </Link>
         </div>
         <div className="Nav_Block_left">
-          <a href="/#" className="Nav_Block_left_a a_style_none">
+          <a href="#firstSection" className="Nav_Block_left_a a_style_none">
             {parse(t("description.Nav1"))}
           </a>
-          <a href="/#" className="Nav_Block_left_a a_style_none">
+          <a href="#AboutUs" className="Nav_Block_left_a a_style_none">
             {parse(t("description.Nav2"))}
           </a>
-          <a href="/#" className="Nav_Block_left_a a_style_none">
+          <a href="#projects" className="Nav_Block_left_a a_style_none">
             {parse(t("description.Nav3"))}
           </a>
-          <a href="/#" className="Nav_Block_left_a a_style_none">
+          <a href="#our_technologies" className="Nav_Block_left_a a_style_none">
             {parse(t("description.Nav4"))}
           </a>
-          <a href="/#" className="Nav_Block_left_a a_style_none">
+          <a href="#contacts" className="Nav_Block_left_a a_style_none">
             {parse(t("description.Nav5"))}
           </a>
           {/* <div class="sel sel--black-panther"> */}
-          <select
+          <div id="select-language" className="selectLANG">
+            <div
+              className="Active_Select_lang"
+              onClick={() => setVisibilityMenuLang((prev) => !prev)}
+            >
+              {language_select === "ru"
+                ? parse(t("description.ru"))
+                : parse(t("description.en"))}
+            </div>
+            <div
+              className="selectorBlock"
+              style={{ marginTop: "12px", opacity: 0 }}
+            >
+              <div
+                onClick={(e) => [setlanguage_select("ru")]}
+                className="selectorblockone"
+              >
+                {parse(t("description.ru"))}
+              </div>
+              <div
+                onClick={(e) => [setlanguage_select("en")]}
+                className="selectorblockone"
+              >
+                {parse(t("description.en"))}
+              </div>
+            </div>
+          </div>
+          {/* <select
             name="select-language"
             id="select-language"
+            className="selectLANG"
             onChange={(e) => [
-              setlanguage_select(e.target.value),
-              // console.log(e.target.value),
+              setlanguage_select(e.target.value)
             ]}
           >
-            <option value="ru">ru</option>
-            <option value="en">en</option>
-            {/* <option value="kz">kz</option> */}
-          </select>
+            <option value="ru">{parse(t("description.ru"))}</option>
+            <option value="en">{parse(t("description.en"))}</option>
+          </select> */}
           {/* </div> */}
         </div>
       </div>

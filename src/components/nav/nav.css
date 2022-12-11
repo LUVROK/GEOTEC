@@ -1,118 +1,223 @@
 .Nav_Block {
-    width: 100%;
-    position: -webkit-sticky;
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 9999;
-    background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    /* backdrop-filter: blur(10px); */
+  width: 100%;
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  /* backdrop-filter: blur(10px); */
 }
 .Nav_BlockCenter {
-    position: relative;
-    width: 91%;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 92px;
-    z-index: 9999;
-    background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  width: 91%;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 92px;
+  z-index: 9999;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Nav_Block_right {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    width: 25%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 25%;
 }
 .Nav_Block_left {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30%;
-    width: 75%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30%;
+  width: 75%;
 }
 .Nav_Block_right .Nav_Block_right_a {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 .Nav_Block_right_a_title {
-    padding-left: 14px;
-    font-family: 'Poppins-ExtraLight';
-    font-size: 16px;
-    color: #102876;
+  padding-left: 14px;
+  font-family: "Poppins-ExtraLight";
+  font-size: 16px;
+  color: #102876;
 }
-
-
 
 .a_style_none {
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-    font-family: 'Raleway-Light';
-    /* display: flex; */
-    flex-wrap: nowrap;
-    color: #102876;
-    white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  font-family: "Raleway-Light";
+  /* display: flex; */
+  flex-wrap: nowrap;
+  color: #102876;
+  white-space: nowrap;
 }
 .Nav_Block_left_a {
-    display: flex;
+  display: flex;
 }
 
-
-
 @media screen and (max-width: 1480px) {
-    .Nav_Block_left {
-        padding-left: 10%;
-    }
+  .Nav_Block_left {
+    padding-left: 10%;
+  }
 }
 
 @media screen and (max-width: 1134px) {
-    .Nav_Block_left {
-        padding-left: 0%;
-    }
+  .Nav_Block_left {
+    padding-left: 0%;
+  }
 }
 
 @media screen and (max-width: 910px) {
-    .Nav_Block_left_a {
-        display: none;
-    }
-    .Nav_Block_right_a_title {
-        display: none;
-    }
-    .Nav_Block_left {
-        justify-content: flex-end;
-    }
-    .Nav_BlockCenter {
-        padding: 28px 32px;
-    }
+  .Nav_Block_left_a {
+    display: none;
+  }
+  .Nav_Block_right_a_title {
+    display: none;
+  }
+  .Nav_Block_left {
+    justify-content: flex-end;
+  }
+  .Nav_BlockCenter {
+    padding: 28px 32px;
+  }
 }
 
 @media screen and (max-width: 720px) {
-    
 }
 
 @media screen and (max-width: 490px) {
-    
 }
 
+.selectLANG {
+  text-align: center;
+  padding: 0px 9px;
+  font-size: 16x;
+  border-radius: 5px;
+  /* border: 1px solid #4a6ad0; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background-color: transparent;
+  color: #4a6ad0;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
 
-
+.selectLANG option {
+  position: relative;
+  border: 0px solid #4a6ad0;
+  color: #4a6ad0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  text-align: left;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.selectorBlock {
+  position: absolute;
+  border-radius: 5px;
+  height: 47px;
+  width: 47px;
+  font-size: 16px;
+  transition: all 0.5s ease-out;
+}
+.selectorblockone {
+  position: relative;
+  height: 50%;
+  text-align: left;
+  padding-left: 8px;
+  line-height: 120%;
+  background-color: #4a69d000;
+  color: #4a6ad0;
+}
+/* .selectorblockone:hover {
+  background-color: #2ADEA1;
+  color: #ffffff;
+}  */
+.selectorblockone:nth-child(1) {
+  /* padding: 2px 11px 8px 5px; */
+  border: 1px solid #4a6ad0;
+  border-bottom: 1px solid #4a6ad0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.selectorblockone:nth-child(2) {
+  /* padding: 2px 11px 8px 5px; */
+  border: 1px solid #4a6ad0;
+  border-top: 0px solid #4a6ad0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.selectorblockone:nth-child(1):hover {
+  /* padding: 2px 11px 8px 5px; */
+  border: 0px solid #4a6ad0;
+  border-bottom: 1px solid #4a6ad0;
+  background-color: #2ADEA1;
+  color: #ffffff;
+}
+.selectorblockone:nth-child(2):hover {
+  /* padding: 2px 11px 8px 5px; */
+  border: 0px solid #4a6ad0;
+  background-color: #2ADEA1;
+  color: #ffffff;
+}
+.Active_Select_lang {
+  height: 26px;
+  width: 52px;
+  border: 1px solid #4a6ad0;
+  border-radius: 4px;
+  text-align: left;
+  padding-left: 8px;
+}
+.selectLANG:hover {
+  /* background-color: rgb(7, 211, 175, .7); */
+  /* border: 1px solid #ffffff; */
+  /* color: #ffffff; */
+}
+.selectLANG:active {
+  /* border: 1px solid #4a6ad0; */
+}
+select::-ms-expand {
+  display: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #236ab1;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
 
 /* @media screen and (max-width: 1480px) {
     

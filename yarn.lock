@@ -3712,6 +3712,13 @@ dom-serializer@^2.0.0:
     domhandler "^5.0.2"
     entities "^4.2.0"
 
+dom7@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
+  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
+  dependencies:
+    ssr-window "^4.0.0"
+
 domelementtype@1, domelementtype@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.1.tgz#d048c44b37b0d10a7f2a3d5fee3f4333d790481f"
@@ -3798,6 +3805,11 @@ duplexer@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
+
+easy-scroll@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/easy-scroll/-/easy-scroll-0.5.1.tgz#a76c9b05a8201a31e045dc72377d60a53c1b1edf"
+  integrity sha512-kiB5enZ+5LV+GAA8ZFkzGqZf3M/2flqiQTpcvbnF6aJe+GfiUf0KBuBjnH7mo44fJUYi6ME8sUfuYIKimNO30w==
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -5882,7 +5894,14 @@ jest@^27.4.3:
     import-local "^3.0.2"
     jest-cli "^27.5.1"
 
-jquery@^3.6.1:
+jquery-scrollify@1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/jquery-scrollify/-/jquery-scrollify-1.0.19.tgz#442dfa6188639ee0bdc4d60ea580347b31f9256b"
+  integrity sha512-bPgTaiQd1JY/mjW8HxX9x3LOcCjjokl0umJ5ftFQB4i9ATSwkdeSLNYwZHzAOQZpMxSVgRzkOFKqL1xFlnvlyg==
+  dependencies:
+    jquery ">=1.7"
+
+jquery@>=1.7, jquery@^3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.1.tgz#fab0408f8b45fc19f956205773b62b292c147a16"
   integrity sha512-opJeO4nCucVnsjiXOE+/PcCgYw9Gwpvs/a6B1LL/lQhwWwpbVEVYDZ1FokFr8PRc7ghYlrFPuyHuiiDNTQxmcw==
@@ -6139,6 +6158,11 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==
+
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -7531,6 +7555,14 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-lazy-load-image-component@^1.5.6:
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/react-lazy-load-image-component/-/react-lazy-load-image-component-1.5.6.tgz#a4b84257be21b1825680b4e158d167c08aeda5ff"
+  integrity sha512-M0jeJtOlTHgThOfgYM9krSqYbR6ShxROy/KVankwbw9/amPKG1t5GSGN1sei6Cyu8+QJVuyAUvQ+LFtCVTTlKw==
+  dependencies:
+    lodash.debounce "^4.0.8"
+    lodash.throttle "^4.1.1"
+
 react-page-scroller@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/react-page-scroller/-/react-page-scroller-2.3.1.tgz#2c657898259b90e1753c5a545e0bce34092bf197"
@@ -8227,6 +8259,11 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
 
+ssr-window@^4.0.0, ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
+
 stable@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
@@ -8489,6 +8526,14 @@ svgo@^2.7.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+swiper@^8.4.4:
+  version "8.4.4"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.4.4.tgz#868ccad5384624e84143b469c75bc54ba004e668"
+  integrity sha512-jA/8BfOZwT8PqPSnMX0TENZYitXEhNa7ZSNj1Diqh5LZyUJoBQaZcqAiPQ/PIg1+IPaRn/V8ZYVb0nxHMh51yw==
+  dependencies:
+    dom7 "^4.0.4"
+    ssr-window "^4.0.2"
 
 symbol-tree@^3.2.4:
   version "3.2.4"

@@ -1,18 +1,18 @@
 import React from "react";
 import "./clients.css";
-import onhp from "../../media/onhp.png";
-import img2 from "../../media/img2.png";
-import enka from "../../media/enka.png";
-import jgc from "../../media/jgc.png";
-import img5 from "../../media/img5.png";
-import ALARKO from "../../media/ALARKO.png";
+import onhp from "../../media/onhp.webp";
+import img2 from "../../media/img2.webp";
+import enka from "../../media/enka.webp";
+import jgc from "../../media/jgc.webp";
+import img5 from "../../media/img5.webp";
+import ALARKO from "../../media/ALARKO.webp";
 
-import img7 from "../../media/img7.png";
-import img8 from "../../media/img8.png";
-import img9 from "../../media/img9.png";
-import img10 from "../../media/img10.png";
-import img11 from "../../media/img11.png";
-import img12 from "../../media/img12.png";
+import img7 from "../../media/img7.webp";
+import img8 from "../../media/img8.webp";
+import img9 from "../../media/img9.webp";
+import img10 from "../../media/img10.webp";
+import img11 from "../../media/img11.webp";
+import img12 from "../../media/img12.webp";
 
 import Preloader from "../Preloader/Preloader";
 import { useNavigate } from "react-router-dom";
@@ -37,7 +37,7 @@ const Clients = () => {
     threshold: [0.5],
   };
   let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll(".element-animation24");
+  let elements = document.querySelectorAll(".element-animation23");
 
   for (let elm of elements) {
     observer.observe(elm);
@@ -64,7 +64,7 @@ const Clients = () => {
   return (
     <div className="App clients">
       {!isrender && <Preloader />}
-      <div className="element-animation24">
+      <div className="element-animation23">
         <svg className="svgclientsprojects" onClick={closeClientsInfo} width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_b_1243_2378)">
             <rect width="46" height="46" rx="23" fill="#F9F9F9" fillOpacity="0.78" />

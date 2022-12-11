@@ -8,7 +8,7 @@ import React, { useEffect, useRef } from 'react';
 import ScrollBar from 'smooth-scrollbar';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Subtract from '../../media/Subtract.png';
+import Subtract from '../../media/Subtract.webp';
 import Wrapper from '../Wrapper/Wrapper';
 
 const AllContentSection = ({ children }) => {
@@ -56,14 +56,14 @@ const AllContentSection = ({ children }) => {
     }, []);
 
     return (
-        <div className="AllContentSection_scroll scroller" ref={scroller}>
+        <section className="AllContentSection_scroll section">
             <div className="AllContentSection">
                 <div className='AllContentSection_block' style={{ backgroundColor: '#ffffffb0' }}>
                     <div className='AllContentSection_block_background'></div>
                     <FirstSection />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

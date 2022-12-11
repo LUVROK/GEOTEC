@@ -1,9 +1,12 @@
 import './whyarewe.css';
 import React, { useState, useEffect } from 'react';
+import parse from "html-react-parser";
+import { useTranslation } from "react-i18next";
 
 const Whyarewe = () => {
     const [activelistLogo, setActivelistLogo] = useState(null);
     const [activelistSvg, setActivelistSvg] = useState(null);
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         // const elements = document.querySelectorAll(".")
@@ -101,19 +104,19 @@ const Whyarewe = () => {
     }
 
     return (
-        <div className="Whyarewe section sec3">
+        <section className="Whyarewe section sec3">
             <div className='Whyarewe_block element-animation'>
                 <div className='Whyarewe_block_title'>
-                    <div className='Whyarewe_block_title_text'>Почему Выбирают Нас?</div>
+                    <div className='Whyarewe_block_title_text'>{parse(t("whyarewe.title"))}</div>
                 </div>
                 <div className='Whyarewe_block_Content'>
                     <div className='Whyarewe_block_Content_first'>
                         <div className='Whyarewe_block_Content_first_transform active' style={{ transform: 'translateX(0px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_1th">
                             <div className='Whyarewe_block_Content_first_title Whyarewe_block_Content_first_title_64text'>
-                                Cотрудники
+                            {parse(t("whyarewe.Whyarewe_block_Content_first_title1"))}
                             </div>
                             <div className='Whyarewe_block_Content_first_text'>
-                                Наши сотрудники - пример креативности, опыта и мотивации.<br /><br />Поддержание слогана <br />«Безопасность- превыше всего!» и обеспечение здоровой производственной среды
+                            {parse(t("whyarewe.Whyarewe_block_Content_first_text1"))}
                             </div>
                         </div>
                         <div className='Whyarewe_block_Content_first_text_Gear_Wheel active Gear_Wheel_first' style={{ transform: 'translateY(0px)', transition: '1s' }} id="Whyarewe_1thSvg">
@@ -125,10 +128,10 @@ const Whyarewe = () => {
                     <div className='Whyarewe_block_Content_first'>
                         <div className='Whyarewe_block_Content_first_transform' style={{ transform: 'translateX(-1680px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_2th">
                             <div className='Whyarewe_block_Content_first_title'>
-                                Устойчивое развитие
+                            {parse(t("whyarewe.Whyarewe_block_Content_first_title2"))}
                             </div>
                             <div className='Whyarewe_block_Content_first_text'>
-                                Мы добиваемся устойчивого развития и осведомлённостив области окружающей средыМы хотим получить всенародное признание какизвестная устойчивая компания
+                            {parse(t("whyarewe.Whyarewe_block_Content_first_text2"))}
                             </div>
                         </div>
                         <div className='Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_second' style={{ transform: 'translateY(1680px)', transition: '1s' }} id="Whyarewe_2thSvg">
@@ -140,11 +143,10 @@ const Whyarewe = () => {
                     <div className='Whyarewe_block_Content_first'>
                         <div className='Whyarewe_block_Content_first_transform' style={{ transform: 'translateX(-1680px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_3th">
                             <div className='Whyarewe_block_Content_first_title'>
-                                Безопасность и Качество
+                            {parse(t("whyarewe.Whyarewe_block_Content_first_title3"))}
                             </div>
                             <div className='Whyarewe_block_Content_first_text'>
-                                Мы имеем высокие стандарты по качеству, которые применяются при выполнении работ<br /><br />
-                                Ставим безопасность превыше всего и обеспечиваем здоровую рабочую cреду
+                            {parse(t("whyarewe.Whyarewe_block_Content_first_text3"))}
                             </div>
                         </div>
                         <div className='Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_third' style={{ transform: 'translateY(1680px)', transition: '1s' }} id="Whyarewe_3thSvg">
@@ -156,11 +158,10 @@ const Whyarewe = () => {
                     <div className='Whyarewe_block_Content_first'>
                         <div className='Whyarewe_block_Content_first_transform' style={{ transform: 'translateX(-1680px)', position: 'relative', width: '100%', height: '100%', transition: '1s' }} id="Whyarewe_2th">
                             <div className='Whyarewe_block_Content_first_title'>
-                                Заказчики
+                            {parse(t("whyarewe.Whyarewe_block_Content_first_title4"))}
                             </div>
                             <div className='Whyarewe_block_Content_first_text'>
-                                Требования Заказчика – наш основной приоритет<br />
-                                Выслушиваем и принимаем каждое слово Заказчика, и ищем лучшие решения для непрерывного совершенствования
+                            {parse(t("whyarewe.Whyarewe_block_Content_first_text4"))}
                             </div>
                         </div>
                         <div className='Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_fourth' style={{ transform: 'translateY(1680px)', transition: '1s' }} id="Whyarewe_2thSvg">
@@ -174,7 +175,7 @@ const Whyarewe = () => {
                     </svg>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

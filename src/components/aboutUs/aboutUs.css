@@ -25,9 +25,9 @@
   top: 0;
   height: 221px;
   border-radius: 40px;
-  background-image: url(../../media/GeotecGeoComp.png);
+  background-image: url(../../media/GeotecGeoComp.webp);
   background-repeat: no-repeat;
-  background-size: cover 100%;
+  background-size: cover;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -143,8 +143,9 @@
   margin-right: 26px;
 }
 .mobileTitleAboutUs {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 39px;
+  margin-top: 30px;
   color: #4a6ad0;
 }
 .logo_CompanyBarMobile svg {
@@ -154,6 +155,9 @@
   position: relative;
   bottom: 0;
 }
+.dots {
+  display: none;
+} 
 
 @media screen and (max-width: 1720px) {
   .researchs_block_elem {
@@ -189,7 +193,7 @@
     width: 90%;
   }
   .researchs_block {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .logo_CompanyBar {
     font-size: 72px;
@@ -222,10 +226,11 @@
     font-size: 46px;
   }
   .researchs_block_elem {
+    position: absolute;
     pointer-events: none;
     width: 100%;
     font-size: 18px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     margin-bottom: 12px;
     padding-left: 17px;
     background-color: rgb(246, 248, 255, 0.7);
@@ -239,23 +244,38 @@
     display: none;
   }
   .researchs_block_elem_text {
+    padding-top: 5px;
     border-bottom: 0px;
     height: auto !important;
-    padding-bottom: 12px;
+    padding-bottom: 5px;
     line-height: 35px;
   }
+  .researchs_block_elem:nth-child(3) {
+    /* margin-top: 60px; */
+  }
+  /* .researchs_block_elem:nth-child(4) {
+    display: none;
+  } */
   .researchs_block {
-    flex-direction: column;
+    flex-direction: row;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .researchs_block_elem .text {
-    margin-top: 18px;
+    margin-top: 0px;
+    line-height: 130%;
   }
-  .researchs_block_elem_text {
-    padding-top: 30px;
+  .mobileTitleAboutUs {
+    margin-top: 24px;
+    /* line-height: 120%; */
+    font-size: 24px;
   }
   .AboutUs {
-    height: auto;
-    background-image: url(../../media/ContactWhiteBackMobile.png), url(../../media/mountains_wrapper.png);
+    height: 100vh;
+    background-image: url(../../media/ContactWhiteBackMobile.webp),
+      url(../../media/mountains_wrapper.webp);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,13 +286,35 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(../../media/ContactWhiteBackMobile.png);
+    background-image: url(../../media/ContactWhiteBackMobile.webp);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
     transform: rotate(180deg);
     opacity: 1;
+  }
+  .dots {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } 
+  .dots span {
+    position: relative;
+    font-size: 64px;
+    transition: all 1s ease-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    width: 10%;
+    vertical-align: middle;
+    color: #102876;
   }
 }
 
@@ -298,20 +340,76 @@
   }
 }
 
-/* @media screen and (max-height: 2160px) and (max-width: 1134px){
-  .AboutUs {
-    height: 170vh;
+@media screen and (max-height: 860px) and (max-width: 1920px) {
+  .researchs_block {
+    margin-top: 6px;
+  }
+  .CompanyBar {
+    height: 161px;
+    align-items: flex-start;
+    padding-top: 25px;
   }
 }
 
-@media screen and (max-height: 1080px) and (max-width: 1134px){
-  .AboutUs {
-    height: 210vh;
+@media screen and (min-height: 860px) and (max-width: 1134px) {
+  .mobileTitleAboutUs {
+    line-height: 120%;
+    font-size: 24px;
+    margin-top: 64px;
+  }
+  .researchs_block {
+    margin-top: 20px;
+  }
+  .researchs_block_elem_text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .researchs_block_elem .text {
+    line-height: 160%;
+  }
+  .researchs_block_elem:nth-child(3) {
+    /* margin-top: 230px; */
   }
 }
 
-@media screen and (max-height: 720px) and (max-width: 1134px){
-    .AboutUs {
-      height: 250vh;
-    }
-} */
+@media screen and (min-height: 800px) and (max-width: 1134px) {
+  .mobileTitleAboutUs {
+    line-height: 120%;
+    font-size: 24px;
+    margin-top: 64px;
+  }
+  .researchs_block {
+    margin-top: 20px;
+  }
+  .researchs_block_elem_text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .researchs_block_elem .text {
+    line-height: 140%;
+  }
+  .researchs_block_elem:nth-child(3) {
+    /* margin-top: 190px; */
+  }
+}
+
+@media screen and (max-height: 620px) and (max-width: 1134px) {
+  /* .mobileTitleAboutUs {
+    line-height: 120%;
+    font-size: 22px;
+    margin-top: 44px;
+  }
+  .researchs_block {
+    margin-top: 10px;
+  }
+  .researchs_block_elem_text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .researchs_block_elem .text {
+    line-height: 140%;
+  } */
+  .researchs_block_elem:nth-child(3) {
+    /* margin-top: 120px; */
+  }
+}

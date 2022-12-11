@@ -1,19 +1,29 @@
 import "./Wrapper.css";
 import Scroll from "../SmothScroll";
-// import wrapper_btn from '../../media/wrapper_btn.png'
+// import wrapper_btn from '../../media/wrapper_btn.webp'
 import { useTranslation } from "react-i18next";
 import fontFamilycorrect from "../../fontFamilyFunc";
 import parse from "html-react-parser";
+import backImage from "../../media/mountains_wrapper.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Wrapper = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="Wrapper">
+    <div className="Wrapper section">
       {/* <Scroll /> */}
 
       {/* <img src={ImageBackground} className="Wrapper_image" alt=''></img> */}
-      <div className="Wrapper_image"></div>
+      <div className="Wrapper_image">
+        <LazyLoadImage
+          alt={""}
+          effect="blur"
+          src={backImage}
+          className="background_image"
+        />
+      </div>
       <div className="Wrapper_block_GEOTEC">
         <div
           className="Wrapper_block_GEOTEC_block1"
@@ -202,7 +212,7 @@ const Wrapper = () => {
           <div className="Wrapper_block_GEOTEC_block2_description">
             {parse(t("Wrapper.ViewServices"))}
           </div>
-          <div className="Wrapper_block_GEOTEC_block2_button">
+          <a className="Wrapper_block_GEOTEC_block2_button" href="#AboutUs">
             <svg
               viewBox="0 0 76 76"
               fill="none"
@@ -214,7 +224,7 @@ const Wrapper = () => {
                 d="M38 76C58.9868 76 76 58.9868 76 38C76 17.0132 58.9868 0 38 0C17.0132 0 0 17.0132 0 38C0 58.9868 17.0132 76 38 76ZM52.9062 37.75C48.0738 37.75 44.1562 33.8325 44.1562 29H43.1562C43.1562 32.839 45.375 36.1598 48.6001 37.75H24V38.75H48.6001C45.375 40.3402 43.1562 43.661 43.1562 47.5H44.1562C44.1562 42.6675 48.0738 38.75 52.9062 38.75V37.75Z"
               />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </div>

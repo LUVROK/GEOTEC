@@ -31,7 +31,7 @@
   width: 10px !important;
   height: 100% !important;
   background-color: rgb(255, 255, 255, 1) !important;
-} 
+}
 .scrollbar-thumb {
   background-color: rgba(105, 165, 245, 0.8) !important;
   border-radius: 20px !important;
@@ -78,14 +78,14 @@
   position: fixed;
   top: 88px;
   left: 4.5%;
-  width: 40px;
+  width: 50px;
   z-index: 100;
 }
 .Subtract_right {
   position: fixed;
   top: 88px;
   right: 4.5%;
-  width: 40px;
+  width: 50px;
   z-index: 100;
   transform: scale(-1, 1);
 }
@@ -95,28 +95,29 @@
   height: auto;
 }
 
-
-
 .PoppinsLight {
-  font-family: 'Poppins-Light';
+  font-family: "Poppins-Light";
 }
 .PoppinsExtraLight {
-  font-family: 'Poppins-ExtraLight';
+  font-family: "Poppins-ExtraLight";
 }
 .PoppinsRegular {
-  font-family: 'Poppins-Regular';
+  font-family: "Poppins-Regular";
 }
 .RalewayBold {
-  font-family: 'Raleway-Bold';
+  font-family: "Raleway-Bold";
 }
 .RalewayLight {
-  font-family: 'Raleway-Light';
+  font-family: "Raleway-Light";
 }
 .RalewayMedium {
-  font-family: 'Raleway-Medium';
+  font-family: "Raleway-Medium";
 }
 .RalewayRegular {
-  font-family: 'Raleway-Regular';
+  font-family: "Raleway-Regular";
+}
+.txtTr {
+  text-transform: uppercase;
 }
 
 .fontweight200 {
@@ -142,4 +143,44 @@
 }
 .fontweight800 {
   font-weight: 800;
+}
+
+/* 
+body {
+  font-family: arial, helvetica;
+}
+
+h3 {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+#section1 {
+  color: #fff;
+}
+
+.fp-section {
+  text-align: center;
+}
+
+.fp-slide {
+  height: 50vh;
+}
+
+button {
+  padding: 0.93em 1.87em;
+  background: #35495e;
+  border-radius: 5px;
+  border-color: transparent;
+  display: block;
+  color: #fff;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 0.85em;
+} */
+
+.MainApp {
+  z-index: 101;
 }

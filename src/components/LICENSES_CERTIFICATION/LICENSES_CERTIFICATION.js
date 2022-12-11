@@ -2,10 +2,10 @@ import React from "react";
 import Preloader from "../Preloader/Preloader";
 import "./LICENSES_CERTIFICATION.css";
 
-import licenses1 from "../../media/licenses1.png";
-import licenses2 from "../../media/licenses2.png";
-import licenses3 from "../../media/licenses3.png";
-import licenses4 from "../../media/licenses4.png";
+import licenses1 from "../../media/licenses1.webp";
+import licenses2 from "../../media/licenses2.webp";
+import licenses3 from "../../media/licenses3.webp";
+import licenses4 from "../../media/licenses4.webp";
 import { useNavigate } from "react-router-dom";
 
 import parse from "html-react-parser";

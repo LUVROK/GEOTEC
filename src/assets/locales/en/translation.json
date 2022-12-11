@@ -5,7 +5,9 @@
     "Nav2": "<span class='PoppinsLight fontweight300'>Services</span>",
     "Nav3": "<span class='PoppinsLight fontweight300'>Projects</span>",
     "Nav4": "<span class='PoppinsLight fontweight300'>Technologies</span>",
-    "Nav5": "<span class='PoppinsLight fontweight300'>Contacts</span>"
+    "Nav5": "<span class='PoppinsLight fontweight300'>Contacts</span>",
+    "ru": "Рус",
+    "en": "Engl"
   },
   "Wrapper": {
     "title": "<span class='PoppinsLight fontweight300'>Geotec</span>&nbsp;<span>LLP</span>",
@@ -16,7 +18,7 @@
     "firstSection_block_geotec": "<span class='PoppinsExtraLight fontweight275'>- reliable partner in the field of geodetic surveys In Kazakhstan</span>",
     "firstSection_block_geotec_perhapse": "<span class='PoppinsExtraLight fontweight275'>GEOTEC LLP has been founded in 2006 in order to serve in the field of Survey and Design activities in Kazakhstan. GEOTEC is now recognized as a reliable and trusted partner by working with prestigious and well-known customers.</span>",
     "firstSection_block_geotec_perhapse_top_sec": "<span class='PoppinsExtraLight fontweight275'>GEOTEC LLP headquarter has been moved to Astana from Aktobe in 2016. Other offices are located inAktobe and Tengiz, Atyrau. GEOTEC works in many different locations, including Kazakhstan and other CIS Countries. GEOTEC 100% local Kazakhstani Company. Local Content achievement is 95%.</span>.",
-    "Certificates_Licenses": "<span class='PoppinsExtraLight fontweight275'>Certificates&Licenses</span>",
+    "Certificates_Licenses": "<span class='PoppinsExtraLight fontweight275'>Certificates & Licenses</span>",
     "Customers": "<span class='PoppinsExtraLight fontweight275'>Customers<span>"
   },
   "projects": {
@@ -96,6 +98,8 @@
   },
 
   "our_technologies": {
+    "circleButton": "<span class='PoppinsLight fontweight300'>Learn more</span>",
+    "number_hopeful_models_block_title": "<span class='PoppinsLight fontweight300'>hopeful<br />models</span>",
     "our_technologies_title1": "<span class='PoppinsLight fontweight300'>Our technology &mdash;<br/>guaranteed results</span></span>",
     "our_technologies_title2": "<span class='PoppinsLight fontweight300'>DJI MATRICE 200</span>",
     "our_technologies_title3": "<span class='PoppinsLight fontweight300'>LEICA NOVA TM50</span>",
@@ -105,20 +109,81 @@
     "our_technologies_title6": "<span class='PoppinsLight fontweight300'>FARO Focus Premium<br/>Laser</span>",
     "our_technologies_title7": "<span class='PoppinsLight fontweight300'>FARO Vantage Laser<br/>Tracker</span>",
     "our_technologies_title8": "<span class='PoppinsLight fontweight300'>GPR OKO-2 & OKO-3</span>",
-    "our_technologies_title9": "<span class='PoppinsLight fontweight300'>GNSS LEICA VIVA GS10 & GS18</span>",
+    "our_technologies_title9": "<span class='PoppinsLight fontweight300'>GNSS LEICA VIVA GS10<br/>& GS18</span>",
     "our_technologies_perhaps1": "<span class='PoppinsExtraLight fontweight275'>GEOTEC constantly invest in specialized equipment for our requirements, and also the latest technologies in the field of result processing of laser scanning, survey activities and engineering researches.</span>",
-    "our_technologies_perhaps2": "<span class='PoppinsExtraLight fontweight275'>eng1</span>",
-    "our_technologies_perhaps3": "<span class='PoppinsExtraLight fontweight275'>eng2</span>",
-    "our_technologies_perhaps3_2": "<span class='PoppinsExtraLight fontweight275'>eng2_2</span>",
-    "our_technologies_perhaps4": "<span class='PoppinsExtraLight fontweight275'>eng3</span>",
-    "our_technologies_perhaps5": "<span class='PoppinsExtraLight fontweight275'>eng4</span>",
-    "our_technologies_perhaps6": "<span class='PoppinsExtraLight fontweight275'>eng5</span>",
-    "our_technologies_perhaps7": "<span class='PoppinsExtraLight fontweight275'>eng6</span>",
-    "our_technologies_perhaps8": "<span class='PoppinsExtraLight fontweight275'>eng7</span>",
-    "our_technologies_perhaps9": "<span class='PoppinsExtraLight fontweight275'>eng8</span>"
+    "our_technologies_perhaps2": "<span class='PoppinsExtraLight fontweight275'>The ultimate platform for aerial productivity combines a rugged design and simple configurability to work as a solution for a variety of industrial applications. Improvements to the M200 Series V2 enhance intelligent control systems, flight performance, and add flight safety and data security features.<br />The use of a UAV with an onboard geodetic receiver ensures high accuracy of 3D models and topographic plans up to a scale of 1:500</span>",
+    "our_technologies_perhaps3": "<span class='PoppinsExtraLight fontweight275'>Leica Nova TM50 is one component of a unique monitoring solution which seamlessly integrates total stations, GNSS receivers and antennas, geotechnical sensors, software and IT communication infrastructures.</span>",
+    "our_technologies_perhaps3_2": "<span class='PoppinsExtraLight fontweight275'>For our topographical, engineering and dimensional control surveys, high accuracy (*1 , “0.5) Total Stations are used which provides the best reflectorless EDM<br/>performance available in the world.</span>",
+    "our_technologies_perhaps4": "<span class='PoppinsExtraLight fontweight275'>ScanStation P40 Delivering highest quality 3D data and HDR imaging at an extremely fast scan rate of 1 mio points per second at ranges of up to 270 m.<br />Unsurpassed range and angular accuracy paired with low range noise and survey-grade dual-axis compensation form the foundation for highly detailed 3D colour point clouds mapped in realistic clarity.</span>",
+    "our_technologies_perhaps5": "<span class='PoppinsExtraLight fontweight275'>Experience shows that with Leica Digital Levels there is up to a 50% time saving when compared with conventional levels.</span>",
+    "our_technologies_perhaps6": "<span class='PoppinsExtraLight fontweight275'>Focus Premium provides exceptional capturing efficiency, data quality and accuracy for professional applications across the construction, public safety, operations & maintenance and manufacturing markets, while offering data quality at faster scan speeds (up to 1 minute per scan) reducing onsite scanning time by up to 50%. Up to 350m scanning range, leading to superior area coverage per scan position.<br/><br/>FARO Focus Premium creates accurate, complete and photorealistic 3D representations of objects, buildings, facilities and complex environments with confidence.</span>",
+    "our_technologies_perhaps7": "<span class='PoppinsExtraLight fontweight275'>The FARO Vantage Laser Tracker enables you to build and inspect products and parts by measuring quickly, simply and precisely with exceptional portability. The Vantage platform offers comprehensive, large-volume 3D measurement up to 80 meters, significantly streamlining the processes and reducing inspection cycle times while giving complete confidence in the measurement results.<br/><br/>Vantage laser tracker maximize 6 Degrees of Freedom (6DoF) measurement capabilities via the 6Probe, enabling precise measurement of hidden areas and small features. The 6Probe is a 6DoF solution that meets the dynamic measurement, speed, and accuracy requirements of the most challenging industrial applications.</span>",
+    "our_technologies_perhaps8": "<span class='PoppinsExtraLight fontweight275'>Ground Penetrating Radar OKO-2 and OKO-3 are a portable, lightweight and inexpensive system designed for non-destructive environmental monitoring.<br/>The system includes a control unit or a control processing unit and antennas with frequencies from 50 to 2500 MHz.<br/><br/>All of these antennas are interchangeable, compatible with the control unit or control processing unit, with a variety of different applications.</span>",
+    "our_technologies_perhaps9": "<span class='PoppinsExtraLight fontweight275'>Leica Viva GS10 & GS18 allowing easily to solve various geodetic problems of any complexity.Leica GS18 T is the fastest and easiest-to-use GNSS smart antenna and RTK rover - Immune to magnetic disturbances and calibration-free – no need to level.</span>"
   },
 
   "History": {
-    "History_blockTitle": "History"
+    "History_blockTitle": "<span class='PoppinsExtraLight fontweight275'>History</span>",
+
+    "textBlock_text1": "<span class='PoppinsExtraLight fontweight275'>Foundation <span class='PoppinsExtraLight fontweight275'><br />GEOTEC</span></span>",
+    "textBlock_text2": "<span class='PoppinsExtraLight fontweight275'>First project <span class='PoppinsExtraLight fontweight275'><br />GEOTEC</span></span>",
+    "textBlock_text3": "<span class='PoppinsExtraLight fontweight275'>Extension <br />in Kazahstan</span>",
+    "textBlock_text4": "<span class='PoppinsExtraLight fontweight275'>TCO<br/>Partnership</span>",
+    "textBlock_text5": "<span class='PoppinsExtraLight fontweight275'>The tallest building<br />in KZ survey works</span>",
+    "textBlock_text6": "<span class='PoppinsExtraLight fontweight275'>Wind power<br />project</span>",
+    "textBlock_text7": "<span class='PoppinsExtraLight fontweight275'>3D scanning project &<br />geophysical investigations</span>",
+    "textBlock_text8": "<span class='PoppinsExtraLight fontweight275'>Certification ISO 9001<br />and OHSAS 18001</span>",
+    "textBlock_text9": "<span class='PoppinsExtraLight fontweight275'>TCO FGP mega project<br />module control</span>",
+    "textBlock_text10": "<span class='PoppinsExtraLight fontweight275'>3D modelling of<br />IGCC</span>",
+    "textBlock_text11": "<span class='PoppinsExtraLight fontweight275'>To be the biggest<br />contractor in its field</span>",
+
+    "textBlock_text_content1": "<span class='PoppinsExtraLight fontweight275'>Geotec has been founded in 2006.</span>",
+    "textBlock_text_content2": "<span class='PoppinsExtraLight fontweight275'>Geotec has been founded in 2006</span>",
+    "textBlock_text_content3": "<span class='PoppinsExtraLight fontweight275'>One of the most difficult project in Almaty Gondola has been executed.</span>",
+    "textBlock_text_content4": "<span class='PoppinsExtraLight fontweight275'>7 Years Master Contract has been signed by TCO</span>",
+    "textBlock_text_content5": "<span class='PoppinsExtraLight fontweight275'>Geotec execute survey works in Almaty</span>",
+    "textBlock_text_content6": "<span class='PoppinsExtraLight fontweight275'>Wind Power Survey works has been executed under the hard winter conditions in North KZ.</span>",
+    "textBlock_text_content7": "<span class='PoppinsExtraLight fontweight275'>Geotec extent its services by using 3D Scanner and Ground-Penetrating Radar (GPR)</span>",
+    "textBlock_text_content8": "<span class='PoppinsExtraLight fontweight275'>Geotec is certificated by Bureau Veritas on ISO 9001 and OHSAS 18001. </span>",
+    "textBlock_text_content9": "<span class='PoppinsExtraLight fontweight275'>Geotec on behalf of TCO will execute the dimension control of modules</span>",
+    "textBlock_text_content10": "<span class='PoppinsExtraLight fontweight275'>Geotec on behalf of KPI will execute the laser scanning during the construction period to create an executive BIM model of Integrated Gas Chemical Complex</span>",
+    "textBlock_text_content11": "<span class='PoppinsExtraLight fontweight275'></span>"
+
+  },
+
+  "whyarewe": {
+    "title": "<span class='PoppinsRegular fontweight400'>Why<br />Choose<br />Us?</span>",
+
+    "Whyarewe_block_Content_first_title1": "<span class='PoppinsRegular fontweight400'>Employees</span>",
+    "Whyarewe_block_Content_first_title2": "<span class='PoppinsRegular fontweight400'>Customer</span>",
+    "Whyarewe_block_Content_first_title3": "<span class='PoppinsRegular fontweight400'>Safety & Quality</span>",
+    "Whyarewe_block_Content_first_title4": "<span class='PoppinsRegular fontweight400'>Sustainability</span>",
+
+    "Whyarewe_block_Content_first_text1": "<span class='PoppinsRegular fontweight400'>The strength of our company.<br />Our employees are an example of creativity, experience and motivation<br />Maintain the Motta “safety first” and provide a healthy work environment.</span>",
+    "Whyarewe_block_Content_first_text2": "<span class='PoppinsRegular fontweight400'>Customer requirements are our highest priority.<br />Cares about customers words, understand, and seek out the best solutions to continually improve.</span>",
+    "Whyarewe_block_Content_first_text3": "<span class='PoppinsRegular fontweight400'>We have high quality standards which also apply to our supplies.<br />Put safety first and provide <br />a healthy work environment.</span>",
+    "Whyarewe_block_Content_first_text4": "<span class='PoppinsRegular fontweight400'>We strive for sustainability and environmental awareness.<br />We want to be publicly recognized as an well-known in sustainable business practice.</span>"
+  },
+
+  
+  "aboutUs": {
+    "logo_CompanyBar": "<span class='PoppinsRegular fontweight400 txtTr'>is turnkey geodetic surveys</span>", 
+    "perhaps_logo_companyBar": "<span class='PoppinsRegular fontweight400'>Our company is active in the following areas:</span>",
+    "mobileTitleAboutUsTitle": "<span class='PoppinsExtraLight fontweight275'>is turnkey geodetic surveys</span>",
+    "researchs_block_elem_text1": "<span class='PoppinsRegular fontweight400'>Specific survey</span>",
+    "researchs_block_elem_text2": "<span class='PoppinsRegular fontweight400'>Topographic and geodetic</span>",
+    "researchs_block_elem_text3": "<span class='PoppinsRegular fontweight400'>Design</span>",
+    "researchs_block_elem_text4": "<span class='PoppinsRegular fontweight400'>Hydrographic, Geological & Geophysical survey</span>",
+
+    "text1": "<span class='PoppinsLight fontweight300'>- 3D Laser Scanning High-Definition Survey<br/>-UAV / Drone Survey<br/>-Dimension Control & Deformation Survey<br/>-High-Precision Measurement Survey<br/>-Clash Detection Survey<br/>-3D Modelling</span>",
+    "text2": "<span class='PoppinsLight fontweight300'>- Global Positioning System (GPS) Survey<br />- Road & Railroad & Bridges Survey & Buildings<br />- Industrial Facilities, Site Plan Surveys,<br />- Engineering & Construction Survey.<br />- Extreme Project Surveys, Wind Energy Survey, Gondola i.e</span>",
+    "text3": "<span class='PoppinsLight fontweight300'>- Railroad Feasibility studies, Calculation of Volumes<br />- Railroad Preliminary and Detailed Environmental Impact<br />- Road & Railroad Conceptual Drawings<br />- Developing Engineering design for Rail Transportation<br />- Developing Engineering design for roads (all categories)</span>",
+    "text4": "<span class='PoppinsLight fontweight300'>- Bathymetric Survey<br />- Ground-Penetrating Radar Services<br />- Soil Investigation<br />- Reporting based on ASTM and SNIP_GOST.</span>"
+  },
+
+  "contacts": {
+    "contact_title": "<span class='PoppinsRegular fontweight400'>CONTACTS</span>",
+    "title_map_btn": "<span class='PoppinsRegular fontweight400'>google maps</span>",
+    "address": "<span class='PoppinsLight fontweight300'>010000, Astana, Korgalzhinskoe Highway 2A, 'Duman' Hotel complex,13th floor, offices<br />1306-1311</span>"
   }
 }

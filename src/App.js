@@ -3,7 +3,7 @@ import Nav from "./components/nav/nav";
 import Wrapper from "./components/Wrapper/Wrapper";
 import AllContentSection from "./components/AllContentSection/AllContentSection";
 import "./fonts/fonts.css";
-import Subtract from "./media/Subtract.png";
+import Subtract from "./media/Subtract.webp";
 import React, { useState, useEffect, useRef } from "react";
 import History from "./components/history/history";
 import Whyarewe from "./components/whyarewe/whyarewe";
@@ -17,11 +17,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Clients from "./components/clients/clients";
 import LICENSES_CERTIFICATION from "./components/LICENSES_CERTIFICATION/LICENSES_CERTIFICATION";
 import MainApp from "./MainApp";
-
+import easyScroll from "easy-scroll";
 import { useTranslation } from "react-i18next";
+
+require("jquery-scrollify");
 
 function App() {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    window.$.scrollify({
+      section: ".section",
+      updateHash: false,
+      scrollSpeed: 1500,
+      // overflowScroll: false,
+      setHeights: false
+    });
+  }, []);
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -47,9 +60,7 @@ function App() {
 
   const [isrender, setisrender] = useState(false);
 
-  useEffect(() => {
-    
-  }, []);
+  useEffect(() => {}, []);
 
   useEffect(() => {
     setInterval(() => {
@@ -93,6 +104,7 @@ function App() {
   }, []);
 
   useEffect(() => {
+    // window.scrollTo(0, 0);
     if (!isrender) {
       // document.getElementById("App").style = "background: #FFFFFF;";
       document.body.style.overflow = "hidden";
@@ -101,7 +113,7 @@ function App() {
 
       // document.getElementById("App").style = "background: #FFFFFF;";
       // document.getElementById("block_All").style = "opacity: 1";
-      document.body.style.overflow = "scroll";
+      // document.body.style.overflow = "scroll";
       document.body.style.overflowX = "hidden";
 
       const Wrapper_block_GEOTEC_block1 = document.querySelector(".Wrapper_block_GEOTEC_block1");

@@ -1,17 +1,17 @@
 import "./our_technologies.css";
 import React, { useState, useEffect } from "react";
 
-import ourTech1 from "../../media/OIU_1.png";
-import ourTech2 from "../../media/OU_2.png";
-import ourTech3 from "../../media/OU_3.png";
-import ourTech4 from "../../media/OU_4.png";
-import ourTech5 from "../../media/OU_5.png";
-import ourTech6 from "../../media/OU_6.png";
-import ourTech7 from "../../media/OU_7.png";
-import ourTech8 from "../../media/OU_8.png";
+import ourTech1 from "../../media/OIU_1.webp";
+import ourTech2 from "../../media/OU_2.webp";
+import ourTech3 from "../../media/OU_3.webp";
+import ourTech4 from "../../media/OU_4.webp";
+import ourTech5 from "../../media/OU_5.webp";
+import ourTech6 from "../../media/OU_6.webp";
+import ourTech7 from "../../media/OU_7.webp";
+import ourTech8 from "../../media/OU_8.webp";
 
-import ourTechBack1 from "../../media/ourTechBack1.png";
-import ourTechBack2 from "../../media/ourTechBack2.png";
+import ourTechBack1 from "../../media/ourTechBack1.webp";
+import ourTechBack2 from "../../media/ourTechBack2.webp";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -28,14 +28,15 @@ const Our_technologies = () => {
   const [our_technologies_perhaps, setour_technologies_perhaps] = useState();
 
   const [stateDisableStat8object, setstateDisableStat8object] = useState(false);
+  const [swipeState, setSwapeState] = useState(false);
 
   useEffect(() => {
     setImage_TechState(document.querySelectorAll(".Image_Tech"));
     setour_technologies_perhaps(document.querySelectorAll(".our_technologies_title"));
     setour_technologies_title(document.querySelectorAll(".our_technologies_perhaps"));
 
-    document.querySelector('.').addEventListener("touchstart", handleTouchStart, false);
-    document.querySelector('.').addEventListener("touchmove", handleTouchMove, false);
+    document.querySelector(".our_technologies_right_right").addEventListener("touchstart", handleTouchStart, false);
+    document.querySelector(".our_technologies_right_right").addEventListener("touchmove", handleTouchMove, false);
 
     var xDown = null;
     var yDown = null;
@@ -67,9 +68,11 @@ const Our_technologies = () => {
       if (Math.abs(xDiff) > Math.abs(yDiff)) {
         /*most significant*/
         if (xDiff > 0) {
+          rightTech();
           /* right swipe */
         } else {
           /* left swipe */
+          leftTech();
         }
       } else {
         if (yDiff > 0) {
@@ -87,7 +90,12 @@ const Our_technologies = () => {
   const leftTech = () => {
     document.querySelector(".our_technologies_right_left").style.pointerEvents = "none";
     document.querySelector(".our_technologies_right_right").style.pointerEvents = "none";
-    for (let i = 0; i < Image_TechState.length; i++) {
+
+    const Image_TechStateElem = document.querySelectorAll(".Image_Tech");
+    // const technologies_perhaps = document.querySelectorAll(".our_technologies_title");
+    // const technologies_title = document.querySelectorAll(".our_technologies_perhaps");
+
+    for (let i = 0; i < Image_TechStateElem.length; i++) {
       // Image_TechState[i].style.
     }
     setActivePrev((prev) => (prev <= 0 ? 7 : prev - 1));
@@ -104,7 +112,10 @@ const Our_technologies = () => {
   const rightTech = () => {
     document.querySelector(".our_technologies_right_left").style.pointerEvents = "none";
     document.querySelector(".our_technologies_right_right").style.pointerEvents = "none";
-    for (let i = 0; i < Image_TechState.length; i++) {
+
+    const Image_TechStateElem = document.querySelectorAll(".Image_Tech");
+
+    for (let i = 0; i < Image_TechStateElem.length; i++) {
       // Image_TechState[i].style.
     }
     setActive((prev) => (prev >= 7 ? 0 : prev + 1));
@@ -175,8 +186,8 @@ const Our_technologies = () => {
   const checkTech = () => {
     document.querySelector(".our_technologies_right_left").style.pointerEvents = "all";
     document.querySelector(".our_technologies_right_right").style.pointerEvents = "all";
-    // document.querySelector(".our_technologies_right_left").style.cursor = "cursor: url(../../media/goback.png) 14 0, pointer";
-    // document.querySelector(".our_technologies_right_right").style.cursor = "cursor: url(../../media/goTo.png) 14 0, pointer;";
+    // document.querySelector(".our_technologies_right_left").style.cursor = "cursor: url(../../media/goback.webp) 14 0, pointer";
+    // document.querySelector(".our_technologies_right_right").style.cursor = "cursor: url(../../media/goTo.webp) 14 0, pointer;";
     document.querySelector(".our_technologies_left").style.width = "30%";
     document.querySelector(".our_technologies_right").style.width = "70%";
 
@@ -202,8 +213,8 @@ const Our_technologies = () => {
     if (window.innerWidth > 1134) {
       document.querySelector(".ourTech1").style.transform = "translateX(30%)";
       document.querySelector(".ourTech2").style.transform = "translateX(80%)";
-      document.querySelectorAll(".Image_Tech")[1].style.transform = "translateX(120%) translateY(0%) scale(0.5)";
-      document.querySelectorAll(".Image_Tech")[0].style.transform = "translateX(20%) translateY(10%) scale(1)";
+      document.querySelectorAll(".Image_Tech")[1].style.transform = "translateX(70%) translateY(15%) scale(0.5)";
+      document.querySelectorAll(".Image_Tech")[0].style.transform = "translateX(40%) translateY(0%) scale(1)";
     } else if (window.innerWidth > 720) {
       document.querySelector(".ourTech1").style.transform = "translateX(30%)";
       document.querySelector(".ourTech2").style.transform = "translateX(50%)";
@@ -218,7 +229,7 @@ const Our_technologies = () => {
   }, []);
 
   return (
-    <div className="our_technologies">
+    <section className="our_technologies section"  id="our_technologies">
       <div className="our_technologies_block element-animation">
         <div className="our_technologies_left" style={{ width: "40%" }}>
           <div className="our_technologies_title" style={{ display: "block" }}>
@@ -282,7 +293,7 @@ const Our_technologies = () => {
             {parse(t("our_technologies.our_technologies_perhaps3_2"))}
           </div>
           <div className="circleButton" onClick={checkTech} style={{ display: "flex" }}>
-            Посмотреть технологии
+            {parse(t("our_technologies.circleButton"))}
           </div>
         </div>
         <div className="our_technologies_right" style={{ width: "60%" }}>
@@ -291,13 +302,7 @@ const Our_technologies = () => {
           <div className="our_technologies_right_left" onClick={leftTech} style={{ pointerEvents: "none" }}>
             <div className="number_hopeful_models_block" style={{ opacity: 1 }}>
               <div className="number_hopeful_models_block_number PoppinsLight fontweight300">8</div>
-              <div className="number_hopeful_models_block_title">
-                <span className="PoppinsLight fontweight300">
-                  hopeful
-                  <br />
-                  models
-                </span>
-              </div>
+              <div className="number_hopeful_models_block_title">{parse(t("our_technologies.number_hopeful_models_block_title"))}</div>
             </div>
           </div>
           <div className="our_technologies_right_right" onClick={rightTech} style={{ pointerEvents: "none" }}>
@@ -328,7 +333,7 @@ const Our_technologies = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

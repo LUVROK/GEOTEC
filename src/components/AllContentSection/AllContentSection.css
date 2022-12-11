@@ -18,6 +18,8 @@
     height: 100%;
     padding-top: 0vh;
     z-index: 101;
+    max-height: 100vh;
+    min-height: 100vh;
 }
 .scroll-content {
     position: fixed;
@@ -31,7 +33,7 @@
     width: 100%;
     background: #ffffff85;
     /* background-color: #FFFFFF; */
-    /* background: url(../../media/background.png); */
+    /* background: url(../../media/background.webp); */
     /* background-position: contain; */
     /* background-repeat: no-repeat; */
     /* background-size: 130% 100%; */

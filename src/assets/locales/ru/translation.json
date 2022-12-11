@@ -5,7 +5,9 @@
     "Nav2": "<span class='RalewayRegular fontweight300'>Услуги</span>",
     "Nav3": "<span class='RalewayRegular fontweight300'>Проекты</span>",
     "Nav4": "<span class='RalewayRegular fontweight300'>Технологии</span>",
-    "Nav5": "<span class='RalewayRegular fontweight300'>Контакты</span>"
+    "Nav5": "<span class='RalewayRegular fontweight300'>Контакты</span>",
+    "ru": "Рус",
+    "en": "Engl"
   },
   "Wrapper": {
     "title": "<span class='RalewayRegular fontweight400'>TOO</span>&nbsp;<span class='PoppinsLight fontweight300'>Geotec</span>",
@@ -16,7 +18,7 @@
     "firstSection_block_geotec": "<span class='RalewayRegular fontweight400'>- надежный партнер в области геодезических изысканий в Казахстане</span>",
     "firstSection_block_geotec_perhapse": "<span class='RalewayLight fontweight300'><span class='engFont'>TOO «GEOTEC»</span> было основано в <span class='engFont'>2006</span> году с целью работы в области геодезических и проектных работ в Казахстане. На данный момент <span class='engFont'>GEOTEC</span> является надежным партнером, работая с престижными и известными клиентами.</span>",
     "firstSection_block_geotec_perhapse_top_sec": "<span class='RalewayLight fontweight300'>Головной офис <span class='engFont'>TOO «GEOTEC»</span> был перенесен в Астану из Актобе в <span class='engFont'>2016</span> году. Остальные офисы расположены в Актобе и Тенгизе, Атырау. <span class='engFont'>GEOTEC</span> выполняет проекты в Казахстане и других странах СНГ. <span class='engFont'>GEOTEC 100%</span> местная казахстанская компания. Достижение местного контента составляет <span class='engFont'>95%</span></span>.",
-    "Certificates_Licenses": "<span class='RalewayLight fontweight300'>Cертификаты&Лицензии</span>",
+    "Certificates_Licenses": "<span class='RalewayLight fontweight300'>Cертификаты & Лицензии</span>",
     "Customers": "<span class='RalewayLight fontweight300'>Заказчики</span>"
   },
   "projects": {
@@ -96,17 +98,19 @@
   },
 
   "our_technologies": {
+    "circleButton": "<span class='RalewayRegular fontweight400'>Посмотреть технологии</span>",
+    "number_hopeful_models_block_title": "<span class='RalewayRegular fontweight400'>Проверенных<br />моделей</span>",
     "our_technologies_title1": "<span class='RalewayLight fontweight300'>Наши технологии<br />&mdash; залог качества</span>",
     "our_technologies_title2": "<span class='PoppinsLight fontweight300'>DJI MATRICE 200</span>",
     "our_technologies_title3": "<span class='PoppinsLight fontweight300'>LEICA NOVA TM50</span>",
     "our_technologies_title3_2": "<span class='PoppinsLight fontweight300'>LEICA TS SERIES</span>",
     "our_technologies_title4": "<span class='PoppinsLight fontweight300'>LEICA SCANSTATION P40</span>",
     "our_technologies_title5": "<span class='PoppinsLight fontweight300'>LEICA DNA03</span>",
-    "our_technologies_title6": "<span class='PoppinsLight fontweight300'>FARO Focus Premium Laser</span>",
-    "our_technologies_title7": "<span class='PoppinsLight fontweight300'>FARO Vantage Laser Tracker</span>",
+    "our_technologies_title6": "<span class='PoppinsLight fontweight300'>FARO Focus Premium<br/>Laser</span>",
+    "our_technologies_title7": "<span class='PoppinsLight fontweight300'>FARO Vantage Laser<br/>Tracker</span>",
     "our_technologies_title8": "<span class='PoppinsLight fontweight300'>GPR OKO-2 & OKO-3</span>",
-    "our_technologies_title9": "<span class='PoppinsLight fontweight300'>GNSS LEICA VIVA GS10 & GS18</span>",
-    "our_technologies_perhaps1": "<span class='RalewayLight fontweight300'>Мы вибираем только качественный и передовые технологи и блабблабламы вибираем только качественный и передовые технологи и блабблабла качественный и передовые технологи и блабблаблакачественный и передовые технологи и блабблабла</span>",
+    "our_technologies_title9": "<span class='PoppinsLight fontweight300'>GNSS LEICA VIVA GS10<br/>& GS18</span>",
+    "our_technologies_perhaps1": "<span class='RalewayLight fontweight300'>GEOTEC постоянно инвестирует в специализированное оборудование для наших нужд, а также новейшие технологии в области обработки результатов лазерного сканирования, изыскательских работ и инженерных изысканий.</span>",
     "our_technologies_perhaps2": "<span class='RalewayLight fontweight300'>Идеальная платформа для повышения производительности антенн сочетает в себе прочную конструкцию и простую конфигурацию для работы в качестве решения для различных промышленных применений. Усовершенствования серии <span class='PoppinsLight fontweight300'>M200 V2</span> улучшают интеллектуальные системы управления, летные характеристики, а также добавляют функции безопасности полетов и защиты данных.<br/>Использование беспилотного летательного аппарата с бортовым геодезическим приемником обеспечивает высокую точность <span class='PoppinsLight fontweight300'>3D</span>-моделей и топографических планов до масштаба <span class='PoppinsLight fontweight300'>1:500</span></span>",
     "our_technologies_perhaps3": "<span class='RalewayLight fontweight300'><span class='PoppinsLight fontweight300'>Leica Nova TM50</span> является одним из компонентов уникальной системы мониторинга, в которую интегрированы тахеометры ГНСС приемники и антенны, геотехнические датчики, программное обеспечение и инфраструктура <span class='PoppinsLight fontweight300'>IT</span>-связи.</span>",
     "our_technologies_perhaps3_2": "<span class='RalewayLight fontweight300'>Для наших топографических, инженерных и размерных контрольных съемок используются тахеометры высокой точности (“1 “, «0,5»), которые обеспечивают лучшие в мире характеристики безотражательного дальномера.</span>",
@@ -119,18 +123,65 @@
   },
 
   "History": {
-    "History_blockTitle": "История",
+    "History_blockTitle": "<span class='RalewayLight fontweight300'>История</span>",
 
-    "textBlock_text1": "<span>Основание <span className='PoppinsLight fontweight300'><br />GEOTEC</span></span>",
-    "textBlock_text2": "<span>Первый проект <span className='PoppinsLight fontweight300'><br />GEOTEC</span></span>",
-    "textBlock_text3": "<span>Расширение<br />в Казахстане</span>",
-    "textBlock_text4": "<span>Партнерство<br />с ТШО</span>",
-    "textBlock_text5": "<span>Самое высокое здание<br />в Казахстан</span>",
-    "textBlock_text6": "<span>Проект ветровой<br />электростанции</span>",
-    "textBlock_text7": "<span>Проект по <span className='PoppinsLight fontweight300'>3D</span> измерению <br />&геофизическое исследование</span>",
-    "textBlock_text8": "<span>Сертификация <span className='PoppinsLight fontweight300'>ISO 9001<br />and OHSAS 18001</span></span>",
-    "textBlock_text9": "<span>Проект по модульному<br />контролю ТШО</span>",
-    "textBlock_text10": "<span><span className='PoppinsLight fontweight300'>3D</span> моделирование <span className='PoppinsLight fontweight300'><br />IGCC</span></span>",
-    "textBlock_text11": "<span>Цель стать самым крупным<br />подрядчиком в своей сфере</span>"
+    "textBlock_text1": "<span class='RalewayRegular fontweight400'>Основание <span class='PoppinsLight fontweight300'><br />GEOTEC</span></span>",
+    "textBlock_text2": "<span class='RalewayRegular fontweight400'>Первый проект <span class='PoppinsLight fontweight300'><br />GEOTEC</span></span>",
+    "textBlock_text3": "<span class='RalewayRegular fontweight400'>Расширение<br />в Казахстане</span>",
+    "textBlock_text4": "<span class='RalewayRegular fontweight400'>Партнерство<br />с ТШО</span>",
+    "textBlock_text5": "<span class='RalewayRegular fontweight400'>Самое высокое здание<br />в Казахстан</span>",
+    "textBlock_text6": "<span class='RalewayRegular fontweight400'>Проект ветровой<br />электростанции</span>",
+    "textBlock_text7": "<span class='RalewayRegular fontweight400 stylemobile'>Проект по <span class='PoppinsExtraLight fontweight300'>3D</span> измерению <br />&геофизическое исследование</span>",
+    "textBlock_text8": "<span class='RalewayRegular fontweight400 stylemobile'>Сертификация <span class='PoppinsExtraLight fontweight300'>ISO 9001</span><br />и <span class='PoppinsExtraLight fontweight300'>OHSAS 18001</span></span>",
+    "textBlock_text9": "<span class='RalewayRegular fontweight400 stylemobile'>Проект по модульному<br />контролю ТШО</span>",
+    "textBlock_text10": "<span class='RalewayRegular fontweight400 stylemobile'><span class='PoppinsExtraLight fontweight300'>3D</span> моделирование <span class='PoppinsExtraLight fontweight300'><br />IGCC</span></span>",
+    "textBlock_text11": "<span class='RalewayRegular fontweight400 stylemobile'>Цель стать самым крупным подрядчиком в своей сфере</span>",
+
+    "textBlock_text_content1": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> был основан в <span class='PoppinsExtraLight fontweight275'>2006</span> году</span>",
+    "textBlock_text_content2": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> получил первый проект в Тенгизе от ТШО</span>",
+    "textBlock_text_content3": "<span class='RalewayLight fontweight300'>Выполнен один из самых сложных проектов в Алматинской гондоле</span>",
+    "textBlock_text_content4": "<span class='RalewayLight fontweight300'>ТШО подписал Генеральный Контракт на <span class='PoppinsExtraLight fontweight275'>7</span> лет</span>",
+    "textBlock_text_content5": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> выполнял изыскательские работы в г.Алматы</span>",
+    "textBlock_text_content6": "<span class='RalewayLight fontweight300'>Изыскательские работы выполнялись в тяжелых зимних условиях в Северном Казахстане</span>",
+    "textBlock_text_content7": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> расширяет свои услуги с использованием <span class='PoppinsExtraLight fontweight275'>3D</span> измерения и георадара <span class='PoppinsExtraLight fontweight275'>(GPR)</span></span>",
+    "textBlock_text_content8": "<span class='RalewayLight fontweight300'>Сертифицирован компанией <span class='PoppinsExtraLight fontweight275'>Bureau Veritas</span> по <span class='PoppinsExtraLight fontweight275'>ISO 9001</span> и <span class='PoppinsExtraLight fontweight275'>OHSAS 18001</span></span>",
+    "textBlock_text_content9": "<span class='RalewayLight fontweight300'>По поручению ТШО <span class='PoppinsExtraLight fontweight275'>GEOTEC</span> выполняет работу по модульному контролю размеров</span>",
+    "textBlock_text_content10": "<span class='RalewayLight fontweight300'>По поручению <span class='PoppinsExtraLight fontweight275'>KPI GEOTEC</span> выполнит лазерное сканировние в период строительства для создания исполнительной <span class='PoppinsExtraLight fontweight275'>BIM</span>-модели Интегрированного газохимического комплекса</span>",
+    "textBlock_text_content11": "<span class='RalewayLight fontweight300'></span>"
+  },
+
+  "whyarewe": {
+    "title": "<span class='RalewayRegular fontweight400'>Почему<br />Выбирают<br />Нас?</span>",
+
+    "Whyarewe_block_Content_first_title1": "<span class='RalewayRegular fontweight400'>Сотрудники</span>",
+    "Whyarewe_block_Content_first_title2": "<span class='RalewayRegular fontweight400'>Заказчик</span>",
+    "Whyarewe_block_Content_first_title3": "<span class='RalewayRegular fontweight400'>Безопасность и Качество</span>",
+    "Whyarewe_block_Content_first_title4": "<span class='RalewayRegular fontweight400'>Устойчивое Развитие</span>",
+
+    "Whyarewe_block_Content_first_text1": "<span class='RalewayRegular fontweight400'>Наши сотрудники - пример креативности, опыта и мотивации.<br /><br />Поддержание слогана <br />«Безопасность- превыше всего!» и обеспечение здоровой производственной среды</span>",
+    "Whyarewe_block_Content_first_text2": "<span class='RalewayRegular fontweight400'>Мы добиваемся устойчивого развития и осведомлённостив области окружающей средыМы хотим получить всенародное признание какизвестная устойчивая компания</span>",
+    "Whyarewe_block_Content_first_text3": "<span class='RalewayRegular fontweight400'>Мы имеем высокие стандарты по качеству, которые применяются при выполнении работ<br /><br />Ставим безопасность превыше всего и обеспечиваем здоровую рабочую cреду</span>",
+    "Whyarewe_block_Content_first_text4": "<span class='RalewayRegular fontweight400'>Требования Заказчика – наш основной приоритет<br />Выслушиваем и принимаем каждое слово Заказчика, и ищем лучшие решения для непрерывного совершенствования</span>"
+  },
+
+  "aboutUs": {
+    "logo_CompanyBar": "<span class='RalewayRegular fontweight400'>это геодезичекие изыскания под ключ</span>",
+    "perhaps_logo_companyBar": "<span class='RalewayRegular fontweight400'>Наша компания активно работает в следующих областях:</span>",
+    "mobileTitleAboutUsTitle": "<span class='RalewayLight fontweight300'>это геодезичекие изыскания под ключ</span>",
+    "researchs_block_elem_text1": "<span class='RalewayRegular fontweight400'>Конкретные Изыскания</span>",
+    "researchs_block_elem_text2": "<span class='RalewayRegular fontweight400'>Топографо - Геодезические Изыскания</span>",
+    "researchs_block_elem_text3": "<span class='RalewayRegular fontweight400'>Проектирование</span>",
+    "researchs_block_elem_text4": "<span class='RalewayRegular fontweight400'>Гидрографические, геологические и геофизические изыскания</span>",
+
+    "text1": "<span class='RalewayLight fontweight300'>- <span class='PoppinsLight fontweight300'>3D</span> Лазерное сканирование высокой четкости<br />- БПЛА / Изыскания с помощью беспилотника<br />- Контроль размеров и обследование деформаций<br />- Высокоточная измерительная съемка<br />- Выявление критических пересечений<br />- <span class='PoppinsLight fontweight300'>3D</span> Моделирование</span>",
+    "text2": "<span class='RalewayLight fontweight300'>- <span class='PoppinsLight fontweight300'>GPS</span> съемка (Глобальная система позиционирования)<br />- Изыскание дорог, железных дорог, мостов и зданий<br />- Промышленные объекты, Топографические съемки<br />- Инженерно-строительные изыскания<br />- Экстремальные Проектные изыскания, Ветроэнергетические изыскания, Гондола и т.д</span>",
+    "text3": "<span class='RalewayLight fontweight300'>- Технико-экономическое обоснование железной дороги, Расчет объемов<br/>- Предварительное и подробное воздействие железной дороги на окружающую среду<br/>- Концептуальные чертежи автомобильных и железных дорог<br/>- Разработка технического проекта для железнодорожных перевозок<br/>- Разработка инженерных проектов автомобильных дорог (всех категорий)</span>",
+    "text4": "<span class='RalewayLight fontweight300'>- Батиметрическая сьемка<br />- Услуги Георадара<br />- Инженерно-геологические <br />изыскания<br />- Отчетность основанная на <span class='PoppinsLight fontweight300'>ASTM</span> и <span class='PoppinsLight fontweight300'>SNIP_GOST</span></span>"
+  },
+
+  "contacts": {
+    "contact_title": "<span class='RalewayMedium fontweight500'>КОНТАКТЫ</span>",
+    "title_map_btn": "<span class='RalewayMedium fontweight500'>гугл карты</span>",
+    "address": "<span class='PoppinsLight fontweight300'>010000,&nbsp;<span className='textRU'>г. Астана, Коргалжинское Шоссе</span>&nbsp;2&nbsp;<span className='textRU'>А, гостиничный комплекс “Думан”,&nbsp;</span>13&nbsp;<span className='textRU'>этаж, офисы</span>&nbsp;1306-1311</span>"
   }
 }
