@@ -141,7 +141,7 @@
     "textBlock_text_content2": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> получил первый проект в Тенгизе от ТШО</span>",
     "textBlock_text_content3": "<span class='RalewayLight fontweight300'>Выполнен один из самых сложных проектов в Алматинской гондоле</span>",
     "textBlock_text_content4": "<span class='RalewayLight fontweight300'>ТШО подписал Генеральный Контракт на <span class='PoppinsExtraLight fontweight275'>7</span> лет</span>",
-    "textBlock_text_content5": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> выполнял изыскательские работы в г.Алматы</span>",
+    "textBlock_text_content5": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> выполнял изыскательские работы в г.Астана</span>",
     "textBlock_text_content6": "<span class='RalewayLight fontweight300'>Изыскательские работы выполнялись в тяжелых зимних условиях в Северном Казахстане</span>",
     "textBlock_text_content7": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> расширяет свои услуги с использованием <span class='PoppinsExtraLight fontweight275'>3D</span> измерения и георадара <span class='PoppinsExtraLight fontweight275'>(GPR)</span></span>",
     "textBlock_text_content8": "<span class='RalewayLight fontweight300'>Сертифицирован компанией <span class='PoppinsExtraLight fontweight275'>Bureau Veritas</span> по <span class='PoppinsExtraLight fontweight275'>ISO 9001</span> и <span class='PoppinsExtraLight fontweight275'>OHSAS 18001</span></span>",
@@ -181,7 +181,7 @@
 
   "contacts": {
     "contact_title": "<span class='RalewayMedium fontweight500'>КОНТАКТЫ</span>",
-    "title_map_btn": "<span class='RalewayMedium fontweight500'>гугл карты</span>",
-    "address": "<span class='PoppinsLight fontweight300'>010000,&nbsp;<span className='textRU'>г. Астана, Коргалжинское Шоссе</span>&nbsp;2&nbsp;<span className='textRU'>А, гостиничный комплекс “Думан”,&nbsp;</span>13&nbsp;<span className='textRU'>этаж, офисы</span>&nbsp;1306-1311</span>"
+    "title_map_btn": "<span class='RalewayMedium fontweight500'>Показать адрес на карте</span>",
+    "address": "<span class='RalewayLight fontweight300'><span class='PoppinsLight fontweight300'>010000</span>, г. Астана, Кургальджинское шоссе<span class='PoppinsLight fontweight300'> 3</span>Б, <span class='PoppinsLight fontweight300'>3</span> этаж, офис <span class='PoppinsLight fontweight300'>301</span></span>"
   }
 }

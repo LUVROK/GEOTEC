@@ -1,174 +1,194 @@
+.licenses {
+  top: 66px;
+}
 .licenses .firstBlock {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    width: 100%;
-    /* margin-top: 40px; */
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 28px;
-    padding-bottom: 56px;
-    left: 0;
-    right: 0;
-    margin-top: 5vh;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 120%;
-    color: #102876;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  /* margin-top: 40px; */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 28px;
+  padding-bottom: 56px;
+  left: 0;
+  right: 0;
+  margin-top: 5vh;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  color: #102876;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .titlePage {
-    position: relative;
-    margin-left: 10%;
-    margin-top: 49px;
-    width: 50%;
-    font-family: 'Poppins-Light';
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 70px;
-    text-transform: capitalize;
-    background: linear-gradient(98.83deg, #2444A9 8.79%, #526EC8 44.21%, #839AE9 79.62%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 49px;
+  width: 50%;
+  font-family: "Poppins-Light";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  text-transform: capitalize;
+  background: linear-gradient(
+    98.83deg,
+    #2444a9 8.79%,
+    #526ec8 44.21%,
+    #839ae9 79.62%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-.licenses  {
-    position: relative;
-    min-height: calc(100vh - 88px);
-    /* overflow: hidden; */
+.licenses {
+  position: relative;
+  min-height: calc(100vh - 88px);
+  /* overflow: hidden; */
 }
 .licenses .svglcsprojects {
-    position: absolute;
-    right: 4.5%;
-    top: 20px;
-    cursor: pointer;
-    z-index: 9999;
+  position: absolute;
+  right: 4.5%;
+  top: 20px;
+  cursor: pointer;
+  z-index: 9999;
 }
 .svgBckdround {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .licenses .firstBlock .imgblock {
-    position: relative;
-    width: 50%;
+  position: relative;
+  width: 50%;
 }
 .licenses .firstBlock .imgblock img {
-    position: relative;
-    width: 90%;
+  position: relative;
+  width: 90%;
 }
 .firstBlockText {
-    
 }
 .licenses .secondBlock {
-    border-top: 0px;
-    flex-direction: row;
+  border-top: 0px;
+  flex-direction: row;
 }
 .licenses .firstBlock:nth-child(1) {
-    padding-left: 10%;
-    padding-right: 2%;
+  padding-left: 10%;
+  padding-right: 2%;
 }
 .licenses .firstBlock:nth-child(2) {
-    padding-left: 10%;
-    padding-right: 2%;
+  padding-left: 10%;
+  padding-right: 2%;
 }
 
 .licenses .element-animation34 {
-    margin: 6rem 0;
-    font-size: 3rem;
-    opacity: 0.2;
-    transform: translateY(80px);
+  margin: 6rem 0;
+  font-size: 3rem;
+  opacity: 0.2;
+  transform: translateY(80px);
 }
 .licenses .element-animation34 .content {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 91%;
-    left: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 91%;
+  left: 0;
 }
-  
+
 .licenses .element-animation34.element-show {
-    opacity: 1;
-    transition: all 1.5s;
-    transition-timing-function: cubic-bezier(0,.65,.7,1);
-    transform: translateY(0%);
+  opacity: 1;
+  transition: all 1.5s;
+  transition-timing-function: cubic-bezier(0, 0.65, 0.7, 1);
+  transform: translateY(0%);
 }
 .licenses .element-animation34:nth-child(1).element-show {
-    transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 .imgblockLC2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-
 @media screen and (max-width: 1480px) {
-    .licenses .element-animation34 .content {
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0; right: 0;
-        width: 81%;
-    }
-    .licenses .firstBlock:nth-child(1) {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    .licenses .firstBlock:nth-child(2) {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    .titlePage {
-        font-size: 54px;
-        line-height: 60px;
-    }
+  .licenses .element-animation34 .content {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 81%;
+  }
+  .licenses .firstBlock:nth-child(1) {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .licenses .firstBlock:nth-child(2) {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .titlePage {
+    font-size: 54px;
+    line-height: 60px;
+  }
+  .licenses .firstBlock {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width: 1134px) {
-    .licenses .element-animation34 .content {
-        width: 91%;
-    }
-    .titlePage {
-        line-height: 50px;
-        font-size: 44px;
-    }
-    .licenses .firstBlock .imgblock img {
-        width: 95%;
-    }
-    .licenses .firstBlock {
-        flex-direction: column;
-        align-items: center;
-    }
-    .imgblockLC2 {
-        margin-top: 32px;
-    }
-    .licenses .firstBlock .imgblock {
-        width: 60%;
-    }
+  .licenses .element-animation34 .content {
+    width: 91%;
+  }
+  .titlePage {
+    line-height: 50px;
+    font-size: 44px;
+  }
+  .licenses .firstBlock .imgblock img {
+    width: 95%;
+  }
+  .licenses .firstBlock {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgblockLC2 {
+    margin-top: 32px;
+  }
+  .licenses .firstBlock .imgblock {
+    width: 60%;
+  }
+  .licenses .firstBlock {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width: 720px) {
-    .titlePage {
-        line-height: 40px;
-        font-size: 34px;
-    }
-    .licenses .firstBlock .imgblock {
-        width: 70%;
-    }
+  .titlePage {
+    line-height: 40px;
+    font-size: 34px;
+  }
+  .licenses .firstBlock .imgblock {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 490px) {
-    .titlePage {
-        line-height: 30px;
-        font-size: 24px;
-    }
-    .licenses .firstBlock .imgblock {
-        width: 80%;
-    }
+  .titlePage {
+    line-height: 30px;
+    font-size: 24px;
+  }
+  .licenses .firstBlock .imgblock {
+    width: 80%;
+  }
 }

@@ -48,7 +48,7 @@
   font-weight: 300;
   font-size: 33px;
   line-height: 75px;
-  padding-left: 35px;
+  padding-left: 92px;
   text-transform: capitalize;
   /* margin-top: 44px; */
   position: absolute;
@@ -66,7 +66,7 @@
   height: 100%;
   /* padding-top: 4%; */
   transition-delay: 0s;
-  padding-left: 35px;
+  padding-left: 92px;
   /* transition: all 0.5s cubic-bezier(0,.11,.29,1); */
 }
 .textBlock_first {
@@ -95,7 +95,12 @@
   font-size: 88px;
   line-height: 100%;
   text-transform: capitalize;
-  background: linear-gradient(98.83deg, #2444a9 8.79%, #526ec8 44.21%, #839ae9 79.62%);
+  background: linear-gradient(
+    98.83deg,
+    #2444a9 8.79%,
+    #526ec8 44.21%,
+    #839ae9 79.62%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -173,7 +178,12 @@
   font-size: 66px;
   line-height: 120%;
   text-transform: inherit;
-  background: linear-gradient(98.83deg, #2444a9 8.79%, #526ec8 44.21%, #839ae9 79.62%);
+  background: linear-gradient(
+    98.83deg,
+    #2444a9 8.79%,
+    #526ec8 44.21%,
+    #839ae9 79.62%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -224,7 +234,7 @@
 .textBlock_first {
   /* transform: translateY(-20%); */
   /* transition-delay: 0.4s !important; */
-  /* padding-left: 85px; */
+  padding-left: 92px;
 }
 .textBlock_first .textBlock_text_content {
   width: 50%;
@@ -322,7 +332,14 @@
     width: 40%;
   }
   .ImageBack {
-    margin-top: 28px !important;
+    /* margin-top: 28px !important; */
+  }
+  .ImageBack img {
+    border-radius: 10px;
+    width: 285px;
+  }
+  .ImageBack {
+    height: 195px;
   }
   .backgroundHistorySvg {
     padding-top: 7%;
@@ -342,16 +359,26 @@
   .History_block {
     padding-top: 51px;
   }
+  .textBlock {
+    padding-left: 35px;
+    width: 72.5%;
+  }
+  .History h2 {
+    padding-left: 35px;
+  }
 }
 
 @media screen and (max-width: 910px) {
   .textBlock {
     padding-left: 35px;
   }
+  .History h2 {
+    padding-left: 35px;
+  }
   .ImageBack {
     margin-left: 35px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
   }
   .stylemobile {
     font-size: 28px;
@@ -414,7 +441,7 @@
     top: 5%;
   }
   .textBlock_first .textBlock_text {
-    width: 80%;
+    width: 100%;
   }
   .textBlock_text {
     width: 100%;
@@ -504,5 +531,89 @@
 @media screen and (max-width: 490px) and (max-height: 700px) {
   .TimeHistoryBox {
     bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-height: 820px) {
+  .History_block {
+    padding-top: 78px;
+  }
+  .History_block .hiddenOverflow {
+    top: 15%;
+  }
+  .TimeHistoryBox {
+    top: 30%;
+  }
+  .TimeHistoryBox_element {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-height: 680px) {
+  .History_block {
+    padding-top: 78px;
+  }
+  .TimeHistoryBox {
+    top: 30%;
+  }
+  .textBlock_text {
+    font-size: 46px;
+  }
+  .TimeHistoryBox_element {
+    font-size: 18px;
+  }
+  .TimeHistoryBox_element {
+    line-height: 140%;
+  }
+  .TimeHistoryBox_element.active {
+    line-height: 140%;
+  }
+  .History h2 {
+    font-size: 18px;
+  }
+  .textBlock_sixth .ImageBack {
+    margin-top: -128px;
+  }
+  .textBlock_eleventh .ImageBack {
+    margin-top: -188px;
+  }
+  .ImageBack {
+    margin-top: -88px;
+  }
+  .textBlock_text_content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-height: 560px) {
+  .History_block {
+    padding-top: 68px;
+  }
+  .TimeHistoryBox {
+    top: 22.5%;
+  }
+  .textBlock_text {
+    font-size: 36px;
+  }
+  .TimeHistoryBox_element.active {
+    line-height: 120%;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-height: 500px) {
+  .History_block {
+    padding-top: 48px;
+  }
+  .TimeHistoryBox {
+    top: 25%;
+  }
+  .textBlock_text {
+    font-size: 32px;
+  }
+  .TimeHistoryBox_element.active {
+    line-height: 100%;
+  }
+  .TimeHistoryBox_element {
+    line-height: 120%;
   }
 }

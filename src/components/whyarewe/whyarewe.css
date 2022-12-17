@@ -46,7 +46,12 @@
   line-height: 70px;
   text-transform: capitalize;
 
-  background: linear-gradient(98.83deg, #2444a9 8.79%, #526ec8 44.21%, #839ae9 79.62%);
+  background: linear-gradient(
+    98.83deg,
+    #2444a9 8.79%,
+    #526ec8 44.21%,
+    #839ae9 79.62%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -78,8 +83,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 54px;
-  line-height: 75px;
-  text-transform: capitalize;
+  line-height: 120%;
+  text-transform:none;
   color: #ffffff;
 }
 .Whyarewe_block_Content_first_title_64text {
@@ -163,7 +168,23 @@
     left: 30px;
   }
   .listLogo {
-    left: 30px;
+    left: 61.74px;
+  }
+  .Gear_Wheel_first svg {
+    width: 174px;
+    height: 435px;
+  }
+  .Gear_Wheel_second svg {
+    width: 340px;
+    height: 341px;
+  }
+  .Gear_Wheel_third svg {
+    width: 272px;
+    height: 280px;
+  }
+  .Gear_Wheel_fourth svg {
+    width: 235px;
+    height: 445px;
   }
 }
 
@@ -205,29 +226,6 @@
   .Whyarewe_block {
     width: 90%;
   }
-
-  .Gear_Wheel_first svg {
-    width: 174px;
-    height: 435px;
-  }
-  .Gear_Wheel_second svg {
-    width: 340px;
-    height: 341px;
-  }
-  .Gear_Wheel_third svg {
-    width: 272px;
-    height: 280px;
-  }
-  .Gear_Wheel_fourth svg {
-    width: 235px;
-    height: 445px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .Whyarewe_block_title_text {
-    font-size: 40px;
-  }
   .Gear_Wheel_first svg {
     width: 134px;
     height: 385px;
@@ -243,6 +241,58 @@
   .Gear_Wheel_fourth svg {
     width: 205px;
     height: 395px;
+  }
+}
+
+@media screen and (max-height: 904px) {
+  .Whyarewe_block_Content_first_text {
+    width: 70%;
+  }
+}
+
+@media screen and (max-height: 804px) {
+  .Whyarewe_block_Content_first {
+    top: 109px;
+  }
+  .Whyarewe_block_title_text {
+    top: 109px;
+  }
+}
+
+@media screen and (max-height: 704px) {
+  .Whyarewe_block_Content_first {
+    top: 69px;
+  }
+  .Whyarewe_block_Content_first {
+    padding-left: 15px;
+  } 
+  .Whyarewe_block_title_text {
+    font-size: 52px;
+    line-height: 120%;
+  }
+  .Whyarewe_block_title_text {
+    top: 69px;
+  }
+  .listLogo {
+    bottom: 29px;
+  }
+}
+
+@media screen and (max-height: 604px) {
+  .Whyarewe_block_Content_first {
+    top: 29px;
+  }
+  .Whyarewe_block_title_text {
+    top: 89px;
+  }
+  .listLogo {
+    bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .Whyarewe_block_title_text {
+    font-size: 40px;
   }
 }
 
@@ -308,5 +358,21 @@
   }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-height: 610px) {
+  .Whyarewe_block {
+    height: 80%;
+    padding-top: 35px;
+    overflow: visible;
+  }
+  .Whyarewe_block_Content_first_text_Gear_Wheel {
+    top: auto !important;
+  }
+  .listLogo {
+    width: 75px;
+    height: 75px;
+  }
+  .Whyarewe_block_Content_first_text {
+    font-size: 15px;
+    line-height: 120%;
+  }
 }

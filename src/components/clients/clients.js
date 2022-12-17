@@ -47,6 +47,8 @@ const Clients = () => {
     setInterval(() => {
       setisrender(true);
     }, 2000);
+    window.scrollTo(0, 0);
+    window.$.scrollify.disable();
     // console.log(i18n.language);
   }, []);
 
@@ -59,23 +61,59 @@ const Clients = () => {
 
   const closeClientsInfo = () => {
     navigate(-1);
+    window.$.scrollify.enable();
   };
 
   return (
     <div className="App clients">
       {!isrender && <Preloader />}
-      <div className="element-animation23">
-        <svg className="svgclientsprojects" onClick={closeClientsInfo} width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className="element-animation2329181">
+        <svg
+          className="svgclientsprojects"
+          onClick={closeClientsInfo}
+          width="46"
+          height="46"
+          viewBox="0 0 46 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_b_1243_2378)">
-            <rect width="46" height="46" rx="23" fill="#F9F9F9" fillOpacity="0.78" />
-            <path d="M15.407 29.4109C14.9301 29.8879 14.9203 30.7346 15.4167 31.231C15.9229 31.7274 16.7696 31.7177 17.2368 31.2505L22.9988 25.4885L28.751 31.2408C29.2377 31.7274 30.0747 31.7274 30.5711 31.231C31.0675 30.7249 31.0675 29.8976 30.5809 29.4109L24.8286 23.6587L30.5809 17.8967C31.0675 17.4101 31.0772 16.573 30.5711 16.0766C30.0747 15.5803 29.2377 15.5803 28.751 16.0669L22.9988 21.8192L17.2368 16.0669C16.7696 15.59 15.9131 15.5705 15.4167 16.0766C14.9203 16.573 14.9301 17.4295 15.407 17.8967L21.1592 23.6587L15.407 29.4109Z" fill="#3C3C43" fillOpacity="0.6" />
+            <rect
+              width="46"
+              height="46"
+              rx="23"
+              fill="#F9F9F9"
+              fillOpacity="0.78"
+            />
+            <path
+              d="M15.407 29.4109C14.9301 29.8879 14.9203 30.7346 15.4167 31.231C15.9229 31.7274 16.7696 31.7177 17.2368 31.2505L22.9988 25.4885L28.751 31.2408C29.2377 31.7274 30.0747 31.7274 30.5711 31.231C31.0675 30.7249 31.0675 29.8976 30.5809 29.4109L24.8286 23.6587L30.5809 17.8967C31.0675 17.4101 31.0772 16.573 30.5711 16.0766C30.0747 15.5803 29.2377 15.5803 28.751 16.0669L22.9988 21.8192L17.2368 16.0669C16.7696 15.59 15.9131 15.5705 15.4167 16.0766C14.9203 16.573 14.9301 17.4295 15.407 17.8967L21.1592 23.6587L15.407 29.4109Z"
+              fill="#3C3C43"
+              fillOpacity="0.6"
+            />
           </g>
           <defs>
-            <filter id="filter0_b_1243_2378" x="-54.3656" y="-54.3656" width="154.731" height="154.731" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <filter
+              id="filter0_b_1243_2378"
+              x="-54.3656"
+              y="-54.3656"
+              width="154.731"
+              height="154.731"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feGaussianBlur in="BackgroundImageFix" stdDeviation="27.1828" />
-              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1243_2378" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1243_2378" result="shape" />
+              <feComposite
+                in2="SourceAlpha"
+                operator="in"
+                result="effect1_backgroundBlur_1243_2378"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_backgroundBlur_1243_2378"
+                result="shape"
+              />
             </filter>
           </defs>
         </svg>

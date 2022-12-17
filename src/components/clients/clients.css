@@ -15,6 +15,9 @@
   text-fill-color: transparent;
 }
 
+.clients {
+  top: 66px;
+}
 .clients .svgclientsprojects {
   position: absolute;
   right: 4.5%;

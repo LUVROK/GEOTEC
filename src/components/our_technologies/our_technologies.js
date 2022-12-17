@@ -229,7 +229,7 @@ const Our_technologies = () => {
   }, []);
 
   return (
-    <section className="our_technologies section"  id="our_technologies">
+    <section className="our_technologies section"  id="our_technologies"  data-section-name="our_technologies">
       <div className="our_technologies_block element-animation">
         <div className="our_technologies_left" style={{ width: "40%" }}>
           <div className="our_technologies_title" style={{ display: "block" }}>

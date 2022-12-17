@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 9999;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   margin-left: auto;
   margin-right: auto;
   overflow: visible;
@@ -24,7 +24,7 @@
   align-items: center;
   padding: 28px 92px;
   z-index: 9999;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,6 +47,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .Nav_Block_right_a_title {
@@ -68,6 +69,7 @@
 }
 .Nav_Block_left_a {
   display: flex;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1480px) {
@@ -98,6 +100,13 @@
 }
 
 @media screen and (max-width: 720px) {
+  .Nav_Block {
+    background-color: #ffffff00;
+  }
+  .Nav_BlockCenter {
+    background-color: #ffffff00;
+    padding: 22px 15px 6px 15px;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -105,7 +114,7 @@
 
 .selectLANG {
   text-align: center;
-  padding: 0px 9px;
+  padding: 0px;
   font-size: 16x;
   border-radius: 5px;
   /* border: 1px solid #4a6ad0; */
@@ -170,13 +179,13 @@
   /* padding: 2px 11px 8px 5px; */
   border: 0px solid #4a6ad0;
   border-bottom: 1px solid #4a6ad0;
-  background-color: #2ADEA1;
+  background-color: #2adea1;
   color: #ffffff;
 }
 .selectorblockone:nth-child(2):hover {
   /* padding: 2px 11px 8px 5px; */
   border: 0px solid #4a6ad0;
-  background-color: #2ADEA1;
+  background-color: #2adea1;
   color: #ffffff;
 }
 .Active_Select_lang {

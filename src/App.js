@@ -26,13 +26,19 @@ function App() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
+    window.addEventListener("wheel", { passive: false });
     window.scrollTo(0, 0);
     window.$.scrollify({
       section: ".section",
-      updateHash: false,
-      scrollSpeed: 1500,
+      interstitialSection: "",
+      // updateHash: false,
+      easing: "easeOutExpo",
+      scrollSpeed: 1750,
       // overflowScroll: false,
-      setHeights: false
+      setHeights: true,
+      overflowScroll: false,
+      updateHash: true,
+      touchScroll: true,
     });
   }, []);
 
@@ -116,11 +122,21 @@ function App() {
       // document.body.style.overflow = "scroll";
       document.body.style.overflowX = "hidden";
 
-      const Wrapper_block_GEOTEC_block1 = document.querySelector(".Wrapper_block_GEOTEC_block1");
-      const Wrapper_block_GEOTEC_block2 = document.querySelector(".Wrapper_block_GEOTEC_block2");
-      const Wrapper_block_GEOTEC_block3 = document.querySelector(".Wrapper_block_GEOTEC_block3");
+      const Wrapper_block_GEOTEC_block1 = document.querySelector(
+        ".Wrapper_block_GEOTEC_block1"
+      );
+      const Wrapper_block_GEOTEC_block2 = document.querySelector(
+        ".Wrapper_block_GEOTEC_block2"
+      );
+      const Wrapper_block_GEOTEC_block3 = document.querySelector(
+        ".Wrapper_block_GEOTEC_block3"
+      );
 
-      if (Wrapper_block_GEOTEC_block1 !== null && Wrapper_block_GEOTEC_block2 !== null && Wrapper_block_GEOTEC_block3 !== null) {
+      if (
+        Wrapper_block_GEOTEC_block1 !== null &&
+        Wrapper_block_GEOTEC_block2 !== null &&
+        Wrapper_block_GEOTEC_block3 !== null
+      ) {
         Wrapper_block_GEOTEC_block1.style.opacity = 1;
         Wrapper_block_GEOTEC_block2.style.opacity = 1;
         Wrapper_block_GEOTEC_block3.style.opacity = 1;

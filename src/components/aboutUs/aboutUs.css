@@ -67,7 +67,7 @@
 
 .researchs_block {
   position: relative;
-  margin: 86px 0px 0px 0px;
+  margin: 36px 0px 0px 0px;
   width: auto;
   height: auto;
   display: flex;
@@ -99,6 +99,9 @@
 .researchs_block_elem_text {
   position: relative;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   border-bottom: 1px solid #102876;
 }
 .researchs_block_elem .text {
@@ -157,7 +160,7 @@
 }
 .dots {
   display: none;
-} 
+}
 
 @media screen and (max-width: 1720px) {
   .researchs_block_elem {
@@ -187,13 +190,13 @@
     height: 40px;
   }
   .AboutUs {
-    padding-top: 38px;
+    padding-top: 86px;
   }
   .AboutUs_block {
     width: 90%;
   }
   .researchs_block {
-    margin-top: 0px;
+    margin-top:24px;
   }
   .logo_CompanyBar {
     font-size: 72px;
@@ -303,7 +306,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  } 
+  }
   .dots span {
     position: relative;
     font-size: 64px;
@@ -333,7 +336,7 @@
   .logo_CompanyBarMobile svg {
     padding: 0;
     width: 34px;
-    height: 20px;
+    height: 25px;
   }
   .logo_CompanyBarMobileGeotec {
     font-size: 34px;
@@ -342,7 +345,7 @@
 
 @media screen and (max-height: 860px) and (max-width: 1920px) {
   .researchs_block {
-    margin-top: 6px;
+    margin-top: 14px;
   }
   .CompanyBar {
     height: 161px;
@@ -367,9 +370,6 @@
   .researchs_block_elem .text {
     line-height: 160%;
   }
-  .researchs_block_elem:nth-child(3) {
-    /* margin-top: 230px; */
-  }
 }
 
 @media screen and (min-height: 800px) and (max-width: 1134px) {
@@ -388,28 +388,75 @@
   .researchs_block_elem .text {
     line-height: 140%;
   }
-  .researchs_block_elem:nth-child(3) {
-    /* margin-top: 190px; */
+}
+
+@media screen and (min-width: 1134px) and (max-height: 890px) {
+  .researchs_block_elem .text {
+    font-size: 14px;
+    line-height: 180%;
+  }
+}
+@media screen and (min-width: 1134px) and (max-height: 750px) {
+  .researchs_block_elem .text {
+    line-height: 160%;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1134px) and (max-height: 700px) {
+  .researchs_block_elem .text {
+    line-height: 150%;
+  }
+  .CompanyBar {
+    height: 121px;
+    padding-top: 5px;
+  }
+  .researchs_block_elem_text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+@media screen and (min-width: 1134px) and (max-height: 600px) {
+  .researchs_block_elem .text {
+    font-size: 12px;
+  }
+  .perhaps_logo_companyBar {
+    font-size: 16px;
+  }
+  .CompanyBar {
+    height: 102px;
+    font-size: 24px;
+  }
+  .logo_CompanyBar {
+    font-size: 36px;
   }
 }
 
-@media screen and (max-height: 620px) and (max-width: 1134px) {
-  /* .mobileTitleAboutUs {
-    line-height: 120%;
-    font-size: 22px;
-    margin-top: 44px;
-  }
-  .researchs_block {
-    margin-top: 10px;
+@media screen and (min-width: 1134px) and (max-height: 550px) {
+  .researchs_block_elem .text {
+    font-size: 10px;
   }
   .researchs_block_elem_text {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    font-size: 12px;
   }
+  .AboutUs {
+    padding-top: 102px;
+  }
+}
+
+@media screen and (min-width: 1134px) and (max-height: 450px) {
   .researchs_block_elem .text {
-    line-height: 140%;
-  } */
-  .researchs_block_elem:nth-child(3) {
-    /* margin-top: 120px; */
+    font-size: 9px;
+  }
+  .AboutUs {
+    padding-top: 86px;
+  }
+}
+
+@media screen and (max-height: 620px) {
+  .borderbottom {
+    bottom: 32px;
+  }
+  .researchs_block_elem svg {
+    bottom: 0px;
   }
 }

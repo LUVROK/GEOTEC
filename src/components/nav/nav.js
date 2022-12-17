@@ -1,11 +1,10 @@
 import "../../App.css";
 import "./nav.css";
-// import logo from '../../media/logo.svg';
 import { Link } from "react-router-dom";
-import $ from "jquery";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import parse from "html-react-parser";
+import $ from "jquery";
 
 const Nav = () => {
   const [language_select, setlanguage_select] = useState("ru");
@@ -41,49 +40,6 @@ const Nav = () => {
   }, [visibilityMenuLang]);
 
   useEffect(() => {
-    //     $('.sel').each(function () {
-    //         $(this).children('select').css('display', 'none');
-    //         var $current = $(this);
-    //         $(this).find('option').each(function (i) {
-    //             if (i == 0) {
-    //                 $current.prepend($('<div>', {
-    //                     class: $current.attr('class').replace(/sel/g, 'sel__box')
-    //                 }));
-    //                 var placeholder = $(this).text();
-    //                 $current.prepend($('<span>', {
-    //                     class: $current.attr('class').replace(/sel/g, 'sel__placeholder'),
-    //                     text: placeholder,
-    //                     'data-placeholder': placeholder
-    //                 }));
-    //                 return;
-    //             }
-    //             $current.children('div').append($('<span>', {
-    //                 class: $current.attr('class').replace(/sel/g, 'sel__box__options'),
-    //                 text: $(this).text()
-    //             }));
-    //         });
-    //     });
-    //     // Toggling the `.active` state on the `.sel`.
-    //     $('.sel').click(function () {
-    //         $(this).toggleClass('active');
-    //     });
-    //     // Toggling the `.selected` state on the options.
-    //     $('.sel__box__options').click(function () {
-    //         var txt = $(this).text();
-    //         var index = $(this).index();
-    //         $(this).siblings('.sel__box__options').removeClass('selected');
-    //         $(this).addClass('selected');
-    //         var $currentSel = $(this).closest('.sel');
-    //         $currentSel.children('.sel__placeholder').text(txt);
-    //         $currentSel.children('select').prop('selectedIndex', index + 1);
-    //     });
-    // useEffect(() => {
-    //     changeLanguage(language_select);
-    // }, []);
-  }, []);
-
-  useEffect(() => {
-    // console.log(language_select);
     changeLanguage(language_select);
   }, [language_select]);
 
@@ -91,7 +47,14 @@ const Nav = () => {
     <nav className="Nav_Block box">
       <div className="Nav_BlockCenter">
         <div className="Nav_Block_right">
-          <Link to="/" className="Nav_Block_right_a a_style_none">
+          <div
+            className="Nav_Block_right_a a_style_none js-scrollify-move"
+            onClick={
+              (() => window.$.scrollify.enable(),
+              // () => $.scrollify("move", "#wrapper"))
+              () => $.scrollify.move("#wrapper"))
+            }
+          >
             <div className="Nav_Block_right_a_svg">
               <svg
                 width="31"
@@ -156,24 +119,49 @@ const Nav = () => {
               </svg>
             </div>
             <div className="Nav_Block_right_a_title">GEOTEC</div>
-          </Link>
+          </div>
         </div>
         <div className="Nav_Block_left">
-          <a href="#firstSection" className="Nav_Block_left_a a_style_none">
+          <div
+            // href="#firstSection"
+            className="Nav_Block_left_a a_style_none"
+            // onClick={() => $.scrollify("move", "#firstSection")}
+            onClick={() => $.scrollify.move("#firstSection")}
+          >
             {parse(t("description.Nav1"))}
-          </a>
-          <a href="#AboutUs" className="Nav_Block_left_a a_style_none">
+          </div>
+          <div
+            // href="#AboutUs"
+            className="Nav_Block_left_a a_style_none"
+            // onClick={() => $.scrollify("move", "#AboutUs")}
+            onClick={() => $.scrollify.move("#aboutUs")}
+          >
             {parse(t("description.Nav2"))}
-          </a>
-          <a href="#projects" className="Nav_Block_left_a a_style_none">
+          </div>
+          <div
+            // href="#projects"
+            className="Nav_Block_left_a a_style_none"
+            // onClick={() => $.scrollify("move", "#projects")}
+            onClick={() => $.scrollify.move("#projects")}
+          >
             {parse(t("description.Nav3"))}
-          </a>
-          <a href="#our_technologies" className="Nav_Block_left_a a_style_none">
+          </div>
+          <div
+            className="Nav_Block_left_a a_style_none"
+            // onClick={() => $.scrollify("move", "#our_technologies")}
+            onClick={() => $.scrollify.move("#our_technologies")}
+          >
             {parse(t("description.Nav4"))}
-          </a>
-          <a href="#contacts" className="Nav_Block_left_a a_style_none">
+          </div>
+          <div
+            className="Nav_Block_left_a a_style_none"
+            // onClick={() =>
+            //   setTimeout(() => $.scrollify("move", "#contacts"), 1000)
+            // }
+            onClick={() => $.scrollify.move("#contacts")}
+          >
             {parse(t("description.Nav5"))}
-          </a>
+          </div>
           {/* <div class="sel sel--black-panther"> */}
           <div id="select-language" className="selectLANG">
             <div
@@ -202,18 +190,6 @@ const Nav = () => {
               </div>
             </div>
           </div>
-          {/* <select
-            name="select-language"
-            id="select-language"
-            className="selectLANG"
-            onChange={(e) => [
-              setlanguage_select(e.target.value)
-            ]}
-          >
-            <option value="ru">{parse(t("description.ru"))}</option>
-            <option value="en">{parse(t("description.en"))}</option>
-          </select> */}
-          {/* </div> */}
         </div>
       </div>
     </nav>

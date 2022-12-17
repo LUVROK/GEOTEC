@@ -57,7 +57,7 @@
   top: 0;
   background-color: #ffffff;
   z-index: 101;
-  margin-top: 4%;
+  margin-top: 66px;
   transition: all 0.7s cubic-bezier(0.01, 0.72, 0.33, 1);
   display: flex;
   justify-content: center;
@@ -77,6 +77,8 @@
   height: auto;
   width: auto;
   margin-top: 10%;
+  width: 80%;
+  line-height: 90%;
   left: 10%;
   color: #4a6ad0;
   font-family: "Poppins-ExtraLight";
@@ -393,7 +395,7 @@ li:before {
 
 .MobileProjectPhoto {
   position: relative;
-  height: 60%;
+  height: 45%;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 34px;
@@ -407,6 +409,13 @@ li:before {
 }
 
 @media screen and (max-width: 1480px) {
+  .Projects .title_project {
+    padding-left: 15px;
+    margin-top: 0px;
+  }
+  .Projects .textBlockpr {
+    padding-left: 15px;
+  }
 }
 
 @media screen and (max-width: 1134px) {
@@ -417,13 +426,6 @@ li:before {
     .Projects_Text_desc_text
     .ruProjects_Text_desc_text_title {
     font-size: 22px;
-  }
-  .Projects .title_project {
-    padding-left: 15px;
-    margin-top: 0px;
-  }
-  .Projects .textBlockpr {
-    padding-left: 15px;
   }
   .Projects .Button_Learn_More {
     bottom: -70px;
@@ -488,6 +490,103 @@ li:before {
 @media screen and (max-width: 730px) and (min-height: 820px) {
   .MobileTitle {
     top: 105px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .Projects_block {
+    padding-top: 76px;
+  }
+  .buttonsBlock {
+    bottom: 0%;
+  }
+}
+
+@media screen and (max-height: 1080px) and (max-width: 910px) {
+  .map_item {
+    height: 80vh !important;
+  }
+  .swiper {
+    height: 100%;
+  }
+  .blockSwiper {
+    height: 592px !important;
+  }
+  .blockSwiper {
+    margin-top: 92px !important;
+  }
+}
+@media screen and (max-height: 850px) and (max-width: 910px) {
+  .blockSwiper {
+    height: 472px !important;
+  }
+}
+@media screen and (max-height: 600px) and (max-width: 910px) {
+  .map_item {
+    height: 70vh !important;
+  }
+  .blockSwiper {
+    top: auto;
+    margin-top: auto !important;
+    bottom: 0;
+  }
+  .swiper {
+    height: 95%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .Projects .Button_Learn_More {
+    bottom: 120px;
+  }
+  .Projects .title_project {
+    font-size: 22px;
+  } 
+  .Projects .textBlock_text {
+    font-size: 24px;
+  }
+  .Projects .textBlock_text_content  {
+    font-size: 13px;
+  }
+  .Projects .Button_Learn_More {
+    padding: 16px 45px;
+    border-radius: 10px;
+  }
+  .buttonsBlock {
+    left: 10px;
+  }
+  .btnBefore {
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    margin-right: 12px;
+  }
+  .btnAfter{
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+  }
+}
+@media screen and (max-height: 475px) {
+  .Projects_block .hiddenOverflow2 {
+    height: 95%;
+  }
+  .ImagesBlockOverflow {
+    margin-top: -30px;
+  }
+  .Projects .Button_Learn_More {
+    bottom: 150px;
+  }
+  .Projects .textBlockpr {
+    margin-top: 12.5%;
+  }
+  .Projects .title_project {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-height: 405px) {
+  .Projects .textBlockpr {
+    margin-top: 8%;
   }
 }
 

@@ -246,10 +246,10 @@
     margin-top: 66px;
   }
   .Subtract_right {
-    top: 60px;
+    top: 66px;
   }
   .Subtract_left {
-    top: 60px;
+    top: 66px;
   }
   .Wrapper_block_GEOTEC_block2_button svg path {
     fill: #ffffff;
@@ -260,9 +260,6 @@
   }
   .Wrapper_block_GEOTEC_block2_button {
     left: 10px;
-  }
-  .Nav_BlockCenter {
-    padding: 22px 32px 6px 32px;
   }
 }
 
@@ -287,7 +284,7 @@
     font-size: 16px;
   }
   .Wrapper_block_GEOTEC {
-    height: 75%;
+    /* height: 75%; */
   }
 }
 
@@ -295,4 +292,67 @@
   .Wrapper_block_GEOTEC {
     top: 92px;
   }
+}
+
+@media screen and (min-width: 1134px) and (max-height: 980px) {
+}
+@media screen and (min-width: 1134px) and (max-height: 880px) {
+}
+@media screen and (min-width: 1134px) and (max-height: 780px) {
+}
+@media screen and (min-width: 1134px) and (max-height: 720px) {
+}
+@media screen and (max-height: 660px) {
+  .Wrapper_block_GEOTEC_title {
+    font-size: 104px;
+  }
+  .Wrapper_block_GEOTEC_logo svg {
+    width: 110px;
+    height: 93px;
+  }
+  .Wrapper_block_GEOTEC_block2_title {
+    font-size: 18px;
+  }
+  .Wrapper_block_GEOTEC_block2_description {
+    font-size: 18px;
+  }
+  .Wrapper_block_GEOTEC_block3 {
+    top: auto;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 490px) and (max-height: 660px) {
+  .Wrapper_block_GEOTEC_title {
+    font-size: 70px;
+  }
+  .Wrapper_block_GEOTEC_logo svg {
+    width: 70px;
+    height: 53px;
+  }
+}
+@media screen and (max-height: 560px) {
+  .Wrapper_block_GEOTEC_title {
+    line-height: 180%;
+  }
+}
+@media screen and (min-width: 1134px) and (max-height: 480px) {
+}
+@media screen and (min-width: 1134px) and (max-height: 410px) {
+}
+
+@media screen and (max-width: 1134px) and (max-height: 980px) {
+}
+@media screen and (max-width: 1134px) and (max-height: 880px) {
+}
+@media screen and (max-width: 1134px) and (max-height: 780px) {
+}
+@media screen and (max-width: 1134px) and (max-height: 720px) {
+}
+@media screen and (max-width: 1134px) and (max-height: 660px) {
+}
+@media screen and (max-width: 1134px) and (max-height: 560px) {
+}
+@media screen and (max-width: 1134px) and (max-height: 480px) {
+}
+@media screen and (max-width: 1134px) and (max-height: 410px) {
 }

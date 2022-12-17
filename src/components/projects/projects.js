@@ -138,8 +138,8 @@ const Projects = () => {
   };
 
   return (
-    <section className="Projects Projects_section sec2 section" id="projects">
-      <div className="Projects_blockDesktop">
+    <section className="Projects Projects_section sec2 section" id="projects"  data-section-name="projects">
+      <div className="Projects_blockDesktop element-animation">
         <div
           className="Projects_Text_desc"
           style={{ transform: "translateX(-100%)" }}
@@ -848,7 +848,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="Projects_blockMobile">
+      <div className="Projects_blockMobile element-animation">
         <div className="MobileTitle">{parse(t("projects.title"))}</div>
         <div
           className="Projects_Text_desc"

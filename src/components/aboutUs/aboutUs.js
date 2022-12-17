@@ -22,16 +22,24 @@ const AboutUs = () => {
       ".researchs_block_elem .text"
     );
     if (researchs_block_elemSVGs[index].style.transform === "rotateX(180deg)") {
-      researchs_block_elems[index].style.height = "126px";
-      researchs_block_elem_overflows[index].style.height = "81px";
+      if (window.innerHeight >= 620) {
+        researchs_block_elems[index].style.height = "126px";
+      } else {
+        researchs_block_elems[index].style.height = "78px";
+      }
+      if (window.innerHeight > 620) {
+        researchs_block_elem_overflows[index].style.height = "81px";
+      } else {
+        researchs_block_elem_overflows[index].style.height = "46px";
+      }
       researchs_block_elemSVGs[index].style.transform = "rotateX(0deg)";
       //   researchs_block_elem_text_text[index].style.opacity = 0;
     } else {
       //   setTimeout(() => {
       researchs_block_elem_text_text[index].style.opacity = 1;
       //   }, 300);
-      researchs_block_elems[index].style.height = "50vh";
-      researchs_block_elem_overflows[index].style.height = "45vh";
+      researchs_block_elems[index].style.height = "55vh";
+      researchs_block_elem_overflows[index].style.height = "55vh";
       researchs_block_elemSVGs[index].style.transform = "rotateX(180deg)";
     }
   };
@@ -146,7 +154,7 @@ const AboutUs = () => {
 
   useEffect(() => {
     if (window.innerWidth <= 1134) {
-      console.log(activeAboutUsMobile);
+      // console.log(activeAboutUsMobile);
       const prev1 = activeAboutUsMobile === 0 ? 3 : activeAboutUsMobile - 1;
       const sec1 = activeAboutUsMobile === 3 ? 0 : activeAboutUsMobile + 1;
       const sec2 =
@@ -174,31 +182,17 @@ const AboutUs = () => {
     }
   }, [activeAboutUsMobile]);
 
-  function onEntry(entry) {
-    entry.forEach((change) => {
-      if (change.isIntersecting) {
-        change.target.classList.add("element-show");
-      }
-    });
-  }
-
-  let options = {
-    threshold: [0.5],
-  };
-  let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll(".element-animation44444");
-
-  for (let elm of elements) {
-    observer.observe(elm);
-  }
-
   return (
-    <section className="AboutUs section" id="AboutUs">
+    <section
+      className="AboutUs section"
+      id="aboutUs"
+      data-section-name="aboutUs"
+    >
       <div
         className="MobileWhitebottomAboutus"
         style={{ display: "none" }}
       ></div>
-      <div className="AboutUs_block element-animation44444">
+      <div className="AboutUs_block element-animation">
         <div className="CompanyBar">
           <span className="logo_CompanyBar">GEOTEC -&nbsp;</span>
           {parse(t("aboutUs.logo_CompanyBar"))}
@@ -247,22 +241,32 @@ const AboutUs = () => {
             className="researchs_block_elem"
             onClick={() => researchs_block_elemClick(0)}
             style={
-              window.innerWidth <= 1134
+              (window.innerWidth <= 1134
                 ? {
                     transform: "translateX(0px)",
-                    height: "126px",
                     opacity: 1,
                   }
-                : { height: "126px" }
+                : {},
+              window.innerHeight < 620
+                ? { height: "78px" }
+                : { height: "126px" })
             }
           >
             <div
               className="researchs_block_elem_overflow"
-              style={{ height: "81px" }}
+              style={
+                window.innerHeight > 620
+                  ? { height: "81px" }
+                  : { height: "46px" }
+              }
             >
               <div
                 className="researchs_block_elem_text"
-                style={{ height: "81px" }}
+                style={
+                  window.innerHeight > 620
+                    ? { height: "81px" }
+                    : { height: "46px" }
+                }
               >
                 {parse(t("aboutUs.researchs_block_elem_text1"))}
               </div>
@@ -290,22 +294,32 @@ const AboutUs = () => {
             className="researchs_block_elem"
             onClick={() => researchs_block_elemClick(1)}
             style={
-              window.innerWidth <= 1134
+              (window.innerWidth <= 1134
                 ? {
                     transform: "translateX(505px)",
-                    height: "126px",
                     opacity: 1,
                   }
-                : { height: "126px" }
+                : {},
+              window.innerHeight < 620
+                ? { height: "78px" }
+                : { height: "126px" })
             }
           >
             <div
               className="researchs_block_elem_overflow"
-              style={{ height: "81px" }}
+              style={
+                window.innerHeight > 620
+                  ? { height: "81px" }
+                  : { height: "46px" }
+              }
             >
               <div
                 className="researchs_block_elem_text"
-                style={{ height: "81px" }}
+                style={
+                  window.innerHeight > 620
+                    ? { height: "81px" }
+                    : { height: "46px" }
+                }
               >
                 {parse(t("aboutUs.researchs_block_elem_text2"))}
               </div>
@@ -334,22 +348,32 @@ const AboutUs = () => {
             className="researchs_block_elem"
             onClick={() => researchs_block_elemClick(2)}
             style={
-              window.innerWidth <= 1134
+              (window.innerWidth <= 1134
                 ? {
                     transform: "translateX(505px)",
-                    height: "126px",
                     opacity: 1,
                   }
-                : { height: "126px" }
+                : {},
+              window.innerHeight < 620
+                ? { height: "78px" }
+                : { height: "126px" })
             }
           >
             <div
               className="researchs_block_elem_overflow"
-              style={{ height: "81px" }}
+              style={
+                window.innerHeight > 620
+                  ? { height: "81px" }
+                  : { height: "46px" }
+              }
             >
               <div
                 className="researchs_block_elem_text"
-                style={{ height: "81px" }}
+                style={
+                  window.innerHeight > 620
+                    ? { height: "81px" }
+                    : { height: "46px" }
+                }
               >
                 {parse(t("aboutUs.researchs_block_elem_text3"))}
               </div>
@@ -377,22 +401,32 @@ const AboutUs = () => {
             className="researchs_block_elem"
             onClick={() => researchs_block_elemClick(3)}
             style={
-              window.innerWidth <= 1134
+              (window.innerWidth <= 1134
                 ? {
                     transform: "translateX(-505px)",
-                    height: "126px",
                     opacity: 1,
                   }
-                : { height: "126px" }
+                : {},
+              window.innerHeight < 620
+                ? { height: "78px" }
+                : { height: "126px" })
             }
           >
             <div
               className="researchs_block_elem_overflow"
-              style={{ height: "81px" }}
+              style={
+                window.innerHeight > 620
+                  ? { height: "81px" }
+                  : { height: "46px" }
+              }
             >
               <div
                 className="researchs_block_elem_text"
-                style={{ height: "81px" }}
+                style={
+                  window.innerHeight > 620
+                    ? { height: "81px" }
+                    : { height: "46px" }
+                }
               >
                 {parse(t("aboutUs.researchs_block_elem_text4"))}
               </div>

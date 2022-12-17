@@ -1,5 +1,4 @@
 import "./Wrapper.css";
-import Scroll from "../SmothScroll";
 // import wrapper_btn from '../../media/wrapper_btn.webp'
 import { useTranslation } from "react-i18next";
 import fontFamilycorrect from "../../fontFamilyFunc";
@@ -12,7 +11,7 @@ const Wrapper = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="Wrapper section">
+    <div className="Wrapper section" id="Wrapper" data-section-name="wrapper">
       {/* <Scroll /> */}
 
       {/* <img src={ImageBackground} className="Wrapper_image" alt=''></img> */}

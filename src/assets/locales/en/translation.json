@@ -148,7 +148,6 @@
     "textBlock_text_content9": "<span class='PoppinsExtraLight fontweight275'>Geotec on behalf of TCO will execute the dimension control of modules</span>",
     "textBlock_text_content10": "<span class='PoppinsExtraLight fontweight275'>Geotec on behalf of KPI will execute the laser scanning during the construction period to create an executive BIM model of Integrated Gas Chemical Complex</span>",
     "textBlock_text_content11": "<span class='PoppinsExtraLight fontweight275'></span>"
-
   },
 
   "whyarewe": {
@@ -165,9 +164,8 @@
     "Whyarewe_block_Content_first_text4": "<span class='PoppinsRegular fontweight400'>We strive for sustainability and environmental awareness.<br />We want to be publicly recognized as an well-known in sustainable business practice.</span>"
   },
 
-  
   "aboutUs": {
-    "logo_CompanyBar": "<span class='PoppinsRegular fontweight400 txtTr'>is turnkey geodetic surveys</span>", 
+    "logo_CompanyBar": "<span class='PoppinsRegular fontweight400 txtTr'>is turnkey geodetic surveys</span>",
     "perhaps_logo_companyBar": "<span class='PoppinsRegular fontweight400'>Our company is active in the following areas:</span>",
     "mobileTitleAboutUsTitle": "<span class='PoppinsExtraLight fontweight275'>is turnkey geodetic surveys</span>",
     "researchs_block_elem_text1": "<span class='PoppinsRegular fontweight400'>Specific survey</span>",
@@ -175,15 +173,15 @@
     "researchs_block_elem_text3": "<span class='PoppinsRegular fontweight400'>Design</span>",
     "researchs_block_elem_text4": "<span class='PoppinsRegular fontweight400'>Hydrographic, Geological & Geophysical survey</span>",
 
-    "text1": "<span class='PoppinsLight fontweight300'>- 3D Laser Scanning High-Definition Survey<br/>-UAV / Drone Survey<br/>-Dimension Control & Deformation Survey<br/>-High-Precision Measurement Survey<br/>-Clash Detection Survey<br/>-3D Modelling</span>",
-    "text2": "<span class='PoppinsLight fontweight300'>- Global Positioning System (GPS) Survey<br />- Road & Railroad & Bridges Survey & Buildings<br />- Industrial Facilities, Site Plan Surveys,<br />- Engineering & Construction Survey.<br />- Extreme Project Surveys, Wind Energy Survey, Gondola i.e</span>",
-    "text3": "<span class='PoppinsLight fontweight300'>- Railroad Feasibility studies, Calculation of Volumes<br />- Railroad Preliminary and Detailed Environmental Impact<br />- Road & Railroad Conceptual Drawings<br />- Developing Engineering design for Rail Transportation<br />- Developing Engineering design for roads (all categories)</span>",
-    "text4": "<span class='PoppinsLight fontweight300'>- Bathymetric Survey<br />- Ground-Penetrating Radar Services<br />- Soil Investigation<br />- Reporting based on ASTM and SNIP_GOST.</span>"
+    "text1": "<span class='PoppinsRegular fontweight400'>- 3D Laser Scanning High-Definition Survey<br/>-UAV / Drone Survey<br/>-Dimension Control & Deformation Survey<br/>-High-Precision Measurement Survey<br/>-Clash Detection Survey<br/>-3D Modelling</span>",
+    "text2": "<span class='PoppinsRegular fontweight400'>- Global Positioning System (GPS) Survey<br />- Road & Railroad & Bridges Survey & Buildings<br />- Industrial Facilities, Site Plan Surveys,<br />- Engineering & Construction Survey.<br />- Extreme Project Surveys, Wind Energy Survey, Gondola i.e</span>",
+    "text3": "<span class='PoppinsRegular fontweight400'>- Railroad Feasibility studies, Calculation of Volumes<br />- Railroad Preliminary and Detailed Environmental Impact<br />- Road & Railroad Conceptual Drawings<br />- Developing Engineering design for Rail Transportation<br />- Developing Engineering design for roads (all categories)</span>",
+    "text4": "<span class='PoppinsRegular fontweight400'>- Bathymetric Survey<br />- Ground-Penetrating Radar Services<br />- Soil Investigation<br />- Reporting based on ASTM and SNIP_GOST.</span>"
   },
 
   "contacts": {
     "contact_title": "<span class='PoppinsRegular fontweight400'>CONTACTS</span>",
-    "title_map_btn": "<span class='PoppinsRegular fontweight400'>google maps</span>",
-    "address": "<span class='PoppinsLight fontweight300'>010000, Astana, Korgalzhinskoe Highway 2A, 'Duman' Hotel complex,13th floor, offices<br />1306-1311</span>"
+    "title_map_btn": "<span class='PoppinsRegular fontweight400'>Show address on map</span>",
+    "address": "<span class='PoppinsLight fontweight300'>010000, Astana, Kurgaldzhinskoe highway 3B, 3rd floor, office 301</span>"
   }
 }
