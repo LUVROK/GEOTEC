@@ -19,6 +19,7 @@ import { useNavigate } from "react-router-dom";
 
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
+import $ from "jquery";
 
 const Clients = () => {
   const [isrender, setisrender] = React.useState(false);
@@ -47,7 +48,7 @@ const Clients = () => {
     setInterval(() => {
       setisrender(true);
     }, 2000);
-    window.scrollTo(0, 0);
+    $(document.body).scrollTop(0);
     window.$.scrollify.disable();
     // console.log(i18n.language);
   }, []);

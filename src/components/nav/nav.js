@@ -1,14 +1,15 @@
 import "../../App.css";
 import "./nav.css";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import parse from "html-react-parser";
 import $ from "jquery";
+import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const [language_select, setlanguage_select] = useState("ru");
   const { t, i18n } = useTranslation();
+
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
@@ -43,17 +44,27 @@ const Nav = () => {
     changeLanguage(language_select);
   }, [language_select]);
 
+  const navigate = useNavigate();
+
+  const fiji = () => {
+    if (
+      document.querySelector(".licenses") ||
+      document.querySelector(".clients")
+    ) {
+      navigate(-1);
+      window.$.scrollify.enable();
+    } else {
+      $.scrollify.move("#wrapper");
+    }
+  };
+
   return (
     <nav className="Nav_Block box">
       <div className="Nav_BlockCenter">
         <div className="Nav_Block_right">
           <div
+            onClick={() => fiji()}
             className="Nav_Block_right_a a_style_none js-scrollify-move"
-            onClick={
-              (() => window.$.scrollify.enable(),
-              // () => $.scrollify("move", "#wrapper"))
-              () => $.scrollify.move("#wrapper"))
-            }
           >
             <div className="Nav_Block_right_a_svg">
               <svg
