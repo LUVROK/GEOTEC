@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GEOTEC/static/css/main.7d1ee109.css",
-    "main.js": "/GEOTEC/static/js/main.6e8c317d.js",
+    "main.js": "/GEOTEC/static/js/main.884f6fed.js",
     "static/js/787.cd711f27.chunk.js": "/GEOTEC/static/js/787.cd711f27.chunk.js",
     "static/media/mountains_wrapper.webp": "/GEOTEC/static/media/mountains_wrapper.d97fcfb2ed4a0c11a1e9.webp",
     "static/media/Raleway-Light.ttf": "/GEOTEC/static/media/Raleway-Light.b1f782b7717d75963d4a.ttf",
@@ -74,11 +74,11 @@
     "index.html": "/GEOTEC/index.html",
     "static/media/getFetch.cjs": "/GEOTEC/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.7d1ee109.css.map": "/GEOTEC/static/css/main.7d1ee109.css.map",
-    "main.6e8c317d.js.map": "/GEOTEC/static/js/main.6e8c317d.js.map",
+    "main.884f6fed.js.map": "/GEOTEC/static/js/main.884f6fed.js.map",
     "787.cd711f27.chunk.js.map": "/GEOTEC/static/js/787.cd711f27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d1ee109.css",
-    "static/js/main.6e8c317d.js"
+    "static/js/main.884f6fed.js"
   ]
 }
