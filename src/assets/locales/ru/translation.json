@@ -127,13 +127,13 @@
 
     "textBlock_text1": "<span class='RalewayRegular fontweight400'>Основание <span class='PoppinsLight fontweight300'><br />GEOTEC</span></span>",
     "textBlock_text2": "<span class='RalewayRegular fontweight400'>Первый проект <span class='PoppinsLight fontweight300'><br />GEOTEC</span></span>",
-    "textBlock_text3": "<span class='RalewayRegular fontweight400'>Расширение<br />в Казахстане</span>",
-    "textBlock_text4": "<span class='RalewayRegular fontweight400'>Партнерство<br />с ТШО</span>",
-    "textBlock_text5": "<span class='RalewayRegular fontweight400'>Самое высокое здание<br />в Казахстан</span>",
-    "textBlock_text6": "<span class='RalewayRegular fontweight400'>Проект ветровой<br />электростанции</span>",
-    "textBlock_text7": "<span class='RalewayRegular fontweight400 stylemobile'>Проект по <span class='PoppinsExtraLight fontweight300'>3D</span> измерению <br />&геофизическое исследование</span>",
-    "textBlock_text8": "<span class='RalewayRegular fontweight400 stylemobile'>Сертификация <span class='PoppinsExtraLight fontweight300'>ISO 9001</span><br />и <span class='PoppinsExtraLight fontweight300'>OHSAS 18001</span></span>",
-    "textBlock_text9": "<span class='RalewayRegular fontweight400 stylemobile'>Проект по модульному<br />контролю ТШО</span>",
+    "textBlock_text3": "<span class='RalewayRegular fontweight400'>Расширение&nbsp<br />в Казахстане</span>",
+    "textBlock_text4": "<span class='RalewayRegular fontweight400'>Партнерство&nbsp<br />с ТШО</span>",
+    "textBlock_text5": "<span class='RalewayRegular fontweight400'>Самое высокое здание&nbsp<br />в Казахстан</span>",
+    "textBlock_text6": "<span class='RalewayRegular fontweight400'>Проект ветровой&nbsp<br />электростанции</span>",
+    "textBlock_text7": "<span class='RalewayRegular fontweight400 stylemobile'>Проект по <span class='PoppinsExtraLight fontweight300'>3D</span> измерению&nbsp<br />& геофизическое исследование</span>",
+    "textBlock_text8": "<span class='RalewayRegular fontweight400 stylemobile'>Сертификация <span class='PoppinsExtraLight fontweight300'>ISO 9001</span>&nbsp<br />и <span class='PoppinsExtraLight fontweight300'>OHSAS 18001</span></span>",
+    "textBlock_text9": "<span class='RalewayRegular fontweight400 stylemobile'>Проект по модульному&nbsp<br />контролю ТШО</span>",
     "textBlock_text10": "<span class='RalewayRegular fontweight400 stylemobile'><span class='PoppinsExtraLight fontweight300'>3D</span> моделирование <span class='PoppinsExtraLight fontweight300'><br />IGCC</span></span>",
     "textBlock_text11": "<span class='RalewayRegular fontweight400 stylemobile'>Цель стать самым крупным подрядчиком в своей сфере</span>",
 
@@ -154,14 +154,14 @@
     "title": "<span class='RalewayRegular fontweight400'>Почему<br />Выбирают<br />Нас?</span>",
 
     "Whyarewe_block_Content_first_title1": "<span class='RalewayRegular fontweight400'>Сотрудники</span>",
-    "Whyarewe_block_Content_first_title2": "<span class='RalewayRegular fontweight400'>Заказчик</span>",
+    "Whyarewe_block_Content_first_title4": "<span class='RalewayRegular fontweight400'>Заказчик</span>",
     "Whyarewe_block_Content_first_title3": "<span class='RalewayRegular fontweight400'>Безопасность и Качество</span>",
-    "Whyarewe_block_Content_first_title4": "<span class='RalewayRegular fontweight400'>Устойчивое Развитие</span>",
+    "Whyarewe_block_Content_first_title2": "<span class='RalewayRegular fontweight400'>Устойчивое Развитие</span>",
 
     "Whyarewe_block_Content_first_text1": "<span class='RalewayRegular fontweight400'>Наши сотрудники - пример креативности, опыта и мотивации.<br /><br />Поддержание слогана <br />«Безопасность- превыше всего!» и обеспечение здоровой производственной среды</span>",
-    "Whyarewe_block_Content_first_text2": "<span class='RalewayRegular fontweight400'>Мы добиваемся устойчивого развития и осведомлённостив области окружающей средыМы хотим получить всенародное признание какизвестная устойчивая компания</span>",
+    "Whyarewe_block_Content_first_text4": "<span class='RalewayRegular fontweight400'>Мы добиваемся устойчивого развития и осведомлённости в области окружающей средыМы хотим получить всенародное признание какизвестная устойчивая компания</span>",
     "Whyarewe_block_Content_first_text3": "<span class='RalewayRegular fontweight400'>Мы имеем высокие стандарты по качеству, которые применяются при выполнении работ<br /><br />Ставим безопасность превыше всего и обеспечиваем здоровую рабочую cреду</span>",
-    "Whyarewe_block_Content_first_text4": "<span class='RalewayRegular fontweight400'>Требования Заказчика – наш основной приоритет<br />Выслушиваем и принимаем каждое слово Заказчика, и ищем лучшие решения для непрерывного совершенствования</span>"
+    "Whyarewe_block_Content_first_text2": "<span class='RalewayRegular fontweight400'>Требования Заказчика – наш основной приоритет<br />Выслушиваем и принимаем каждое слово Заказчика, и ищем лучшие решения для непрерывного совершенствования</span>"
   },
 
   "aboutUs": {

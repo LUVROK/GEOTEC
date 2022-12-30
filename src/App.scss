@@ -2,10 +2,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
-  /* overflow-y: scroll; */
   height: auto;
-  /* scroll-behavior: smooth; */
   overflow: hidden;
 }
 .WrapperFixedContent {
@@ -63,27 +60,23 @@
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  /* overflow: hidden; */
-  /* opacity: 0; */
 }
 .borderRadius_overlow {
   position: relative;
   border-radius: 40px;
-  /* overflow: hidden; */
   width: 100%;
   height: auto;
-  /* overflow: scroll; */
 }
 .Subtract_left {
   position: fixed;
-  top: 88px;
+  top: calc(56px + 1.05vh + 1.05vw);
   left: 4.5%;
   width: 50px;
   z-index: 100;
 }
 .Subtract_right {
   position: fixed;
-  top: 88px;
+  top: calc(56px + 1.05vh + 1.05vw);
   right: 4.5%;
   width: 50px;
   z-index: 100;
@@ -93,6 +86,10 @@
   position: relative;
   width: 100%;
   height: auto;
+}
+nav span {
+  position: relative;
+  height: fit-content;
 }
 
 .PoppinsLight {
@@ -144,43 +141,6 @@
 .fontweight800 {
   font-weight: 800;
 }
-
-/* 
-body {
-  font-family: arial, helvetica;
-}
-
-h3 {
-  font-size: 5em;
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
-}
-
-#section1 {
-  color: #fff;
-}
-
-.fp-section {
-  text-align: center;
-}
-
-.fp-slide {
-  height: 50vh;
-}
-
-button {
-  padding: 0.93em 1.87em;
-  background: #35495e;
-  border-radius: 5px;
-  border-color: transparent;
-  display: block;
-  color: #fff;
-  margin: 0 auto;
-  cursor: pointer;
-  font-size: 0.85em;
-} */
-
 .MainApp {
   z-index: 101;
 }

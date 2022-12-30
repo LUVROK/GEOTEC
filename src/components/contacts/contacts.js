@@ -1,4 +1,4 @@
-import "./contacts.css";
+import "./contacts.scss";
 import React from "react";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
@@ -10,7 +10,7 @@ const Contacts = () => {
     <section
       className="contacts section"
       id="contacts"
-      data-section-name="contacts"
+      data-section-name="contacts_section"
     >
       <div className="contact_title element-animation">
         {parse(t("contacts.contact_title"))}

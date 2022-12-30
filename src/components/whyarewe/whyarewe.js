@@ -1,32 +1,27 @@
-import "./whyarewe.css";
+import "./whyarewe.scss";
 import React, { useState, useEffect } from "react";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
 
 const Whyarewe = () => {
-  const [activelistLogo, setActivelistLogo] = useState(null);
-  const [activelistSvg, setActivelistSvg] = useState(null);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const [stateClientHeight, setStateClientHeight] = useState(0);
   const [stateClientHeightY, setStateClientHeightY] = useState(0);
 
   useEffect(() => {
     window.innerHeight < 1120 && window.innerHeight >= 920
-      ? setStateClientHeightY(0)
+      ? setStateClientHeightY(10)
       : window.innerHeight < 920 && window.innerHeight >= 720
-      ? setStateClientHeightY(-15)
+      ? setStateClientHeightY(0)
       : window.innerHeight < 720 && window.innerHeight >= 600
-      ? setStateClientHeightY(-30)
+      ? setStateClientHeightY(5)
       : window.innerHeight < 600
-      ? setStateClientHeightY(-100)
+      ? setStateClientHeightY(-40)
       : setStateClientHeightY(0);
   }, []);
 
   const listLogoClick = () => {
     document.querySelector(".listLogo").style.pointerEvents = "none";
-    const el = document.getElementById("Whyarewe_1th");
-    const elActive = document.querySelector(".active");
     const elAll = document.querySelectorAll(
       ".Whyarewe_block_Content_first_transform"
     );
@@ -39,90 +34,71 @@ const Whyarewe = () => {
 
     for (let i = 0; i < elAll.length; i++) {
       elAll[i].classList.forEach((element) =>
-        element === "active" ? [setActivelistLogo(i), (indexEl = i)] : null
+        element === "active" ? [(indexEl = i)] : null
       );
       elAllgearwhell[i].classList.forEach((element) =>
-        element === "active" ? [setActivelistSvg(i), (indexEl2 = i)] : null
+        element === "active" ? [(indexEl2 = i)] : null
       );
     }
 
     if (indexEl === 1) {
       elAllgearwhell[3].style.transition = "1s";
       elAllgearwhell[0].style.transition = "0s";
-      elAllgearwhell[0].style.transform = "translateY(1680px)";
-      // console.log(elAllgearwhell[0].style.transform)
+      elAllgearwhell[0].style.transform = "translateY(155vh)";
     }
     if (indexEl === 2) {
       elAllgearwhell[0].style.transition = "1s";
       elAllgearwhell[1].style.transition = "0s";
-      elAllgearwhell[1].style.transform = "translateY(1680px)";
-      // console.log(elAllgearwhell[1].style.transform)
+      elAllgearwhell[1].style.transform = "translateY(155vh)";
     }
     if (indexEl === 3) {
       elAllgearwhell[1].style.transition = "1s";
       elAllgearwhell[2].style.transition = "0s";
-      elAllgearwhell[2].style.transform = "translateY(1680px)";
-      // console.log(elAllgearwhell[2].style.transform)
+      elAllgearwhell[2].style.transform = "translateY(155vh)";
     }
     if (indexEl === 0) {
       elAllgearwhell[2].style.transition = "1s";
       elAllgearwhell[3].style.transition = "0s";
-      elAllgearwhell[3].style.transform = "translateY(1680px)";
-      // console.log(elAllgearwhell[3].style.transform)
+      elAllgearwhell[3].style.transform = "translateY(155vh)";
     }
 
-    // if (indexEl === 3) {
-    //     if (i !== 3) {
-    //         elAllgearwhell[i].style.transition = '0s';
-    //         elAllgearwhell[i].style.transform = 'translateY(1680px)';
-    //         console.log(elAllgearwhell[i].style.transform)
-    //     }
-    //     elAllgearwhell[i].style.transition = '1s';
-    //     console.log(elAllgearwhell[i].style.transform)
-    // }
-    // if (indexEl === 0) {
-    //     if (i !== 4) {
-    //         elAllgearwhell[i].style.transition = '0s';
-    //         elAllgearwhell[i].style.transform = 'translateY(1680px)';
-    //         console.log(elAllgearwhell[i].style.transform)
-    //     }
-    //     elAllgearwhell[i].style.transition = '1s';
-    //     console.log(elAllgearwhell[i].style.transform)
-    // }
-
-    elAll[indexEl].style.transform = "translateX(-1680px)";
+    elAll[indexEl].style.transform = "translateX(-155vh)";
     elAll[indexEl].classList.remove("active");
 
-    elAllgearwhell[indexEl2].style.transform = "translateY(-1680px)";
+    elAllgearwhell[indexEl2].style.transform = "translateY(-155vh)";
     elAllgearwhell[indexEl2].classList.remove("active");
 
     if (elAll[indexEl + 1]) {
       elAll[indexEl + 1].style.transform = "translateX(0px)";
       elAll[indexEl + 1].classList.add("active");
 
-      elAllgearwhell[
-        indexEl2 + 1
-      ].style.transform = `translateY(${stateClientHeightY}px)`;
+      if (window.innerWidth < 720) {
+        elAllgearwhell[indexEl2 + 1].style.transform = `translateY(${
+          indexEl + 1 !== 3 ? stateClientHeightY + 70 : stateClientHeightY + 20
+        }%)`;
+      } else {
+        elAllgearwhell[indexEl2 + 1].style.transform = `translateY(${
+          stateClientHeightY + 10
+        }%)`;
+      }
       elAllgearwhell[indexEl2 + 1].classList.add("active");
     } else {
       elAll[0].style.transform = "translateX(0px)";
       elAll[0].classList.add("active");
 
-      elAllgearwhell[0].style.transform = `translateY(${stateClientHeightY}px)`;
+      elAllgearwhell[0].style.transform = `translateY(${stateClientHeightY}%)`;
       elAllgearwhell[0].classList.add("active");
     }
     setTimeout(() => {
       document.querySelector(".listLogo").style.pointerEvents = "all";
     }, 1000);
-
-    //settimeout для опарсити и для пролистывания
   };
 
   return (
     <section
       className="Whyarewe section sec3"
       id="Whyarewe"
-      data-section-name="Whyarewe"
+      data-section-name="Whyarewe_section"
     >
       <div className="Whyarewe_block element-animation">
         <div className="Whyarewe_block_title">
@@ -153,7 +129,7 @@ const Whyarewe = () => {
             <div
               className="Whyarewe_block_Content_first_text_Gear_Wheel active Gear_Wheel_first"
               style={{
-                transform: `translateY(${stateClientHeightY}px)`,
+                transform: `translateY(${stateClientHeightY}%)`,
                 transition: "1s",
               }}
               id="Whyarewe_1thSvg"
@@ -176,7 +152,7 @@ const Whyarewe = () => {
             <div
               className="Whyarewe_block_Content_first_transform"
               style={{
-                transform: "translateX(-1680px)",
+                transform: "translateX(-155vh)",
                 position: "relative",
                 width: "100%",
                 height: "100%",
@@ -193,7 +169,7 @@ const Whyarewe = () => {
             </div>
             <div
               className="Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_second"
-              style={{ transform: "translateY(1680px)", transition: "1s" }}
+              style={{ transform: "translateY(155vh)", transition: "1s" }}
               id="Whyarewe_2thSvg"
             >
               <svg
@@ -214,7 +190,7 @@ const Whyarewe = () => {
             <div
               className="Whyarewe_block_Content_first_transform"
               style={{
-                transform: "translateX(-1680px)",
+                transform: "translateX(-155vh)",
                 position: "relative",
                 width: "100%",
                 height: "100%",
@@ -231,7 +207,7 @@ const Whyarewe = () => {
             </div>
             <div
               className="Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_third"
-              style={{ transform: "translateY(1680px)", transition: "1s" }}
+              style={{ transform: "translateY(155vh)", transition: "1s" }}
               id="Whyarewe_3thSvg"
             >
               <svg
@@ -252,7 +228,7 @@ const Whyarewe = () => {
             <div
               className="Whyarewe_block_Content_first_transform"
               style={{
-                transform: "translateX(-1680px)",
+                transform: "translateX(-155vh)",
                 position: "relative",
                 width: "100%",
                 height: "100%",
@@ -269,7 +245,7 @@ const Whyarewe = () => {
             </div>
             <div
               className="Whyarewe_block_Content_first_text_Gear_Wheel Gear_Wheel_fourth"
-              style={{ transform: "translateY(1680px)", transition: "1s" }}
+              style={{ transform: "translateY(155vh)", transition: "1s" }}
               id="Whyarewe_2thSvg"
             >
               <svg

@@ -1,6 +1,6 @@
 import React from "react";
 import Preloader from "../Preloader/Preloader";
-import "./LICENSES_CERTIFICATION.css";
+import "./LICENSES_CERTIFICATION.scss";
 
 import licenses1 from "../../media/licenses1.webp";
 import licenses2 from "../../media/licenses2.webp";
@@ -40,7 +40,6 @@ const LICENSES_CERTIFICATION = () => {
       setisrender(true);
     }, 2000);
     $(document.body).scrollTop(0);
-    // window.scrollTo(0, 0);
     window.$.scrollify.disable();
   }, []);
 

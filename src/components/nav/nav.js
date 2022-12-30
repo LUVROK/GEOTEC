@@ -1,5 +1,5 @@
-import "../../App.css";
-import "./nav.css";
+import "../../App.scss";
+import "./nav.scss";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import parse from "html-react-parser";
@@ -55,6 +55,8 @@ const Nav = () => {
       window.$.scrollify.enable();
     } else {
       $.scrollify.move("#wrapper");
+      $.scrollify.disable();
+      setTimeout(() => $.scrollify.enable(), 1600);
     }
   };
 
@@ -68,8 +70,6 @@ const Nav = () => {
           >
             <div className="Nav_Block_right_a_svg">
               <svg
-                width="31"
-                height="28"
                 viewBox="0 0 111 102"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,46 +134,55 @@ const Nav = () => {
         </div>
         <div className="Nav_Block_left">
           <div
-            // href="#firstSection"
             className="Nav_Block_left_a a_style_none"
-            // onClick={() => $.scrollify("move", "#firstSection")}
-            onClick={() => $.scrollify.move("#firstSection")}
+            onClick={() => {
+              $.scrollify.move("#firstSection_section");
+              $.scrollify.disable();
+              setTimeout(() => $.scrollify.enable(), 1600);
+            }}
           >
             {parse(t("description.Nav1"))}
           </div>
           <div
-            // href="#AboutUs"
             className="Nav_Block_left_a a_style_none"
-            // onClick={() => $.scrollify("move", "#AboutUs")}
-            onClick={() => $.scrollify.move("#aboutUs")}
+            onClick={() => {
+              $.scrollify.move("#aboutUs_section");
+              $.scrollify.disable();
+              setTimeout(() => $.scrollify.enable(), 1600);
+            }}
           >
             {parse(t("description.Nav2"))}
           </div>
           <div
-            // href="#projects"
             className="Nav_Block_left_a a_style_none"
-            // onClick={() => $.scrollify("move", "#projects")}
-            onClick={() => $.scrollify.move("#projects")}
+            onClick={() => {
+              $.scrollify.move("#projects_section");
+              $.scrollify.disable();
+              setTimeout(() => $.scrollify.enable(), 1600);
+            }}
           >
             {parse(t("description.Nav3"))}
           </div>
           <div
             className="Nav_Block_left_a a_style_none"
-            // onClick={() => $.scrollify("move", "#our_technologies")}
-            onClick={() => $.scrollify.move("#our_technologies")}
+            onClick={() => {
+              $.scrollify.move("#our_technologies_section");
+              $.scrollify.disable();
+              setTimeout(() => $.scrollify.enable(), 1600);
+            }}
           >
             {parse(t("description.Nav4"))}
           </div>
           <div
             className="Nav_Block_left_a a_style_none"
-            // onClick={() =>
-            //   setTimeout(() => $.scrollify("move", "#contacts"), 1000)
-            // }
-            onClick={() => $.scrollify.move("#contacts")}
+            onClick={() => {
+              $.scrollify.move("#contacts_section");
+              $.scrollify.disable();
+              setTimeout(() => $.scrollify.enable(), 1600);
+            }}
           >
             {parse(t("description.Nav5"))}
           </div>
-          {/* <div class="sel sel--black-panther"> */}
           <div id="select-language" className="selectLANG">
             <div
               className="Active_Select_lang"

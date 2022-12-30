@@ -1,4 +1,4 @@
-import "./history.css";
+import "./history.scss";
 import history1Block from "../../media/history1Block.webp";
 import history2Block from "../../media/history2Block.webp";
 import history3Block from "../../media/history3Block.webp";
@@ -11,15 +11,11 @@ import history9Block from "../../media/history9Block.webp";
 import history10Block from "../../media/history10Block.webp";
 import history11Block from "../../media/history11Block.webp";
 import React, { useEffect, useState } from "react";
-import $, { event } from "jquery";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
 
 const History = () => {
   const { t, i18n } = useTranslation();
-  const [TimeHistoryBox_elements, setTimeHistoryBox_element] = useState();
-
-  const [active, setActive] = useState(0);
 
   useEffect(() => {
     const els = document.querySelectorAll(".textBlock");
@@ -41,10 +37,7 @@ const History = () => {
       var yDown = null;
 
       function getTouches(evt) {
-        return (
-          evt.touches || // browser API
-          evt.originalEvent.touches
-        ); // jQuery
+        return evt.touches || evt.originalEvent.touches;
       }
 
       function handleTouchStart(evt) {
@@ -67,7 +60,6 @@ const History = () => {
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
           /*most significant*/
           if (xDiff > 0) {
-            // rightTech();
             /* right swipe */
 
             const massElements = document.querySelectorAll(
@@ -81,15 +73,12 @@ const History = () => {
             let activeElem;
             let indexEl, indexElSec, indexElSec2, indexElPrev, indexElPrev2;
             activeEl.forEach((el) =>
-              el.style.transform === "translateX(0%)"
-                ? (activeElem = el)
-                : console.log("none")
+              el.style.transform === "translateX(0%)" ? (activeElem = el) : null
             );
 
             for (let i = 0; i < massElements.length; i++) {
               massElements[i].classList.forEach((el) => {
                 if (el === "active") {
-                  console.log("good");
                   indexEl = i;
                   indexElSec = indexEl !== 10 ? indexEl + 1 : 0;
                   indexElSec2 = indexEl !== 9 ? indexEl + 2 : 0;
@@ -97,90 +86,25 @@ const History = () => {
                   indexElPrev2 = indexEl !== 1 ? indexEl - 2 : 10;
                 }
               });
-              // massElements[i].classList.forEach((element) => (element === "active" ? (indexEl = i) : null));
             }
-            console.log(textBlockAll[indexElSec].id);
-            console.log(els_n[indexElSec].id);
-            console.log(indexEl);
 
             if (indexEl !== 10) {
               currentCorrectActive(
                 textBlockAll[indexElSec].id,
                 els_n[indexElSec].id,
-                indexEl + 1
+                indexEl + 1,
+                false
               );
             } else {
               currentCorrectActive(
                 textBlockAll[indexElSec].id,
                 els_n[indexElSec].id,
-                0
+                0,
+                false
               );
             }
-
-            // currentCorrectActive("first", 2006, 0)
-
-            // if (indexEl !== 10 && indexEl !== 0) {
-            //   els_n[indexElPrev2].style.display = "block";
-            //   els_n[indexElPrev2].style.transform = "translateX(-125%)";
-            //   els_n[indexElPrev].style.display = "block";
-            //   els_n[indexElPrev].style.transform = "translateX(-37.5%)";
-            //   els_n[indexElPrev].style.zIndex = "101";
-            //   els_n[indexEl].style.zIndex = "100";
-            //   els_n[indexEl].style.display = "block";
-            //   els_n[indexEl].style.transform = "translateX(0%)";
-            //   els_n[indexElSec].style.display = "block";
-            //   els_n[indexElSec].style.transform = "translateX(37.5%)";
-            //   els_n[indexElSec].style.zIndex = "101";
-            //   els_n[indexElSec2].style.display = "block";
-            //   els_n[indexElSec2].style.transform = "translateX(175%)";
-            // } else {
-            //   if (indexEl === 10) {
-            //     els_n[8].style.display = "block";
-            //     els_n[8].style.transform = "translateX(-125%)";
-            //     els_n[9].style.display = "block";
-            //     els_n[9].style.transform = "translateX(-37.5%)";
-            //     els_n[9].style.zIndex = "101";
-            //     els_n[10].style.zIndex = "100";
-            //     els_n[10].style.display = "block";
-            //     els_n[10].style.transform = "translateX(0%)";
-            //     els_n[0].style.display = "block";
-            //     els_n[0].style.transform = "translateX(37.5%)";
-            //     els_n[0].style.zIndex = "101";
-            //     els_n[1].style.display = "block";
-            //     els_n[1].style.transform = "translateX(175%)";
-            //   }
-            //   if (indexEl === 0) {
-            //     els_n[10].style.display = "block";
-            //     els_n[10].style.transform = "translateX(-125%)";
-            //     els_n[0].style.display = "block";
-            //     els_n[0].style.transform = "translateX(-37.5%)";
-            //     els_n[0].style.zIndex = "101";
-            //     els_n[1].style.zIndex = "100";
-            //     els_n[1].style.display = "block";
-            //     els_n[1].style.transform = "translateX(0%)";
-            //     els_n[2].style.display = "block";
-            //     els_n[2].style.transform = "translateX(37.5%)";
-            //     els_n[2].style.zIndex = "101";
-            //     els_n[3].style.display = "block";
-            //     els_n[3].style.transform = "translateX(175%)";
-            //   }
-            // }
-
-            // for (let i = 0; i < massElements.length; i++) {
-            //   textBlockAll[i].style.transition = "0s";
-            //   textBlockAll[i].style.transform = "translateY(0px) translateX(-950px) ";
-            // }
-
-            // textBlockAll[indexEl].style.transition = "all 1s ease-out";
-            // textBlockAll[indexEl].style.transform = "translateY(0px) translateX(880px)";
-            // massElements[indexElSec].style.transition = "all 1s ease-out";
-            // massElements[indexElSec].style.transform = "translateY(0px) translateX(0px)";
-
-            // massElements[indexEl].classList.remove("active");
-            // newActiveElmass.classList.add("active");
           } else {
             /* left swipe */
-            // leftTech();
             const massElements = document.querySelectorAll(
               ".TimeHistoryBox_element"
             );
@@ -192,15 +116,12 @@ const History = () => {
             let activeElem;
             let indexEl, indexElSec, indexElSec2, indexElPrev, indexElPrev2;
             activeEl.forEach((el) =>
-              el.style.transform === "translateX(0%)"
-                ? (activeElem = el)
-                : console.log("none")
+              el.style.transform === "translateX(0%)" ? (activeElem = el) : null
             );
 
             for (let i = 0; i < massElements.length; i++) {
               massElements[i].classList.forEach((el) => {
                 if (el === "active") {
-                  console.log("good");
                   indexEl = i;
                   indexElSec = indexEl !== 10 ? indexEl + 1 : 0;
                   indexElSec2 = indexEl !== 9 ? indexEl + 2 : 0;
@@ -208,11 +129,7 @@ const History = () => {
                   indexElPrev2 = indexEl !== 1 ? indexEl - 2 : 10;
                 }
               });
-              // massElements[i].classList.forEach((element) => (element === "active" ? (indexEl = i) : null));
             }
-            console.log(textBlockAll[indexElSec].id);
-            console.log(els_n[indexElSec].id);
-            console.log(indexEl);
 
             if (indexEl !== 0) {
               currentCorrectActive(
@@ -230,12 +147,6 @@ const History = () => {
               );
             }
           }
-        } else {
-          if (yDiff > 0) {
-            /* down swipe */
-          } else {
-            /* up swipe */
-          }
         }
         /* reset values */
         xDown = null;
@@ -243,11 +154,13 @@ const History = () => {
       }
 
       for (let i = 0; i < els.length; i++) {
-        els[i].style.transform = "translateY(0px) translateX(880px)";
-        // els_n[i].style.display = "block";
+        if (els.length - 1 !== i) {
+          els[i].style.transform = "translateY(0px) translateX(880px)";
+        } else {
+          els[i].style.transform = "translateY(0px) translateX(-950px)";
+        }
+        // els[i].style.opacity = 0;
       }
-      // els[10].style.transform = "translateX(-950px) translateY(0px)";
-      // els[9].style.transform = "translateX(-950px) translateY(0px)";
 
       for (let i = 0; i < els_n.length; i++) {
         els_n[i].style.display = "none";
@@ -266,7 +179,6 @@ const History = () => {
       els_n[1].style.zIndex = "101";
       els_n[2].style.display = "block";
       els_n[2].style.transform = "translateX(175%)";
-
       els[0].style.transform = "translateY(0px) translateX(0px)";
     }
   }, []);
@@ -275,7 +187,6 @@ const History = () => {
     const massElements = document.querySelectorAll(".TimeHistoryBox_element");
     const textBlockAll = document.querySelectorAll(".textBlock");
     const els_n = document.querySelectorAll(".TimeHistoryBox_element");
-
     const newActiveEl = document.getElementById(`${newActive}`);
     const newActiveElmass = document.getElementById(`${newActiveTime}`);
 
@@ -290,16 +201,27 @@ const History = () => {
     massElements[indexEl].classList.remove("active");
     newActiveElmass.classList.add("active");
 
+    for (let i = 0; i < massElements.length; i++) {
+      massElements[i].classList.forEach((element) =>
+        element === "active" ? (indexEl = i) : null
+      );
+    }
+
     if (window.innerWidth > 720) {
       for (let i = 0; i < massElements.length; i++) {
         textBlockAll[i].style.transition = "0s";
         textBlockAll[i].style.transform = "translateX(0px) translateY(-950px)";
+        textBlockAll[i].style.opacity = 0;
       }
 
-      textBlockAll[indexEl].style.transition = "all 1s ease-out";
+      console.log(indexEl);
+      textBlockAll[indexEl].style.transition = "all 0.8s ease-out";
       textBlockAll[indexEl].style.transform =
         "translateX(0px) translateY(880px)";
-      newActiveEl.style.transition = "all 1s ease-out";
+      setTimeout(() => {
+        textBlockAll[indexEl].style.opacity = 1;
+      }, 300);
+      newActiveEl.style.transition = "all 0.8s ease-out";
       newActiveEl.style.transform = "translateX(0px) translateY(0px)";
     } else {
       let act = activeel;
@@ -307,6 +229,12 @@ const History = () => {
       let letsec2act = activeel !== 9 ? activeel + 2 : 0;
       let letprevact = activeel !== 0 ? activeel - 1 : 10;
       let letprev2act = activeel !== 1 ? activeel - 2 : 10;
+
+      for (let i = 0; i < massElements.length; i++) {
+        // textBlockAll[i].style.transition = "0s";
+        // textBlockAll[i].style.transform = "translateX(0px) translateY(-950px)";
+        // textBlockAll[i].style.opacity = 1;
+      }
 
       // for (let i = 0; i < els_n.length; i++) {
       //   if (i !== letprevact && i !== letsecact && i !== act) {
@@ -377,26 +305,62 @@ const History = () => {
       }
 
       for (let i = 0; i < massElements.length; i++) {
-        textBlockAll[i].style.transition = "0s";
         if (leftQ === true) {
-          textBlockAll[i].style.transform =
-            "translateY(0px) translateX(-950px) ";
+          if (i !== letprevact && i !== letsecact) {
+            textBlockAll[i].style.transition = "0s";
+            textBlockAll[i].style.opacity = 0;
+            textBlockAll[i].style.transform =
+              // "translateY(0px) translateX(880px) ";
+              "translateY(0px) translateX(-950px) ";
+          } else {
+            textBlockAll[i].style.transition = "all 0.8s ease-out";
+            textBlockAll[i].style.opacity = 1;
+            textBlockAll[i].style.transform =
+              "translateY(0px) translateX(880px) ";
+            // "translateY(0px) translateX(-950px) ";
+          }
         } else {
-          textBlockAll[i].style.transform =
-            "translateY(0px) translateX(880px) ";
+          if (i !== letprevact && i !== letsecact) {
+            textBlockAll[i].style.transition = "0s";
+            textBlockAll[i].style.opacity = 0;
+            textBlockAll[i].style.transform =
+              // "translateY(0px) translateX( -950px) ";
+              "translateY(0px) translateX(880px) ";
+          } else {
+            textBlockAll[i].style.transition = "all 0.8s ease-out";
+            textBlockAll[i].style.opacity = 1;
+            textBlockAll[i].style.transform =
+              // "translateY(0px) translateX(880px) ";
+              "translateY(0px) translateX(-950px) ";
+          }
         }
       }
 
-      textBlockAll[indexEl].style.transition = "all 1s ease-out";
+      console.log(indexEl);
+      textBlockAll[letprevact].style.transition = "all 0.8s ease-out";
       if (leftQ === true) {
-        textBlockAll[indexEl].style.transform =
-          "translateY(0px) translateX(880px)";
-      } else {
-        textBlockAll[indexEl].style.transform =
+        textBlockAll[letprevact].style.opacity = 1;
+        textBlockAll[letprevact].style.transform =
           "translateY(0px) translateX(-950px)";
+        // "translateY(0px) translateX(880px) ";
+        textBlockAll[letprevact].style.transition = "0s";
+        textBlockAll[letprevact].style.opacity = 1;
+        textBlockAll[letprevact].style.transform =
+          "translateY(0px) translateX(-950px)";
+        // "translateY(0px) translateX(-950px) ";
+      } else {
+        textBlockAll[letprevact].style.opacity = 1;
+        textBlockAll[letprevact].style.transform =
+          // "translateY(0px) translateX(880px)";
+          "translateY(0px) translateX(-950px)";
+        textBlockAll[letsecact].style.transition = "0s";
+        textBlockAll[letsecact].style.opacity = 1;
+        textBlockAll[letsecact].style.transform =
+          "translateY(0px) translateX(880px) ";
       }
-      newActiveEl.style.transition = "all 1s ease-out";
+      newActiveEl.style.transition = "all 0.8s ease-out";
       newActiveEl.style.transform = "translateY(0px) translateX(0px)";
+      newActiveEl.style.opacity = 1;
     }
   };
 
@@ -404,17 +368,20 @@ const History = () => {
     <section
       className="History section sec2"
       id="History"
-      data-section-name="History"
+      data-section-name="History_section"
     >
       <div className="History_block element-animation">
-        <h2 className="History_blockTitle">История</h2>
+        <h2 className="History_blockTitle">
+          {parse(t("History.History_blockTitle"))}
+        </h2>
         <div className="hiddenOverflow">
           <div
             className="textBlock textBlock_first active"
             id="first"
             style={{
               transform: "translateY(0px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 1,
             }}
           >
             <div className="textBlock_text">
@@ -432,7 +399,8 @@ const History = () => {
             id="second"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -450,7 +418,8 @@ const History = () => {
             id="third"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -468,7 +437,8 @@ const History = () => {
             id="fourth"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -486,7 +456,8 @@ const History = () => {
             id="fifth"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -506,7 +477,8 @@ const History = () => {
             id="sixth"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -524,7 +496,8 @@ const History = () => {
             id="seventh"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -544,7 +517,8 @@ const History = () => {
             id="eight"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -562,7 +536,8 @@ const History = () => {
             id="tenth"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -580,7 +555,8 @@ const History = () => {
             id="eleventh"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text">
@@ -598,7 +574,8 @@ const History = () => {
             id="twelveth"
             style={{
               transform: "translateY(-950px)",
-              transition: "all 1s cubic-bezier(0,.11,.29,1)",
+              transition: "all 0.6s cubic-bezier(0,.11,.29,1)",
+              opacity: 0,
             }}
           >
             <div className="textBlock_text lasttextBlock_text">
@@ -631,7 +608,7 @@ const History = () => {
               currentCorrectActive("second", "TimeHistoryBox_element_2007", 1)
             }
           >
-            2007
+            2006
           </div>
           <div
             className="TimeHistoryBox_element"
@@ -735,8 +712,6 @@ const History = () => {
       </div>
       <div className="backgroundHistorySvg">
         <svg
-          width="544"
-          height="500"
           viewBox="0 0 544 400"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -1,0 +1,226 @@
+.Wrapper {
+  width: 91%;
+  height: calc(100vh);
+  position: -webkit-sticky;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0px;
+}
+.Wrapper_image {
+  width: 100%;
+  height: calc(100vh - 56px - 1.05vh - 1.05vw);
+  margin-top: calc(56px + 1.05vh + 1.05vw);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.Wrapper_image .background_image {
+  height: calc(100vh - 56px - 1.05vh - 1.05vw);
+  width: 91vw;
+  object-fit: cover;
+  object-position: top center;
+}
+.Wrapper_block_GEOTEC {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: calc(56px + 1.05vh + 1.05vw + 8.18vh);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+.Wrapper_block_GEOTEC_block1 {
+  height: auto;
+  width: auto;
+  position: relative;
+  left: 74px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  transition: 2s ease-out;
+}
+.Wrapper_block_GEOTEC_block2 {
+  height: auto;
+  width: auto;
+  position: relative;
+  left: 74px;
+  color: #3856b5;
+  font-family: "Raleway-Regular";
+  font-size: calc(12px + 0.25vw + 0.25vh);
+  transition: 2s ease-out;
+  @media (max-width: 490px) {
+    font-size: 16px;
+  }
+}
+.Wrapper_block_GEOTEC_block3 {
+  height: auto;
+  width: auto;
+  position: relative;
+  top: 77px;
+  left: 74px;
+  color: #3856b5;
+  font-family: "Raleway-Regular";
+  font-size: calc(12px + 0.25vw + 0.25vh);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 2s ease-out;
+  @media (max-width: 490px) {
+    font-size: 16px;
+  }
+}
+.Wrapper_block_GEOTEC_block2_button svg path {
+  fill: #4a6ad0;
+  transition: 0.2s ease-out;
+}
+.Wrapper_block_GEOTEC_block2_button svg {
+  transform: scale(1);
+  transition: 0.2s ease-out;
+  width: 60px;
+  height: 60px;
+}
+.Wrapper_block_GEOTEC_block2_button:hover svg {
+  transform: scale(1.05);
+}
+.Wrapper_block_GEOTEC_block2_button:hover svg path {
+  fill: #3ed4a9;
+}
+.Wrapper_block_GEOTEC_block2_button {
+  cursor: pointer;
+  position: relative;
+  left: 49px;
+}
+.Wrapper_block_GEOTEC_block2_title {
+  font-size: calc(12px + 0.25vw + 0.25vh);
+  @media (max-width: 490px) {
+    font-size: 16px;
+  }
+}
+.Wrapper_block_GEOTEC_title {
+  width: 85%;
+  text-transform: uppercase;
+  font-size: calc(70px + 3.13vh + 3.13vw);
+  font-family: "Poppins-ExtraLight";
+  color: #3856b5;
+  line-height: 120%;
+  font-weight: 275;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 720px) {
+    font-size: 84px;
+  }
+  @media (max-width: 390px) {
+    font-size: 70px;
+  }
+}
+.Wrapper_block_GEOTEC_logo {
+  width: 100%;
+  position: relative;
+  left: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Wrapper_block_GEOTEC_logo svg {
+  position: relative;
+  left: 0px;
+  width: calc(70px + 2.4vw + 2.4vh);
+  height: auto;
+  @media (max-width: 720px) {
+    width: 71px;
+  }
+  @media (max-width: 390px) {
+    width: 60px;
+  }
+}
+.Wrapper_block_GEOTEC_logo path {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.backgroundSvgLogo {
+  position: relative;
+  width: 190%;
+  left: -45%;
+  height: 190%;
+  bottom: -45%;
+  transform-origin: center center;
+  animation: logoPath_recGradientRotate 5s linear infinite;
+}
+
+.recGradientRotate {
+  animation: logoPath_recGradientRotate 20s linear infinite;
+}
+
+@keyframes logoPath_recGradientRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes logoPath1 {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Wrapper_block_GEOTEC {
+    width: 80%;
+    height: 70%;
+  }
+  .Wrapper_block_GEOTEC_block1 {
+    left: 15px;
+  }
+  .Wrapper_block_GEOTEC_block2 {
+    left: 15px;
+  }
+  .Wrapper_block_GEOTEC_block3 {
+    left: 15px;
+    position: absolute;
+    bottom: 20px;
+    top: auto;
+    height: auto;
+    color: #ffffff;
+  }
+  .Wrapper_block_GEOTEC_block2_button svg path {
+    fill: #ffffff;
+  }
+  .Wrapper_block_GEOTEC_block2_button svg {
+    width: 58px;
+    height: 58px;
+  }
+  .Wrapper_block_GEOTEC_block2_button {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .Wrapper_block_GEOTEC_logo {
+    left: 3px;
+  }
+}
+
+@media screen and (max-height: 760px) and (min-width: 490px) {
+  .Wrapper_block_GEOTEC_block3 {
+    // top: auto;
+    // bottom: 0;
+  }
+}

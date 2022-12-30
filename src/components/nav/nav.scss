@@ -8,11 +8,9 @@
   justify-content: space-between;
   align-items: center;
   z-index: 9999;
-  /* background-color: #ffffff; */
   margin-left: auto;
   margin-right: auto;
   overflow: visible;
-  /* backdrop-filter: blur(10px); */
 }
 .Nav_BlockCenter {
   position: relative;
@@ -24,7 +22,6 @@
   align-items: center;
   padding: 28px 92px;
   z-index: 9999;
-  /* background-color: #ffffff; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -49,20 +46,25 @@
   align-items: center;
   cursor: pointer;
 }
+.Nav_Block_right_a_svg svg {
+  width: calc(1.05vh + 1.05vw);
+  height: auto;
+  min-width: 31px;
+}
 
 .Nav_Block_right_a_title {
   padding-left: 14px;
   font-family: "Poppins-ExtraLight";
-  font-size: 16px;
+  font-size: calc(0.55vh + 0.55vw);
   color: #102876;
+  font-weight: 275;
 }
 
 .a_style_none {
   text-decoration: none;
   color: inherit;
-  font-size: 16px;
+  font-size: calc(0.55vh + 0.55vw);
   font-family: "Raleway-Light";
-  /* display: flex; */
   flex-wrap: nowrap;
   color: #102876;
   white-space: nowrap;
@@ -70,9 +72,11 @@
 .Nav_Block_left_a {
   display: flex;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1580px) {
   .Nav_Block_left {
     padding-left: 10%;
   }
@@ -81,6 +85,9 @@
 @media screen and (max-width: 1134px) {
   .Nav_Block_left {
     padding-left: 0%;
+  }
+  .Nav_BlockCenter {
+    padding: 28px 35px 28px 35px;
   }
 }
 
@@ -94,9 +101,6 @@
   .Nav_Block_left {
     justify-content: flex-end;
   }
-  .Nav_BlockCenter {
-    padding: 28px 32px;
-  }
 }
 
 @media screen and (max-width: 720px) {
@@ -109,15 +113,16 @@
   }
 }
 
-@media screen and (max-width: 490px) {
-}
-
 .selectLANG {
   text-align: center;
   padding: 0px;
-  font-size: 16x;
+  font-size: calc(12px + 0.15vh + 0.15vw);
+  position: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
   border-radius: 5px;
-  /* border: 1px solid #4a6ad0; */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -143,66 +148,48 @@
 .selectorBlock {
   position: absolute;
   border-radius: 5px;
-  height: 47px;
-  width: 47px;
-  font-size: 16px;
+  font-size: calc(12px + 0.15vh + 0.15vw);
   transition: all 0.5s ease-out;
 }
 .selectorblockone {
   position: relative;
-  height: 50%;
   text-align: left;
-  padding-left: 8px;
-  line-height: 120%;
   background-color: #4a69d000;
   color: #4a6ad0;
+  padding: 4px 14px 6px 4px;
+  line-height: 100%;
 }
-/* .selectorblockone:hover {
-  background-color: #2ADEA1;
-  color: #ffffff;
-}  */
 .selectorblockone:nth-child(1) {
-  /* padding: 2px 11px 8px 5px; */
   border: 1px solid #4a6ad0;
   border-bottom: 1px solid #4a6ad0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background-color: #fff;
 }
 .selectorblockone:nth-child(2) {
-  /* padding: 2px 11px 8px 5px; */
   border: 1px solid #4a6ad0;
   border-top: 0px solid #4a6ad0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  background-color: #fff;
 }
 .selectorblockone:nth-child(1):hover {
-  /* padding: 2px 11px 8px 5px; */
   border: 0px solid #4a6ad0;
   border-bottom: 1px solid #4a6ad0;
   background-color: #2adea1;
   color: #ffffff;
 }
 .selectorblockone:nth-child(2):hover {
-  /* padding: 2px 11px 8px 5px; */
   border: 0px solid #4a6ad0;
   background-color: #2adea1;
   color: #ffffff;
 }
 .Active_Select_lang {
-  height: 26px;
-  width: 52px;
   border: 1px solid #4a6ad0;
   border-radius: 4px;
   text-align: left;
-  padding-left: 8px;
-}
-.selectLANG:hover {
-  /* background-color: rgb(7, 211, 175, .7); */
-  /* border: 1px solid #ffffff; */
-  /* color: #ffffff; */
-}
-.selectLANG:active {
-  /* border: 1px solid #4a6ad0; */
+  padding: 4px 14px 6px 4px;
+  line-height: 100%;
 }
 select::-ms-expand {
   display: none;
@@ -223,23 +210,7 @@ select {
   transition: 0.25s all ease;
   pointer-events: none;
 }
-/* Transition */
+
 .select:hover::after {
   color: #f39c12;
 }
-
-/* @media screen and (max-width: 1480px) {
-    
-}
-
-@media screen and (max-width: 1134px) {
-    
-}
-
-@media screen and (max-width: 720px) {
-    
-}
-
-@media screen and (max-width: 490px) {
-    
-} */

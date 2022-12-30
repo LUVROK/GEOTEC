@@ -1,7 +1,7 @@
 {
   "title": "KZ",
   "description": {
-    "Nav1": "<span class='PoppinsLight fontweight300'>About the company</span>",
+    "Nav1": "<span class='PoppinsLight fontweight300'>About</span>",
     "Nav2": "<span class='PoppinsLight fontweight300'>Services</span>",
     "Nav3": "<span class='PoppinsLight fontweight300'>Projects</span>",
     "Nav4": "<span class='PoppinsLight fontweight300'>Technologies</span>",
@@ -9,7 +9,7 @@
   },
   "Wrapper": {
     "title": "<span class='PoppinsLight fontweight300'>Geotec</span>&nbsp;<span>LLP</span>",
-    "description": "<span class='PoppinsLight fontweight300'>a local survey company</span>",
+    "description": "<span class='PoppinsLight fontweight300'>A local survey company</span>",
     "ViewServices": "<span class='RalewayRegular fontweight400'>See services</span>"
   },
   "firstSection": {
@@ -85,8 +85,6 @@
     "textBlock_text_location12": "<span class='PoppinsExtraLight fontweight275'>Location: Tengiz, Kazakhstan</span>",
     "textBlock_text_client12": "<span class='PoppinsExtraLight fontweight275'>Client: PAO ONHP</span>"
   },
-
-
 
   "LICENSES_CERTIFICATION": {
     "titlePage": "<span class='RalewayLight fontweight300'>ЛИЦЕНЗИЯЛАРДЫ &<br />СЕРТИФИКАТТАУ</span>",

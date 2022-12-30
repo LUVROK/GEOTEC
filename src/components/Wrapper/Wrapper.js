@@ -1,20 +1,17 @@
-import "./Wrapper.css";
-// import wrapper_btn from '../../media/wrapper_btn.webp'
+import "./Wrapper.scss";
 import { useTranslation } from "react-i18next";
 import fontFamilycorrect from "../../fontFamilyFunc";
 import parse from "html-react-parser";
 import backImage from "../../media/mountains_wrapper.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import $ from "jquery";
 
 const Wrapper = () => {
   const { t, i18n } = useTranslation();
 
   return (
     <div className="Wrapper section" id="Wrapper" data-section-name="wrapper">
-      {/* <Scroll /> */}
-
-      {/* <img src={ImageBackground} className="Wrapper_image" alt=''></img> */}
       <div className="Wrapper_image">
         <LazyLoadImage
           alt={""}
@@ -197,7 +194,6 @@ const Wrapper = () => {
             className="Wrapper_block_GEOTEC_block2_title"
             style={{ fontFamily: fontFamilycorrect("en", "Light") }}
           >
-            {/* {t("Wrapper.title")} */}
             {parse(t("Wrapper.title"))}
           </div>
           <div className="Wrapper_block_GEOTEC_block2_description">
@@ -211,7 +207,14 @@ const Wrapper = () => {
           <div className="Wrapper_block_GEOTEC_block2_description">
             {parse(t("Wrapper.ViewServices"))}
           </div>
-          <a className="Wrapper_block_GEOTEC_block2_button" href="#AboutUs">
+          <a
+            className="Wrapper_block_GEOTEC_block2_button"
+            onClick={(e) => {
+              $.scrollify.move("#aboutUs_section");
+              $.scrollify.disable();
+              setTimeout(() => $.scrollify.enable(), 1600);
+            }}
+          >
             <svg
               viewBox="0 0 76 76"
               fill="none"

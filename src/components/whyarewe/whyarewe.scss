@@ -37,13 +37,11 @@
 }
 .Whyarewe_block_title_text {
   position: relative;
-  top: 169px;
+  top: 25%;
   left: 90px;
   width: 50%;
   font-family: "Raleway-Regular";
   font-weight: 400;
-  font-size: 64px;
-  line-height: 70px;
   text-transform: capitalize;
 
   background: linear-gradient(
@@ -56,6 +54,12 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  line-height: 120%;
+  font-size: calc(24px + 1.31vw + 1.31vh);
+  @media (max-width: 720px) {
+    font-size: 36px;
+  }
 }
 .Whyarewe_block_Content {
   position: absolute;
@@ -72,7 +76,7 @@
 }
 .Whyarewe_block_Content_first {
   position: absolute;
-  top: 169px;
+  top: 25%;
   padding-left: 81.74px;
   width: 100%;
   height: auto;
@@ -84,11 +88,18 @@
   font-weight: 400;
   font-size: 54px;
   line-height: 120%;
-  text-transform:none;
+  text-transform: none;
   color: #ffffff;
+  font-size: calc(24px + 1.075vw + 1.075vh);
+  @media (max-width: 720px) {
+    font-size: 32px;
+  }
 }
 .Whyarewe_block_Content_first_title_64text {
-  font-size: 64px;
+  font-size: calc(24px + 1.31vw + 1.31vh);
+  @media (max-width: 720px) {
+    font-size: 36px;
+  }
 }
 .Whyarewe_block_Content_first_text {
   position: relative;
@@ -97,18 +108,30 @@
   font-family: "Raleway-Regular";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 28px;
+  line-height: 120%;
   color: #ffffff;
+  font-size: calc(12px + 0.35vw + 0.35vh);
+  @media (max-width: 720px) {
+    font-size: 16px;
+  }
 }
 .listLogo {
   position: absolute;
   left: 73px;
-  bottom: 89.52px;
+  bottom: 20%;
   z-index: 101;
   cursor: pointer;
-  width: 108px;
-  height: 108px;
+  width: auto;
+  height: calc(80px + 0.38vw + 0.38vh);
+  @media (max-width: 590px) {
+    height: 83px;
+  }
+  @media (max-height: 840px) {
+    bottom: 12.5%;
+  }
+  @media (max-height: 710px) {
+    bottom: 5%;
+  }
 }
 .listLogo path {
   transition: 0.5s ease-out;
@@ -124,20 +147,20 @@
 }
 
 .Gear_Wheel_first svg {
-  width: 214px;
-  height: 475px;
+  width: calc(7vh + 7vw); //134,4 +
+  height: auto;
 }
 .Gear_Wheel_second svg {
-  width: 380px;
-  height: 381px;
+  width: calc(12.5vh + 12.5vw);
+  height: auto;
 }
 .Gear_Wheel_third svg {
-  width: 312px;
-  height: 310px;
+  width: calc(10.5vh + 10.5vw);
+  height: auto;
 }
 .Gear_Wheel_fourth svg {
-  width: 265px;
-  height: 475px;
+  width: calc(8.9vh + 8.9vw);
+  height: auto;
 }
 
 .Gear_Wheel_first {
@@ -170,22 +193,6 @@
   .listLogo {
     left: 61.74px;
   }
-  .Gear_Wheel_first svg {
-    width: 174px;
-    height: 435px;
-  }
-  .Gear_Wheel_second svg {
-    width: 340px;
-    height: 341px;
-  }
-  .Gear_Wheel_third svg {
-    width: 272px;
-    height: 280px;
-  }
-  .Gear_Wheel_fourth svg {
-    width: 235px;
-    height: 445px;
-  }
 }
 
 @media screen and (max-width: 1134px) {
@@ -210,37 +217,13 @@
     top: 90%;
   }
   .Whyarewe_block_title_text {
-    font-size: 45px;
-    line-height: 50px;
     left: 15px;
-  }
-  .Whyarewe_block_Content_first_title_64text {
-    font-size: 45px;
   }
   .Whyarewe_block_Content_first_text {
     width: 60%;
   }
-  .Whyarewe_block_Content_first_text {
-    font-size: 18px;
-  }
   .Whyarewe_block {
     width: 90%;
-  }
-  .Gear_Wheel_first svg {
-    width: 134px;
-    height: 385px;
-  }
-  .Gear_Wheel_second svg {
-    width: 300px;
-    height: 291px;
-  }
-  .Gear_Wheel_third svg {
-    width: 232px;
-    height: 240px;
-  }
-  .Gear_Wheel_fourth svg {
-    width: 205px;
-    height: 395px;
   }
 }
 
@@ -250,49 +233,27 @@
   }
 }
 
-@media screen and (max-height: 804px) {
+@media screen and (max-height: 704px) and (max-width: 1134px) {
   .Whyarewe_block_Content_first {
-    top: 109px;
-  }
-  .Whyarewe_block_title_text {
-    top: 109px;
+    padding-left: 15px;
   }
 }
 
 @media screen and (max-height: 704px) {
   .Whyarewe_block_Content_first {
-    top: 69px;
-  }
-  .Whyarewe_block_Content_first {
-    padding-left: 15px;
-  } 
-  .Whyarewe_block_title_text {
-    font-size: 52px;
-    line-height: 120%;
+    top: 109px;
   }
   .Whyarewe_block_title_text {
-    top: 69px;
-  }
-  .listLogo {
-    bottom: 29px;
+    top: 109px;
   }
 }
 
 @media screen and (max-height: 604px) {
   .Whyarewe_block_Content_first {
-    top: 29px;
+    top: 69px;
   }
   .Whyarewe_block_title_text {
     top: 89px;
-  }
-  .listLogo {
-    bottom: 9px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .Whyarewe_block_title_text {
-    font-size: 40px;
   }
 }
 
@@ -315,16 +276,10 @@
     top: 34px;
     width: 60%;
   }
-  .Whyarewe_block_title_text {
-    font-size: 32px;
-    line-height: 120%;
-  }
   .Whyarewe_block_Content_first {
     top: 24px;
   }
   .Whyarewe_block_Content_first_text {
-    font-size: 16px;
-    line-height: 120%;
     width: 80%;
   }
   .listLogo {
@@ -333,28 +288,8 @@
     width: 68px;
     height: 68px;
   }
-  .Whyarewe_block_Content_first_title {
-    line-height: 40px;
-    font-size: 32px;
-  }
-  .Gear_Wheel_first svg {
-    width: 112.09px;
-    height: 251px;
-  }
-  .Gear_Wheel_second svg {
-    width: 151px;
-    height: 251px;
-  }
-  .Gear_Wheel_third svg {
-    width: 151px;
-    height: 251px;
-  }
   .Gear_Wheel_third {
     top: 80%;
-  }
-  .Gear_Wheel_fourth svg {
-    width: 125px;
-    height: 225px;
   }
 }
 
@@ -370,9 +305,5 @@
   .listLogo {
     width: 75px;
     height: 75px;
-  }
-  .Whyarewe_block_Content_first_text {
-    font-size: 15px;
-    line-height: 120%;
   }
 }

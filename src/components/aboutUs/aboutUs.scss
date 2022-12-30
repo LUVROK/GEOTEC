@@ -1,3 +1,5 @@
+
+
 .AboutUs {
   position: relative;
   width: 100%;
@@ -196,7 +198,7 @@
     width: 90%;
   }
   .researchs_block {
-    margin-top:24px;
+    margin-top: 24px;
   }
   .logo_CompanyBar {
     font-size: 72px;
@@ -348,9 +350,16 @@
     margin-top: 14px;
   }
   .CompanyBar {
+    font-size: 26px;
     height: 161px;
     align-items: flex-start;
     padding-top: 25px;
+  }
+  .logo_CompanyBar {
+    font-size: 82px;
+  }
+  .perhaps_logo_companyBar {
+    font-size: 20px;
   }
 }
 

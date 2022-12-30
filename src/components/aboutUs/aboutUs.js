@@ -1,4 +1,4 @@
-import "./aboutUs.css";
+import "./aboutUs.scss";
 import React, { useEffect, useState } from "react";
 
 import parse from "html-react-parser";
@@ -33,11 +33,8 @@ const AboutUs = () => {
         researchs_block_elem_overflows[index].style.height = "46px";
       }
       researchs_block_elemSVGs[index].style.transform = "rotateX(0deg)";
-      //   researchs_block_elem_text_text[index].style.opacity = 0;
     } else {
-      //   setTimeout(() => {
       researchs_block_elem_text_text[index].style.opacity = 1;
-      //   }, 300);
       researchs_block_elems[index].style.height = "55vh";
       researchs_block_elem_overflows[index].style.height = "55vh";
       researchs_block_elemSVGs[index].style.transform = "rotateX(180deg)";
@@ -79,10 +76,7 @@ const AboutUs = () => {
       var yDown = null;
 
       function getTouches(evt) {
-        return (
-          evt.touches || // browser API
-          evt.originalEvent.touches
-        ); // jQuery
+        return evt.touches || evt.originalEvent.touches;
       }
 
       function handleTouchStart(evt) {
@@ -114,19 +108,6 @@ const AboutUs = () => {
             if (window.innerWidth <= 1134) {
               leftaboutUs();
             }
-            // console.log('left')
-            // console.log(activeAboutUsMobile)
-            // if (activeAboutUsMobile <= 0) {
-            //   setActiveAboutUsMobile(4);
-            // } else {
-            //   setActiveAboutUsMobile((prev) => prev - 1);
-            // }
-          }
-        } else {
-          if (yDiff > 0) {
-            /* down swipe */
-          } else {
-            /* up swipe */
           }
         }
         /* reset values */
@@ -154,7 +135,6 @@ const AboutUs = () => {
 
   useEffect(() => {
     if (window.innerWidth <= 1134) {
-      // console.log(activeAboutUsMobile);
       const prev1 = activeAboutUsMobile === 0 ? 3 : activeAboutUsMobile - 1;
       const sec1 = activeAboutUsMobile === 3 ? 0 : activeAboutUsMobile + 1;
       const sec2 =
@@ -186,7 +166,7 @@ const AboutUs = () => {
     <section
       className="AboutUs section"
       id="aboutUs"
-      data-section-name="aboutUs"
+      data-section-name="aboutUs_section"
     >
       <div
         className="MobileWhitebottomAboutus"
@@ -343,7 +323,6 @@ const AboutUs = () => {
               />
             </svg>
           </div>
-          {/* <section className="section"> */}
           <div
             className="researchs_block_elem"
             onClick={() => researchs_block_elemClick(2)}
@@ -456,7 +435,6 @@ const AboutUs = () => {
             <span style={{ transform: "scale(1)" }}>.</span>
             <span style={{ transform: "scale(1)" }}>.</span>
           </div>
-          {/* </section> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./clients.css";
+import "./clients.scss";
 import onhp from "../../media/onhp.webp";
 import img2 from "../../media/img2.webp";
 import enka from "../../media/enka.webp";
@@ -50,13 +50,13 @@ const Clients = () => {
     }, 2000);
     $(document.body).scrollTop(0);
     window.$.scrollify.disable();
-    // console.log(i18n.language);
   }, []);
 
   React.useEffect(() => {
     if (!isrender) {
       document.body.style.overflow = "hidden";
     } else {
+      document.body.style.overflow = "hidden scroll";
     }
   }, [isrender]);
 

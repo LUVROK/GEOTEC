@@ -1,4 +1,4 @@
-import "./projects.css";
+import "./projects.scss";
 import { useState, useEffect } from "react";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
@@ -78,9 +78,6 @@ const Projects = () => {
   }, []);
 
   useEffect(() => {
-    // console.log(activePrev);
-    // console.log(active);
-    // console.log(activeSec);
     if (MassImagesBlockOverflow !== undefined) {
       MassImagesBlockOverflow[activePrev].classList.remove("active");
       MassImagesBlockOverflow[active].classList.add("active");
@@ -102,18 +99,13 @@ const Projects = () => {
       MassImagesBlockOverflow[active].style.opacity = "1";
       MassImagesBlockOverflow[active].style.transform = "translateX(0%)";
 
-      // MassDiscriptionBlockOverflow[activePrev].style.opacity = 0;
       MassDiscriptionBlockOverflow[activePrev].style.display = "none";
       MassDiscriptionBlockOverflow[active].style.display = "block";
-      // MassDiscriptionBlockOverflow[active].style.opacity = 1;
       MassDiscriptionBlockOverflow[activeSec].style.display = "none";
-      // MassDiscriptionBlockOverflow[activeSec].style.opacity = 0;
 
       MasshiddenOverflowBlockOverflow[activePrev].style.display = "none";
       MasshiddenOverflowBlockOverflow[active].style.display = "block";
       MasshiddenOverflowBlockOverflow[activeSec].style.display = "none";
-
-      // console.log(MassImagesBlockOverflow);
     }
   }, [active]);
 
@@ -124,7 +116,23 @@ const Projects = () => {
 
   const opanMoreInfo = () => {
     const el = document.querySelector(".Projects_Text_desc");
+    console.log(el);
     el.style.transform = "translateX(0%)";
+  };
+
+  const opanMoreInfoMobile = () => {
+    const el = document.querySelector(
+      ".Projects_blockMobile .Projects_Text_desc"
+    );
+    console.log(el);
+    el.style.transform = "translateX(0%)";
+  };
+
+  const closeMoreInfoMobile = () => {
+    const el = document.querySelector(
+      ".Projects_blockMobile .Projects_Text_desc"
+    );
+    el.style.transform = "translateX(-100%)";
   };
 
   const swipe = (swiper) => {
@@ -138,7 +146,11 @@ const Projects = () => {
   };
 
   return (
-    <section className="Projects Projects_section sec2 section" id="projects"  data-section-name="projects">
+    <section
+      className="Projects Projects_section sec2 section"
+      id="projects"
+      data-section-name="projects_section"
+    >
       <div className="Projects_blockDesktop element-animation">
         <div
           className="Projects_Text_desc"
@@ -856,7 +868,7 @@ const Projects = () => {
         >
           <svg
             className="svgcloseprojects"
-            onClick={closeMoreInfo}
+            onClick={closeMoreInfoMobile}
             width="46"
             height="46"
             viewBox="0 0 46 46"
@@ -972,7 +984,7 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client1"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1003,7 +1015,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client2"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1034,7 +1047,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client3"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1065,7 +1079,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client4"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1096,7 +1111,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client5"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1127,7 +1143,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client6"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1158,7 +1175,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client7"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1189,7 +1207,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client8"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1220,7 +1239,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client9"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1251,7 +1271,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client10"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1282,7 +1303,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client11"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"
@@ -1313,7 +1335,8 @@ const Projects = () => {
                 <p className="yellow map_item_p teme">
                   {parse(t("projects.textBlock_text_client12"))}
                 </p>
-                <div className="btnMapItem" onClick={opanMoreInfo}>
+
+                <div className="btnMapItem" onClick={opanMoreInfoMobile}>
                   {parse(t("projects.Button_Learn_More"))}
                   <svg
                     width="29"

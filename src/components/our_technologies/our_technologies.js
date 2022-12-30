@@ -1,4 +1,4 @@
-import "./our_technologies.css";
+import "./our_technologies.scss";
 import React, { useState, useEffect } from "react";
 
 import ourTech1 from "../../media/OIU_1.webp";
@@ -14,7 +14,6 @@ import ourTechBack1 from "../../media/ourTechBack1.webp";
 import ourTechBack2 from "../../media/ourTechBack2.webp";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 const Our_technologies = () => {
   const { t, i18n } = useTranslation();
@@ -27,25 +26,27 @@ const Our_technologies = () => {
   const [our_technologies_title, setour_technologies_title] = useState();
   const [our_technologies_perhaps, setour_technologies_perhaps] = useState();
 
-  const [stateDisableStat8object, setstateDisableStat8object] = useState(false);
-  const [swipeState, setSwapeState] = useState(false);
-
   useEffect(() => {
     setImage_TechState(document.querySelectorAll(".Image_Tech"));
-    setour_technologies_perhaps(document.querySelectorAll(".our_technologies_title"));
-    setour_technologies_title(document.querySelectorAll(".our_technologies_perhaps"));
+    setour_technologies_perhaps(
+      document.querySelectorAll(".our_technologies_title")
+    );
+    setour_technologies_title(
+      document.querySelectorAll(".our_technologies_perhaps")
+    );
 
-    document.querySelector(".our_technologies_right_right").addEventListener("touchstart", handleTouchStart, false);
-    document.querySelector(".our_technologies_right_right").addEventListener("touchmove", handleTouchMove, false);
+    document
+      .querySelector(".our_technologies_right_right")
+      .addEventListener("touchstart", handleTouchStart, false);
+    document
+      .querySelector(".our_technologies_right_right")
+      .addEventListener("touchmove", handleTouchMove, false);
 
     var xDown = null;
     var yDown = null;
 
     function getTouches(evt) {
-      return (
-        evt.touches || // browser API
-        evt.originalEvent.touches
-      ); // jQuery
+      return evt.touches || evt.originalEvent.touches;
     }
 
     function handleTouchStart(evt) {
@@ -88,81 +89,79 @@ const Our_technologies = () => {
   }, []);
 
   const leftTech = () => {
-    document.querySelector(".our_technologies_right_left").style.pointerEvents = "none";
-    document.querySelector(".our_technologies_right_right").style.pointerEvents = "none";
-
-    const Image_TechStateElem = document.querySelectorAll(".Image_Tech");
-    // const technologies_perhaps = document.querySelectorAll(".our_technologies_title");
-    // const technologies_title = document.querySelectorAll(".our_technologies_perhaps");
-
-    for (let i = 0; i < Image_TechStateElem.length; i++) {
-      // Image_TechState[i].style.
-    }
+    document.querySelector(".our_technologies_right_left").style.pointerEvents =
+      "none";
+    document.querySelector(
+      ".our_technologies_right_right"
+    ).style.pointerEvents = "none";
     setActivePrev((prev) => (prev <= 0 ? 7 : prev - 1));
     setActivePrev2((prev) => (prev <= 0 ? 7 : prev - 1));
     setActiveSec((prev) => (prev <= 0 ? 7 : prev - 1));
     setActiveSec2((prev) => (prev <= 0 ? 7 : prev - 1));
     setActive((prev) => (prev <= 0 ? 7 : prev - 1));
     setTimeout(() => {
-      document.querySelector(".our_technologies_right_left").style.pointerEvents = "all";
-      document.querySelector(".our_technologies_right_right").style.pointerEvents = "all";
+      document.querySelector(
+        ".our_technologies_right_left"
+      ).style.pointerEvents = "all";
+      document.querySelector(
+        ".our_technologies_right_right"
+      ).style.pointerEvents = "all";
     }, 600);
   };
 
   const rightTech = () => {
-    document.querySelector(".our_technologies_right_left").style.pointerEvents = "none";
-    document.querySelector(".our_technologies_right_right").style.pointerEvents = "none";
-
-    const Image_TechStateElem = document.querySelectorAll(".Image_Tech");
-
-    for (let i = 0; i < Image_TechStateElem.length; i++) {
-      // Image_TechState[i].style.
-    }
+    document.querySelector(".our_technologies_right_left").style.pointerEvents =
+      "none";
+    document.querySelector(
+      ".our_technologies_right_right"
+    ).style.pointerEvents = "none";
     setActive((prev) => (prev >= 7 ? 0 : prev + 1));
     setActivePrev((prev) => (prev >= 7 ? 0 : prev + 1));
     setActivePrev2((prev) => (prev >= 7 ? 0 : prev + 1));
     setActiveSec((prev) => (prev >= 7 ? 0 : prev + 1));
     setActiveSec2((prev) => (prev >= 7 ? 0 : prev + 1));
     setTimeout(() => {
-      document.querySelector(".our_technologies_right_left").style.pointerEvents = "all";
-      document.querySelector(".our_technologies_right_right").style.pointerEvents = "all";
+      document.querySelector(
+        ".our_technologies_right_left"
+      ).style.pointerEvents = "all";
+      document.querySelector(
+        ".our_technologies_right_right"
+      ).style.pointerEvents = "all";
     }, 600);
   };
 
   useEffect(() => {
-    // if (active) {
-    //   document.querySelector(".number_hopeful_models_block").style.opacity = 0;
-    // }
     if (Image_TechState !== undefined) {
-      // console.log(activePrev2);
-      // console.log(activePrev);
-      // console.log(active);
-      // console.log(activeSec);
-      // console.log(activeSec2);
-      // console.log(Image_TechState);
-      Image_TechState[activePrev2].style.transform = "translateX(-200%) translateY(20%) scale(0.5)";
+      Image_TechState[activePrev2].style.transform =
+        "translateX(-200%) translateY(20%) scale(0.6)";
       Image_TechState[active].style.filter = "blur(0px)";
       Image_TechState[activePrev].style.filter = "blur(0px)";
-      Image_TechState[activePrev].style.transform = "translateX(-90%) translateY(50%) scale(0.5)";
+      Image_TechState[activePrev].style.transform =
+        "translateX(-90%) translateY(50%) scale(0.6)";
       Image_TechState[activePrev].style.opacity = 0;
       Image_TechState[activePrev2].style.opacity = 0;
       Image_TechState[active].style.opacity = 1;
-      // Image_TechState[active].style.backgroundImage = `url('${ourTechBack1}')`;
       if (window.innerWidth > 1134) {
-        Image_TechState[activeSec].style.transform = "translateX(120%) translateY(0%) scale(0.5)";
-        Image_TechState[active].style.transform = "translateX(20%) translateY(10%) scale(1)";
+        Image_TechState[activeSec].style.transform =
+          "translateX(120%) translateY(0%) scale(0.6)";
+        Image_TechState[active].style.transform =
+          "translateX(20%) translateY(10%) scale(1)";
       } else if (window.innerWidth > 720) {
-        Image_TechState[activeSec].style.transform = "translateX(80%) translateY(-10%) scale(0.5)";
-        Image_TechState[active].style.transform = "translateX(0%) translateY(10%) scale(1)";
+        Image_TechState[activeSec].style.transform =
+          "translateX(80%) translateY(-10%) scale(0.6)";
+        Image_TechState[active].style.transform =
+          "translateX(0%) translateY(10%) scale(1)";
       } else {
-        Image_TechState[active].style.transform = "translateX(0%) translateY(10%) scale(1)";
-        Image_TechState[activeSec].style.transform = "translateX(40%) translateY(-10%) scale(0.5)";
+        Image_TechState[active].style.transform =
+          "translateX(5%) translateY(55%) scale(1)";
+        Image_TechState[activeSec].style.transform =
+          "translateX(45%) translateY(40%) scale(0.55)";
       }
-      // Image_TechState[activeSec].style.backgroundImage = `url('${ourTechBack2}')`;
       Image_TechState[activeSec].style.opacity = 1;
       Image_TechState[activeSec2].style.opacity = 0;
       Image_TechState[activeSec].style.filter = "blur(10px)";
-      Image_TechState[activeSec2].style.transform = "translateX(200%) translateY(50%) scale(0.5)";
+      Image_TechState[activeSec2].style.transform =
+        "translateX(200%) translateY(50%) scale(0.6)";
 
       our_technologies_title[active + 1].style.display = "block";
       our_technologies_perhaps[active + 1].style.display = "block";
@@ -180,14 +179,14 @@ const Our_technologies = () => {
         our_technologies_perhaps[9].style.display = "none";
       }
     }
-    // setstateDisableStat8object(true);
   }, [active]);
 
   const checkTech = () => {
-    document.querySelector(".our_technologies_right_left").style.pointerEvents = "all";
-    document.querySelector(".our_technologies_right_right").style.pointerEvents = "all";
-    // document.querySelector(".our_technologies_right_left").style.cursor = "cursor: url(../../media/goback.webp) 14 0, pointer";
-    // document.querySelector(".our_technologies_right_right").style.cursor = "cursor: url(../../media/goTo.webp) 14 0, pointer;";
+    document.querySelector(".our_technologies_right_left").style.pointerEvents =
+      "all";
+    document.querySelector(
+      ".our_technologies_right_right"
+    ).style.pointerEvents = "all";
     document.querySelector(".our_technologies_left").style.width = "30%";
     document.querySelector(".our_technologies_right").style.width = "70%";
 
@@ -213,29 +212,42 @@ const Our_technologies = () => {
     if (window.innerWidth > 1134) {
       document.querySelector(".ourTech1").style.transform = "translateX(30%)";
       document.querySelector(".ourTech2").style.transform = "translateX(80%)";
-      document.querySelectorAll(".Image_Tech")[1].style.transform = "translateX(70%) translateY(15%) scale(0.5)";
-      document.querySelectorAll(".Image_Tech")[0].style.transform = "translateX(40%) translateY(0%) scale(1)";
+      document.querySelectorAll(".Image_Tech")[1].style.transform =
+        "translateX(70%) translateY(15%) scale(0.6)";
+      document.querySelectorAll(".Image_Tech")[0].style.transform =
+        "translateX(40%) translateY(0%) scale(1)";
     } else if (window.innerWidth > 720) {
       document.querySelector(".ourTech1").style.transform = "translateX(30%)";
       document.querySelector(".ourTech2").style.transform = "translateX(50%)";
-      document.querySelectorAll(".Image_Tech")[1].style.transform = "translateX(80%) translateY(10%) scale(0.5)";
-      document.querySelectorAll(".Image_Tech")[0].style.transform = "translateX(10%) translateY(10%) scale(1)";
+      document.querySelectorAll(".Image_Tech")[1].style.transform =
+        "translateX(80%) translateY(10%) scale(0.6)";
+      document.querySelectorAll(".Image_Tech")[0].style.transform =
+        "translateX(10%) translateY(10%) scale(1)";
     } else {
       document.querySelector(".ourTech1").style.transform = "translateX(0%)";
-      document.querySelector(".ourTech2").style.transform = "translateX(50%)";
-      document.querySelectorAll(".Image_Tech")[1].style.transform = "translateX(25%) translateY(30%) scale(0.5)";
-      document.querySelectorAll(".Image_Tech")[0].style.transform = "translateX(10%) translateY(15%) scale(1)";
+      document.querySelector(".ourTech2").style.transform = "translateX(70%)";
+      document.querySelectorAll(".Image_Tech")[1].style.transform =
+        "translateX(35%) translateY(80%) scale(0.6)";
+      document.querySelectorAll(".Image_Tech")[0].style.transform =
+        "translateX(10%) translateY(60%) scale(1)";
     }
   }, []);
 
   return (
-    <section className="our_technologies section"  id="our_technologies"  data-section-name="our_technologies">
+    <section
+      className="our_technologies section"
+      id="our_technologies"
+      data-section-name="our_technologies_section"
+    >
       <div className="our_technologies_block element-animation">
         <div className="our_technologies_left" style={{ width: "40%" }}>
           <div className="our_technologies_title" style={{ display: "block" }}>
             {parse(t("our_technologies.our_technologies_title1"))}
           </div>
-          <div className="our_technologies_perhaps" style={{ display: "block" }}>
+          <div
+            className="our_technologies_perhaps"
+            style={{ display: "block" }}
+          >
             {parse(t("our_technologies.our_technologies_perhaps1"))}
           </div>
           <div className="our_technologies_title" style={{ display: "none" }}>
@@ -292,42 +304,124 @@ const Our_technologies = () => {
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps3_2"))}
           </div>
-          <div className="circleButton" onClick={checkTech} style={{ display: "flex" }}>
+          <div
+            className="circleButton"
+            onClick={checkTech}
+            style={{ display: "flex" }}
+          >
             {parse(t("our_technologies.circleButton"))}
           </div>
         </div>
         <div className="our_technologies_right" style={{ width: "60%" }}>
-          <img src={ourTechBack1} alt="" className="ourTech1" style={{ transform: "translateX(30%)" }} />
-          <img src={ourTechBack2} alt="" className="ourTech2" style={{ transform: "translateX(80%)" }} />
-          <div className="our_technologies_right_left" onClick={leftTech} style={{ pointerEvents: "none" }}>
+          <img
+            src={ourTechBack1}
+            alt=""
+            className="ourTech1"
+            style={{ transform: "translateX(30%)" }}
+          />
+          <img
+            src={ourTechBack2}
+            alt=""
+            className="ourTech2"
+            style={{ transform: "translateX(80%)" }}
+          />
+          <div
+            className="our_technologies_right_left"
+            onClick={leftTech}
+            style={{ pointerEvents: "none" }}
+          >
             <div className="number_hopeful_models_block" style={{ opacity: 1 }}>
-              <div className="number_hopeful_models_block_number PoppinsLight fontweight300">8</div>
-              <div className="number_hopeful_models_block_title">{parse(t("our_technologies.number_hopeful_models_block_title"))}</div>
+              <div className="number_hopeful_models_block_number PoppinsLight fontweight300">
+                8
+              </div>
+              <div className="number_hopeful_models_block_title">
+                {parse(t("our_technologies.number_hopeful_models_block_title"))}
+              </div>
             </div>
           </div>
-          <div className="our_technologies_right_right" onClick={rightTech} style={{ pointerEvents: "none" }}>
-            <div className="Image_Tech" style={{ transform: "translateX(30%) translateY(0%) scale(1)", opacity: 1, filter: "blur(0px)" }}>
+          <div
+            className="our_technologies_right_right"
+            onClick={rightTech}
+            style={{ pointerEvents: "none" }}
+          >
+            <div
+              className="Image_Tech"
+              style={{
+                transform: "translateX(30%) translateY(0%) scale(1)",
+                opacity: 1,
+                filter: "blur(0px)",
+              }}
+            >
               <img src={ourTech1} alt="" />
             </div>
-            <div className="Image_Tech" style={{ transform: "translateX(70%) translateY(20%) scale(0.6)", opacity: 1, filter: "blur(0px)" }}>
+            <div
+              className="Image_Tech"
+              style={{
+                transform: "translateX(70%) translateY(20%) scale(0.6)",
+                opacity: 1,
+                filter: "blur(0px)",
+              }}
+            >
               <img src={ourTech2} alt="" />
             </div>
-            <div className="Image_Tech" style={{ transform: "translateX(180%) translateY(10%) scale(0.6)", opacity: 0, filter: "blur(0px)" }}>
+            <div
+              className="Image_Tech"
+              style={{
+                transform: "translateX(180%) translateY(10%) scale(0.6)",
+                opacity: 0,
+                filter: "blur(0px)",
+              }}
+            >
               <img src={ourTech3} alt="" />
             </div>
-            <div className="Image_Tech" style={{ transform: "translateX(-180%) translateY(50%) scale(0.6)", opacity: 0, filter: "blur(0px)" }}>
+            <div
+              className="Image_Tech"
+              style={{
+                transform: "translateX(-180%) translateY(50%) scale(0.6)",
+                opacity: 0,
+                filter: "blur(0px)",
+              }}
+            >
               <img src={ourTech4} alt="" />
             </div>
-            <div className="Image_Tech" style={{ transform: "translateX(-180%) translateY(50%) scale(0.6)", opacity: 0, filter: "blur(0px)" }}>
+            <div
+              className="Image_Tech"
+              style={{
+                transform: "translateX(-180%) translateY(50%) scale(0.6)",
+                opacity: 0,
+                filter: "blur(0px)",
+              }}
+            >
               <img src={ourTech5} alt="" />
             </div>
-            <div className="Image_Tech" style={{ transform: "translateX(-180%) translateY(50%) scale(0.6)", opacity: 0, filter: "blur(0px)" }}>
+            <div
+              className="Image_Tech"
+              style={{
+                transform: "translateX(-180%) translateY(50%) scale(0.6)",
+                opacity: 0,
+                filter: "blur(0px)",
+              }}
+            >
               <img src={ourTech6} alt="" />
             </div>
-            <div className="Image_Tech" style={{ transform: "translateX(-180%) translateY(50%) scale(0.6)", opacity: 0, filter: "blur(0px)" }}>
+            <div
+              className="Image_Tech"
+              style={{
+                transform: "translateX(-180%) translateY(50%) scale(0.6)",
+                opacity: 0,
+                filter: "blur(0px)",
+              }}
+            >
               <img src={ourTech7} alt="" />
             </div>
-            <div className="Image_Tech" style={{ transform: "translateX(-100%) translateY(10%) scale(0.6)", opacity: 0, filter: "blur(0px)" }}>
+            <div
+              className="Image_Tech"
+              style={{
+                transform: "translateX(-100%) translateY(10%) scale(0.6)",
+                opacity: 0,
+                filter: "blur(0px)",
+              }}
+            >
               <img src={ourTech8} alt="" />
             </div>
           </div>

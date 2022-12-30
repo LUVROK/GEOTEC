@@ -1,3 +1,11 @@
+$mobile: 600px; // Screen min
+$desktop: 1200px; // Screen max
+$font-min: 24px;
+// $font-max: 64px;
+$font-max: calc(1.5vh + 1.5vw);
+// $screen-diff: ($desktop / 1px - $mobile / 1px);
+// $font-diff: ($font-max / 1px - $font-min / 1px);
+
 .licenses {
   top: 66px;
 }
@@ -31,8 +39,8 @@
   width: 50%;
   font-family: "Poppins-Light";
   font-weight: 400;
-  font-size: 64px;
-  line-height: 70px;
+  // font-size: 64px;
+  line-height: 120%;
   text-transform: capitalize;
   background: linear-gradient(
     98.83deg,
@@ -44,16 +52,29 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  font-size: $font-max;
+
+  // @media (max-width: 599px) {
+  //   font-size: $font-min;
+  // }
+  // @media (min-width: 600px) and (max-width: 1200px) {
+  //   font-size: calc(
+  //     #{$font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$font-diff}
+  //   );
+  // }
+  // @media (min-width: 1201px) {
+  //   font-size: $font-max;
+  // }
 }
 .licenses {
   position: relative;
   min-height: calc(100vh - 88px);
-  /* overflow: hidden; */
 }
 .licenses .svglcsprojects {
   position: absolute;
   right: 4.5%;
-  top: 20px;
+  top: 49px;
   cursor: pointer;
   z-index: 9999;
 }
@@ -72,8 +93,6 @@
 .licenses .firstBlock .imgblock img {
   position: relative;
   width: 90%;
-}
-.firstBlockText {
 }
 .licenses .secondBlock {
   border-top: 0px;
@@ -134,10 +153,6 @@
     padding-left: 0%;
     padding-right: 0%;
   }
-  .titlePage {
-    font-size: 54px;
-    line-height: 60px;
-  }
   .licenses .firstBlock {
     width: 70%;
     margin-right: auto;
@@ -148,10 +163,6 @@
 @media screen and (max-width: 1134px) {
   .licenses .element-animation34 .content {
     width: 91%;
-  }
-  .titlePage {
-    line-height: 50px;
-    font-size: 44px;
   }
   .licenses .firstBlock .imgblock img {
     width: 95%;
@@ -188,20 +199,12 @@
 }
 
 @media screen and (max-width: 720px) {
-  .titlePage {
-    line-height: 40px;
-    font-size: 34px;
-  }
   .licenses .firstBlock .imgblock {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 490px) {
-  .titlePage {
-    line-height: 30px;
-    font-size: 24px;
-  }
   .licenses .firstBlock .imgblock {
     width: 80%;
   }

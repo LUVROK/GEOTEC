@@ -419,6 +419,11 @@ li:before {
 }
 
 @media screen and (max-width: 1134px) {
+  .Projects_Text_desc .Projects_Text_desc_text .Projects_Text_desc_text_title {
+    line-height: 90%;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
   .svgcloseprojects {
     top: 20px;
   }
@@ -636,6 +641,8 @@ li:before {
   font-size: 18px;
   padding: 7px 15px;
   height: 42px;
+  z-index: 9999;
+  pointer-events: all;
 }
 
 .btnMapItem svg {

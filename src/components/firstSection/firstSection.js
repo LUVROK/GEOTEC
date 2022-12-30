@@ -1,9 +1,8 @@
-import "./firstSection.css";
+import "./firstSection.scss";
 import licens from "../../media/licens.webp";
 import customers from "../../media/customers.webp";
-import "./firstSection.scss";
 import $ from "jquery";
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
@@ -26,9 +25,7 @@ const FirstSection = () => {
     });
 
   return (
-    <div
-      className="FirstSection sec1"
-    >
+    <div className="FirstSection sec1">
       <div className="firstSection_block element-animation">
         <div className="firstSection_block_geotec_block">
           <div className="firstSection_block_geotec">

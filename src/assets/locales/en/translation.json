@@ -1,7 +1,7 @@
 {
   "title": "EN",
   "description": {
-    "Nav1": "<span class='PoppinsLight fontweight300'>About the company</span>",
+    "Nav1": "<span class='PoppinsLight fontweight300'>About</span>",
     "Nav2": "<span class='PoppinsLight fontweight300'>Services</span>",
     "Nav3": "<span class='PoppinsLight fontweight300'>Projects</span>",
     "Nav4": "<span class='PoppinsLight fontweight300'>Technologies</span>",
@@ -11,7 +11,7 @@
   },
   "Wrapper": {
     "title": "<span class='PoppinsLight fontweight300'>Geotec</span>&nbsp;<span>LLP</span>",
-    "description": "<span class='PoppinsLight fontweight300'>a local survey company</span>",
+    "description": "<span class='PoppinsLight fontweight300'>A local survey company</span>",
     "ViewServices": "<span class='PoppinsLight fontweight300'>See services</span>"
   },
   "firstSection": {
@@ -125,17 +125,17 @@
   "History": {
     "History_blockTitle": "<span class='PoppinsExtraLight fontweight275'>History</span>",
 
-    "textBlock_text1": "<span class='PoppinsExtraLight fontweight275'>Foundation <span class='PoppinsExtraLight fontweight275'><br />GEOTEC</span></span>",
-    "textBlock_text2": "<span class='PoppinsExtraLight fontweight275'>First project <span class='PoppinsExtraLight fontweight275'><br />GEOTEC</span></span>",
-    "textBlock_text3": "<span class='PoppinsExtraLight fontweight275'>Extension <br />in Kazahstan</span>",
-    "textBlock_text4": "<span class='PoppinsExtraLight fontweight275'>TCO<br/>Partnership</span>",
-    "textBlock_text5": "<span class='PoppinsExtraLight fontweight275'>The tallest building<br />in KZ survey works</span>",
-    "textBlock_text6": "<span class='PoppinsExtraLight fontweight275'>Wind power<br />project</span>",
-    "textBlock_text7": "<span class='PoppinsExtraLight fontweight275'>3D scanning project &<br />geophysical investigations</span>",
-    "textBlock_text8": "<span class='PoppinsExtraLight fontweight275'>Certification ISO 9001<br />and OHSAS 18001</span>",
-    "textBlock_text9": "<span class='PoppinsExtraLight fontweight275'>TCO FGP mega project<br />module control</span>",
-    "textBlock_text10": "<span class='PoppinsExtraLight fontweight275'>3D modelling of<br />IGCC</span>",
-    "textBlock_text11": "<span class='PoppinsExtraLight fontweight275'>To be the biggest<br />contractor in its field</span>",
+    "textBlock_text1": "<span class='PoppinsExtraLight fontweight275'>Foundation<span class='PoppinsExtraLight fontweight275'>&nbsp<br />GEOTEC</span></span>",
+    "textBlock_text2": "<span class='PoppinsExtraLight fontweight275'>First project<span class='PoppinsExtraLight fontweight275'>&nbsp<br />GEOTEC</span></span>",
+    "textBlock_text3": "<span class='PoppinsExtraLight fontweight275'>Extension&nbsp<br />in Kazahstan</span>",
+    "textBlock_text4": "<span class='PoppinsExtraLight fontweight275'>TCO&nbsp<br/>Partnership</span>",
+    "textBlock_text5": "<span class='PoppinsExtraLight fontweight275'>The tallest building&nbsp<br />in KZ survey works</span>",
+    "textBlock_text6": "<span class='PoppinsExtraLight fontweight275'>Wind power&nbsp<br />project</span>",
+    "textBlock_text7": "<span class='PoppinsExtraLight fontweight275'>3D scanning project &<br />&nbspgeophysical investigations</span>",
+    "textBlock_text8": "<span class='PoppinsExtraLight fontweight275'>Certification ISO 9001&nbsp<br />and OHSAS 18001</span>",
+    "textBlock_text9": "<span class='PoppinsExtraLight fontweight275'>TCO FGP mega project&nbsp<br />module control</span>",
+    "textBlock_text10": "<span class='PoppinsExtraLight fontweight275'>3D modelling of&nbsp<br />IGCC</span>",
+    "textBlock_text11": "<span class='PoppinsExtraLight fontweight275'>To be the biggest&nbsp<br />contractor in its field</span>",
 
     "textBlock_text_content1": "<span class='PoppinsExtraLight fontweight275'>Geotec has been founded in 2006.</span>",
     "textBlock_text_content2": "<span class='PoppinsExtraLight fontweight275'>Geotec has been founded in 2006</span>",
@@ -154,14 +154,14 @@
     "title": "<span class='PoppinsRegular fontweight400'>Why<br />Choose<br />Us?</span>",
 
     "Whyarewe_block_Content_first_title1": "<span class='PoppinsRegular fontweight400'>Employees</span>",
-    "Whyarewe_block_Content_first_title2": "<span class='PoppinsRegular fontweight400'>Customer</span>",
+    "Whyarewe_block_Content_first_title2": "<span class='PoppinsRegular fontweight400'>Sustainability</span>",
     "Whyarewe_block_Content_first_title3": "<span class='PoppinsRegular fontweight400'>Safety & Quality</span>",
-    "Whyarewe_block_Content_first_title4": "<span class='PoppinsRegular fontweight400'>Sustainability</span>",
+    "Whyarewe_block_Content_first_title4": "<span class='PoppinsRegular fontweight400'>Customer</span>",
 
     "Whyarewe_block_Content_first_text1": "<span class='PoppinsRegular fontweight400'>The strength of our company.<br />Our employees are an example of creativity, experience and motivation<br />Maintain the Motta “safety first” and provide a healthy work environment.</span>",
-    "Whyarewe_block_Content_first_text2": "<span class='PoppinsRegular fontweight400'>Customer requirements are our highest priority.<br />Cares about customers words, understand, and seek out the best solutions to continually improve.</span>",
+    "Whyarewe_block_Content_first_text2": "<span class='PoppinsRegular fontweight400'>We strive for sustainability and environmental awareness. We want to be publicly recognized as an well-known in sustainable business practice.</span>",
     "Whyarewe_block_Content_first_text3": "<span class='PoppinsRegular fontweight400'>We have high quality standards which also apply to our supplies.<br />Put safety first and provide <br />a healthy work environment.</span>",
-    "Whyarewe_block_Content_first_text4": "<span class='PoppinsRegular fontweight400'>We strive for sustainability and environmental awareness.<br />We want to be publicly recognized as an well-known in sustainable business practice.</span>"
+    "Whyarewe_block_Content_first_text4": "<span class='PoppinsRegular fontweight400'>Customer requirements are our highest priority. Cares about customers words, understand, and seek out the best solutions to continually improve. </span>"
   },
 
   "aboutUs": {
