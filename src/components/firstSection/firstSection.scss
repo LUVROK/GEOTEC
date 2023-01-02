@@ -19,7 +19,7 @@
   font-style: normal;
   color: #4a6ad0;
   font-weight: 400;
-  font-size: calc(16px + 0.9vh + 0.9vw);
+  font-size: calc(6px + 1.2vh + 1.2vw); //43
   line-height: 138%;
   white-space: pre-wrap;
   width: 45vw;
@@ -121,7 +121,7 @@
     position: relative;
     top: 0;
     bottom: 0;
-    margin-top: auto;
+    // margin-top: auto;
   }
 }
 .firstSection_block_geotec_block {

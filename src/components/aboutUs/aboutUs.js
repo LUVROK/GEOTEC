@@ -7,6 +7,25 @@ import { useTranslation } from "react-i18next";
 const AboutUs = () => {
   const { t, i18n } = useTranslation();
   const [activeAboutUsMobile, setActiveAboutUsMobile] = useState(0);
+  const [height_researchs_block, setHeight_researchs_block] = useState("0px");
+
+  useEffect(() => {
+    setHeight_researchs_block(
+      `${
+        document.querySelectorAll(".researchs_block_elem_overflow")[1]
+          .clientHeight
+      }px`
+    );
+  }, []);
+
+  useEffect(() => {
+    const borderbottom = document.querySelectorAll(".borderbottom");
+    for (let i = 0; i < borderbottom.length; i++) {
+      borderbottom[
+        i
+      ].style.bottom = `calc(4.2vh + 4.2vw - ${height_researchs_block})`;
+    }
+  }, [height_researchs_block]);
 
   const researchs_block_elemClick = (index) => {
     const researchs_block_elems = document.querySelectorAll(
@@ -21,19 +40,26 @@ const AboutUs = () => {
     const researchs_block_elem_text_text = document.querySelectorAll(
       ".researchs_block_elem .text"
     );
+    const borderbottom = document.querySelectorAll(".borderbottom");
+
     if (researchs_block_elemSVGs[index].style.transform === "rotateX(180deg)") {
+      borderbottom[
+        index
+      ].style.bottom = `calc(4.2vh + 4.2vw - ${height_researchs_block})`;
       if (window.innerHeight >= 620) {
-        researchs_block_elems[index].style.height = "126px";
+        researchs_block_elems[index].style.height = "calc(4.2vh + 4.2vw)";
       } else {
-        researchs_block_elems[index].style.height = "78px";
+        researchs_block_elems[index].style.height = "calc(2.5vh + 2.5vw)";
       }
       if (window.innerHeight > 620) {
-        researchs_block_elem_overflows[index].style.height = "81px";
+        researchs_block_elem_overflows[index].style.height =
+          "calc(2.7vh + 2.7vw)";
       } else {
         researchs_block_elem_overflows[index].style.height = "46px";
       }
       researchs_block_elemSVGs[index].style.transform = "rotateX(0deg)";
     } else {
+      borderbottom[index].style.bottom = "49px";
       researchs_block_elem_text_text[index].style.opacity = 1;
       researchs_block_elems[index].style.height = "55vh";
       researchs_block_elem_overflows[index].style.height = "55vh";
@@ -155,7 +181,7 @@ const AboutUs = () => {
       elems[sec2].style.transform = "translateX(505px)";
 
       const dotselems = document.querySelectorAll(".dots span");
-      dotselems[activeAboutUsMobile].style.transform = "scale(1.2)";
+      dotselems[activeAboutUsMobile].style.transform = "scale(1.4)";
       dotselems[prev1].style.transform = "scale(1)";
       dotselems[sec1].style.transform = "scale(1)";
       dotselems[sec2].style.transform = "scale(1)";
@@ -228,15 +254,15 @@ const AboutUs = () => {
                   }
                 : {},
               window.innerHeight < 620
-                ? { height: "78px" }
-                : { height: "126px" })
+                ? { height: "calc(2.5vh + 2.5vw)" }
+                : { height: "calc(4.2vh + 4.2vw)" })
             }
           >
             <div
               className="researchs_block_elem_overflow"
               style={
                 window.innerHeight > 620
-                  ? { height: "81px" }
+                  ? { height: "calc(2.7vh + 2.7vw)" }
                   : { height: "46px" }
               }
             >
@@ -244,7 +270,7 @@ const AboutUs = () => {
                 className="researchs_block_elem_text"
                 style={
                   window.innerHeight > 620
-                    ? { height: "81px" }
+                    ? { height: "calc(2.7vh + 2.7vw)" }
                     : { height: "46px" }
                 }
               >
@@ -254,7 +280,7 @@ const AboutUs = () => {
                 {parse(t("aboutUs.text1"))}
               </div>
             </div>
-            <div className="borderbottom"></div>
+            <div className="borderbottom" style={{ bottom: "0px" }}></div>
             <svg
               width="45"
               height="24"
@@ -281,15 +307,15 @@ const AboutUs = () => {
                   }
                 : {},
               window.innerHeight < 620
-                ? { height: "78px" }
-                : { height: "126px" })
+                ? { height: "calc(2.5vh + 2.5vw)" }
+                : { height: "calc(4.2vh + 4.2vw)" })
             }
           >
             <div
               className="researchs_block_elem_overflow"
               style={
                 window.innerHeight > 620
-                  ? { height: "81px" }
+                  ? { height: "calc(2.7vh + 2.7vw)" }
                   : { height: "46px" }
               }
             >
@@ -297,7 +323,7 @@ const AboutUs = () => {
                 className="researchs_block_elem_text"
                 style={
                   window.innerHeight > 620
-                    ? { height: "81px" }
+                    ? { height: "calc(2.7vh + 2.7vw)" }
                     : { height: "46px" }
                 }
               >
@@ -307,7 +333,7 @@ const AboutUs = () => {
                 {parse(t("aboutUs.text2"))}
               </div>
             </div>
-            <div className="borderbottom"></div>
+            <div className="borderbottom" style={{ bottom: "0px" }}></div>
             <svg
               width="45"
               height="24"
@@ -334,15 +360,15 @@ const AboutUs = () => {
                   }
                 : {},
               window.innerHeight < 620
-                ? { height: "78px" }
-                : { height: "126px" })
+                ? { height: "calc(2.5vh + 2.5vw)" }
+                : { height: "calc(4.2vh + 4.2vw)" })
             }
           >
             <div
               className="researchs_block_elem_overflow"
               style={
                 window.innerHeight > 620
-                  ? { height: "81px" }
+                  ? { height: "calc(2.7vh + 2.7vw)" }
                   : { height: "46px" }
               }
             >
@@ -350,7 +376,7 @@ const AboutUs = () => {
                 className="researchs_block_elem_text"
                 style={
                   window.innerHeight > 620
-                    ? { height: "81px" }
+                    ? { height: "calc(2.7vh + 2.7vw)" }
                     : { height: "46px" }
                 }
               >
@@ -360,7 +386,7 @@ const AboutUs = () => {
                 {parse(t("aboutUs.text3"))}
               </div>
             </div>
-            <div className="borderbottom"></div>
+            <div className="borderbottom" style={{ bottom: "0px" }}></div>
             <svg
               width="45"
               height="24"
@@ -387,15 +413,15 @@ const AboutUs = () => {
                   }
                 : {},
               window.innerHeight < 620
-                ? { height: "78px" }
-                : { height: "126px" })
+                ? { height: "calc(2.5vh + 2.5vw)" }
+                : { height: "calc(4.2vh + 4.2vw)" })
             }
           >
             <div
               className="researchs_block_elem_overflow"
               style={
                 window.innerHeight > 620
-                  ? { height: "81px" }
+                  ? { height: "calc(2.7vh + 2.7vw)" }
                   : { height: "46px" }
               }
             >
@@ -403,7 +429,7 @@ const AboutUs = () => {
                 className="researchs_block_elem_text"
                 style={
                   window.innerHeight > 620
-                    ? { height: "81px" }
+                    ? { height: "calc(2.7vh + 2.7vw)" }
                     : { height: "46px" }
                 }
               >
@@ -413,7 +439,7 @@ const AboutUs = () => {
                 {parse(t("aboutUs.text4"))}
               </div>
             </div>
-            <div className="borderbottom"></div>
+            <div className="borderbottom" style={{ bottom: "0px" }}></div>
             <svg
               width="45"
               height="24"
