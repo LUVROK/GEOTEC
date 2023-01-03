@@ -69,9 +69,15 @@ const Projects = () => {
     setMassImagesBlockOverflow(
       document.querySelectorAll(".ImagesBlockOverflow")
     );
-    setMassDiscriptionBlockOverflow(
-      document.querySelectorAll(".textDesc_block")
-    );
+    if (window.innerWidth > 910) {
+      setMassDiscriptionBlockOverflow(
+        document.querySelectorAll(".Projects_blockDesktop .textDesc_block")
+      );
+    } else {
+      setMassDiscriptionBlockOverflow(
+        document.querySelectorAll(".Projects_blockMobile .textDesc_block")
+      );
+    }
     setMasshiddenOverflowBlockOverflow(
       document.querySelectorAll(".hiddenOverflowProject")
     );
@@ -139,6 +145,10 @@ const Projects = () => {
     const prev = swiper.activeIndex === 0 ? 11 : swiper.activeIndex - 1;
     const sec = swiper.activeIndex === 11 ? 0 : swiper.activeIndex + 1;
     if (MassDiscriptionBlockOverflow !== undefined) {
+      MassDiscriptionBlockOverflow[prev].style.display = "none";
+      MassDiscriptionBlockOverflow[swiper.activeIndex].style.display = "block";
+      MassDiscriptionBlockOverflow[sec].style.display = "none";
+
       MassDiscriptionBlockOverflow[prev].style.display = "none";
       MassDiscriptionBlockOverflow[swiper.activeIndex].style.display = "block";
       MassDiscriptionBlockOverflow[sec].style.display = "none";
@@ -813,8 +823,7 @@ const Projects = () => {
                 onClick={() => pageFunctionto(0)}
               >
                 <svg
-                  width="29"
-                  height="19"
+                  width="40%"
                   viewBox="0 0 29 19"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -834,8 +843,7 @@ const Projects = () => {
                 onClick={() => pageFunctionto(1)}
               >
                 <svg
-                  width="29"
-                  height="19"
+                  width="40%"
                   viewBox="0 0 29 19"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

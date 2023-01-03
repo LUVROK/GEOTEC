@@ -34,8 +34,10 @@ const Nav = () => {
     if (visibilityMenuLang === true) {
       elem.style.opacity = "1";
       elem.style.marginTop = "15px";
+      elem.style.pointerEvents = "all";
     } else {
       elem.style.opacity = "0";
+      elem.style.pointerEvents = "none";
       elem.style.marginTop = "12px";
     }
   }, [visibilityMenuLang]);

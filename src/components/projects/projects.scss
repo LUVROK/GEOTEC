@@ -21,7 +21,7 @@
 
 .Projects_block {
   position: relative;
-  padding-top: 121px;
+  padding-top: 11vh;
   /* padding-left: 82px; */
   width: 95.5%;
   left: 2%;
@@ -32,6 +32,9 @@
   margin-right: auto;
   display: flex;
   flex-direction: row;
+  @media (min-height: 1120px) {
+    padding-top: 20vh;
+  }
 }
 
 .Projects_block .hiddenOverflow {
@@ -70,7 +73,22 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  line-height: 24px;
+  line-height: 60%;
+  @media (min-width: 2560px) {
+    line-height: 100%;
+  }
+  @media (min-width: 2560px) and (max-height: 1560px) {
+    line-height: 70%;
+  }
+  @media (max-height: 960px) {
+    line-height: 50%;
+  }
+  @media (max-height: 890px) {
+    line-height: 40%;
+  }
+  @media (max-height: 720px) {
+    line-height: 35%;
+  }
 }
 .Projects_Text_desc .Projects_Text_desc_text .Projects_Text_desc_text_title {
   position: relative;
@@ -82,10 +100,11 @@
   left: 10%;
   color: #4a6ad0;
   font-family: "Poppins-ExtraLight";
-  font-size: 44px;
+  // font-size: 44px;
+  font-size: calc(3px + 1vw + 1vh); //33
 }
 .Projects_Text_desc .Projects_Text_desc_text .ruProjects_Text_desc_text_title {
-  font-size: 34px;
+  font-size: calc(3px + 1vw + 1vh); //33
 }
 .Projects_Text_desc
   .Projects_Text_desc_text
@@ -95,9 +114,15 @@
   width: 80%;
   margin-top: 42px;
   left: 10%;
-  font-size: 16px;
+  font-size: calc(9px + 0.3vh + 0.3vw); //16
   /* list-style-position: inside; */
   list-style: none;
+  @media (max-height: 890px) {
+    font-size: calc(9px + 0.25vh + 0.25vw); //16
+  }
+  @media (max-height: 720px) {
+    font-size: calc(9px + 0.15vh + 0.15vw); //16
+  }
 }
 ul li {
   list-style: none;
@@ -109,7 +134,7 @@ li:before {
   content: "·";
   font-size: 50px;
   vertical-align: middle;
-  line-height: 20px;
+  // line-height: 120%;
   margin-right: 10px;
 }
 .discription_projects {
@@ -202,8 +227,8 @@ li:before {
   font-family: "Raleway-Light";
   font-style: normal;
   font-weight: 300;
-  font-size: 33px;
-  line-height: 75px;
+  font-size: calc(3px + 1vw + 1vh); //33
+  line-height: 140%;
   padding-left: 85px;
   text-transform: capitalize;
   margin-top: 44px;
@@ -214,6 +239,9 @@ li:before {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  @media (max-width: 910px) {
+    font-size: 24px;
+  }
 }
 
 .Projects .textBlock_first .textBlock_text {
@@ -227,7 +255,8 @@ li:before {
   position: absolute;
   width: 100%;
   margin-top: 20%;
-  height: 392px;
+  // height: 392px;
+  height: calc(15vh + 10vw);
   padding-top: 4%;
   transition-delay: 0s;
   padding-left: 85px;
@@ -246,8 +275,8 @@ li:before {
   position: relative;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc(6px + 0.3vh + 0.3vw); //16
+  line-height: 120%;
   color: #102876;
   margin-top: 5%;
 }
@@ -256,7 +285,7 @@ li:before {
   font-family: "Raleway-Regular";
   font-style: normal;
   font-weight: 400;
-  font-size: 33px;
+  font-size: calc(3px + 1vw + 1vh); //33
   line-height: 120%;
   text-transform: capitalize;
   background: linear-gradient(
@@ -294,15 +323,15 @@ li:before {
   position: absolute;
   display: flex;
   flex-direction: row;
-  padding: 26px 45px;
+  padding: 1.25vw 3.5vh;
   background-color: #2adea1;
   bottom: 0px;
 
   font-family: "Raleway-Light";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: calc(9px + 0.3vh + 0.3vw); //16
+  line-height: 100%;
 
   color: #ffffff;
   border-radius: 20px;
@@ -324,8 +353,9 @@ li:before {
   fill: #4a6ad0;
 }
 .Projects .Button_Learn_More .title {
-  font-size: 16px;
+  font-size: calc(9px + 0.3vh + 0.3vw); //16
   margin-right: 40px;
+  line-height: 140%;
 }
 
 .buttonsBlock {
@@ -345,7 +375,8 @@ li:before {
   right: 20%;
   bottom: 4%;
   font-family: "Poppins-Regular";
-  font-size: 24px;
+  // font-size: 24px;
+  font-size: calc(4px + 0.5vh + 0.5vw);
   color: #4a6ad0;
 }
 .lineStatus {
@@ -355,6 +386,9 @@ li:before {
   width: 125px;
   margin-left: 15px;
   margin-right: 15px;
+  @media (min-width: 2560px) {
+    width: 10vh;
+  }
 }
 
 .btnBefore {
@@ -362,10 +396,10 @@ li:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  // padding: 15px;
   /* background-color: #4A6AD0; */
-  height: 60px;
-  width: 60px;
+  height: calc(2vh + 2vw);
+  width: calc(2vh + 2vw);
   border-radius: 59px;
   margin-right: 28px;
   cursor: pointer;
@@ -385,10 +419,10 @@ li:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  // padding: calc(0.45vh + 0.45vw);
   /* background-color: #4A6AD0; */
-  height: 60px;
-  width: 60px;
+  height: calc(2vh + 2vw);
+  width: calc(2vh + 2vw);
   border-radius: 59px;
   cursor: pointer;
 }
@@ -406,6 +440,8 @@ li:before {
   position: absolute;
   top: 55px;
   left: 15px;
+  font-size: 24px;
+  padding-top: 5vh;
 }
 
 @media screen and (max-width: 1480px) {
@@ -486,12 +522,6 @@ li:before {
   }
 }
 
-@media screen and (max-width: 720px) {
-}
-
-@media screen and (max-width: 490px) {
-}
-
 @media screen and (max-width: 730px) and (min-height: 820px) {
   .MobileTitle {
     top: 105px;
@@ -509,7 +539,7 @@ li:before {
 
 @media screen and (max-height: 1080px) and (max-width: 910px) {
   .map_item {
-    height: 80vh !important;
+    height: 70vh !important;
   }
   .swiper {
     height: 100%;
@@ -546,11 +576,11 @@ li:before {
   }
   .Projects .title_project {
     font-size: 22px;
-  } 
+  }
   .Projects .textBlock_text {
     font-size: 24px;
   }
-  .Projects .textBlock_text_content  {
+  .Projects .textBlock_text_content {
     font-size: 13px;
   }
   .Projects .Button_Learn_More {
@@ -566,7 +596,7 @@ li:before {
     padding: 15px;
     margin-right: 12px;
   }
-  .btnAfter{
+  .btnAfter {
     height: 50px;
     width: 50px;
     padding: 15px;
@@ -617,14 +647,17 @@ li:before {
   padding-top: 9px;
   color: #2158b2;
   font-size: 14px;
-  line-height: 15px;
+  line-height: 100%;
+  @media (max-width: 910px) {
+    line-height: 120%;
+  }
 }
 .map_item_p {
   padding-left: 16px;
   padding-top: 9px;
   color: #102876;
   font-size: 11px;
-  line-height: 6px;
+  line-height: 90%;
 }
 .btnMapItem {
   position: absolute;

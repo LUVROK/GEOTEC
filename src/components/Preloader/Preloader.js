@@ -6,8 +6,6 @@ const Preloader = () => {
     <div className="preloader">
       <div className="logo" id="preloader">
         <svg
-          width="60"
-          height="50"
           viewBox="0 0 111 102"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

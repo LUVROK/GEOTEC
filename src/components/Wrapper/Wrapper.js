@@ -25,6 +25,7 @@ const Wrapper = () => {
           className="Wrapper_block_GEOTEC_block1"
           style={{ opacity: 0, transform: "translateY(90px)" }}
         >
+          <h1 style={{ display: "none" }}>GEOTEC</h1>
           <div className="Wrapper_block_GEOTEC_title">
             <span>ge</span>
             <span>

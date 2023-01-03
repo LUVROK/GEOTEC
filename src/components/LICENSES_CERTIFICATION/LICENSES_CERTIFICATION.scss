@@ -79,7 +79,7 @@ $font-max: calc(1.5vh + 1.5vw);
   z-index: 9999;
 }
 .svgBckdround {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -113,12 +113,19 @@ $font-max: calc(1.5vh + 1.5vw);
   opacity: 0.2;
   transform: translateY(80px);
 }
-.licenses .element-animation34 .content {
+.licenses .content {
+  // position: relative;
+  // display: flex;
+  // flex-direction: row;
+  // width: 91%;
+  // left: 0;
+
   position: relative;
   display: flex;
-  flex-direction: row;
-  width: 91%;
-  left: 0;
+  width: 85%;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .licenses .element-animation34.element-show {
@@ -135,9 +142,13 @@ $font-max: calc(1.5vh + 1.5vw);
   justify-content: flex-end;
   align-items: center;
 }
+.firstBlockText {
+  margin-top: 2vh;
+  width: 55%;
+}
 
 @media screen and (max-width: 1480px) {
-  .licenses .element-animation34 .content {
+  .licenses .content {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;

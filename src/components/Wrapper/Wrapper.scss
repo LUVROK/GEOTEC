@@ -57,6 +57,9 @@
   @media (max-width: 490px) {
     font-size: 16px;
   }
+  @media (min-width: 2560px) {
+    font-size: calc(12px + 0.55vw + 0.55vh);
+  }
 }
 .Wrapper_block_GEOTEC_block3 {
   height: auto;
@@ -75,6 +78,9 @@
   @media (max-width: 490px) {
     font-size: 16px;
   }
+  @media (min-width: 2560px) {
+    font-size: calc(12px + 0.55vw + 0.55vh);
+  }
 }
 .Wrapper_block_GEOTEC_block2_button svg path {
   fill: #4a6ad0;
@@ -85,6 +91,10 @@
   transition: 0.2s ease-out;
   width: 60px;
   height: 60px;
+  @media (min-width: 2560px) {
+    width: 120px;
+    height: 120px;
+  }
 }
 .Wrapper_block_GEOTEC_block2_button:hover svg {
   transform: scale(1.05);
@@ -101,6 +111,9 @@
   font-size: calc(12px + 0.25vw + 0.25vh);
   @media (max-width: 490px) {
     font-size: 16px;
+  }
+  @media (min-width: 2560px) {
+    font-size: calc(12px + 0.55vw + 0.55vh);
   }
 }
 .Wrapper_block_GEOTEC_title {
@@ -119,6 +132,9 @@
   }
   @media (max-width: 390px) {
     font-size: 70px;
+  }
+  @media (min-width: 2560px) {
+    font-size: calc(70px + 4.33vh + 4.33vw);
   }
 }
 .Wrapper_block_GEOTEC_logo {
@@ -140,6 +156,10 @@
   }
   @media (max-width: 390px) {
     width: 60px;
+  }
+  @media (min-width: 2560px) {
+    width: calc(70px + 3.55vw + 3.55vh);
+    // font-size: calc(70px + 3.33vh + 3.33vw);
   }
 }
 .Wrapper_block_GEOTEC_logo path {

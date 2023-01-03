@@ -10,7 +10,8 @@ import ourTech6 from "../../media/OU_6.webp";
 import ourTech7 from "../../media/OU_7.webp";
 import ourTech8 from "../../media/OU_8.webp";
 
-import ourTechBack1 from "../../media/ourTechBack1.webp";
+// import ourTechBack1 from "../../media/ourTechBack1.webp";
+import ourTechBack1 from "../../media/EllipseOurTech.svg";
 import ourTechBack2 from "../../media/ourTechBack2.webp";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
@@ -133,35 +134,35 @@ const Our_technologies = () => {
   useEffect(() => {
     if (Image_TechState !== undefined) {
       Image_TechState[activePrev2].style.transform =
-        "translateX(-200%) translateY(20%) scale(0.6)";
+        "translateX(-100vw) translateY(20vh) scale(0.6)";
       Image_TechState[active].style.filter = "blur(0px)";
       Image_TechState[activePrev].style.filter = "blur(0px)";
       Image_TechState[activePrev].style.transform =
-        "translateX(-90%) translateY(50%) scale(0.6)";
+        "translateX(-45vw) translateY(50vh) scale(0.6)";
       Image_TechState[activePrev].style.opacity = 0;
       Image_TechState[activePrev2].style.opacity = 0;
       Image_TechState[active].style.opacity = 1;
       if (window.innerWidth > 1134) {
         Image_TechState[activeSec].style.transform =
-          "translateX(120%) translateY(0%) scale(0.6)";
+          "translateX(35vw) translateY(0vh) scale(0.6)";
         Image_TechState[active].style.transform =
-          "translateX(20%) translateY(10%) scale(1)";
+          "translateX(10vw) translateY(10vh) scale(1)";
       } else if (window.innerWidth > 720) {
         Image_TechState[activeSec].style.transform =
-          "translateX(80%) translateY(-10%) scale(0.6)";
+          "translateX(40vw) translateY(-10vh) scale(0.6)";
         Image_TechState[active].style.transform =
-          "translateX(0%) translateY(10%) scale(1)";
+          "translateX(0vw) translateY(10vh) scale(1)";
       } else {
         Image_TechState[active].style.transform =
-          "translateX(5%) translateY(55%) scale(1)";
+          "translateX(5vw) translateY(10vh) scale(1)";
         Image_TechState[activeSec].style.transform =
-          "translateX(45%) translateY(40%) scale(0.55)";
+          "translateX(35vw) translateY(5vh) scale(0.55)";
       }
       Image_TechState[activeSec].style.opacity = 1;
       Image_TechState[activeSec2].style.opacity = 0;
       Image_TechState[activeSec].style.filter = "blur(10px)";
       Image_TechState[activeSec2].style.transform =
-        "translateX(200%) translateY(50%) scale(0.6)";
+        "translateX(100vw) translateY(50vh) scale(0.6)";
 
       our_technologies_title[active + 1].style.display = "block";
       our_technologies_perhaps[active + 1].style.display = "block";
@@ -204,32 +205,32 @@ const Our_technologies = () => {
     document.querySelector(".number_hopeful_models_block").style.opacity = 0;
     document.querySelector(".circleButton").style.display = "none";
 
-    document.querySelector(".ourTech1").style.transform = "translateX(0%)";
-    document.querySelector(".ourTech2").style.transform = "translateX(0%)";
+    document.querySelector(".ourTech1").style.transform = "translateX(0vw)";
+    document.querySelector(".ourTech2").style.transform = "translateX(0vw)";
   };
 
   useEffect(() => {
     if (window.innerWidth > 1134) {
-      document.querySelector(".ourTech1").style.transform = "translateX(30%)";
-      document.querySelector(".ourTech2").style.transform = "translateX(80%)";
+      document.querySelector(".ourTech1").style.transform = "translateX(15vw)";
+      document.querySelector(".ourTech2").style.transform = "translateX(80vw)";
       document.querySelectorAll(".Image_Tech")[1].style.transform =
-        "translateX(70%) translateY(15%) scale(0.6)";
+        "translateX(25vw) translateY(20vh) scale(0.6)";
       document.querySelectorAll(".Image_Tech")[0].style.transform =
-        "translateX(40%) translateY(0%) scale(1)";
+        "translateX(17.5vw) translateY(7vh) scale(1)";
     } else if (window.innerWidth > 720) {
-      document.querySelector(".ourTech1").style.transform = "translateX(30%)";
-      document.querySelector(".ourTech2").style.transform = "translateX(50%)";
+      document.querySelector(".ourTech1").style.transform = "translateX(15vw)";
+      document.querySelector(".ourTech2").style.transform = "translateX(50vw)";
       document.querySelectorAll(".Image_Tech")[1].style.transform =
-        "translateX(80%) translateY(10%) scale(0.6)";
+        "translateX(80vw) translateY(10vh) scale(0.45)";
       document.querySelectorAll(".Image_Tech")[0].style.transform =
-        "translateX(10%) translateY(10%) scale(1)";
+        "translateX(10vw) translateY(10vh) scale(0.7)";
     } else {
-      document.querySelector(".ourTech1").style.transform = "translateX(0%)";
-      document.querySelector(".ourTech2").style.transform = "translateX(70%)";
+      document.querySelector(".ourTech1").style.transform = "translateX(0vw)";
+      document.querySelector(".ourTech2").style.transform = "translateX(30vw)";
       document.querySelectorAll(".Image_Tech")[1].style.transform =
-        "translateX(35%) translateY(80%) scale(0.6)";
+        "translateX(40vw) translateY(17.5vh) scale(0.65)";
       document.querySelectorAll(".Image_Tech")[0].style.transform =
-        "translateX(10%) translateY(60%) scale(1)";
+        "translateX(25vw) translateY(10vh) scale(1.2)";
     }
   }, []);
 
@@ -250,55 +251,82 @@ const Our_technologies = () => {
           >
             {parse(t("our_technologies.our_technologies_perhaps1"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title2"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps2"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title3"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps3"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title4"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps4"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title5"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps5"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title6"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps6"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title7"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps7"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title8"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps8"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title9"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
             {parse(t("our_technologies.our_technologies_perhaps9"))}
           </div>
-          <div className="our_technologies_title" style={{ display: "none" }}>
+          <div
+            className="our_technologies_title fonttitleTech"
+            style={{ display: "none" }}
+          >
             {parse(t("our_technologies.our_technologies_title3_2"))}
           </div>
           <div className="our_technologies_perhaps" style={{ display: "none" }}>
@@ -311,20 +339,6 @@ const Our_technologies = () => {
           >
             {parse(t("our_technologies.circleButton"))}
           </div>
-        </div>
-        <div className="our_technologies_right" style={{ width: "60%" }}>
-          <img
-            src={ourTechBack1}
-            alt=""
-            className="ourTech1"
-            style={{ transform: "translateX(30%)" }}
-          />
-          <img
-            src={ourTechBack2}
-            alt=""
-            className="ourTech2"
-            style={{ transform: "translateX(80%)" }}
-          />
           <div
             className="our_technologies_right_left"
             onClick={leftTech}
@@ -339,6 +353,20 @@ const Our_technologies = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="our_technologies_right" style={{ width: "60%" }}>
+          <img
+            src={ourTechBack1}
+            alt=""
+            className="ourTech1"
+            style={{ transform: "translateX(30vw)" }}
+          />
+          <img
+            src={ourTechBack2}
+            alt=""
+            className="ourTech2"
+            style={{ transform: "translateX(80vw)" }}
+          />
           <div
             className="our_technologies_right_right"
             onClick={rightTech}
@@ -347,7 +375,7 @@ const Our_technologies = () => {
             <div
               className="Image_Tech"
               style={{
-                transform: "translateX(30%) translateY(0%) scale(1)",
+                transform: "translateX(30vw) translateY(0vh) scale(1)",
                 opacity: 1,
                 filter: "blur(0px)",
               }}
@@ -357,7 +385,7 @@ const Our_technologies = () => {
             <div
               className="Image_Tech"
               style={{
-                transform: "translateX(70%) translateY(20%) scale(0.6)",
+                transform: "translateX(70vw) translateY(20vh) scale(0.6)",
                 opacity: 1,
                 filter: "blur(0px)",
               }}
@@ -367,7 +395,7 @@ const Our_technologies = () => {
             <div
               className="Image_Tech"
               style={{
-                transform: "translateX(180%) translateY(10%) scale(0.6)",
+                transform: "translateX(180vw) translateY(10vh) scale(0.6)",
                 opacity: 0,
                 filter: "blur(0px)",
               }}
@@ -377,7 +405,7 @@ const Our_technologies = () => {
             <div
               className="Image_Tech"
               style={{
-                transform: "translateX(-180%) translateY(50%) scale(0.6)",
+                transform: "translateX(-180vw) translateY(50vh) scale(0.6)",
                 opacity: 0,
                 filter: "blur(0px)",
               }}
@@ -387,7 +415,7 @@ const Our_technologies = () => {
             <div
               className="Image_Tech"
               style={{
-                transform: "translateX(-180%) translateY(50%) scale(0.6)",
+                transform: "translateX(-180vw) translateY(50vh) scale(0.6)",
                 opacity: 0,
                 filter: "blur(0px)",
               }}
@@ -397,7 +425,7 @@ const Our_technologies = () => {
             <div
               className="Image_Tech"
               style={{
-                transform: "translateX(-180%) translateY(50%) scale(0.6)",
+                transform: "translateX(-180vw) translateY(50vh) scale(0.6)",
                 opacity: 0,
                 filter: "blur(0px)",
               }}
@@ -407,7 +435,7 @@ const Our_technologies = () => {
             <div
               className="Image_Tech"
               style={{
-                transform: "translateX(-180%) translateY(50%) scale(0.6)",
+                transform: "translateX(-180vw) translateY(50vh) scale(0.6)",
                 opacity: 0,
                 filter: "blur(0px)",
               }}
@@ -417,7 +445,7 @@ const Our_technologies = () => {
             <div
               className="Image_Tech"
               style={{
-                transform: "translateX(-100%) translateY(10%) scale(0.6)",
+                transform: "translateX(-100vw) translateY(10vh) scale(0.6)",
                 opacity: 0,
                 filter: "blur(0px)",
               }}

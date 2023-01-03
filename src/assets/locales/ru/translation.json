@@ -100,7 +100,7 @@
   "our_technologies": {
     "circleButton": "<span class='RalewayRegular fontweight400'>Посмотреть технологии</span>",
     "number_hopeful_models_block_title": "<span class='RalewayRegular fontweight400'>Проверенных<br />моделей</span>",
-    "our_technologies_title1": "<span class='RalewayLight fontweight300'>Наши технологии<br />&mdash; залог качества</span>",
+    "our_technologies_title1": "<span class='RalewayLight fontweight300 our_technologies_title1_ru'>Наши технологии<br />&mdash; залог качества</span>",
     "our_technologies_title2": "<span class='PoppinsLight fontweight300'>DJI MATRICE 200</span>",
     "our_technologies_title3": "<span class='PoppinsLight fontweight300'>LEICA NOVA TM50</span>",
     "our_technologies_title3_2": "<span class='PoppinsLight fontweight300'>LEICA TS SERIES</span>",
@@ -158,10 +158,10 @@
     "Whyarewe_block_Content_first_title3": "<span class='RalewayRegular fontweight400'>Безопасность и Качество</span>",
     "Whyarewe_block_Content_first_title2": "<span class='RalewayRegular fontweight400'>Устойчивое Развитие</span>",
 
-    "Whyarewe_block_Content_first_text1": "<span class='RalewayRegular fontweight400'>Наши сотрудники - пример креативности, опыта и мотивации.<br /><br />Поддержание слогана <br />«Безопасность- превыше всего!» и обеспечение здоровой производственной среды</span>",
-    "Whyarewe_block_Content_first_text4": "<span class='RalewayRegular fontweight400'>Мы добиваемся устойчивого развития и осведомлённости в области окружающей средыМы хотим получить всенародное признание какизвестная устойчивая компания</span>",
-    "Whyarewe_block_Content_first_text3": "<span class='RalewayRegular fontweight400'>Мы имеем высокие стандарты по качеству, которые применяются при выполнении работ<br /><br />Ставим безопасность превыше всего и обеспечиваем здоровую рабочую cреду</span>",
-    "Whyarewe_block_Content_first_text2": "<span class='RalewayRegular fontweight400'>Требования Заказчика – наш основной приоритет<br />Выслушиваем и принимаем каждое слово Заказчика, и ищем лучшие решения для непрерывного совершенствования</span>"
+    "Whyarewe_block_Content_first_text1": "<span class='RalewayRegular fontweight400'>Наши сотрудники - пример креативности, опыта и мотивации. <br /><br />Поддержание слогана <br />«Безопасность- превыше всего!» и обеспечение здоровой производственной среды</span>",
+    "Whyarewe_block_Content_first_text4": "<span class='RalewayRegular fontweight400'>Мы добиваемся устойчивого развития и осведомлённости в области окружающей среды. Мы хотим получить всенародное признание какизвестная устойчивая компания</span>",
+    "Whyarewe_block_Content_first_text3": "<span class='RalewayRegular fontweight400'>Мы имеем высокие стандарты по качеству, которые применяются при выполнении работ. <br /><br />Ставим безопасность превыше всего и обеспечиваем здоровую рабочую cреду</span>",
+    "Whyarewe_block_Content_first_text2": "<span class='RalewayRegular fontweight400'>Требования Заказчика – наш основной приоритет. <br />Выслушиваем и принимаем каждое слово Заказчика, и ищем лучшие решения для непрерывного совершенствования</span>"
   },
 
   "aboutUs": {

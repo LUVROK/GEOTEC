@@ -100,7 +100,7 @@
   "our_technologies": {
     "circleButton": "<span class='PoppinsLight fontweight300'>Learn more</span>",
     "number_hopeful_models_block_title": "<span class='PoppinsLight fontweight300'>hopeful<br />models</span>",
-    "our_technologies_title1": "<span class='PoppinsLight fontweight300'>Our technology &mdash;<br/>guaranteed results</span></span>",
+    "our_technologies_title1": "<span class='PoppinsLight fontweight300 our_technologies_title1_en'>Our technology &mdash; <br/>guaranteed results</span></span>",
     "our_technologies_title2": "<span class='PoppinsLight fontweight300'>DJI MATRICE 200</span>",
     "our_technologies_title3": "<span class='PoppinsLight fontweight300'>LEICA NOVA TM50</span>",
     "our_technologies_title3_2": "<span class='PoppinsLight fontweight300'>LEICA TS SERIES</span>",

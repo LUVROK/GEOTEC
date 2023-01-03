@@ -41,7 +41,11 @@ const Contacts = () => {
           </svg>
           <div className="perhaps_contacts_element">info@geotec.kz</div>
         </div>
-        <div className="contact_contacts_element">
+        <a
+          className="contact_contacts_element"
+          target={"_blank"}
+          href="https://2gis.kz/nur_sultan/inside/9570784907573361/firm/70000001028804385?m=71.409757%2C51.144517%2F16.72"
+        >
           <svg
             viewBox="0 0 31 43"
             fill="none"
@@ -59,7 +63,7 @@ const Contacts = () => {
           <div className="perhaps_contacts_element">
             {parse(t("contacts.address"))}
           </div>
-        </div>
+        </a>
         <div className="contact_contacts_element">
           <svg
             viewBox="0 0 41 41"
@@ -89,8 +93,6 @@ const Contacts = () => {
           {parse(t("contacts.title_map_btn"))}
         </div>
         <svg
-          width="22.2"
-          height="14.55"
           viewBox="0 0 29 19"
           fill="#102876"
           xmlns="http://www.w3.org/2000/svg"

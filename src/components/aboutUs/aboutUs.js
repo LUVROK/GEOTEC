@@ -19,12 +19,12 @@ const AboutUs = () => {
   }, []);
 
   useEffect(() => {
-    const borderbottom = document.querySelectorAll(".borderbottom");
-    for (let i = 0; i < borderbottom.length; i++) {
-      borderbottom[
-        i
-      ].style.bottom = `calc(4.2vh + 4.2vw - ${height_researchs_block})`;
-    }
+    // const borderbottom = document.querySelectorAll(".borderbottom");
+    // for (let i = 0; i < borderbottom.length; i++) {
+    //   borderbottom[
+    //     i
+    //   ].style.bottom = `calc(4.2vh + 4.2vw - ${height_researchs_block})`;
+    // }
   }, [height_researchs_block]);
 
   const researchs_block_elemClick = (index) => {
@@ -40,12 +40,12 @@ const AboutUs = () => {
     const researchs_block_elem_text_text = document.querySelectorAll(
       ".researchs_block_elem .text"
     );
-    const borderbottom = document.querySelectorAll(".borderbottom");
+    // const borderbottom = document.querySelectorAll(".borderbottom");
 
     if (researchs_block_elemSVGs[index].style.transform === "rotateX(180deg)") {
-      borderbottom[
-        index
-      ].style.bottom = `calc(4.2vh + 4.2vw - ${height_researchs_block})`;
+      // borderbottom[
+      //   index
+      // ].style.bottom = `calc(4.2vh + 4.2vw - ${height_researchs_block})`;
       if (window.innerHeight >= 620) {
         researchs_block_elems[index].style.height = "calc(4.2vh + 4.2vw)";
       } else {
@@ -59,10 +59,10 @@ const AboutUs = () => {
       }
       researchs_block_elemSVGs[index].style.transform = "rotateX(0deg)";
     } else {
-      borderbottom[index].style.bottom = "49px";
+      // borderbottom[index].style.bottom = "49px";
       researchs_block_elem_text_text[index].style.opacity = 1;
-      researchs_block_elems[index].style.height = "55vh";
-      researchs_block_elem_overflows[index].style.height = "55vh";
+      researchs_block_elems[index].style.height = "50vh";
+      researchs_block_elem_overflows[index].style.height = "50vh";
       researchs_block_elemSVGs[index].style.transform = "rotateX(180deg)";
     }
   };
@@ -280,21 +280,21 @@ const AboutUs = () => {
                 {parse(t("aboutUs.text1"))}
               </div>
             </div>
-            <div className="borderbottom" style={{ bottom: "0px" }}></div>
-            <svg
-              width="45"
-              height="24"
-              viewBox="0 0 45 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ transform: "rotateX(0deg)" }}
-            >
-              <path
-                d="M1 1L22.2132 22.2132L43.4264 1"
-                stroke="#102876"
-                strokeWidth="2"
-              />
-            </svg>
+            {/* <div className="borderbottom" style={{ bottom: "0px" }}></div> */}
+            <div className="svgblock">
+              <svg
+                viewBox="0 0 45 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ transform: "rotateX(0deg)" }}
+              >
+                <path
+                  d="M1 1L22.2132 22.2132L43.4264 1"
+                  stroke="#102876"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
           </div>
           <div
             className="researchs_block_elem"
@@ -333,21 +333,21 @@ const AboutUs = () => {
                 {parse(t("aboutUs.text2"))}
               </div>
             </div>
-            <div className="borderbottom" style={{ bottom: "0px" }}></div>
-            <svg
-              width="45"
-              height="24"
-              viewBox="0 0 45 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ transform: "rotateX(deg)" }}
-            >
-              <path
-                d="M1 1L22.2132 22.2132L43.4264 1"
-                stroke="#102876"
-                strokeWidth="2"
-              />
-            </svg>
+            {/* <div className="borderbottom" style={{ bottom: "0px" }}></div> */}
+            <div className="svgblock">
+              <svg
+                viewBox="0 0 45 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ transform: "rotateX(deg)" }}
+              >
+                <path
+                  d="M1 1L22.2132 22.2132L43.4264 1"
+                  stroke="#102876"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
           </div>
           <div
             className="researchs_block_elem"
@@ -386,21 +386,21 @@ const AboutUs = () => {
                 {parse(t("aboutUs.text3"))}
               </div>
             </div>
-            <div className="borderbottom" style={{ bottom: "0px" }}></div>
-            <svg
-              width="45"
-              height="24"
-              viewBox="0 0 45 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ transform: "rotateX(deg)" }}
-            >
-              <path
-                d="M1 1L22.2132 22.2132L43.4264 1"
-                stroke="#102876"
-                strokeWidth="2"
-              />
-            </svg>
+            {/* <div className="borderbottom" style={{ bottom: "0px" }}></div> */}
+            <div className="svgblock">
+              <svg
+                viewBox="0 0 45 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ transform: "rotateX(deg)" }}
+              >
+                <path
+                  d="M1 1L22.2132 22.2132L43.4264 1"
+                  stroke="#102876"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
           </div>
           <div
             className="researchs_block_elem"
@@ -439,21 +439,21 @@ const AboutUs = () => {
                 {parse(t("aboutUs.text4"))}
               </div>
             </div>
-            <div className="borderbottom" style={{ bottom: "0px" }}></div>
-            <svg
-              width="45"
-              height="24"
-              viewBox="0 0 45 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ transform: "rotateX(deg)" }}
-            >
-              <path
-                d="M1 1L22.2132 22.2132L43.4264 1"
-                stroke="#102876"
-                strokeWidth="2"
-              />
-            </svg>
+            {/* <div className="borderbottom" style={{ bottom: "0px" }}></div> */}
+            <div className="svgblock">
+              <svg
+                viewBox="0 0 45 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ transform: "rotateX(deg)" }}
+              >
+                <path
+                  d="M1 1L22.2132 22.2132L43.4264 1"
+                  stroke="#102876"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
           </div>
           <div className="dots">
             <span style={{ transform: "scale(1.2)" }}>.</span>

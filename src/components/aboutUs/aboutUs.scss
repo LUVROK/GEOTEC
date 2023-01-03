@@ -12,11 +12,15 @@
 .AboutUs_block {
   position: relative;
   top: calc(5vh + 5vw);
+  // top: calc(1.05vh + 1.05vw + 28px + 2.5vh);
   margin-top: 0px;
   width: calc(480px + 40vw + 30vh);
   height: 100%;
   @media (min-width: 2560px) {
     width: calc(90vw);
+  }
+  @media (max-width: 720px) {
+    top: calc(10vh + 10vw);
   }
 }
 .CompanyBar {
@@ -35,7 +39,7 @@
   font-family: "Raleway-Regular";
   font-style: normal;
   font-weight: 400;
-  font-size: calc(12px + 1.1vh + 1.1vw); //44
+  font-size: calc(5px + 1.3vh + 1.3vw); //44
   line-height: 120%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -45,6 +49,7 @@
   background-position: center;
   @media (min-width: 2560px) {
     height: calc(5vh + 5vw);
+    font-size: calc(30px + 0.75vh + 0.75vw); //44
   }
 }
 .CompanyBar .perhaps_logo_companyBar span {
@@ -52,18 +57,21 @@
 }
 .logo_CompanyBar {
   font-family: "Poppins-ExtraLight";
-  font-size: calc(60px + 1.5vw + 1.5vh); //110
+  font-size: calc(5px + 3.5vw + 3.5vh); //110
   font-style: normal;
   font-weight: 275;
   line-height: 120%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin-left: calc(1.5vw + 1.5vh);
+  margin-left: calc(2.5vw + 2.5vh);
+  @media (min-width: 2560px) {
+    font-size: calc(30px + 2vw + 2vh); //110
+  }
 }
 .perhaps_logo_companyBar {
   position: absolute;
-  bottom: 9px;
-  left: calc(1.5vw + 1.5vh);
+  bottom: 17.5px;
+  left: calc(2.5vw + 2.5vh);
   font-family: "Raleway-Regular";
   font-style: normal;
   font-weight: 300;
@@ -91,7 +99,7 @@
   font-style: normal;
   font-weight: 500;
   color: #102876;
-  font-size: calc(7.5px + 0.5vh + 0.5vw); //22
+  font-size: calc(0.75vh + 0.75vw); //22
   line-height: 150%;
   letter-spacing: -0.03em;
   cursor: pointer;
@@ -117,13 +125,21 @@
   position: relative;
   width: 100%;
   margin-top: 25px;
-  transition-delay: 0.3s;
-  transition: all 0.7s, opacity 1s;
+  // transition-delay: 0.3s;
+  transition: all 1s, opacity 1s;
   font-family: "Raleway-Light";
   font-size: calc(9px + 0.3vh + 0.3vw); //16
   font-style: normal;
   font-weight: 300;
-  line-height: 120%;
+  line-height: 140%;
+  @media (min-width: 2560px) {
+    font-size: calc(9px + 0.4vh + 0.4vw); //16
+    line-height: 160%;
+  }
+  @media (max-height: 890px) {
+    line-height: 120%;
+    font-size: calc(9px + 0.25vh + 0.25vw); //16
+  }
 }
 .borderbottom {
   position: absolute;
@@ -133,29 +149,47 @@
   transition: all 1s ease-out;
   // bottom: 45px;
 }
-.researchs_block_elem svg {
+.researchs_block_elem .svgblock {
   position: absolute;
-  bottom: 6px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   transition: 1s;
+  width: 100%;
+  height: 49px;
+  display: flex;
+  bottom: 0px;
+  border-top: 1px solid #102876;
+  background-color: #fff;
+  @media (max-width: 1420px) {
+    bottom: 0px;
+  }
+}
+.researchs_block_elem div svg {
+  position: relative;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: calc(15px + 1vh + 1vw);
+  transition: all 0.75s ease-in-out;
 }
 .researchs_block_elem:nth-child(0) {
-  padding-left: 15px;
+  margin-left: 15px;
   padding-right: 0px;
 }
 .researchs_block_elem:nth-child(1) {
-  padding-left: 15px;
+  margin-left: 15px;
   padding-right: 0px;
 }
 .researchs_block_elem:nth-child(2) {
-  padding-left: 15px;
+  margin-left: 15px;
   padding-right: 0px;
 }
 .researchs_block_elem:nth-child(3) {
-  padding-left: 15px;
+  margin-left: 15px;
   padding-right: 0px;
 }
 .mobileTitleAboutUs {
@@ -175,24 +209,15 @@
   display: none;
 }
 
-@media screen and (max-width: 1720px) {
-  .logo_CompanyBar {
-    margin-left: 24px;
-  }
-  .perhaps_logo_companyBar {
-    left: 24px;
-  }
-}
-
 @media screen and (max-width: 1480px) {
   .logo_CompanyBarMobile svg {
     padding: 5px 0px;
     width: 51px;
     height: 40px;
   }
-  .AboutUs {
-    padding-top: 86px;
-  }
+  // .AboutUs {
+  //   padding-top: 86px;
+  // }
   .AboutUs_block {
     width: 90%;
   }
@@ -203,16 +228,16 @@
 
 @media screen and (max-width: 1134px) {
   .researchs_block_elem:nth-child(0) {
-    padding-right: 10px;
+    margin-right: 10px;
   }
   .researchs_block_elem:nth-child(1) {
-    padding-right: 10px;
+    margin-right: 10px;
   }
   .researchs_block_elem:nth-child(2) {
-    padding-right: 10px;
+    margin-right: 10px;
   }
   .researchs_block_elem:nth-child(3) {
-    padding-right: 10px;
+    margin-right: 10px;
   }
   .CompanyBar {
     display: none;
@@ -246,6 +271,9 @@
   .researchs_block_elem svg {
     display: none;
   }
+  .svgblock {
+    display: none !important;
+  }
   .researchs_block_elem_text {
     padding-top: 25px;
     border-bottom: 0px;
@@ -257,14 +285,13 @@
   }
   .researchs_block {
     flex-direction: row;
-    height: 70%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .researchs_block_elem .text {
     margin-top: 0px;
-    line-height: 130%;
     font-size: 14px;
     letter-spacing: 0.35px;
     margin-bottom: 20px;
@@ -355,9 +382,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .researchs_block_elem .text {
-    line-height: 160%;
-  }
 }
 
 @media screen and (min-height: 800px) and (max-width: 1134px) {
@@ -372,26 +396,14 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .researchs_block_elem .text {
-    line-height: 140%;
-  }
 }
 
-@media screen and (min-width: 1134px) and (max-height: 890px) {
-  .researchs_block_elem .text {
-    line-height: 180%;
-  }
-}
 @media screen and (min-width: 1134px) and (max-height: 750px) {
   .researchs_block_elem .text {
-    line-height: 160%;
     margin-top: 5px;
   }
 }
 @media screen and (min-width: 1134px) and (max-height: 700px) {
-  .researchs_block_elem .text {
-    line-height: 150%;
-  }
   .CompanyBar {
     padding-top: 5px;
   }
@@ -401,15 +413,15 @@
 }
 
 @media screen and (min-width: 1134px) and (max-height: 550px) {
-  .AboutUs {
-    padding-top: 102px;
-  }
+  // .AboutUs {
+  //   padding-top: 102px;
+  // }
 }
 
 @media screen and (min-width: 1134px) and (max-height: 450px) {
-  .AboutUs {
-    padding-top: 86px;
-  }
+  // .AboutUs {
+  //   padding-top: 86px;
+  // }
 }
 
 @media screen and (max-height: 620px) {

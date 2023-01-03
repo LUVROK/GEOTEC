@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 .firstSection_block_geotec {
   font-family: "Raleway-Regular";
@@ -25,6 +26,9 @@
   width: 45vw;
   @media (max-width: 720px) {
     font-size: 20px;
+  }
+  @media (min-width: 2560px) {
+    font-size: calc(6px + 1.45vh + 1.45vw); //43
   }
 }
 
@@ -56,6 +60,9 @@
     width: 22px;
     margin: auto 5px;
   }
+  @media (min-width: 2560px) {
+    width: calc(16px + 1.05vw + 1.05vh);
+  }
 }
 
 .firstSection_block_geotec_perhapse_block {
@@ -78,6 +85,9 @@
   @media (max-width: 720px) {
     font-size: 14px;
   }
+  @media (min-width: 2560px) {
+    font-size: calc(8.5px + 0.5vh + 0.5vw);
+  }
 }
 .top_sec {
   margin-top: 33px;
@@ -92,6 +102,9 @@
   @media (max-width: 720px) {
     font-size: 14px;
   }
+  @media (min-width: 2560px) {
+    font-size: calc(8.5px + 0.5vh + 0.5vw);
+  }
 }
 .bigFontSize {
   font-size: calc(32px + 1.1vw + 1.1vh);
@@ -101,6 +114,9 @@
   font-weight: 275;
   @media (max-width: 720px) {
     font-size: 32px;
+  }
+  @media (min-width: 2560px) {
+    font-size: calc(32px + 1.35vw + 1.35vh);
   }
 }
 
@@ -130,7 +146,7 @@
   width: 57%;
   margin-left: 82px;
   @media (max-width: 720px) and (max-height: 720px) {
-    margin-top: auto;
+    // margin-top: auto;
   }
 }
 .blockCont {
@@ -140,6 +156,10 @@
   background: #4a6ad0;
   border-radius: 20px;
   cursor: pointer;
+  @media (min-width: 2560px) {
+    width: calc(7vh + 7vw);
+    height: calc(5.5vh + 5.5vw);
+  }
 }
 .centerer:first-of-type {
   margin-right: 27px;
@@ -147,6 +167,9 @@
 .blockCont img {
   padding-top: 29px;
   padding-left: 31px;
+  @media (min-width: 2560px) {
+    transform: scale(1.65);
+  }
 }
 .blockCont_text {
   font-family: "Raleway-Light";
@@ -158,11 +181,21 @@
   color: #ffffff;
   padding-top: 12px;
   padding-left: 28px;
+  @media (min-width: 2560px) {
+    font-size: calc(9px + 0.45vh + 0.45vw);
+    line-height: 160%;
+    padding-top: 32px;
+  }
 }
 .blockCont svg {
   position: absolute;
   right: 31px;
   bottom: 28px;
+  @media (min-width: 2560px) {
+    transform: scale(1.95);
+    right: 61px;
+    bottom: 58px;
+  }
 }
 
 .centerer {
@@ -244,9 +277,9 @@
   }
 }
 @media screen and (max-width: 590px) and (max-height: 700px) {
-  .firstSection_block {
-    top: 2% !important;
-  }
+  // .firstSection_block {
+  //   top: 2% !important;
+  // }
 }
 @media screen and (max-width: 1334px) {
   .firstSection_block_geotec_perhapse {
@@ -388,7 +421,7 @@
 
 @media screen and (max-width: 490px) {
   .firstSection_block {
-    top: 8%;
+    // top: 8%;
   }
   .firstSection_block_geotec svg {
     padding: 0;
