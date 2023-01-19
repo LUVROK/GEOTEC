@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d4f6ad4.css",
-    "main.js": "/static/js/main.14a50781.js",
+    "main.css": "/static/css/main.b02c16a5.css",
+    "main.js": "/static/js/main.6a1a6dd8.js",
     "static/js/787.cd711f27.chunk.js": "/static/js/787.cd711f27.chunk.js",
     "static/media/mountains_wrapper.webp": "/static/media/mountains_wrapper.d97fcfb2ed4a0c11a1e9.webp",
     "static/media/lc2.webp": "/static/media/lc2.650a01ad30029196be13.webp",
@@ -9,6 +9,7 @@
     "static/media/lc1.webp": "/static/media/lc1.4c344782eafd086557b4.webp",
     "static/media/lc4.webp": "/static/media/lc4.b21da46faae335ac7675.webp",
     "static/media/ourTechBack2.webp": "/static/media/ourTechBack2.abd7451d393300c8dee2.webp",
+    "static/media/3danalisys.webp": "/static/media/3danalisys.cc40c89f37e9d4bfb934.webp",
     "static/media/ve.webp": "/static/media/ve.7a1fa846990db197acc8.webp",
     "static/media/sspvgm.webp": "/static/media/sspvgm.a9c347e281a796c8030a.webp",
     "static/media/fps.webp": "/static/media/fps.19fa26f22b81eaf88118.webp",
@@ -31,6 +32,7 @@
     "static/media/OU_6.webp": "/static/media/OU_6.d57fcaa1bbb35f81451b.webp",
     "static/media/OU_4.webp": "/static/media/OU_4.f71fa0858186976aee11.webp",
     "static/media/projects_10.webp": "/static/media/projects_10.3a6a6b4e124eec77e05f.webp",
+    "static/media/historyCert.webp": "/static/media/historyCert.8ec50ec573f6c09a0175.webp",
     "static/media/OIU_1.webp": "/static/media/OIU_1.300f9cd8f489973eb497.webp",
     "static/media/projects_1.webp": "/static/media/projects_1.4e3012a53a76ce7d1b76.webp",
     "static/media/history1Block.webp": "/static/media/history1Block.7455832240ecca82b26b.webp",
@@ -50,8 +52,6 @@
     "static/media/projects_2.webp": "/static/media/projects_2.c931001619b08093e65e.webp",
     "static/media/history7Block.webp": "/static/media/history7Block.4d71dca967e8cf0e31ac.webp",
     "static/media/loon-image-original_1.webp": "/static/media/loon-image-original_1.5f45c426176f5d2a487e.webp",
-    "static/media/history8Block.webp": "/static/media/history8Block.5dd84ab1676104c1c350.webp",
-    "static/media/history10Block.webp": "/static/media/history10Block.2fac6300fa842ffa3bf9.webp",
     "static/media/projects_3.webp": "/static/media/projects_3.4d944cfb8f1293953c37.webp",
     "static/media/img10.webp": "/static/media/img10.759127864fc351a81cbb.webp",
     "static/media/ALARKO.webp": "/static/media/ALARKO.a9efa33b8e3f114318a8.webp",
@@ -73,12 +73,12 @@
     "index.html": "/index.html",
     "static/media/EllipseOurTech.svg": "/static/media/EllipseOurTech.a569d38005bcaccb8df788b8ef5a246b.svg",
     "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.9d4f6ad4.css.map": "/static/css/main.9d4f6ad4.css.map",
-    "main.14a50781.js.map": "/static/js/main.14a50781.js.map",
+    "main.b02c16a5.css.map": "/static/css/main.b02c16a5.css.map",
+    "main.6a1a6dd8.js.map": "/static/js/main.6a1a6dd8.js.map",
     "787.cd711f27.chunk.js.map": "/static/js/787.cd711f27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d4f6ad4.css",
-    "static/js/main.14a50781.js"
+    "static/css/main.b02c16a5.css",
+    "static/js/main.6a1a6dd8.js"
   ]
 }
