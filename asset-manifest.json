@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9d4f6ad4.css",
-    "main.js": "/static/js/main.68b3fe20.js",
+    "main.js": "/static/js/main.14a50781.js",
     "static/js/787.cd711f27.chunk.js": "/static/js/787.cd711f27.chunk.js",
     "static/media/mountains_wrapper.webp": "/static/media/mountains_wrapper.d97fcfb2ed4a0c11a1e9.webp",
     "static/media/lc2.webp": "/static/media/lc2.650a01ad30029196be13.webp",
@@ -35,8 +35,8 @@
     "static/media/projects_1.webp": "/static/media/projects_1.4e3012a53a76ce7d1b76.webp",
     "static/media/history1Block.webp": "/static/media/history1Block.7455832240ecca82b26b.webp",
     "static/media/ContactBackMobile.webp": "/static/media/ContactBackMobile.a10d5fd6cdc4c78b6c50.webp",
-    "static/media/history2Block.webp": "/static/media/history2Block.3be90df21d63069fba6a.webp",
     "static/media/projects_6.webp": "/static/media/projects_6.58e58d8295ef19a3bd94.webp",
+    "static/media/4history.webp": "/static/media/4history.7ac1bf5e5402fbdd017e.webp",
     "static/media/Geology-01_2021-04-07.webp": "/static/media/Geology-01_2021-04-07.9db93efe10e618d47c69.webp",
     "static/media/OU_7.webp": "/static/media/OU_7.b88070703a2f38418431.webp",
     "static/media/OU_2.webp": "/static/media/OU_2.db84a529d34b09fec560.webp",
@@ -74,11 +74,11 @@
     "static/media/EllipseOurTech.svg": "/static/media/EllipseOurTech.a569d38005bcaccb8df788b8ef5a246b.svg",
     "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.9d4f6ad4.css.map": "/static/css/main.9d4f6ad4.css.map",
-    "main.68b3fe20.js.map": "/static/js/main.68b3fe20.js.map",
+    "main.14a50781.js.map": "/static/js/main.14a50781.js.map",
     "787.cd711f27.chunk.js.map": "/static/js/787.cd711f27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d4f6ad4.css",
-    "static/js/main.68b3fe20.js"
+    "static/js/main.14a50781.js"
   ]
 }
