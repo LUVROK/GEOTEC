@@ -338,18 +338,23 @@ const Our_technologies = () => {
             style={{ display: "flex" }}
           >
             {parse(t("our_technologies.circleButton"))}
-          </div>
-          <div
-            className="our_technologies_right_left"
-            onClick={leftTech}
-            style={{ pointerEvents: "none" }}
-          >
-            <div className="number_hopeful_models_block" style={{ opacity: 1 }}>
-              <div className="number_hopeful_models_block_number PoppinsLight fontweight300">
-                8
-              </div>
-              <div className="number_hopeful_models_block_title">
-                {parse(t("our_technologies.number_hopeful_models_block_title"))}
+            <div
+              className="our_technologies_right_left"
+              onClick={leftTech}
+              style={{ pointerEvents: "none" }}
+            >
+              <div
+                className="number_hopeful_models_block"
+                style={{ opacity: 1 }}
+              >
+                <div className="number_hopeful_models_block_number PoppinsLight fontweight300">
+                  8
+                </div>
+                <div className="number_hopeful_models_block_title">
+                  {parse(
+                    t("our_technologies.number_hopeful_models_block_title")
+                  )}
+                </div>
               </div>
             </div>
           </div>

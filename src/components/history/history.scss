@@ -160,11 +160,15 @@
     font-size: 13px;
   }
 }
+.TimeHistoryBox_element:first-of-type {
+  margin-top: 0px !important;
+}
 .TimeHistoryBox_element.active {
   color: #1839a3;
   font-size: calc(3px + 2.1vh + 2.1vw); //66
   line-height: 90%;
-  margin-bottom: 35px;
+  margin-top: 17.5px;
+  margin-bottom: 17.5px;
   @media (max-width: 590px) {
     font-size: 32px;
   }
@@ -314,7 +318,7 @@
 
 @media screen and (max-width: 1480px) {
   .TimeHistoryBox {
-    right: 60px;
+    // right: 60px;
   }
   .textBlock_seventh .textBlock_text_content {
     width: 40%;
@@ -332,7 +336,7 @@
     width: 60%;
   }
   .TimeHistoryBox {
-    margin-right: 35px;
+    right: 80px;
   }
   .textBlock_seventh .textBlock_text {
     width: 100%;
@@ -453,7 +457,7 @@
     font-size: 22px;
   }
   .textBlock_text span br {
-    display: none;
+    display: block;
   }
 }
 
@@ -504,7 +508,7 @@
   //   margin-top: -128px;
   // }
   .textBlock_eleventh .ImageBack {
-    margin-top: -188px;
+    // margin-top: -188px;
   }
   // .ImageBack {
   //   margin-top: -88px;
@@ -522,3 +526,9 @@
     top: 25%;
   }
 }
+
+// @media screen and (max-width: 450px) {
+//   .textBlock_text br {
+//     display: block;
+//   }
+// }

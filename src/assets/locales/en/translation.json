@@ -7,7 +7,7 @@
     "Nav4": "<span class='PoppinsLight fontweight300'>Technologies</span>",
     "Nav5": "<span class='PoppinsLight fontweight300'>Contacts</span>",
     "ru": "Рус",
-    "en": "Engl"
+    "en": "Eng"
   },
   "Wrapper": {
     "title": "<span class='PoppinsLight fontweight300'>Geotec</span>&nbsp;<span>LLP</span>",
@@ -17,7 +17,7 @@
   "firstSection": {
     "firstSection_block_geotec": "<span class='PoppinsExtraLight fontweight275'>- reliable partner in the field of geodetic surveys In Kazakhstan</span>",
     "firstSection_block_geotec_perhapse": "<span class='PoppinsExtraLight fontweight275'>GEOTEC LLP has been founded in 2006 in order to serve in the field of Survey and Design activities in Kazakhstan. GEOTEC is now recognized as a reliable and trusted partner by working with prestigious and well-known customers.</span>",
-    "firstSection_block_geotec_perhapse_top_sec": "<span class='PoppinsExtraLight fontweight275'>GEOTEC LLP headquarter has been moved to Astana from Aktobe in 2016. Other offices are located inAktobe and Tengiz, Atyrau. GEOTEC works in many different locations, including Kazakhstan and other CIS Countries. GEOTEC 100% local Kazakhstani Company. Local Content achievement is 95%.</span>.",
+    "firstSection_block_geotec_perhapse_top_sec": "<span class='PoppinsExtraLight fontweight275'>GEOTEC LLP headquarter has been moved to Astana from Aktobe in 2016. Other offices are located inAktobe and Tengiz, Atyrau. GEOTEC works in many different locations, including Kazakhstan and other CIS Countries. GEOTEC 100% local Company.</span>.",
     "Certificates_Licenses": "<span class='PoppinsExtraLight fontweight275'>Certificates & Licenses</span>",
     "Customers": "<span class='PoppinsExtraLight fontweight275'>Customers<span>"
   },
@@ -139,7 +139,7 @@
 
     "textBlock_text_content1": "<span class='PoppinsExtraLight fontweight275'>Geotec has been founded in 2006.</span>",
     "textBlock_text_content2": "<span class='PoppinsExtraLight fontweight275'>Geotec has been founded in 2006</span>",
-    "textBlock_text_content3": "<span class='PoppinsExtraLight fontweight275'>One of the most difficult project in Almaty Gondola has been executed.</span>",
+    "textBlock_text_content3": "<span class='PoppinsExtraLight fontweight275'>One of the most difficult project in Almaty Gondola.</span>",
     "textBlock_text_content4": "<span class='PoppinsExtraLight fontweight275'>7 Years Master Contract has been signed by TCO</span>",
     "textBlock_text_content5": "<span class='PoppinsExtraLight fontweight275'>Geotec execute survey works in Almaty</span>",
     "textBlock_text_content6": "<span class='PoppinsExtraLight fontweight275'>Wind Power Survey works has been executed under the hard winter conditions in North KZ.</span>",

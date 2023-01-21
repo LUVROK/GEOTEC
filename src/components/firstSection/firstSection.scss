@@ -303,6 +303,9 @@
     padding-top: 0px;
     padding-left: 15px;
   }
+  .FirstSection .blockCont_text span {
+    padding-right: 20px;
+  }
   .blockCont {
     width: 192px;
     height: 153px;
@@ -440,7 +443,7 @@
     margin-top: 23px;
   }
   .blockCont_block {
-    bottom: 20px;
+    bottom: -20px;
     top: auto;
     margin-top: auto;
   }
@@ -474,6 +477,7 @@
   .firstSection_block {
     display: flex;
     justify-content: center;
+    margin-top: 10vh;
   }
 }
 @media screen and (max-height: 490px) {

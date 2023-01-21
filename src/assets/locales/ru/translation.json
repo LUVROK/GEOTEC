@@ -7,7 +7,7 @@
     "Nav4": "<span class='RalewayRegular fontweight300'>Технологии</span>",
     "Nav5": "<span class='RalewayRegular fontweight300'>Контакты</span>",
     "ru": "Рус",
-    "en": "Engl"
+    "en": "Eng"
   },
   "Wrapper": {
     "title": "<span class='RalewayRegular fontweight400'>TOO</span>&nbsp;<span class='PoppinsLight fontweight300'>Geotec</span>",
@@ -17,9 +17,9 @@
   "firstSection": {
     "firstSection_block_geotec": "<span class='RalewayRegular fontweight400'>- надежный партнер в области геодезических изысканий в Казахстане</span>",
     "firstSection_block_geotec_perhapse": "<span class='RalewayLight fontweight300'><span class='engFont'>TOO «GEOTEC»</span> было основано в <span class='engFont'>2006</span> году с целью работы в области геодезических и проектных работ в Казахстане. На данный момент <span class='engFont'>GEOTEC</span> является надежным партнером, работая с престижными и известными клиентами.</span>",
-    "firstSection_block_geotec_perhapse_top_sec": "<span class='RalewayLight fontweight300'>Головной офис <span class='engFont'>TOO «GEOTEC»</span> был перенесен в Астану из Актобе в <span class='engFont'>2016</span> году. Остальные офисы расположены в Актобе и Тенгизе, Атырау. <span class='engFont'>GEOTEC</span> выполняет проекты в Казахстане и других странах СНГ. <span class='engFont'>GEOTEC 100%</span> местная казахстанская компания. Достижение местного контента составляет <span class='engFont'>95%</span></span>.",
+    "firstSection_block_geotec_perhapse_top_sec": "<span class='RalewayLight fontweight300'>Головной офис <span class='engFont'>TOO «GEOTEC»</span> был перенесен в Астану из Актобе в <span class='engFont'>2016</span> году. Остальные офисы расположены в Актобе и Тенгизе, Атырау. <span class='engFont'>GEOTEC</span> выполняет проекты в Казахстане и других странах СНГ. <span class='engFont'>GEOTEC 100%</span> местная компания.</span>.",
     "Certificates_Licenses": "<span class='RalewayLight fontweight300'>Cертификаты & Лицензии</span>",
-    "Customers": "<span class='RalewayLight fontweight300'>Заказчики</span>"
+    "Customers": "<span class='RalewayLight fontweight300'>Клиенты</span>"
   },
   "projects": {
     "title": "<span class='title_project RalewayLight fontweight300'>Проекты</span>",
@@ -94,7 +94,7 @@
     "firstBlockText2": "<span class='RalewayLight fontweight300'>Международные Сертификаты ISO 9001 & ISO 45001 (Сертифицировано URS)</span>"
   },
   "clients": {
-    "title": "<span class='RalewayLight fontweight300'>Заказчики</span>"
+    "title": "<span class='RalewayLight fontweight300'>Клиенты</span>"
   },
 
   "our_technologies": {
@@ -129,7 +129,7 @@
     "textBlock_text2": "<span class='RalewayRegular fontweight400'>Первый проект <span class='PoppinsLight fontweight300'><br />GEOTEC</span></span>",
     "textBlock_text3": "<span class='RalewayRegular fontweight400'>Расширение&nbsp<br />в Казахстане</span>",
     "textBlock_text4": "<span class='RalewayRegular fontweight400'>Партнерство&nbsp<br />с ТШО</span>",
-    "textBlock_text5": "<span class='RalewayRegular fontweight400'>Самое высокое здание&nbsp<br />в Казахстан</span>",
+    "textBlock_text5": "<span class='RalewayRegular fontweight400'>Самое высокое здание&nbsp<br />в Казахстанe</span>",
     "textBlock_text6": "<span class='RalewayRegular fontweight400'>Проект ветровой&nbsp<br />электростанции</span>",
     "textBlock_text7": "<span class='RalewayRegular fontweight400 stylemobile'>Проект по <span class='PoppinsExtraLight fontweight300'>3D</span> измерению&nbsp<br />& геофизическое исследование</span>",
     "textBlock_text8": "<span class='RalewayRegular fontweight400 stylemobile'>Сертификация <span class='PoppinsExtraLight fontweight300'>ISO 9001</span>&nbsp<br />и <span class='PoppinsExtraLight fontweight300'>OHSAS 18001</span></span>",
@@ -139,7 +139,7 @@
 
     "textBlock_text_content1": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> был основан в <span class='PoppinsExtraLight fontweight275'>2006</span> году</span>",
     "textBlock_text_content2": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> получил первый проект в Тенгизе от ТШО</span>",
-    "textBlock_text_content3": "<span class='RalewayLight fontweight300'>Выполнен один из самых сложных проектов в Алматинской гондоле</span>",
+    "textBlock_text_content3": "<span class='RalewayLight fontweight300'>Выполнен один из самых сложных проектов в горах Алматинской области</span>",
     "textBlock_text_content4": "<span class='RalewayLight fontweight300'>ТШО подписал Генеральный Контракт на <span class='PoppinsExtraLight fontweight275'>7</span> лет</span>",
     "textBlock_text_content5": "<span class='RalewayLight fontweight300'><span class='PoppinsExtraLight fontweight275'>GEOTEC</span> выполнял изыскательские работы в г.Астана</span>",
     "textBlock_text_content6": "<span class='RalewayLight fontweight300'>Изыскательские работы выполнялись в тяжелых зимних условиях в Северном Казахстане</span>",

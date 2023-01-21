@@ -1,14 +1,14 @@
 import "./history.scss";
 import history1Block from "../../media/history1Block.webp";
-import history2Block from "../../media/history2Block.webp";
-import history3Block from "../../media/history3Block.webp";
-import history4Block from "../../media/history4Block.webp";
-import history5Block from "../../media/history5Block.webp";
-import history6Block from "../../media/history6Block.webp";
+import history2Block from "../../media/fps.webp";
+import history3Block from "../../media/sspvgm.webp";
+import history4Block from "../../media/4history.webp";
+import history5Block from "../../media/svz.webp";
+import history6Block from "../../media/ve.webp";
 import history7Block from "../../media/history7Block.webp";
-import history8Block from "../../media/history8Block.webp";
+import history8Block from "../../media/historyCert.webp";
 import history9Block from "../../media/history9Block.webp";
-import history10Block from "../../media/history10Block.webp";
+import history10Block from "../../media/3danalisys.webp";
 import history11Block from "../../media/history11Block.webp";
 import React, { useEffect, useState } from "react";
 import parse from "html-react-parser";
@@ -208,13 +208,18 @@ const History = () => {
     }
 
     if (window.innerWidth > 720) {
+      let letprevact = activeel !== 0 ? activeel - 1 : 10;
+      textBlockAll[letprevact].style.transition = "all 0.8s ease-out";
+
       for (let i = 0; i < massElements.length; i++) {
-        textBlockAll[i].style.transition = "0s";
-        textBlockAll[i].style.transform = "translateX(0px) translateY(-950px)";
-        textBlockAll[i].style.opacity = 0;
+        if (i !== indexEl && i !== activeel) {
+          textBlockAll[i].style.transition = "0s";
+          textBlockAll[i].style.transform =
+            "translateX(0px) translateY(-950px)";
+          textBlockAll[i].style.opacity = 0;
+        }
       }
 
-      console.log(indexEl);
       textBlockAll[indexEl].style.transition = "all 0.8s ease-out";
       textBlockAll[indexEl].style.transform =
         "translateX(0px) translateY(880px)";

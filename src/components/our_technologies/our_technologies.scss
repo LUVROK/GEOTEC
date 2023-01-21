@@ -127,13 +127,12 @@
 }
 .our_technologies_right_left {
   position: absolute;
-  right: 0;
-  left: 0;
+  right: -20vw;
+  // left: 0;
   margin-right: 0px;
   margin-left: auto;
-  width: 40%;
+  width: calc((91vw - 85px) * 0.4 * 0.4); //calc((91vw - 85px) * 0.4 * 0.4)
   height: inherit;
-  left: 0;
   cursor: url(../../media/goback.webp) 14 0, default;
   display: flex;
   justify-content: flex-start;
