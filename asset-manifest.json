@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.css": "/GEOTEC/static/css/main.cc7159a8.css",
-    "main.js": "/GEOTEC/static/js/main.c123d83e.js",
-    "static/js/787.cd711f27.chunk.js": "/GEOTEC/static/js/787.cd711f27.chunk.js",
+    "main.css": "/GEOTEC/static/css/main.6d318c65.css",
+    "main.js": "/GEOTEC/static/js/main.df4728f1.js",
+    "static/js/111.fd575a0b.chunk.js": "/GEOTEC/static/js/111.fd575a0b.chunk.js",
     "static/media/mountains_wrapper.webp": "/GEOTEC/static/media/mountains_wrapper.d97fcfb2ed4a0c11a1e9.webp",
-    "static/media/lc2.webp": "/GEOTEC/static/media/lc2.650a01ad30029196be13.webp",
     "static/media/lc3.webp": "/GEOTEC/static/media/lc3.ab6626e3ee1c6d884222.webp",
-    "static/media/lc1.webp": "/GEOTEC/static/media/lc1.4c344782eafd086557b4.webp",
     "static/media/lc4.webp": "/GEOTEC/static/media/lc4.b21da46faae335ac7675.webp",
     "static/media/ourTechBack2.webp": "/GEOTEC/static/media/ourTechBack2.abd7451d393300c8dee2.webp",
     "static/media/3danalisys.webp": "/GEOTEC/static/media/3danalisys.cc40c89f37e9d4bfb934.webp",
@@ -15,6 +13,8 @@
     "static/media/fps.webp": "/GEOTEC/static/media/fps.19fa26f22b81eaf88118.webp",
     "static/media/svz.webp": "/GEOTEC/static/media/svz.cbc66a5c035c99a260b6.webp",
     "static/media/loon-image-original_2.webp": "/GEOTEC/static/media/loon-image-original_2.ec9e33e29d147e4777ff.webp",
+    "static/media/lic2.webp": "/GEOTEC/static/media/lic2.c8d92a3093146c8291b1.webp",
+    "static/media/lic1.webp": "/GEOTEC/static/media/lic1.3fd257063c88d3ce6871.webp",
     "static/media/ContactWhiteBackMobile.webp": "/GEOTEC/static/media/ContactWhiteBackMobile.f099f2a4de3e2a7cb545.webp",
     "static/media/Raleway-Bold.woff2": "/GEOTEC/static/media/Raleway-Bold.79482b743f1c40b3ed46.woff2",
     "static/media/Raleway-Medium.woff2": "/GEOTEC/static/media/Raleway-Medium.bd022749ef764a6831be.woff2",
@@ -73,12 +73,12 @@
     "index.html": "/GEOTEC/index.html",
     "static/media/EllipseOurTech.svg": "/GEOTEC/static/media/EllipseOurTech.a569d38005bcaccb8df788b8ef5a246b.svg",
     "static/media/getFetch.cjs": "/GEOTEC/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.cc7159a8.css.map": "/GEOTEC/static/css/main.cc7159a8.css.map",
-    "main.c123d83e.js.map": "/GEOTEC/static/js/main.c123d83e.js.map",
-    "787.cd711f27.chunk.js.map": "/GEOTEC/static/js/787.cd711f27.chunk.js.map"
+    "main.6d318c65.css.map": "/GEOTEC/static/css/main.6d318c65.css.map",
+    "main.df4728f1.js.map": "/GEOTEC/static/js/main.df4728f1.js.map",
+    "111.fd575a0b.chunk.js.map": "/GEOTEC/static/js/111.fd575a0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc7159a8.css",
-    "static/js/main.c123d83e.js"
+    "static/css/main.6d318c65.css",
+    "static/js/main.df4728f1.js"
   ]
 }
