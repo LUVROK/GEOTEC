@@ -133,20 +133,18 @@
   margin-left: auto;
   width: calc((91vw - 85px) * 0.4 * 0.4); //calc((91vw - 85px) * 0.4 * 0.4)
   height: inherit;
-  cursor: url(../../media/goback.webp) 14 0, default;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   z-index: 101;
 }
-.our_technologies_right_left:hover {
+.our_technologies_right__pseudo_left:hover {
   cursor: url(../../media/goback.webp) 14 0, default;
 }
 .our_technologies_right_right {
   position: relative;
   width: 100%;
   height: 100%;
-  cursor: url(../../media/goTo.webp) 14 0, default;
   z-index: 100;
   @media (min-width: 2560px) {
     display: flex;
@@ -154,7 +152,25 @@
     align-items: center;
   }
 }
-.our_technologies_right_right:hover {
+
+.our_technologies_right__pseudo_left {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 9999;
+  left: 0;
+  cursor: url(../../media/goback.webp) 14 0, default;
+}
+.our_technologies_right__pseudo_right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 9999;
+  right: 0;
+  cursor: url(../../media/goTo.webp) 14 0, default;
+}
+
+.our_technologies_right__pseudo_right:hover {
   cursor: url(../../media/goTo.webp) 14 0, default;
 }
 .our_technologies_right_right .Image_Tech {

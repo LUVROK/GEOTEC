@@ -2,14 +2,9 @@
   "name": "geotec",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://luvrok.github.io/GEOTEC/",
+  "homepage": "./",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "easy-scroll": "0.5.1",
     "gh-pages": "^4.0.0",
-    "gsap": "^3.11.1",
     "html-react-parser": "^3.0.4",
     "i18next": "21.9.1",
     "i18next-browser-languagedetector": "6.1.5",
@@ -21,14 +16,9 @@
     "react-html-parser": "^2.0.2",
     "react-i18next": "11.18.4",
     "react-lazy-load-image-component": "^1.5.6",
-    "react-page-scroller": "^2.3.1",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "react-scrollify": "^1.0.4",
-    "react-smooth-scrollbar": "^8.0.6",
     "sass": "^1.54.9",
-    "smooth-scrollbar": "^8.7.5",
-    "smooth-scrollbar-react": "^2.3.0",
     "swiper": "^8.4.4",
     "web-vitals": "^2.1.0"
   },
@@ -38,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "webpack": "webpack"
   },
   "eslintConfig": {
     "extends": [
@@ -59,5 +50,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "path": "^0.12.7",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }

@@ -2,8 +2,8 @@ import React from "react";
 import Preloader from "../Preloader/Preloader";
 import "./LICENSES_CERTIFICATION.scss";
 
-import licenses1 from "../../media/lc1.webp";
-import licenses2 from "../../media/lc2.webp";
+import licenses1 from "../../media/lic1.webp";
+import licenses2 from "../../media/lic2.webp";
 import licenses3 from "../../media/lc3.webp";
 import licenses4 from "../../media/lc4.webp";
 import { useNavigate } from "react-router-dom";

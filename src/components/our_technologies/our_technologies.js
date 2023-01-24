@@ -90,10 +90,10 @@ const Our_technologies = () => {
   }, []);
 
   const leftTech = () => {
-    document.querySelector(".our_technologies_right_left").style.pointerEvents =
+    document.querySelector(".our_technologies_right__pseudo_left").style.pointerEvents =
       "none";
     document.querySelector(
-      ".our_technologies_right_right"
+      ".our_technologies_right__pseudo_right"
     ).style.pointerEvents = "none";
     setActivePrev((prev) => (prev <= 0 ? 7 : prev - 1));
     setActivePrev2((prev) => (prev <= 0 ? 7 : prev - 1));
@@ -102,19 +102,19 @@ const Our_technologies = () => {
     setActive((prev) => (prev <= 0 ? 7 : prev - 1));
     setTimeout(() => {
       document.querySelector(
-        ".our_technologies_right_left"
+        ".our_technologies_right__pseudo_left"
       ).style.pointerEvents = "all";
       document.querySelector(
-        ".our_technologies_right_right"
+        ".our_technologies_right__pseudo_right"
       ).style.pointerEvents = "all";
     }, 600);
   };
 
   const rightTech = () => {
-    document.querySelector(".our_technologies_right_left").style.pointerEvents =
+    document.querySelector(".our_technologies_right__pseudo_left").style.pointerEvents =
       "none";
     document.querySelector(
-      ".our_technologies_right_right"
+      ".our_technologies_right__pseudo_right"
     ).style.pointerEvents = "none";
     setActive((prev) => (prev >= 7 ? 0 : prev + 1));
     setActivePrev((prev) => (prev >= 7 ? 0 : prev + 1));
@@ -123,10 +123,10 @@ const Our_technologies = () => {
     setActiveSec2((prev) => (prev >= 7 ? 0 : prev + 1));
     setTimeout(() => {
       document.querySelector(
-        ".our_technologies_right_left"
+        ".our_technologies_right__pseudo_left"
       ).style.pointerEvents = "all";
       document.querySelector(
-        ".our_technologies_right_right"
+        ".our_technologies_right__pseudo_right"
       ).style.pointerEvents = "all";
     }, 600);
   };
@@ -183,13 +183,15 @@ const Our_technologies = () => {
   }, [active]);
 
   const checkTech = () => {
-    document.querySelector(".our_technologies_right_left").style.pointerEvents =
+    document.querySelector(".our_technologies_right__pseudo_left").style.pointerEvents =
       "all";
     document.querySelector(
-      ".our_technologies_right_right"
+      ".our_technologies_right__pseudo_right"
     ).style.pointerEvents = "all";
     document.querySelector(".our_technologies_left").style.width = "30%";
     document.querySelector(".our_technologies_right").style.width = "70%";
+    document.querySelector(".our_technologies_right__pseudo_left").style.display = "flex";
+    document.querySelector(".our_technologies_right__pseudo_right").style.display = "flex";
 
     our_technologies_title[1].style.display = "block";
     our_technologies_perhaps[1].style.display = "block";
@@ -340,8 +342,6 @@ const Our_technologies = () => {
             {parse(t("our_technologies.circleButton"))}
             <div
               className="our_technologies_right_left"
-              onClick={leftTech}
-              style={{ pointerEvents: "none" }}
             >
               <div
                 className="number_hopeful_models_block"
@@ -360,6 +360,16 @@ const Our_technologies = () => {
           </div>
         </div>
         <div className="our_technologies_right" style={{ width: "60%" }}>
+          <div
+            className="our_technologies_right__pseudo_left"
+            style={{ display: "none", pointerEvents: "none" }}
+            onClick={leftTech}
+          ></div>
+          <div
+            className="our_technologies_right__pseudo_right"
+            style={{ display: "none", pointerEvents: "none" }}
+            onClick={rightTech}
+          ></div>
           <img
             src={ourTechBack1}
             alt=""
@@ -374,8 +384,6 @@ const Our_technologies = () => {
           />
           <div
             className="our_technologies_right_right"
-            onClick={rightTech}
-            style={{ pointerEvents: "none" }}
           >
             <div
               className="Image_Tech"
