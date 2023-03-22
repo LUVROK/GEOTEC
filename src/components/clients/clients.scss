@@ -2,8 +2,8 @@ $mobile: 600px; // Screen min
 $desktop: 1200px; // Screen max
 $font-min: 36px;
 $font-max: 64px;
-$screen-diff: ($desktop / 1px - $mobile / 1px);
-$font-diff: ($font-max / 1px - $font-min / 1px);
+// $screen-diff: ($desktop / 1px - $mobile / 1px);
+// $font-diff: ($font-max / 1px - $font-min / 1px);
 
 .titlePage {
   position: relative;
@@ -27,11 +27,6 @@ $font-diff: ($font-max / 1px - $font-min / 1px);
   text-fill-color: transparent;
   @media (max-width: 599px) {
     font-size: $font-min;
-  }
-  @media (min-width: 600px) and (max-width: 1200px) {
-    font-size: calc(
-      #{$font-min} + (100vw - #{$mobile}) / #{$screen-diff} * #{$font-diff}
-    );
   }
   @media (min-width: 1201px) {
     font-size: $font-max;

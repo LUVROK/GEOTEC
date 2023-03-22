@@ -1,0 +1,187 @@
+{
+  "title": "EN",
+  "description": {
+    "Nav1": "<span class='PoppinsLight fontweight300'>About</span>",
+    "Nav2": "<span class='PoppinsLight fontweight300'>Services</span>",
+    "Nav3": "<span class='PoppinsLight fontweight300'>Projects</span>",
+    "Nav4": "<span class='PoppinsLight fontweight300'>Technologies</span>",
+    "Nav5": "<span class='PoppinsLight fontweight300'>Contacts</span>",
+    "ru": "Рус",
+    "en": "Eng"
+  },
+  "Wrapper": {
+    "title": "<span class='PoppinsLight fontweight300'>Geotec</span>&nbsp;<span>LLP</span>",
+    "description": "<span class='PoppinsLight fontweight300'>A local survey company</span>",
+    "ViewServices": "<span class='PoppinsLight fontweight300'>See services</span>"
+  },
+  "firstSection": {
+    "firstSection_block_geotec": "<span class='PoppinsExtraLight fontweight275'>- reliable partner in the field of geodetic surveys In Kazakhstan</span>",
+    "firstSection_block_geotec_perhapse": "<span class='PoppinsExtraLight fontweight275'>GEOTEC LLP has been founded in 2006 in order to serve in the field of Survey and Design activities in Kazakhstan. GEOTEC is now recognized as a reliable and trusted partner by working with prestigious and well-known customers.</span>",
+    "firstSection_block_geotec_perhapse_top_sec": "<span class='PoppinsExtraLight fontweight275'>GEOTEC LLP headquarter has been moved to Astana from Aktobe in 2016. Other offices are located inAktobe and Tengiz, Atyrau. GEOTEC works in many different locations, including Kazakhstan and other CIS Countries. GEOTEC 100% local Company.</span>.",
+    "Certificates_Licenses": "<span class='PoppinsExtraLight fontweight275'>Certificates & Licenses</span>",
+    "Customers": "<span class='PoppinsExtraLight fontweight275'>Customers<span>"
+  },
+  "projects": {
+    "title": "<span class='title_project PoppinsExtraLight fontweight275'>Projects</span>",
+    "Button_Learn_More": "<span class='PoppinsLight fontweight300'>Learn more</span>",
+
+    "Projects_Text_desc_text_title": "<span class='PoppinsExtraLight fontweight275'>PROJECT SUMMARY</span>",
+    "Projects_Text_desc_text_discription1": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span>The KLPE Gas Separation Unit (GSU) Project is being executed for the development of an integrated gas-chemical complex for the production of Polyethylene in Atyrau region of the Republic of Kazakhstan. The KLPE GSU Project overall objective is to recover and export of ethane and propane products from the existing TCO Plants (i.e. CTL/SGP) Dry Gas.</span><br /><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> has been assigned to carry out engineering surveys and other associated works and services in relation to the front end engineering design (FEED) of KLPE GSU Project by PAO ONHP subcontractor of JGC Corporation.</span><br /><br /><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out the following engineering surveys:</span><ul><li>Geotechnical engineering surveys;</li><li>Topographical engineering surveys</li><li>Hydrometeorological surveys</li><li>Environmental surveys</li></ul><span>The projected main facilities includes LPG Park, GEEP Launcher Area, GSU (process unit), GSU Flare, the routes of technological pipelines, a highway route. The total area of the engineering surveys is 173 hectares.</span></span>",
+    "Projects_Text_desc_text_discription2": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span>The use of laser scanning technologies at the construction stage allows to create an executive BIM (Building Information Model) model according to BIMT standards. Control the stages of construction with the identification of deformation and geometric deflections for the project and CD (controlling documentation). Laser scanning is a control tool that allows you to track deviations at construction sites with high accuracy. Accordingly, reduce costs and identify inconsistencies during the construction stages. Staged of control during construction:</span><ul><li>Concrete works (Reinforced concrete structures, piles, foundations, etc.)</li><li>Metal structures</li><li>Equipments</li><li>Pipelines</li><li>Measuring and recording apparatus</li><li>Network</li><li>Prior to initial operation </li><li>Once up and operational (for deformational deflections tracking)</li><li>Updating the design model at all stages of construction work, in accordance with the information system in which the project was developed.</li></ul></span>",
+    "Projects_Text_desc_text_discription3": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC LLP</span> Dimensional control teams were dedicated as a dimensional control contractor to work with Warner Surveys as part of an Integrated Team for Future Growth Project/Wellhead Pressure Management Project on both Aktau and Tengiz sites.</span><br /><br /><span>At Aktau site, our teams worked in cooperation with the fabrication contractors and client to monitor critical construction processes during fabrication for dimensional accuracy in order to report and highlight potential dimensional issues such as clashes and ensure a first time fit up.</span><br /><br /><span>At Tengiz site, all modules were surveyed by our teams after arrival at 3GP and 3GI sites to ensure there has been no deformation during loadout and transport and prior to Landing, pre-installation plans were executed for each module. After the installation was completed each PAU/PAR were surveyed and the data was interrogated thoroughly and as-built reports were produced which gives the client reassurance that the end product meets all dimensional tolerances.</span></span>",
+    "Projects_Text_desc_text_discription4": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span>Geodesic and Topographic Survey Works<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> has provided Engineering and Surveying services for Tengizchevroil LLP Future Growth Project related work activities since 2011 and continues where call-off basis.<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> performed static survey and second order leveling for the monuments located all around the Tengiz Oil Field. Additionally,<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out verification/control surveys and monitoring surveys with the volume calculation of earthworks during the construction activities.</span><br /><br /><span>Engineering and Geophysical Site Investigations (Underground Objects Detection by GPR)<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> performed engineering geophysical survey in order to discover and record any underground objects such as steel/plastic pipelines, cables, concrete duct banks, foundations or other concrete objects etc.<br />The Underground Services/Objects Detection surveys are performed at 38 facilities in Tengiz Oil Field.</span></span>",
+    "Projects_Text_desc_text_discription5": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC LLP</span> has been working with Tengizchevroil LLP (TCO) Railroad Group for more than 10 years. Experienced and specialized</span><br /><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC LLP</span> staff are carrying out any assignments of surveying and engineering works for Tengizchevroil LLP Railroad Group including:</span><br /><ul class='project_ul_left10'><li>maintaining and supporting the detailed reference and geodetic network along the shortline which is developed with coordinate system conversion from 1942 to WGS84 by <span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>Geotec LLP</span></li><li>developing the approved railroad specific system of AutoCAD drawing management;</li><li>developing and upkeeping of Blue Print drawing system including typical railroad solutions;</li><li>providing technical and design consultation for railroad issues;</li><li>preparing all design projects for service roads, new tracks etc.</li><li>developing continuous survey monitoring system of TCO Shortline Overpasses;</li><li>Geotechnical survey works for the design of new tracks and rail infrastructures;</li><li>Engineering and geophysical investigations by using Ground-penetrating radar (GPR) on the TCO Tengiz-Kulsary Shortline</li></ul></span>",
+    "Projects_Text_desc_text_discription6": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> has been provided 3D Laser Scanning services at the TCO facilities in the Tengiz Oil Field for TCO Design Engineering Group, which includes:</span><ul class='project_ul_left10'><li>3D Scanning of on-site piping, equipment, structures, etc.</li><li>Creating an accurate and precise cloud-of-points of the scanned area.</li><li>Transferring Client’s isometric drawing into a 3D model.</li><li>Accurate and precise identification of potential clashing issues using the cloud of points and the 3D model.</li></ul><br /><span>Laser scanning is being performed for the route checking of the projected new piping under the upgrade project in relation to the existing lines and structures, and developing 3D mesh model to enable successful execution.</span></span>",
+    "Projects_Text_desc_text_discription7": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span>Propane Compressor GC 740 at KTL 1.<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out dimensional survey to take high-precision (0.06 mm) measurements of the internal part (the seals, cavities and shaft sections of the compressor where those seals installed and around them) of the Propane Compressor GC 740 by using Romer Absolute Arm.</span><br /><br /><span>SGI GE Turbine<br />High-precision measurements and scanning of the turbine body with further production of a 3D model (using the Leica AT403 laser tracker and Romer coordinate measuring machine with built-in scanner. Measurement accuracy +/- 0.02 mm, scanning accuracy +/- 0.05 mm.</span><br /><br /><span>1st stage SGI injection compressor at SGI Plant<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> performed dimensional check by using hand scanning equipment on critical dimensions of the 1st stage SGI injection compressor for specifying critical casing dimensions in relation to the shaft center line to enable successful execution of 2018 Re-Wheel project.</span></span>",
+    "Projects_Text_desc_text_discription8": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span>Laser Scanning Survey for Future Growth Project,<br />Warner Surveys<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out Laser Scanning and additional conventional survey work for verification of the Laser Scanning data of specific areas within the existing Tengizchevroil Tengiz Oil Field to establish horizontal and vertical control, measure as-built, and assure dimensional fit up of interconnecting pipe, steel and mechanical equipment interfaces between modules and equipment both in Tengiz and in the fabrication yards.</span><br /><br /><span>Laser Scanning and Dimensional Control Survey<br />for KTL SGR Project, Warner Surveys<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out Laser Scanning and dimension control works for the critical tie-ins of TCO KTL Seasonal Gap Reduction (SGR) Project to establish horizontal and vertical control, measure as-built, and assure dimensional fit up of interconnecting pipe, steel and mechanical equipment interfaces between modules and equipment both in Tengiz and in the fabrication yards.</span><br /><br /><span>Laser Scanning and 3D Modelling for SGP Unit-300 Metallurgy Upgrade Project, Worley Parsons Kazakhstan LLP<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out Laser Scanning survey works for specific areas within the existing Tengiz Oil Field to establish 3D models and assure dimensional fit up of interconnecting pipe, steel and mechanical equipment interfaces between modules and equipment both<br />in Tengiz and in the fabrication yards.</span><br /></span>",
+    "Projects_Text_desc_text_discription9": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out Laser Scanning and dimensional control survey works for specific areas within the Abu Dhabi Plaza Project to establish 3D models for assuring dimensional fit up and deformation investigation of structural beams. During the construction phase there was a fire on the high rise building and our client need to clarify if there is a deviation on structural beams.<br />Our specialized Laser scanner team performed a high-resolution laser scanning survey and created a detailed 3D model of specific steel columns and structural beams. In additional to this task, GEOTEC also performed dimensional control surveys on 3 blocks in the project. Detailed 3D models, including beams and interior walls, created for future planning of the project.</span></span>",
+    "Projects_Text_desc_text_discription10": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out topographic & geodetic survey works for the Samal Wind Park Project in Akmola Province in North Central Kazakhstan near the town of Ereimentau.<br />Topographic works are performed to obtain accurate, reliable and relevant data on the current situation, terrain, existing buildings and facilities (including underground), aboveground and underground utilities, as well as planning, landscaping and planting elements; this information will also be used for engineering of the buildings, roads, aboveground and underground facilities and service lines, formalization of land use boundaries and operational needs of various organization.</span></span>",
+    "Projects_Text_desc_text_discription11": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> carried out the works of preparation of the current and 3D lake map of Taldykol Lake which is located at Southwest of Astana under the Taldykol Sewer Pond Liquidation Project with Re-Cultivation.<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> performed Geodetic Survey, Bathymetric Survey and Subbottom Survey (sediment survey) at field. Sediment survey was performed using a high resolution subbottom profiler which allows penetration up to 40 m (max.) penetration in soft mud from lakebed. This system was operated together with bathymetric survey system. With singlebeam echosounder, the seabed was determined precisely, the subbottom profiler provided data from the lakebed and mud over the original lake floor.</span></span>",
+    "Projects_Text_desc_text_discription12": "<span class='PoppinsExtraLight fontweight275 discription_projects'><span>The Medeu & Chimbulak Mountain Resort Development (Project) in Almaty is planned to build Total 600.000 sqm Residences, High Class hotel, Gondola, Car park, Retails, Related infrastructure upgrade and re-built. Provide an indication of future capacity of the Chimbulak ski area at 5.500 skiers per day. The core vision of the project is to create Central Asia’s first, world class, four season, mountain desert destination. Create Visitor Centre, and other issues related with national park.<br /><span class='PoppinsLight fontweight300 style_Geotec_titles_projects'>GEOTEC</span> has opportunity to work with Colliers, Locum Consulting; Robert Stern, HOK, ARUP, Ecosing, Dopelmayer and various international companies during the project execution. The project is located one of the highest seismic zone in the world and inside the National Park. Due to the geographical conditions of the project location, survey works were quite difficult to execute however Geotec has completed its scope with high success as well as timely manner.</span></span>",
+
+    "textBlock_text1": "<span class='PoppinsExtraLight fontweight275'>KLPE GAS SEPARATION<br />UNIT PROJECT</span>",
+    "textBlock_text_location1": "<span class='PoppinsExtraLight fontweight275'>Location: Tengiz, Kazakhstan</span>",
+    "textBlock_text_client1": "<span class='PoppinsExtraLight fontweight275'>Client: PAO ONHP</span>",
+
+    "textBlock_text2": "<span class='PoppinsExtraLight fontweight275'>INTEGRATED GAS CHEMICAL<br/>COMPLEX (IGCC) PROJECT</span>",
+    "textBlock_text_location2": "<span class='PoppinsExtraLight fontweight275'>Location: Atyrau, Kazakhstan</span>",
+    "textBlock_text_client2": "<span class='PoppinsExtraLight fontweight275'>Client: Kazakhstan Petrochemical Industries lnc</span>",
+
+    "textBlock_text3": "<span class='PoppinsExtraLight fontweight275'>TCO FGP & WPMP MODULE FABRICATION<br/>& INSTALLATION DIMENSION CONTROL<br/>PROJECT</span>",
+    "textBlock_text_location3": "<span class='PoppinsExtraLight fontweight275'>Location: Aktau & Tengiz, Kazakhstan</span>",
+    "textBlock_text_client3": "<span class='PoppinsExtraLight fontweight275'>Client: Warner Surveys & Tengizchevroil LLP</span>",
+
+    "textBlock_text4": "<span class='PoppinsExtraLight fontweight275'>TCO FUTURE GROWTH PROJECT /<br/>WELLHEAD PRESSURE MANAGEMENT<br/>PROJECT</span>",
+    "textBlock_text_location4": "<span class='PoppinsExtraLight fontweight275'>Location: Tengiz, Kazakhstan</span>",
+    "textBlock_text_client4": "<span class='PoppinsExtraLight fontweight275'>Client: Tengizchevroil LLP</span>",
+
+    "textBlock_text5": "<span class='PoppinsExtraLight fontweight275'>TCO RAILROAD ENGINEERING AND<br/>SURVEY SERVICES - MASTER<br/>CONTRACT</span>",
+    "textBlock_text_location5": "<span class='PoppinsExtraLight fontweight275'>Location: Tengiz, Kazakhstan</span>",
+    "textBlock_text_client5": "<span class='PoppinsExtraLight fontweight275'>Client: Tengizchevroil LLP</span>",
+
+    "textBlock_text6": "<span class='PoppinsExtraLight fontweight275'>LASER SCANNING AND CLASH<br/>DETECTION ON TCO FACILITIES</span>",
+    "textBlock_text_location6": "<span class='PoppinsExtraLight fontweight275'>Location: Tengiz, Kazakhstan</span>",
+    "textBlock_text_client6": "<span class='PoppinsExtraLight fontweight275'>Client: Tengizchevroil LLP Inc.</span>",
+
+    "textBlock_text7": "<span class='PoppinsExtraLight fontweight275'>HIGH-PRECISION DIMENSIONAL CONTROL<br/>SURVEY WORKS FOR MACHINERY<br/>RELIABILITY</span>",
+    "textBlock_text_location7": "<span class='PoppinsExtraLight fontweight275'>Location: Tengiz, Kazakhstan</span>",
+    "textBlock_text_client7": "<span class='PoppinsExtraLight fontweight275'>Client: Tengizchevroil LLP</span>",
+
+    "textBlock_text8": "<span class='PoppinsExtraLight fontweight275'>LASER SCANNING AND DIMENSIONAL<br/>CONTROL SURVEY OF TCO<br/>FACILITIES</span>",
+    "textBlock_text_location8": "<span class='PoppinsExtraLight fontweight275'>Location: Tengiz, Kazakhstan</span>",
+    "textBlock_text_client8": "<span class='PoppinsExtraLight fontweight275'>Client: Warner Surveys & Worley Parsons</span>",
+
+    "textBlock_text9": "<span class='PoppinsExtraLight fontweight275'>LASER SCANNING AND DIMENSIONAL<br/>CONTROL WORKS FOR ABU DHABI<br/>PLAZA PROJECT</span>",
+    "textBlock_text_location9": "<span class='PoppinsExtraLight fontweight275'>Location: Astana, Kazakhstan</span>",
+    "textBlock_text_client9": "<span class='PoppinsExtraLight fontweight275'>Client: Arabtec Consolidated Contractor LTD</span>",
+
+    "textBlock_text10": "<span class='PoppinsExtraLight fontweight275'>TOPOGRAPHIC AND GEODETIC<br/>WORKS FOR SAMAL WIND PARK<br/>PROJECT</span>",
+    "textBlock_text_location10": "<span class='PoppinsExtraLight fontweight275'>Location: Ereimentau, Akmola Province Kazakhstan</span>",
+    "textBlock_text_client10": "<span class='PoppinsExtraLight fontweight275'>Client: Worley Parsons</span>",
+
+    "textBlock_text11": "<span class='PoppinsExtraLight fontweight275'>BATHYMETRIC & SEDIMENT SURVEY<br/>FOR TALDYKOL LAKE</span>",
+    "textBlock_text_location11": "<span class='PoppinsExtraLight fontweight275'>Location: Astana, Kazakhstan</span>",
+    "textBlock_text_client11": "<span class='PoppinsExtraLight fontweight275'>Client: Alarko Construction</span>",
+
+    "textBlock_text12": "<span class='PoppinsExtraLight fontweight275'>MEDEU – SHYMBYLAK SKI RESORT<br/>GONDOLA PROJECT RESORT</span>",
+    "textBlock_text_location12": "<span class='PoppinsExtraLight fontweight275'>Location: Almaty, Kazakhstan</span>",
+    "textBlock_text_client12": "<span class='PoppinsExtraLight fontweight275'>Client: Capital Partners</span>"
+  },
+
+  "LICENSES_CERTIFICATION": {
+    "titlePage": "<span class='PoppinsExtraLight fontweight275'>LICENSES &<br />CERTIFICATION</span>",
+    "firstBlockText1": "<span class='PoppinsExtraLight fontweight275'>Survey and Design License Required engineering and survey licenses</span>",
+    "firstBlockText2": "<span class='PoppinsExtraLight fontweight275'>International Certificates ISO 9001 & ISO 45001 (URS Certified)</span>"
+  },
+  "clients": {
+    "title": "<span class='RalewayLight fontweight300'>Customers</span>"
+  },
+
+  "our_technologies": {
+    "circleButton": "<span class='PoppinsLight fontweight300'>Learn more</span>",
+    "number_hopeful_models_block_title": "<span class='PoppinsLight fontweight300'>hopeful<br />models</span>",
+    "our_technologies_title1": "<span class='PoppinsLight fontweight300 our_technologies_title1_en'>Our technology &mdash; <br/>guaranteed results</span></span>",
+    "our_technologies_title2": "<span class='PoppinsLight fontweight300'>DJI MATRICE 200</span>",
+    "our_technologies_title3": "<span class='PoppinsLight fontweight300'>LEICA NOVA TM50</span>",
+    "our_technologies_title3_2": "<span class='PoppinsLight fontweight300'>LEICA TS SERIES</span>",
+    "our_technologies_title4": "<span class='PoppinsLight fontweight300'>LEICA SCANSTATION P40</span>",
+    "our_technologies_title5": "<span class='PoppinsLight fontweight300'>LEICA DNA03</span>",
+    "our_technologies_title6": "<span class='PoppinsLight fontweight300'>FARO Focus Premium<br/>Laser</span>",
+    "our_technologies_title7": "<span class='PoppinsLight fontweight300'>FARO Vantage Laser<br/>Tracker</span>",
+    "our_technologies_title8": "<span class='PoppinsLight fontweight300'>GPR OKO-2 & OKO-3</span>",
+    "our_technologies_title9": "<span class='PoppinsLight fontweight300'>GNSS LEICA VIVA GS10<br/>& GS18</span>",
+    "our_technologies_perhaps1": "<span class='PoppinsExtraLight fontweight275'>GEOTEC constantly invest in specialized equipment for our requirements, and also the latest technologies in the field of result processing of laser scanning, survey activities and engineering researches.</span>",
+    "our_technologies_perhaps2": "<span class='PoppinsExtraLight fontweight275'>The ultimate platform for aerial productivity combines a rugged design and simple configurability to work as a solution for a variety of industrial applications. Improvements to the M200 Series V2 enhance intelligent control systems, flight performance, and add flight safety and data security features.<br />The use of a UAV with an onboard geodetic receiver ensures high accuracy of 3D models and topographic plans up to a scale of 1:500</span>",
+    "our_technologies_perhaps3": "<span class='PoppinsExtraLight fontweight275'>Leica Nova TM50 is one component of a unique monitoring solution which seamlessly integrates total stations, GNSS receivers and antennas, geotechnical sensors, software and IT communication infrastructures.</span>",
+    "our_technologies_perhaps3_2": "<span class='PoppinsExtraLight fontweight275'>For our topographical, engineering and dimensional control surveys, high accuracy (*1 , “0.5) Total Stations are used which provides the best reflectorless EDM<br/>performance available in the world.</span>",
+    "our_technologies_perhaps4": "<span class='PoppinsExtraLight fontweight275'>ScanStation P40 Delivering highest quality 3D data and HDR imaging at an extremely fast scan rate of 1 mio points per second at ranges of up to 270 m.<br />Unsurpassed range and angular accuracy paired with low range noise and survey-grade dual-axis compensation form the foundation for highly detailed 3D colour point clouds mapped in realistic clarity.</span>",
+    "our_technologies_perhaps5": "<span class='PoppinsExtraLight fontweight275'>Experience shows that with Leica Digital Levels there is up to a 50% time saving when compared with conventional levels.</span>",
+    "our_technologies_perhaps6": "<span class='PoppinsExtraLight fontweight275'>Focus Premium provides exceptional capturing efficiency, data quality and accuracy for professional applications across the construction, public safety, operations & maintenance and manufacturing markets, while offering data quality at faster scan speeds (up to 1 minute per scan) reducing onsite scanning time by up to 50%. Up to 350m scanning range, leading to superior area coverage per scan position.<br/><br/>FARO Focus Premium creates accurate, complete and photorealistic 3D representations of objects, buildings, facilities and complex environments with confidence.</span>",
+    "our_technologies_perhaps7": "<span class='PoppinsExtraLight fontweight275'>The FARO Vantage Laser Tracker enables you to build and inspect products and parts by measuring quickly, simply and precisely with exceptional portability. The Vantage platform offers comprehensive, large-volume 3D measurement up to 80 meters, significantly streamlining the processes and reducing inspection cycle times while giving complete confidence in the measurement results.<br/><br/>Vantage laser tracker maximize 6 Degrees of Freedom (6DoF) measurement capabilities via the 6Probe, enabling precise measurement of hidden areas and small features. The 6Probe is a 6DoF solution that meets the dynamic measurement, speed, and accuracy requirements of the most challenging industrial applications.</span>",
+    "our_technologies_perhaps8": "<span class='PoppinsExtraLight fontweight275'>Ground Penetrating Radar OKO-2 and OKO-3 are a portable, lightweight and inexpensive system designed for non-destructive environmental monitoring.<br/>The system includes a control unit or a control processing unit and antennas with frequencies from 50 to 2500 MHz.<br/><br/>All of these antennas are interchangeable, compatible with the control unit or control processing unit, with a variety of different applications.</span>",
+    "our_technologies_perhaps9": "<span class='PoppinsExtraLight fontweight275'>Leica Viva GS10 & GS18 allowing easily to solve various geodetic problems of any complexity.Leica GS18 T is the fastest and easiest-to-use GNSS smart antenna and RTK rover - Immune to magnetic disturbances and calibration-free – no need to level.</span>"
+  },
+
+  "History": {
+    "History_blockTitle": "<span class='PoppinsExtraLight fontweight275'>History</span>",
+
+    "textBlock_text1": "<span class='PoppinsExtraLight fontweight275'>Foundation<span class='PoppinsExtraLight fontweight275'>&nbsp<br />GEOTEC</span></span>",
+    "textBlock_text2": "<span class='PoppinsExtraLight fontweight275'>First project<span class='PoppinsExtraLight fontweight275'>&nbsp<br />GEOTEC</span></span>",
+    "textBlock_text3": "<span class='PoppinsExtraLight fontweight275'>Extension&nbsp<br />in Kazahstan</span>",
+    "textBlock_text4": "<span class='PoppinsExtraLight fontweight275'>TCO&nbsp<br/>Partnership</span>",
+    "textBlock_text5": "<span class='PoppinsExtraLight fontweight275'>The tallest building&nbsp<br />in KZ survey works</span>",
+    "textBlock_text6": "<span class='PoppinsExtraLight fontweight275'>Wind power&nbsp<br />project</span>",
+    "textBlock_text7": "<span class='PoppinsExtraLight fontweight275'>3D scanning project & &nbsp<br />geophysical investigations</span>",
+    "textBlock_text8": "<span class='PoppinsExtraLight fontweight275'>Certification ISO 9001&nbsp<br />and OHSAS 18001</span>",
+    "textBlock_text9": "<span class='PoppinsExtraLight fontweight275'>TCO FGP mega project&nbsp<br />module control</span>",
+    "textBlock_text10": "<span class='PoppinsExtraLight fontweight275'>3D modelling of&nbsp<br />IGCC</span>",
+    "textBlock_text11": "<span class='PoppinsExtraLight fontweight275'>To be the biggest&nbsp<br />contractor in its field</span>",
+
+    "textBlock_text_content1": "<span class='PoppinsExtraLight fontweight275'>Geotec has been founded in 2006.</span>",
+    "textBlock_text_content2": "<span class='PoppinsExtraLight fontweight275'>Geotec has been founded in 2006</span>",
+    "textBlock_text_content3": "<span class='PoppinsExtraLight fontweight275'>One of the most difficult project in Almaty Gondola.</span>",
+    "textBlock_text_content4": "<span class='PoppinsExtraLight fontweight275'>7 Years Master Contract has been signed by TCO</span>",
+    "textBlock_text_content5": "<span class='PoppinsExtraLight fontweight275'>Geotec execute survey works in Almaty</span>",
+    "textBlock_text_content6": "<span class='PoppinsExtraLight fontweight275'>Wind Power Survey works has been executed under the hard winter conditions in North KZ.</span>",
+    "textBlock_text_content7": "<span class='PoppinsExtraLight fontweight275'>Geotec extent its services by using 3D Scanner and Ground-Penetrating Radar (GPR)</span>",
+    "textBlock_text_content8": "<span class='PoppinsExtraLight fontweight275'>Geotec is certificated by Bureau Veritas on ISO 9001 and OHSAS 18001. </span>",
+    "textBlock_text_content9": "<span class='PoppinsExtraLight fontweight275'>Geotec on behalf of TCO will execute the dimension control of modules</span>",
+    "textBlock_text_content10": "<span class='PoppinsExtraLight fontweight275'>Geotec on behalf of KPI will execute the laser scanning during the construction period to create an executive BIM model of Integrated Gas Chemical Complex</span>",
+    "textBlock_text_content11": "<span class='PoppinsExtraLight fontweight275'></span>"
+  },
+
+  "whyarewe": {
+    "title": "<span class='PoppinsRegular fontweight400'>Why<br />Choose<br />Us?</span>",
+
+    "Whyarewe_block_Content_first_title1": "<span class='PoppinsRegular fontweight400'>Employees</span>",
+    "Whyarewe_block_Content_first_title2": "<span class='PoppinsRegular fontweight400'>Sustainability</span>",
+    "Whyarewe_block_Content_first_title3": "<span class='PoppinsRegular fontweight400'>Safety & Quality</span>",
+    "Whyarewe_block_Content_first_title4": "<span class='PoppinsRegular fontweight400'>Customer</span>",
+
+    "Whyarewe_block_Content_first_text1": "<span class='PoppinsRegular fontweight400'>The strength of our company.<br />Our employees are an example of creativity, experience and motivation<br />Maintain the Motta “safety first” and provide a healthy work environment.</span>",
+    "Whyarewe_block_Content_first_text2": "<span class='PoppinsRegular fontweight400'>We strive for sustainability and environmental awareness. We want to be publicly recognized as an well-known in sustainable business practice.</span>",
+    "Whyarewe_block_Content_first_text3": "<span class='PoppinsRegular fontweight400'>We have high quality standards which also apply to our supplies.<br />Put safety first and provide <br />a healthy work environment.</span>",
+    "Whyarewe_block_Content_first_text4": "<span class='PoppinsRegular fontweight400'>Customer requirements are our highest priority. Cares about customers words, understand, and seek out the best solutions to continually improve. </span>"
+  },
+
+  "aboutUs": {
+    "logo_CompanyBar": "<span class='PoppinsRegular fontweight400 txtTr'>is turnkey geodetic surveys</span>",
+    "perhaps_logo_companyBar": "<span class='PoppinsRegular fontweight400'>Our company is active in the following areas:</span>",
+    "mobileTitleAboutUsTitle": "<span class='PoppinsExtraLight fontweight275'>is turnkey geodetic surveys</span>",
+    "researchs_block_elem_text1": "<span class='PoppinsRegular fontweight400'>Specific survey</span>",
+    "researchs_block_elem_text2": "<span class='PoppinsRegular fontweight400'>Topographic and geodetic</span>",
+    "researchs_block_elem_text3": "<span class='PoppinsRegular fontweight400'>Design</span>",
+    "researchs_block_elem_text4": "<span class='PoppinsRegular fontweight400'>Hydrographic, Geological & Geophysical survey</span>",
+
+    "text1": "<span class='PoppinsRegular fontweight400'>- 3D Laser Scanning High-Definition Survey<br/>-UAV / Drone Survey<br/>-Dimension Control & Deformation Survey<br/>-High-Precision Measurement Survey<br/>-Clash Detection Survey<br/>-3D Modelling</span>",
+    "text2": "<span class='PoppinsRegular fontweight400'>- Global Positioning System (GPS) Survey<br />- Road & Railroad & Bridges Survey & Buildings<br />- Industrial Facilities, Site Plan Surveys,<br />- Engineering & Construction Survey.<br />- Extreme Project Surveys, Wind Energy Survey, Gondola i.e</span>",
+    "text3": "<span class='PoppinsRegular fontweight400'>- Railroad Feasibility studies, Calculation of Volumes<br />- Railroad Preliminary and Detailed Environmental Impact<br />- Road & Railroad Conceptual Drawings<br />- Developing Engineering design for Rail Transportation<br />- Developing Engineering design for roads (all categories)</span>",
+    "text4": "<span class='PoppinsRegular fontweight400'>- Bathymetric Survey<br />- Ground-Penetrating Radar Services<br />- Soil Investigation<br />- Reporting based on ASTM and SNIP_GOST.</span>"
+  },
+
+  "contacts": {
+    "contact_title": "<span class='PoppinsRegular fontweight400'>CONTACTS</span>",
+    "title_map_btn": "<span class='PoppinsRegular fontweight400'>Show address on map</span>",
+    "address": "<span class='PoppinsLight fontweight300'>010000, Astana, Kurgaldzhinskoe highway 3B, 3rd floor, office 301</span>"
+  }
+}

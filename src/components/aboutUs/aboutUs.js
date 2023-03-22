@@ -5,29 +5,10 @@ import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [activeAboutUsMobile, setActiveAboutUsMobile] = useState(0);
-  const [height_researchs_block, setHeight_researchs_block] = useState("0px");
 
-  useEffect(() => {
-    setHeight_researchs_block(
-      `${
-        document.querySelectorAll(".researchs_block_elem_overflow")[1]
-          .clientHeight
-      }px`
-    );
-  }, []);
-
-  useEffect(() => {
-    // const borderbottom = document.querySelectorAll(".borderbottom");
-    // for (let i = 0; i < borderbottom.length; i++) {
-    //   borderbottom[
-    //     i
-    //   ].style.bottom = `calc(4.2vh + 4.2vw - ${height_researchs_block})`;
-    // }
-  }, [height_researchs_block]);
-
-  const researchs_block_elemClick = (index) => {
+  const researchs_block_elemClick = (index, open) => {
     const researchs_block_elems = document.querySelectorAll(
       ".researchs_block_elem"
     );
@@ -40,49 +21,51 @@ const AboutUs = () => {
     const researchs_block_elem_text_text = document.querySelectorAll(
       ".researchs_block_elem .text"
     );
-    // const borderbottom = document.querySelectorAll(".borderbottom");
+    const svgblocks = document.querySelectorAll(".svgblock");
 
-    if (researchs_block_elemSVGs[index].style.transform === "rotateX(180deg)") {
-      // borderbottom[
-      //   index
-      // ].style.bottom = `calc(4.2vh + 4.2vw - ${height_researchs_block})`;
+    if (
+      researchs_block_elemSVGs[index].style.transform === "rotateX(180deg)" &&
+      !open
+    ) {
       if (window.innerHeight >= 620) {
-        researchs_block_elems[index].style.height = "calc(4.2vh + 4.2vw)";
+        researchs_block_elems[index].style.height = "calc(4.5vh + 4.5vw)";
       } else {
         researchs_block_elems[index].style.height = "calc(2.5vh + 2.5vw)";
       }
       if (window.innerHeight > 620) {
         researchs_block_elem_overflows[index].style.height =
           "calc(2.7vh + 2.7vw)";
+        svgblocks[index].style.top = "calc(2.7vh + 2.7vw)";
       } else {
         researchs_block_elem_overflows[index].style.height = "46px";
+        svgblocks[index].style.top = "46px";
       }
       researchs_block_elemSVGs[index].style.transform = "rotateX(0deg)";
     } else {
-      // borderbottom[index].style.bottom = "49px";
       researchs_block_elem_text_text[index].style.opacity = 1;
       researchs_block_elems[index].style.height = "50vh";
       researchs_block_elem_overflows[index].style.height = "50vh";
+      svgblocks[index].style.top = "45vh";
       researchs_block_elemSVGs[index].style.transform = "rotateX(180deg)";
     }
   };
 
   useEffect(() => {
-    const textsAboutUs = document.querySelectorAll(
-      ".researchs_block_elem_overflow .text"
-    );
-    const BlocktextsAboutUs = document.querySelectorAll(
-      ".researchs_block_elem_overflow"
-    );
-    const researchs_block_elems = document.querySelectorAll(
-      ".researchs_block_elem"
-    );
-    const mobileTitleAboutUs = document.querySelector(".mobileTitleAboutUs");
-    const MobileWhitebottomAboutus = document.querySelector(
-      ".MobileWhitebottomAboutus"
-    );
-
     if (window.innerWidth < 1134) {
+      const textsAboutUs = document.querySelectorAll(
+        ".researchs_block_elem_overflow .text"
+      );
+      const BlocktextsAboutUs = document.querySelectorAll(
+        ".researchs_block_elem_overflow"
+      );
+      const researchs_block_elems = document.querySelectorAll(
+        ".researchs_block_elem"
+      );
+      const mobileTitleAboutUs = document.querySelector(".mobileTitleAboutUs");
+      const MobileWhitebottomAboutus = document.querySelector(
+        ".MobileWhitebottomAboutus"
+      );
+
       textsAboutUs.forEach((el) => (el.style.opacity = 1));
       BlocktextsAboutUs.forEach((el) => (el.style.height = "auto"));
       researchs_block_elems.forEach(
@@ -123,23 +106,30 @@ const AboutUs = () => {
         var yDiff = yDown - yUp;
 
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
-          /*most significant*/
           if (xDiff > 0) {
             if (window.innerWidth <= 1134) {
               rightaboutUs();
             }
-            /* right swipe */
           } else {
-            /* left swipe */
             if (window.innerWidth <= 1134) {
               leftaboutUs();
             }
           }
         }
-        /* reset values */
+
         xDown = null;
         yDown = null;
       }
+    } else {
+      const researchs_block_elems = document.querySelectorAll(
+        ".researchs_block_elem"
+      );
+      researchs_block_elems.forEach((data, index) =>
+        data.addEventListener("mouseover", function (e) {
+          console.log(index);
+          setActiveAboutUsMobile(index);
+        })
+      );
     }
   }, []);
 
@@ -185,6 +175,8 @@ const AboutUs = () => {
       dotselems[prev1].style.transform = "scale(1)";
       dotselems[sec1].style.transform = "scale(1)";
       dotselems[sec2].style.transform = "scale(1)";
+    } else {
+      researchs_block_elemClick(activeAboutUsMobile, true);
     }
   }, [activeAboutUsMobile]);
 
@@ -281,7 +273,14 @@ const AboutUs = () => {
               </div>
             </div>
             {/* <div className="borderbottom" style={{ bottom: "0px" }}></div> */}
-            <div className="svgblock">
+            <div
+              className="svgblock"
+              style={
+                window.innerHeight > 620
+                  ? { top: "calc(2.7vh + 2.7vw)" }
+                  : { top: "46px" }
+              }
+            >
               <svg
                 viewBox="0 0 45 24"
                 fill="none"
@@ -334,7 +333,14 @@ const AboutUs = () => {
               </div>
             </div>
             {/* <div className="borderbottom" style={{ bottom: "0px" }}></div> */}
-            <div className="svgblock">
+            <div
+              className="svgblock"
+              style={
+                window.innerHeight > 620
+                  ? { top: "calc(2.7vh + 2.7vw)" }
+                  : { top: "46px" }
+              }
+            >
               <svg
                 viewBox="0 0 45 24"
                 fill="none"
@@ -387,7 +393,14 @@ const AboutUs = () => {
               </div>
             </div>
             {/* <div className="borderbottom" style={{ bottom: "0px" }}></div> */}
-            <div className="svgblock">
+            <div
+              className="svgblock"
+              style={
+                window.innerHeight > 620
+                  ? { top: "calc(2.7vh + 2.7vw)" }
+                  : { top: "46px" }
+              }
+            >
               <svg
                 viewBox="0 0 45 24"
                 fill="none"
@@ -440,7 +453,14 @@ const AboutUs = () => {
               </div>
             </div>
             {/* <div className="borderbottom" style={{ bottom: "0px" }}></div> */}
-            <div className="svgblock">
+            <div
+              className="svgblock"
+              style={
+                window.innerHeight > 620
+                  ? { top: "calc(2.7vh + 2.7vw)" }
+                  : { top: "46px" }
+              }
+            >
               <svg
                 viewBox="0 0 45 24"
                 fill="none"

@@ -1,4 +1,5 @@
 import "./projects.scss";
+import React from "react";
 import { useState, useEffect } from "react";
 import parse from "html-react-parser";
 import { useTranslation } from "react-i18next";

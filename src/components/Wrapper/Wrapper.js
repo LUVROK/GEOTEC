@@ -1,4 +1,5 @@
 import "./Wrapper.scss";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import fontFamilycorrect from "../../fontFamilyFunc";
 import parse from "html-react-parser";

@@ -1,5 +1,6 @@
 import "../../App.scss";
 import "./nav.scss";
+import React from "react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import parse from "html-react-parser";
